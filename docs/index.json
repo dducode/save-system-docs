@@ -97,7 +97,7 @@
   "manual/installing.html": {
     "href": "manual/installing.html",
     "title": "Installing",
-    "keywords": "Installing Do these steps to install the package: Click on the green button \"Code\" Then click on copy button, in \"HTTPS\" tab In Unity open the Package Manager window (Window/Package Manager) Then click on plus sign and select \"Add package from git URL\" Insert copied link and click on \"Add\" After a while the package will be added to your project"
+    "keywords": "Installing Do these steps to install the package: Click on the green button \"Code\" Then click on copy button, in \"HTTPS\" tab In Unity open the Package Manager window (Window/Package Manager) Then click on plus sign and select \"Add package from git URL\" Insert copied link and click on \"Add\" After a while the package will be added to your project However, you can see some errors in the debug console. The save system has a dependency on UniTask. Unfortunately, Unity Package Manager cannot resolve dependencies between Git repositories, so you need to install UniTask manually. Copy this link https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask and install UniTask in the same way as you installed the save system"
   },
   "manual/intro.html": {
     "href": "manual/intro.html",

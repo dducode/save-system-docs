@@ -25,3 +25,14 @@ Do these steps to install the package:
 6. After a while the package will be added to your project
 
     ![](../images/Screenshot_5.png)
+
+However, you can see some errors in the debug console. The
+save system has a dependency on UniTask.
+Unfortunately, Unity Package Manager cannot resolve 
+dependencies between Git repositories, so you need to install 
+UniTask manually. 
+
+Copy this link 
+`https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask`
+and install UniTask in the same way as you installed
+the save system
