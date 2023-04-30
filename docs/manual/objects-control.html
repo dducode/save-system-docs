@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -75,26 +75,28 @@
         <article data-uid="">
 <h1 id="objects-control">Objects control</h1>
 
-<p>In addition to unity structures and base data types,
-you can write down and read custom classes and structures.</p>
+<p>In addition to unity structures and base data types, you
+can write down and read custom classes and structures.</p>
 <pre><code class="lang-csharp">writer.Write&lt;MyClass&gt;(myClass);
 myClass = reader.ReadObject&lt;MyClass&gt;();
 </code></pre>
-<p>To write down (not save) a custom class, it must be serializable</p>
+<p>To write down (not save) a custom class,
+it must be serializable</p>
 <pre><code class="lang-csharp">[Serializable]
 public class MyClass {
+
     public int intValue; // it will be saved
-    
+
     [SerializeField]
     private bool boolValue; // and this
     
     private int m_intValue; // but not this
     public bool BoolValue { get; set; } // and not this
- }
+    
+}
 </code></pre>
 <p>By default, its will be written as json string. If you want
-to override this, you can define extensions.
-For example</p>
+to override this, you can define extensions. For example</p>
 <pre><code class="lang-csharp">public static class SaveSystemExtensions {
 
     public static void WriteMyClass (this UnityWriter writer, MyClass myClass) {
@@ -115,7 +117,8 @@ For example</p>
     }
 }
 </code></pre>
-<p>After then you can write down the class and read its as binary</p>
+<p>After then you can write down the class and read its as
+binary</p>
 <pre><code class="lang-csharp">writer.WriteMyClass(myClass);
 myClass = reader.ReadMyClass();
 </code></pre>

@@ -1,0 +1,1108 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.UnityAsyncWriter
+  commentId: T:SaveSystem.UnityAsyncWriter
+  id: UnityAsyncWriter
+  parent: SaveSystem
+  children:
+  - SaveSystem.UnityAsyncWriter.Dispose
+  - SaveSystem.UnityAsyncWriter.DisposeAsync
+  - SaveSystem.UnityAsyncWriter.localPath
+  - SaveSystem.UnityAsyncWriter.Write(SaveSystem.MeshData,System.Int32)
+  - SaveSystem.UnityAsyncWriter.Write(System.Byte[])
+  - SaveSystem.UnityAsyncWriter.Write(System.Int32[])
+  - SaveSystem.UnityAsyncWriter.Write(System.Single[])
+  - SaveSystem.UnityAsyncWriter.Write(System.Version)
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color[])
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color32[])
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Matrix4x4[])
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector2[])
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector3[])
+  - SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector4[])
+  - SaveSystem.UnityAsyncWriter.Write``1(``0[])
+  langs:
+  - csharp
+  - vb
+  name: UnityAsyncWriter
+  nameWithType: UnityAsyncWriter
+  fullName: SaveSystem.UnityAsyncWriter
+  type: Class
+  source:
+    id: UnityAsyncWriter
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 11
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Adapter to class <xref href="System.IO.BinaryWriter" data-throw-if-not-resolved="false"></xref> for simplify writing data async
+  example: []
+  syntax:
+    content: 'public sealed class UnityAsyncWriter : IDisposable, IAsyncDisposable'
+    content.vb: Public NotInheritable Class UnityAsyncWriter Implements IDisposable, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SaveSystem.UnityAsyncWriter.localPath
+  commentId: F:SaveSystem.UnityAsyncWriter.localPath
+  id: localPath
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: localPath
+  nameWithType: UnityAsyncWriter.localPath
+  fullName: SaveSystem.UnityAsyncWriter.localPath
+  type: Field
+  source:
+    id: localPath
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 14
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public readonly string localPath
+    return:
+      type: System.String
+    content.vb: Public ReadOnly localPath As String
+- uid: SaveSystem.UnityAsyncWriter.Write(System.Version)
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(System.Version)
+  id: Write(System.Version)
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Version)
+  nameWithType: UnityAsyncWriter.Write(Version)
+  fullName: SaveSystem.UnityAsyncWriter.Write(System.Version)
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 23
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public void Write(Version version)
+    parameters:
+    - id: version
+      type: System.Version
+    content.vb: Public Sub Write(version As Version)
+  overload: SaveSystem.UnityAsyncWriter.Write*
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector2[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector2[])
+  id: Write(UnityEngine.Vector2[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector2[])
+  nameWithType: UnityAsyncWriter.Write(Vector2[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector2[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 31
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Vector2[] vector2Array)
+    parameters:
+    - id: vector2Array
+      type: UnityEngine.Vector2[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(vector2Array As Vector2()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Vector2())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector2())
+  name.vb: Write(Vector2())
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector3[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector3[])
+  id: Write(UnityEngine.Vector3[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector3[])
+  nameWithType: UnityAsyncWriter.Write(Vector3[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector3[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 41
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Vector3[] vector3Array)
+    parameters:
+    - id: vector3Array
+      type: UnityEngine.Vector3[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(vector3Array As Vector3()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Vector3())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector3())
+  name.vb: Write(Vector3())
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector4[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector4[])
+  id: Write(UnityEngine.Vector4[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector4[])
+  nameWithType: UnityAsyncWriter.Write(Vector4[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector4[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 51
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Vector4[] vector4Array)
+    parameters:
+    - id: vector4Array
+      type: UnityEngine.Vector4[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(vector4Array As Vector4()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Vector4())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Vector4())
+  name.vb: Write(Vector4())
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color[])
+  id: Write(UnityEngine.Color[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color[])
+  nameWithType: UnityAsyncWriter.Write(Color[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 61
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Color[] colorsArray)
+    parameters:
+    - id: colorsArray
+      type: UnityEngine.Color[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(colorsArray As Color()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Color())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color())
+  name.vb: Write(Color())
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color32[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color32[])
+  id: Write(UnityEngine.Color32[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color32[])
+  nameWithType: UnityAsyncWriter.Write(Color32[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color32[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 71
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Color32[] colors32Array)
+    parameters:
+    - id: colors32Array
+      type: UnityEngine.Color32[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(colors32Array As Color32()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Color32())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Color32())
+  name.vb: Write(Color32())
+- uid: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Matrix4x4[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(UnityEngine.Matrix4x4[])
+  id: Write(UnityEngine.Matrix4x4[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Matrix4x4[])
+  nameWithType: UnityAsyncWriter.Write(Matrix4x4[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Matrix4x4[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 81
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(Matrix4x4[] matrices)
+    parameters:
+    - id: matrices
+      type: UnityEngine.Matrix4x4[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(matrices As Matrix4x4()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Matrix4x4())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(UnityEngine.Matrix4x4())
+  name.vb: Write(Matrix4x4())
+- uid: SaveSystem.UnityAsyncWriter.Write(SaveSystem.MeshData,System.Int32)
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(SaveSystem.MeshData,System.Int32)
+  id: Write(SaveSystem.MeshData,System.Int32)
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(MeshData, int)
+  nameWithType: UnityAsyncWriter.Write(MeshData, int)
+  fullName: SaveSystem.UnityAsyncWriter.Write(SaveSystem.MeshData, int)
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 90
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(MeshData meshData, int uvChannels = 1)
+    parameters:
+    - id: meshData
+      type: SaveSystem.MeshData
+    - id: uvChannels
+      type: System.Int32
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(meshData As MeshData, uvChannels As Integer = 1) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(MeshData, Integer)
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(SaveSystem.MeshData, Integer)
+  name.vb: Write(MeshData, Integer)
+- uid: SaveSystem.UnityAsyncWriter.Write``1(``0[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write``1(``0[])
+  id: Write``1(``0[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write<T>(T[])
+  nameWithType: UnityAsyncWriter.Write<T>(T[])
+  fullName: SaveSystem.UnityAsyncWriter.Write<T>(T[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 142
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write<T>(T[] objects)
+    parameters:
+    - id: objects
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(Of T)(objects As T()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Of T)(T())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(Of T)(T())
+  name.vb: Write(Of T)(T())
+- uid: SaveSystem.UnityAsyncWriter.Write(System.Int32[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(System.Int32[])
+  id: Write(System.Int32[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(int[])
+  nameWithType: UnityAsyncWriter.Write(int[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(int[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 152
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(int[] intValues)
+    parameters:
+    - id: intValues
+      type: System.Int32[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(intValues As Integer()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Integer())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(Integer())
+  name.vb: Write(Integer())
+- uid: SaveSystem.UnityAsyncWriter.Write(System.Byte[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[])
+  nameWithType: UnityAsyncWriter.Write(byte[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(byte[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 162
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(bytes As Byte()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Byte())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(Byte())
+  name.vb: Write(Byte())
+- uid: SaveSystem.UnityAsyncWriter.Write(System.Single[])
+  commentId: M:SaveSystem.UnityAsyncWriter.Write(System.Single[])
+  id: Write(System.Single[])
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(float[])
+  nameWithType: UnityAsyncWriter.Write(float[])
+  fullName: SaveSystem.UnityAsyncWriter.Write(float[])
+  type: Method
+  source:
+    id: Write
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 172
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public UniTask Write(float[] floatValues)
+    parameters:
+    - id: floatValues
+      type: System.Single[]
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function Write(floatValues As Single()) As UniTask
+  overload: SaveSystem.UnityAsyncWriter.Write*
+  nameWithType.vb: UnityAsyncWriter.Write(Single())
+  fullName.vb: SaveSystem.UnityAsyncWriter.Write(Single())
+  name.vb: Write(Single())
+- uid: SaveSystem.UnityAsyncWriter.Dispose
+  commentId: M:SaveSystem.UnityAsyncWriter.Dispose
+  id: Dispose
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnityAsyncWriter.Dispose()
+  fullName: SaveSystem.UnityAsyncWriter.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 182
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SaveSystem.UnityAsyncWriter.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: SaveSystem.UnityAsyncWriter.DisposeAsync
+  commentId: M:SaveSystem.UnityAsyncWriter.DisposeAsync
+  id: DisposeAsync
+  parent: SaveSystem.UnityAsyncWriter
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: UnityAsyncWriter.DisposeAsync()
+  fullName: SaveSystem.UnityAsyncWriter.DisposeAsync()
+  type: Method
+  source:
+    id: DisposeAsync
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityAsyncWriter.cs
+    startLine: 187
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: SaveSystem.UnityAsyncWriter.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SaveSystem.UnityAsyncWriter.Write*
+  commentId: Overload:SaveSystem.UnityAsyncWriter.Write
+  href: SaveSystem.UnityAsyncWriter.html#SaveSystem.UnityAsyncWriter.Write(System.Version)
+  name: Write
+  nameWithType: UnityAsyncWriter.Write
+  fullName: SaveSystem.UnityAsyncWriter.Write
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.version
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: UnityEngine.Vector2[]
+  isExternal: true
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: UnityEngine.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: UnityEngine.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Cysharp.Threading.Tasks.UniTask
+  commentId: T:Cysharp.Threading.Tasks.UniTask
+  parent: Cysharp.Threading.Tasks
+  name: UniTask
+  nameWithType: UniTask
+  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector4[]
+  isExternal: true
+  name: Vector4[]
+  nameWithType: Vector4[]
+  fullName: UnityEngine.Vector4[]
+  nameWithType.vb: Vector4()
+  fullName.vb: UnityEngine.Vector4()
+  name.vb: Vector4()
+  spec.csharp:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Color32[]
+  isExternal: true
+  name: Color32[]
+  nameWithType: Color32[]
+  fullName: UnityEngine.Color32[]
+  nameWithType.vb: Color32()
+  fullName.vb: UnityEngine.Color32()
+  name.vb: Color32()
+  spec.csharp:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Matrix4x4[]
+  isExternal: true
+  name: Matrix4x4[]
+  nameWithType: Matrix4x4[]
+  fullName: UnityEngine.Matrix4x4[]
+  nameWithType.vb: Matrix4x4()
+  fullName.vb: UnityEngine.Matrix4x4()
+  name.vb: Matrix4x4()
+  spec.csharp:
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: SaveSystem.MeshData
+  commentId: T:SaveSystem.MeshData
+  parent: SaveSystem
+  href: SaveSystem.MeshData.html
+  name: MeshData
+  nameWithType: MeshData
+  fullName: SaveSystem.MeshData
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: SaveSystem.UnityAsyncWriter.Dispose*
+  commentId: Overload:SaveSystem.UnityAsyncWriter.Dispose
+  href: SaveSystem.UnityAsyncWriter.html#SaveSystem.UnityAsyncWriter.Dispose
+  name: Dispose
+  nameWithType: UnityAsyncWriter.Dispose
+  fullName: SaveSystem.UnityAsyncWriter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SaveSystem.UnityAsyncWriter.DisposeAsync*
+  commentId: Overload:SaveSystem.UnityAsyncWriter.DisposeAsync
+  href: SaveSystem.UnityAsyncWriter.html#SaveSystem.UnityAsyncWriter.DisposeAsync
+  name: DisposeAsync
+  nameWithType: UnityAsyncWriter.DisposeAsync
+  fullName: SaveSystem.UnityAsyncWriter.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

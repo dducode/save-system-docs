@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../../",
+          "src": "../../../",
           "files": [
             "SaveSystem.csproj"
           ]
@@ -27,6 +27,8 @@
         "files": [
           "manual/**.md",
           "manual/**/toc.yml",
+          "changelog/toc.yml",
+          "license/toc.yml",
           "toc.yml",
           "index.md"
         ]
@@ -57,7 +59,7 @@
       "_enableSearch" : true,
       "_disableContribution" : true,
       "_appFooter" : "<p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href=\"https://dotnet.github.io/docfx\">docfx</a></p>",
-      "docurl" : "https://github.com/dducode/BaseDefense"
+      "docurl" : ""
     },
     "fileMetadataFiles": [],
     "template": [

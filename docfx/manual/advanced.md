@@ -2,9 +2,9 @@
 
 In 99% cases you won't need to this, but you can
 write and read data asynchronously by using
-[UnityAsyncWriter]() 
+[UnityAsyncWriter](../api/SaveSystem.UnityAsyncWriter.yml) 
 and 
-[UnityAsyncReader]().
+[UnityAsyncReader](../api/SaveSystem.UnityAsyncReader.yml).
 
 In past examples only objects was saved
 asynchronously, but inside them data was written
@@ -26,7 +26,7 @@ public async UniTask Save (UnityAsyncWriter asyncWriter) {
 ```
 
 To do this, class of object must be implement the
-[IPersistentObjectAsync]()
+[IPersistentObjectAsync](../api/SaveSystem.IPersistentObjectAsync.yml)
 interface instead of the IPersistentObject
 
 ```csharp

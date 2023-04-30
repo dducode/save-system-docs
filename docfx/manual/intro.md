@@ -23,4 +23,4 @@ Read [Installing Manual](installing.md) to install this package
 
 ## Using Save System
 
-See [Using Save System]() to learn how to use this system
+See [Using Save System](using.md) to learn how to use this system

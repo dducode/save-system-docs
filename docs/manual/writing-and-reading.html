@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -75,17 +75,19 @@
         <article data-uid="">
 <h1 id="writing-and-reading-data">Writing and reading data</h1>
 
-<p>To write and read data, the save system provides two classes -
-<a href="../api/SaveSystem.UnityWriter.html">UnityWriter</a> and
-<a href="../api/SaveSystem.UnityReader.html">UnityReader</a>.
+<p>To write and read data, the save system provides two
+classes -
+<a href="">UnityWriter</a>
+and
+<a href="">UnityReader</a>.
 They can write and read data respectively. Your
-MonoBehaviour classes get these data handler
-from the DataManager when you're saving or loading them.
-To write and read data you would write</p>
+MonoBehaviour classes get these data handler from the
+DataManager when you're saving or loading them. To write and
+read data you would write</p>
 <pre><code class="lang-csharp">public void Save (UnityWriter writer) {
     writer.Write(transform.position);
     writer.Write(transform.rotation);
-    
+
     writer.Write(material.color);
     
     writer.Write(myClass);
@@ -96,7 +98,7 @@ To write and read data you would write</p>
 public void Load (UnityReader reader) {
     transform.position = reader.ReadVector3();
     transform.rotation = reader.ReadRotation();
-    
+
     material.color = reader.ReadColor();
     
     myClass = reader.ReadObject&lt;MyClass&gt;();
@@ -107,8 +109,8 @@ public void Load (UnityReader reader) {
 <h5>Important</h5>
 <p>You must read data in the same order as you write it.</p>
 </div>
-<p>To learn how to control custom classes and structs
-see <a href="objects-control.html">this part</a></p>
+<p>To learn how to control custom classes and structs see
+<a href="objects-control.html">this part</a></p>
 </article>
 
 

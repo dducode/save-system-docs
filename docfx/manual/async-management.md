@@ -1,9 +1,10 @@
 ﻿# Asynchronous management
 
-[DataManager]() can also save and load objects
-asynchronously. For example, if you're generating
-a heavy mesh and want to write down it, you wouldn't
-want to do it at runtime, else your game will freeze.
+[DataManager](../api/SaveSystem.DataManager.yml) 
+can also save and load objects asynchronously. For example,
+if you're generating a heavy mesh and want to write down it, 
+you wouldn't want to do it at runtime, else your game 
+will freeze.
 
 To do it you can persist MyGenerator by using
 SaveObjectAsync method. You can await it or continue
@@ -31,7 +32,7 @@ public void Save (UnityWriter writer) {
 ```
 
 > [!NOTE]
-> Before write down the mesh, you must get MeshData 
+> Before write down the mesh, you must get [MeshData](../api/SaveSystem.MeshData.yml) 
 > struct inside an other method and save it as class 
 > field to pass it to writer.Write method. You just 
 > can cast Mesh to MeshData, ex.
@@ -50,7 +51,7 @@ public void Save (UnityWriter writer) {
 > ```
 
 For more information about AsyncMode, see the chapter 
-[async modes]()
+[async modes](async-modes.md)
 
 If you are saving a lot of objects, you can observe 
 the progress by passing a object to the DataManager 

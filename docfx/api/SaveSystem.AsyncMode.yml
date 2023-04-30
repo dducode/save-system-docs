@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.AsyncMode
+  commentId: T:SaveSystem.AsyncMode
+  id: AsyncMode
+  parent: SaveSystem
+  children:
+  - SaveSystem.AsyncMode.OnPlayerLoop
+  - SaveSystem.AsyncMode.OnThreadPool
+  langs:
+  - csharp
+  - vb
+  name: AsyncMode
+  nameWithType: AsyncMode
+  fullName: SaveSystem.AsyncMode
+  type: Enum
+  source:
+    id: AsyncMode
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\AsyncMode.cs
+    startLine: 2
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public enum AsyncMode
+    content.vb: Public Enum AsyncMode
+- uid: SaveSystem.AsyncMode.OnThreadPool
+  commentId: F:SaveSystem.AsyncMode.OnThreadPool
+  id: OnThreadPool
+  parent: SaveSystem.AsyncMode
+  langs:
+  - csharp
+  - vb
+  name: OnThreadPool
+  nameWithType: AsyncMode.OnThreadPool
+  fullName: SaveSystem.AsyncMode.OnThreadPool
+  type: Field
+  source:
+    id: OnThreadPool
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\AsyncMode.cs
+    startLine: 4
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: OnThreadPool = 0
+    return:
+      type: SaveSystem.AsyncMode
+- uid: SaveSystem.AsyncMode.OnPlayerLoop
+  commentId: F:SaveSystem.AsyncMode.OnPlayerLoop
+  id: OnPlayerLoop
+  parent: SaveSystem.AsyncMode
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerLoop
+  nameWithType: AsyncMode.OnPlayerLoop
+  fullName: SaveSystem.AsyncMode.OnPlayerLoop
+  type: Field
+  source:
+    id: OnPlayerLoop
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\AsyncMode.cs
+    startLine: 5
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: OnPlayerLoop = 1
+    return:
+      type: SaveSystem.AsyncMode
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: SaveSystem.AsyncMode
+  commentId: T:SaveSystem.AsyncMode
+  parent: SaveSystem
+  href: SaveSystem.AsyncMode.html
+  name: AsyncMode
+  nameWithType: AsyncMode
+  fullName: SaveSystem.AsyncMode

@@ -1,0 +1,24 @@
+### YamlMime:TableOfContent
+items:
+- uid: SaveSystem
+  name: SaveSystem
+  items:
+  - uid: SaveSystem.AsyncMode
+    name: AsyncMode
+  - uid: SaveSystem.DataManager
+    name: DataManager
+  - uid: SaveSystem.IPersistentObject
+    name: IPersistentObject
+  - uid: SaveSystem.IPersistentObjectAsync
+    name: IPersistentObjectAsync
+  - uid: SaveSystem.MeshData
+    name: MeshData
+  - uid: SaveSystem.UnityAsyncReader
+    name: UnityAsyncReader
+  - uid: SaveSystem.UnityAsyncWriter
+    name: UnityAsyncWriter
+  - uid: SaveSystem.UnityReader
+    name: UnityReader
+  - uid: SaveSystem.UnityWriter
+    name: UnityWriter
+memberLayout: SamePage

@@ -1,0 +1,1051 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.MeshData
+  commentId: T:SaveSystem.MeshData
+  id: MeshData
+  parent: SaveSystem
+  children:
+  - SaveSystem.MeshData.bounds
+  - SaveSystem.MeshData.colors32
+  - SaveSystem.MeshData.indexBufferTarget
+  - SaveSystem.MeshData.indexFormat
+  - SaveSystem.MeshData.name
+  - SaveSystem.MeshData.normals
+  - SaveSystem.MeshData.op_Implicit(SaveSystem.MeshData)~UnityEngine.Mesh
+  - SaveSystem.MeshData.op_Implicit(UnityEngine.Mesh)~SaveSystem.MeshData
+  - SaveSystem.MeshData.subMeshes
+  - SaveSystem.MeshData.subMeshIndices
+  - SaveSystem.MeshData.tangents
+  - SaveSystem.MeshData.triangles
+  - SaveSystem.MeshData.uv
+  - SaveSystem.MeshData.uv2
+  - SaveSystem.MeshData.uv3
+  - SaveSystem.MeshData.uv4
+  - SaveSystem.MeshData.uv5
+  - SaveSystem.MeshData.uv6
+  - SaveSystem.MeshData.uv7
+  - SaveSystem.MeshData.uv8
+  - SaveSystem.MeshData.vertexBufferTarget
+  - SaveSystem.MeshData.vertices
+  langs:
+  - csharp
+  - vb
+  name: MeshData
+  nameWithType: MeshData
+  fullName: SaveSystem.MeshData
+  type: Struct
+  source:
+    id: MeshData
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 8
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Contains the data of a mesh. Mesh can be casted to MeshData and vice-versa
+  example: []
+  syntax:
+    content: public struct MeshData
+    content.vb: Public Structure MeshData
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SaveSystem.MeshData.subMeshes
+  commentId: F:SaveSystem.MeshData.subMeshes
+  id: subMeshes
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: subMeshes
+  nameWithType: MeshData.subMeshes
+  fullName: SaveSystem.MeshData.subMeshes
+  type: Field
+  source:
+    id: subMeshes
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 10
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public SubMeshDescriptor[] subMeshes
+    return:
+      type: UnityEngine.Rendering.SubMeshDescriptor[]
+    content.vb: Public subMeshes As SubMeshDescriptor()
+- uid: SaveSystem.MeshData.subMeshIndices
+  commentId: F:SaveSystem.MeshData.subMeshIndices
+  id: subMeshIndices
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: subMeshIndices
+  nameWithType: MeshData.subMeshIndices
+  fullName: SaveSystem.MeshData.subMeshIndices
+  type: Field
+  source:
+    id: subMeshIndices
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 11
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public int[][] subMeshIndices
+    return:
+      type: System.Int32[][]
+    content.vb: Public subMeshIndices As Integer()()
+- uid: SaveSystem.MeshData.name
+  commentId: F:SaveSystem.MeshData.name
+  id: name
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: name
+  nameWithType: MeshData.name
+  fullName: SaveSystem.MeshData.name
+  type: Field
+  source:
+    id: name
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 12
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public string name
+    return:
+      type: System.String
+    content.vb: Public name As String
+- uid: SaveSystem.MeshData.vertices
+  commentId: F:SaveSystem.MeshData.vertices
+  id: vertices
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: vertices
+  nameWithType: MeshData.vertices
+  fullName: SaveSystem.MeshData.vertices
+  type: Field
+  source:
+    id: vertices
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 13
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector3[] vertices
+    return:
+      type: UnityEngine.Vector3[]
+    content.vb: Public vertices As Vector3()
+- uid: SaveSystem.MeshData.uv
+  commentId: F:SaveSystem.MeshData.uv
+  id: uv
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv
+  nameWithType: MeshData.uv
+  fullName: SaveSystem.MeshData.uv
+  type: Field
+  source:
+    id: uv
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 14
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv As Vector2()
+- uid: SaveSystem.MeshData.uv2
+  commentId: F:SaveSystem.MeshData.uv2
+  id: uv2
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv2
+  nameWithType: MeshData.uv2
+  fullName: SaveSystem.MeshData.uv2
+  type: Field
+  source:
+    id: uv2
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv2
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv2 As Vector2()
+- uid: SaveSystem.MeshData.uv3
+  commentId: F:SaveSystem.MeshData.uv3
+  id: uv3
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv3
+  nameWithType: MeshData.uv3
+  fullName: SaveSystem.MeshData.uv3
+  type: Field
+  source:
+    id: uv3
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 16
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv3
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv3 As Vector2()
+- uid: SaveSystem.MeshData.uv4
+  commentId: F:SaveSystem.MeshData.uv4
+  id: uv4
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv4
+  nameWithType: MeshData.uv4
+  fullName: SaveSystem.MeshData.uv4
+  type: Field
+  source:
+    id: uv4
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 17
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv4
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv4 As Vector2()
+- uid: SaveSystem.MeshData.uv5
+  commentId: F:SaveSystem.MeshData.uv5
+  id: uv5
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv5
+  nameWithType: MeshData.uv5
+  fullName: SaveSystem.MeshData.uv5
+  type: Field
+  source:
+    id: uv5
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 18
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv5
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv5 As Vector2()
+- uid: SaveSystem.MeshData.uv6
+  commentId: F:SaveSystem.MeshData.uv6
+  id: uv6
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv6
+  nameWithType: MeshData.uv6
+  fullName: SaveSystem.MeshData.uv6
+  type: Field
+  source:
+    id: uv6
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 19
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv6
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv6 As Vector2()
+- uid: SaveSystem.MeshData.uv7
+  commentId: F:SaveSystem.MeshData.uv7
+  id: uv7
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv7
+  nameWithType: MeshData.uv7
+  fullName: SaveSystem.MeshData.uv7
+  type: Field
+  source:
+    id: uv7
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 20
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv7
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv7 As Vector2()
+- uid: SaveSystem.MeshData.uv8
+  commentId: F:SaveSystem.MeshData.uv8
+  id: uv8
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: uv8
+  nameWithType: MeshData.uv8
+  fullName: SaveSystem.MeshData.uv8
+  type: Field
+  source:
+    id: uv8
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 21
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2[] uv8
+    return:
+      type: UnityEngine.Vector2[]
+    content.vb: Public uv8 As Vector2()
+- uid: SaveSystem.MeshData.colors32
+  commentId: F:SaveSystem.MeshData.colors32
+  id: colors32
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: colors32
+  nameWithType: MeshData.colors32
+  fullName: SaveSystem.MeshData.colors32
+  type: Field
+  source:
+    id: colors32
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 22
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Color32[] colors32
+    return:
+      type: UnityEngine.Color32[]
+    content.vb: Public colors32 As Color32()
+- uid: SaveSystem.MeshData.normals
+  commentId: F:SaveSystem.MeshData.normals
+  id: normals
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: normals
+  nameWithType: MeshData.normals
+  fullName: SaveSystem.MeshData.normals
+  type: Field
+  source:
+    id: normals
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 23
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector3[] normals
+    return:
+      type: UnityEngine.Vector3[]
+    content.vb: Public normals As Vector3()
+- uid: SaveSystem.MeshData.tangents
+  commentId: F:SaveSystem.MeshData.tangents
+  id: tangents
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: tangents
+  nameWithType: MeshData.tangents
+  fullName: SaveSystem.MeshData.tangents
+  type: Field
+  source:
+    id: tangents
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 24
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector4[] tangents
+    return:
+      type: UnityEngine.Vector4[]
+    content.vb: Public tangents As Vector4()
+- uid: SaveSystem.MeshData.triangles
+  commentId: F:SaveSystem.MeshData.triangles
+  id: triangles
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: triangles
+  nameWithType: MeshData.triangles
+  fullName: SaveSystem.MeshData.triangles
+  type: Field
+  source:
+    id: triangles
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 25
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public int[] triangles
+    return:
+      type: System.Int32[]
+    content.vb: Public triangles As Integer()
+- uid: SaveSystem.MeshData.bounds
+  commentId: F:SaveSystem.MeshData.bounds
+  id: bounds
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: bounds
+  nameWithType: MeshData.bounds
+  fullName: SaveSystem.MeshData.bounds
+  type: Field
+  source:
+    id: bounds
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 26
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Bounds bounds
+    return:
+      type: UnityEngine.Bounds
+    content.vb: Public bounds As Bounds
+- uid: SaveSystem.MeshData.indexBufferTarget
+  commentId: F:SaveSystem.MeshData.indexBufferTarget
+  id: indexBufferTarget
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: indexBufferTarget
+  nameWithType: MeshData.indexBufferTarget
+  fullName: SaveSystem.MeshData.indexBufferTarget
+  type: Field
+  source:
+    id: indexBufferTarget
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 27
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public GraphicsBuffer.Target indexBufferTarget
+    return:
+      type: UnityEngine.GraphicsBuffer.Target
+    content.vb: Public indexBufferTarget As GraphicsBuffer.Target
+- uid: SaveSystem.MeshData.indexFormat
+  commentId: F:SaveSystem.MeshData.indexFormat
+  id: indexFormat
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: indexFormat
+  nameWithType: MeshData.indexFormat
+  fullName: SaveSystem.MeshData.indexFormat
+  type: Field
+  source:
+    id: indexFormat
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 28
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public IndexFormat indexFormat
+    return:
+      type: UnityEngine.Rendering.IndexFormat
+    content.vb: Public indexFormat As IndexFormat
+- uid: SaveSystem.MeshData.vertexBufferTarget
+  commentId: F:SaveSystem.MeshData.vertexBufferTarget
+  id: vertexBufferTarget
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: vertexBufferTarget
+  nameWithType: MeshData.vertexBufferTarget
+  fullName: SaveSystem.MeshData.vertexBufferTarget
+  type: Field
+  source:
+    id: vertexBufferTarget
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 29
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public GraphicsBuffer.Target vertexBufferTarget
+    return:
+      type: UnityEngine.GraphicsBuffer.Target
+    content.vb: Public vertexBufferTarget As GraphicsBuffer.Target
+- uid: SaveSystem.MeshData.op_Implicit(UnityEngine.Mesh)~SaveSystem.MeshData
+  commentId: M:SaveSystem.MeshData.op_Implicit(UnityEngine.Mesh)~SaveSystem.MeshData
+  id: op_Implicit(UnityEngine.Mesh)~SaveSystem.MeshData
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: implicit operator MeshData(Mesh)
+  nameWithType: MeshData.implicit operator MeshData(Mesh)
+  fullName: SaveSystem.MeshData.implicit operator SaveSystem.MeshData(UnityEngine.Mesh)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 32
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public static implicit operator MeshData(Mesh mesh)
+    parameters:
+    - id: mesh
+      type: UnityEngine.Mesh
+    return:
+      type: SaveSystem.MeshData
+    content.vb: Public Shared Widening Operator CType(mesh As Mesh) As MeshData
+  overload: SaveSystem.MeshData.op_Implicit*
+  nameWithType.vb: MeshData.CType(Mesh)
+  fullName.vb: SaveSystem.MeshData.CType(UnityEngine.Mesh)
+  name.vb: CType(Mesh)
+- uid: SaveSystem.MeshData.op_Implicit(SaveSystem.MeshData)~UnityEngine.Mesh
+  commentId: M:SaveSystem.MeshData.op_Implicit(SaveSystem.MeshData)~UnityEngine.Mesh
+  id: op_Implicit(SaveSystem.MeshData)~UnityEngine.Mesh
+  parent: SaveSystem.MeshData
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Mesh(MeshData)
+  nameWithType: MeshData.implicit operator Mesh(MeshData)
+  fullName: SaveSystem.MeshData.implicit operator UnityEngine.Mesh(SaveSystem.MeshData)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\MeshData.cs
+    startLine: 37
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public static implicit operator Mesh(MeshData meshData)
+    parameters:
+    - id: meshData
+      type: SaveSystem.MeshData
+    return:
+      type: UnityEngine.Mesh
+    content.vb: Public Shared Widening Operator CType(meshData As MeshData) As Mesh
+  overload: SaveSystem.MeshData.op_Implicit*
+  nameWithType.vb: MeshData.CType(MeshData)
+  fullName.vb: SaveSystem.MeshData.CType(SaveSystem.MeshData)
+  name.vb: CType(MeshData)
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Rendering.SubMeshDescriptor[]
+  isExternal: true
+  name: SubMeshDescriptor[]
+  nameWithType: SubMeshDescriptor[]
+  fullName: UnityEngine.Rendering.SubMeshDescriptor[]
+  nameWithType.vb: SubMeshDescriptor()
+  fullName.vb: UnityEngine.Rendering.SubMeshDescriptor()
+  name.vb: SubMeshDescriptor()
+  spec.csharp:
+  - uid: UnityEngine.Rendering.SubMeshDescriptor
+    name: SubMeshDescriptor
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Rendering.SubMeshDescriptor
+    name: SubMeshDescriptor
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32[][]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[][]
+  nameWithType: int[][]
+  fullName: int[][]
+  nameWithType.vb: Integer()()
+  fullName.vb: Integer()()
+  name.vb: Integer()()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+  - name: (
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector2[]
+  isExternal: true
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: UnityEngine.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: UnityEngine.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Color32[]
+  isExternal: true
+  name: Color32[]
+  nameWithType: Color32[]
+  fullName: UnityEngine.Color32[]
+  nameWithType.vb: Color32()
+  fullName.vb: UnityEngine.Color32()
+  name.vb: Color32()
+  spec.csharp:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UnityEngine.Vector4[]
+  isExternal: true
+  name: Vector4[]
+  nameWithType: Vector4[]
+  fullName: UnityEngine.Vector4[]
+  nameWithType.vb: Vector4()
+  fullName.vb: UnityEngine.Vector4()
+  name.vb: Vector4()
+  spec.csharp:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: UnityEngine.Bounds
+  commentId: T:UnityEngine.Bounds
+  parent: UnityEngine
+  isExternal: true
+  name: Bounds
+  nameWithType: Bounds
+  fullName: UnityEngine.Bounds
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.GraphicsBuffer.Target
+  commentId: T:UnityEngine.GraphicsBuffer.Target
+  parent: UnityEngine
+  isExternal: true
+  name: GraphicsBuffer.Target
+  nameWithType: GraphicsBuffer.Target
+  fullName: UnityEngine.GraphicsBuffer.Target
+  spec.csharp:
+  - uid: UnityEngine.GraphicsBuffer
+    name: GraphicsBuffer
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.GraphicsBuffer.Target
+    name: Target
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine.GraphicsBuffer
+    name: GraphicsBuffer
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.GraphicsBuffer.Target
+    name: Target
+    isExternal: true
+- uid: UnityEngine.Rendering.IndexFormat
+  commentId: T:UnityEngine.Rendering.IndexFormat
+  parent: UnityEngine.Rendering
+  isExternal: true
+  name: IndexFormat
+  nameWithType: IndexFormat
+  fullName: UnityEngine.Rendering.IndexFormat
+- uid: UnityEngine.Rendering
+  commentId: N:UnityEngine.Rendering
+  isExternal: true
+  name: UnityEngine.Rendering
+  nameWithType: UnityEngine.Rendering
+  fullName: UnityEngine.Rendering
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+- uid: SaveSystem.MeshData.op_Implicit*
+  commentId: Overload:SaveSystem.MeshData.op_Implicit
+  name: implicit operator
+  nameWithType: MeshData.implicit operator
+  fullName: SaveSystem.MeshData.implicit operator
+  nameWithType.vb: MeshData.CType
+  fullName.vb: SaveSystem.MeshData.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: SaveSystem.MeshData
+  commentId: T:SaveSystem.MeshData
+  parent: SaveSystem
+  href: SaveSystem.MeshData.html
+  name: MeshData
+  nameWithType: MeshData
+  fullName: SaveSystem.MeshData

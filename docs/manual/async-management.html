@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -75,12 +75,12 @@
         <article data-uid="">
 <h1 id="asynchronous-management">Asynchronous management</h1>
 
-<p>DataManager can also save and load
-objects asynchronously. For example, if you're generating a
-heavy mesh and want to write down it, you wouldn't want to do
-it at runtime, else your game will freeze.</p>
-<p>To do it you can persist MyGenerator by using SaveObjectAsync
-method. You can await it or continue</p>
+<p><a href="">DataManager</a> can also save and load objects
+asynchronously. For example, if you're generating
+a heavy mesh and want to write down it, you wouldn't
+want to do it at runtime, else your game will freeze.</p>
+<p>To do it you can persist MyGenerator by using
+SaveObjectAsync method. You can await it or continue</p>
 <pre><code class="lang-csharp">public async void Saving () {
     await DataManager.SaveObjectAsync(fileName, myGenerator, AsyncMode.OnThreadPool);
     // some actions
@@ -100,67 +100,67 @@ public void Saving () {
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Before write down the mesh, you must get
-<a href="../api/SaveSystem.MeshData.html">MeshData</a>
-struct inside an other method and save it
-as class field to pass it to writer.Write method.
-You just can cast Mesh to MeshData, ex.</p>
+<p>Before write down the mesh, you must get MeshData
+struct inside an other method and save it as class
+field to pass it to writer.Write method. You just
+can cast Mesh to MeshData, ex.</p>
 <pre><code class="lang-csharp">public class MyGenerator : IPersistentObject {
 
-  private MeshData m_meshData;
-  private Mesh m_generatedMesh;
-
-
-  public void PreSave () {
-      m_meshData = m_generatedMesh;
-  }
-  
-  // other actions
+   private MeshData m_meshData;
+   private Mesh m_generatedMesh;
+   
+   public void PreSave () {
+       m_meshData = m_generatedMesh;
+   }
+   
+   // other actions
 }
 </code></pre>
 </div>
 <p>For more information about AsyncMode, see the chapter
-<a href="async-modes.html">async modes</a></p>
-<p>If you are saving a lot of objects, you can observe the
-progress by passing a object to the DataManager which implement
-the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.iprogress-1?view=net-7.0">IProgress&lt;float&gt;</a>
+<a href="">async modes</a></p>
+<p>If you are saving a lot of objects, you can observe
+the progress by passing a object to the DataManager
+which implement the
+<a href="https://learn.microsoft.com/en-us/dotnet/api/system.iprogress-1?view=net-7.0">IProgress&lt;float&gt;</a>
 interface</p>
 <pre><code class="lang-csharp">var progress = new Progress(); // it implements the IProgress&lt;float&gt; interface
 await DataManager.SaveObjectsAsync(
-    fileName, 
-    myObjects, 
-    AsyncMode.OnThreadPool, 
+    fileName,
+    myObjects,
+    AsyncMode.OnThreadPool,
     progress
 );
 </code></pre>
-<p>Also you can cancel operation by passing the cancellation
-token source to the DataManager</p>
+<p>Also you can cancel operation by passing the
+cancellation token source to the DataManager</p>
 <pre><code class="lang-csharp">var source = new CancellationTokenSource();
 DataManager.SaveObjectsAsync(
-    fileName, 
-    myObjects, 
-    AsyncMode.OnThreadPool, 
-    progress: null, 
+    fileName,
+    myObjects,
+    AsyncMode.OnThreadPool,
+    progress: null,
     source
 );
 // some actions
 source.Cancel();
 </code></pre>
-<p>If you cancel the save, DataManager will delete
-the save file.</p>
-<p>Finally you can pass a lambda to the manager. The lambda
-will be called after the completion of the process</p>
+<p>If you cancel the save, DataManager will delete the
+save file.</p>
+<p>Finally you can pass a lambda to the manager.
+The lambda will be called after the completion of
+the process</p>
 <pre><code class="lang-csharp">DataManager.SaveObjectsAsync(
-    fileName, 
-    myObjects, 
-    AsyncMode.OnThreadPool, 
-    progress: null, 
-    source: null, 
+    fileName,
+    myObjects,
+    AsyncMode.OnThreadPool,
+    progress: null,
+    source: null,
     () =&gt; Debug.Log(&quot;Objects saved&quot;)
 );
 </code></pre>
-<p>When you load objects, you can await the result in the same
-way as when you load objects synchronously</p>
+<p>When you load objects, you can await the result in
+the same way as when you load objects synchronously</p>
 <pre><code class="lang-csharp">public async void Loading () {
     if (await DataManager.LoadObjectsAsync(fileName, myObjects, AsyncMode.OnThreadPool)) {
         // some actions

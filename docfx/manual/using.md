@@ -3,12 +3,12 @@
 Saving and loading data consist of the following steps:
 
 * Implement the
-  [IPersistentObject]() or
-  [IPersistentObjectAsync]()
+  [IPersistentObject](../api/SaveSystem.IPersistentObject.yml) or
+  [IPersistentObjectAsync](../api/SaveSystem.IPersistentObjectAsync.yml)
   interface in your object
 * Implement Save and Load methods in it:
-    * Write down data in the save method by using [UnityWriter]()
-    * Read data in the load method by using [UnityReader]()
+    * Write down data in the save method by using [UnityWriter](../api/SaveSystem.UnityWriter.yml)
+    * Read data in the load method by using [UnityReader](../api/SaveSystem.UnityReader.yml)
 * Pass the object to the DataManager:
     * Pass it to SaveObject method for saving
     * Or pass it to LoadObject to load

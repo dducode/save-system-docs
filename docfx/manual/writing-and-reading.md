@@ -2,9 +2,9 @@
 
 To write and read data, the save system provides two
 classes -
-[UnityWriter]()
+[UnityWriter](../api/SaveSystem.UnityWriter.yml)
 and
-[UnityReader]().
+[UnityReader](../api/SaveSystem.UnityReader.yml).
 They can write and read data respectively. Your
 MonoBehaviour classes get these data handler from the
 DataManager when you're saving or loading them. To write and

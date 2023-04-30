@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -75,30 +75,31 @@
         <article data-uid="">
 <h1 id="async-modes">Async modes</h1>
 
-<p>You can choose how to save and load objects - in the player loop
-or in the thread pool. For example, to save objects in
-the player loop you must pass AsyncMode.OnPlayerLoop mode to
-SaveObject method</p>
+<p>You can choose how to save and load objects -
+in the player loop or in the thread pool. For example,
+to save objects in the player loop you must pass
+AsyncMode.OnPlayerLoop mode to SaveObject method</p>
 <pre><code class="lang-csharp">await DataManager.SaveObjectAsync(fileName, myObjects, AsyncMode.OnPlayerLoop);
 </code></pre>
-<p>Async mode defines where the objects will be saved - in
-the main thread (in the player loop, single thread mode), or
-in a background (in the thread pool, multithreading mode).</p>
+<p>Async mode defines where the objects will be saved -
+in the main thread (in the player loop, single thread
+mode), or in a background (in the thread pool,
+multithreading mode).</p>
 <div class="TIP">
 <h5>Tip</h5>
 <ol>
-<li>Running in the thread pool will be faster than running in the
-player loop, other things being equal</li>
+<li>Running in the thread pool will be faster than
+running in the player loop, other things being equal</li>
 <li>If you save one object in the player loop asynchronously,
-it will be equivalent to synchronous save
-(however, in this case onComplete action will be
-called in the next frame)</li>
+it will be equivalent to synchronous save (however,
+in this case onComplete action will be called in the
+next frame)</li>
 </ol>
 </div>
 <h2 id="how-to-choose-async-mode">How to choose async mode</h2>
-<p>Usually you will write down and read data in the thread pool,
-especially if you are saving and loading a lot of objects.
-But if you can't use multithreading
+<p>Usually you will write down and read data in the
+thread pool, especially if you are saving and loading
+a lot of objects. But if you can't use multithreading
 (ex. when you're creating a game for the WebGL platform),
 you need to select a saving/loading in the player loop.</p>
 <table>

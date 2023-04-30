@@ -1,6 +1,6 @@
 ﻿# Saving and loading objects
 
-[DataManager]()
+[DataManager](../api/SaveSystem.DataManager.yml)
 is the main class for data management. It contains several
 methods for loading and saving objects. If you want to
 keep a MonoBehaviour object, you can write
@@ -24,7 +24,7 @@ The LoadObject method returns true if it successfully
 loaded object. It returns false if a save file is missing.
 
 The class of object must implement the
-[IPersistentObject]()
+[IPersistentObject](../api/SaveSystem.IPersistentObject.yml)
 interface and Save and Load methods.
 
 ```csharp

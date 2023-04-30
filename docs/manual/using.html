@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -77,16 +77,17 @@
 
 <p>Saving and loading data consist of the following steps:</p>
 <ul>
-<li>Implement the <a href="../api/SaveSystem.IPersistentObject.html">IPersistentObject</a>
-or <a href="../api/SaveSystem.IPersistentObjectAsync.html">IPersistentObjectAsync</a>
+<li>Implement the
+<a href="">IPersistentObject</a> or
+<a href="">IPersistentObjectAsync</a>
 interface in your object</li>
 <li>Implement Save and Load methods in it:
 <ul>
-<li>Write down data in the save method by using <a href="../api/SaveSystem.UnityWriter.html">UnityWriter</a></li>
-<li>Read data in the load method by using <a href="../api/SaveSystem.UnityReader.html">UnityReader</a></li>
+<li>Write down data in the save method by using <a href="">UnityWriter</a></li>
+<li>Read data in the load method by using <a href="">UnityReader</a></li>
 </ul>
 </li>
-<li>Pass the object to the <a href="../api/SaveSystem.DataManager.html">DataManager:</a>
+<li>Pass the object to the DataManager:
 <ul>
 <li>Pass it to SaveObject method for saving</li>
 <li>Or pass it to LoadObject to load</li>
@@ -95,8 +96,8 @@ interface in your object</li>
 </ul>
 <p>See <a href="saving-and-loading.html">saving and loading data</a>
 for more information about using of the DataManager</p>
-<p>Then see <a href="writing-and-reading.html">writing and reading data</a>
-for more about of the UnityWriter and the UnityReader</p>
+<p>Then see <a href="writing-and-reading.html">writing and reading data</a> for more about of
+the UnityWriter and the UnityReader</p>
 <p>And at the end see more information about asynchronous
 data management in <a href="async-management.html">this manual</a></p>
 </article>

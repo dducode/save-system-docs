@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.IPersistentObject
+  commentId: T:SaveSystem.IPersistentObject
+  id: IPersistentObject
+  parent: SaveSystem
+  children:
+  - SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  - SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  langs:
+  - csharp
+  - vb
+  name: IPersistentObject
+  nameWithType: IPersistentObject
+  fullName: SaveSystem.IPersistentObject
+  type: Interface
+  source:
+    id: IPersistentObject
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 2
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public interface IPersistentObject
+    content.vb: Public Interface IPersistentObject
+- uid: SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  commentId: M:SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  id: Save(SaveSystem.UnityWriter)
+  parent: SaveSystem.IPersistentObject
+  langs:
+  - csharp
+  - vb
+  name: Save(UnityWriter)
+  nameWithType: IPersistentObject.Save(UnityWriter)
+  fullName: SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  type: Method
+  source:
+    id: Save
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 4
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: void Save(UnityWriter writer)
+    parameters:
+    - id: writer
+      type: SaveSystem.UnityWriter
+    content.vb: Sub Save(writer As UnityWriter)
+  overload: SaveSystem.IPersistentObject.Save*
+- uid: SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  commentId: M:SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  id: Load(SaveSystem.UnityReader)
+  parent: SaveSystem.IPersistentObject
+  langs:
+  - csharp
+  - vb
+  name: Load(UnityReader)
+  nameWithType: IPersistentObject.Load(UnityReader)
+  fullName: SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  type: Method
+  source:
+    id: Load
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 5
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: void Load(UnityReader reader)
+    parameters:
+    - id: reader
+      type: SaveSystem.UnityReader
+    content.vb: Sub Load(reader As UnityReader)
+  overload: SaveSystem.IPersistentObject.Load*
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: SaveSystem.IPersistentObject.Save*
+  commentId: Overload:SaveSystem.IPersistentObject.Save
+  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  name: Save
+  nameWithType: IPersistentObject.Save
+  fullName: SaveSystem.IPersistentObject.Save
+- uid: SaveSystem.UnityWriter
+  commentId: T:SaveSystem.UnityWriter
+  parent: SaveSystem
+  href: SaveSystem.UnityWriter.html
+  name: UnityWriter
+  nameWithType: UnityWriter
+  fullName: SaveSystem.UnityWriter
+- uid: SaveSystem.IPersistentObject.Load*
+  commentId: Overload:SaveSystem.IPersistentObject.Load
+  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  name: Load
+  nameWithType: IPersistentObject.Load
+  fullName: SaveSystem.IPersistentObject.Load
+- uid: SaveSystem.UnityReader
+  commentId: T:SaveSystem.UnityReader
+  parent: SaveSystem
+  href: SaveSystem.UnityReader.html
+  name: UnityReader
+  nameWithType: UnityReader
+  fullName: SaveSystem.UnityReader

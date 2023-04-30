@@ -13,7 +13,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       <meta name="docfx:rel" content="../">
-      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+      
 
       <script>
         MathJax = {
@@ -75,53 +75,58 @@
         <article data-uid="">
 <h1 id="advanced-data-handling">Advanced data handling</h1>
 
-<p>In 99% cases you won't need to this, but you can write
-and read data asynchronously by using
-<a href="../api/SaveSystem.UnityAsyncWriter.html">UnityAsyncWriter</a> and
-<a href="../api/SaveSystem.UnityAsyncReader.html">UnityAsyncReader</a>.</p>
-<p>In past examples only objects
-was saved asynchronously, but inside them data was written sync</p>
+<p>In 99% cases you won't need to this, but you can
+write and read data asynchronously by using
+<a href="">UnityAsyncWriter</a>
+and
+<a href="">UnityAsyncReader</a>.</p>
+<p>In past examples only objects was saved
+asynchronously, but inside them data was written
+sync</p>
 <pre><code class="lang-csharp">public void Save (UnityWriter writer) {
     writer.Write(myData);
 }
 </code></pre>
-<p>Instead, you can write down data async
-in the same way as saving objects</p>
+<p>Instead, you can write down data async in the same
+way as saving objects</p>
 <pre><code class="lang-csharp">public async UniTask Save (UnityAsyncWriter asyncWriter) {
     await asyncWriter.Write(myData);
 }
 </code></pre>
 <p>To do this, class of object must be implement the
-<a href="../api/SaveSystem.IPersistentObjectAsync.html">IPersistentObjectAsync</a>
+<a href="">IPersistentObjectAsync</a>
 interface instead of the IPersistentObject</p>
 <pre><code class="lang-csharp">public class MyObject : IPersistentObjectAsync {
     public async UniTask Save (UnityAsyncWriter asyncWriter) { }
     public async UniTask Load (UnityAsyncReader asyncReader) { }
 }
 </code></pre>
-<p>To save the object, you can pass it to DataManager.SaveObjectAsyncAdvanced
-method</p>
+<p>To save the object, you can pass it to
+DataManager.SaveObjectAsyncAdvanced method</p>
 <pre><code class="lang-csharp">await DataManager.SaveObjectAsyncAdvanced(fileName, myObject);
 </code></pre>
-<p>Notice that you don't pass AsyncMode to either SaveObjectAsyncAdvanced method,
-or the data handlers, because the data handlers handle
-data the same in both modes, so only one mode was chosen which
-support in every platforms.</p>
+<p>Notice that you don't pass AsyncMode to either
+SaveObjectAsyncAdvanced method, or the data handlers,
+because the data handlers handle data the same in both
+modes, so only one mode was chosen which support in
+every platforms.</p>
 <h2 id="separately-about-the-mesh">Separately about the mesh</h2>
-<p>If you're generating a mesh with more than one uv channel
-and want to write down the generated mesh,
-you must pass the number of channels to the asyncWriter.Write
-method</p>
+<p>If you're generating a mesh with more than one uv
+channel and want to write down the generated mesh,
+you must pass the number of channels to the
+asyncWriter.Write method</p>
 <pre><code class="lang-csharp">await asyncWriter.Write(generatedMeshData, uvChannels: 2);
 </code></pre>
 <p>Similarly with reading</p>
 <pre><code class="lang-csharp">generatedMeshData = await asyncReader.ReadMesh(uvChannels: 2);
 </code></pre>
-<p>By default, asynchronous data handlers write and read one uv channel</p>
+<p>By default, asynchronous data handlers write and read
+one uv channel</p>
 <h2 id="when-i-need-to-this">When I need to this</h2>
-<p>You can use this when your objects have big arrays of data.
-In this case, you can split the job of writing and reading
-data. The every array will be read/write in a separate frame</p>
+<p>You can use this when your objects have big arrays of
+data. In this case, you can split the job of writing
+and reading data. The every array will be read/write
+in a separate frame</p>
 </article>
 
 

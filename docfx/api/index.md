@@ -2,11 +2,16 @@
 
 ## Base classes of the save system:
 
-* [DataManager]() - saving and loading your objects
-* [UnityWriter]() - writing your data
-* [UnityReader]() - reading your data
-* [UnityAsyncWriter]() - as UnityWriter, but it writing data async
-* [UnityAsyncReader]() - as UnityReader, but it reading data async
+* [DataManager](../api/SaveSystem.DataManager.yml) -
+  saving and loading your objects
+* [UnityWriter](../api/SaveSystem.UnityWriter.yml) -
+  writing your data
+* [UnityReader](../api/SaveSystem.UnityReader.yml) -
+  reading your data
+* [UnityAsyncWriter](../api/SaveSystem.UnityAsyncWriter.yml) -
+  as UnityWriter, but it writing data async
+* [UnityAsyncReader](../api/SaveSystem.UnityAsyncReader.yml) -
+  as UnityReader, but it reading data async
 
 ## Dependencies:
 

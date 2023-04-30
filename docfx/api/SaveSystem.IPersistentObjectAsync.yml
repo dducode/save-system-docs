@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.IPersistentObjectAsync
+  commentId: T:SaveSystem.IPersistentObjectAsync
+  id: IPersistentObjectAsync
+  parent: SaveSystem
+  children:
+  - SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)
+  - SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)
+  langs:
+  - csharp
+  - vb
+  name: IPersistentObjectAsync
+  nameWithType: IPersistentObjectAsync
+  fullName: SaveSystem.IPersistentObjectAsync
+  type: Interface
+  source:
+    id: IPersistentObjectAsync
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
+    startLine: 4
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public interface IPersistentObjectAsync
+    content.vb: Public Interface IPersistentObjectAsync
+- uid: SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)
+  commentId: M:SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)
+  id: Save(SaveSystem.UnityAsyncWriter)
+  parent: SaveSystem.IPersistentObjectAsync
+  langs:
+  - csharp
+  - vb
+  name: Save(UnityAsyncWriter)
+  nameWithType: IPersistentObjectAsync.Save(UnityAsyncWriter)
+  fullName: SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)
+  type: Method
+  source:
+    id: Save
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
+    startLine: 6
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: UniTask Save(UnityAsyncWriter asyncWriter)
+    parameters:
+    - id: asyncWriter
+      type: SaveSystem.UnityAsyncWriter
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Function Save(asyncWriter As UnityAsyncWriter) As UniTask
+  overload: SaveSystem.IPersistentObjectAsync.Save*
+- uid: SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)
+  commentId: M:SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)
+  id: Load(SaveSystem.UnityAsyncReader)
+  parent: SaveSystem.IPersistentObjectAsync
+  langs:
+  - csharp
+  - vb
+  name: Load(UnityAsyncReader)
+  nameWithType: IPersistentObjectAsync.Load(UnityAsyncReader)
+  fullName: SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)
+  type: Method
+  source:
+    id: Load
+    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
+    startLine: 7
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: UniTask Load(UnityAsyncReader asyncReader)
+    parameters:
+    - id: asyncReader
+      type: SaveSystem.UnityAsyncReader
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Function Load(asyncReader As UnityAsyncReader) As UniTask
+  overload: SaveSystem.IPersistentObjectAsync.Load*
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: SaveSystem.IPersistentObjectAsync.Save*
+  commentId: Overload:SaveSystem.IPersistentObjectAsync.Save
+  href: SaveSystem.IPersistentObjectAsync.html#SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)
+  name: Save
+  nameWithType: IPersistentObjectAsync.Save
+  fullName: SaveSystem.IPersistentObjectAsync.Save
+- uid: SaveSystem.UnityAsyncWriter
+  commentId: T:SaveSystem.UnityAsyncWriter
+  parent: SaveSystem
+  href: SaveSystem.UnityAsyncWriter.html
+  name: UnityAsyncWriter
+  nameWithType: UnityAsyncWriter
+  fullName: SaveSystem.UnityAsyncWriter
+- uid: Cysharp.Threading.Tasks.UniTask
+  commentId: T:Cysharp.Threading.Tasks.UniTask
+  parent: Cysharp.Threading.Tasks
+  name: UniTask
+  nameWithType: UniTask
+  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: SaveSystem.IPersistentObjectAsync.Load*
+  commentId: Overload:SaveSystem.IPersistentObjectAsync.Load
+  href: SaveSystem.IPersistentObjectAsync.html#SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)
+  name: Load
+  nameWithType: IPersistentObjectAsync.Load
+  fullName: SaveSystem.IPersistentObjectAsync.Load
+- uid: SaveSystem.UnityAsyncReader
+  commentId: T:SaveSystem.UnityAsyncReader
+  parent: SaveSystem
+  href: SaveSystem.UnityAsyncReader.html
+  name: UnityAsyncReader
+  nameWithType: UnityAsyncReader
+  fullName: SaveSystem.UnityAsyncReader

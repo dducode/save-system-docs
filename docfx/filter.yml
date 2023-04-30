@@ -1,0 +1,4 @@
+﻿apiRules:
+  - include:
+      uidRegex: ^SaveSystem
+      type: Namespace
