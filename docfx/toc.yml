@@ -4,6 +4,8 @@
   href: api/
   homepage: api/index.md
 - name: Changelog
+  homepage: changelog/CHANGELOG.md
   href: changelog/
 - name: License
   href: license/
+  homepage: license/LICENSE.md

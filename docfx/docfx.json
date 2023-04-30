@@ -27,8 +27,8 @@
         "files": [
           "manual/**.md",
           "manual/**/toc.yml",
-          "changelog/toc.yml",
-          "license/toc.yml",
+          "changelog/**",
+          "license/**",
           "toc.yml",
           "index.md"
         ]

@@ -75,7 +75,7 @@
         <article data-uid="">
 <h1 id="saving-and-loading-objects">Saving and loading objects</h1>
 
-<p><a href="">DataManager</a>
+<p><a href="../api/SaveSystem.DataManager.html">DataManager</a>
 is the main class for data management. It contains several
 methods for loading and saving objects. If you want to
 keep a MonoBehaviour object, you can write</p>
@@ -92,7 +92,7 @@ DataManager.SaveObject(fileName, myObject);
 <p>The LoadObject method returns true if it successfully
 loaded object. It returns false if a save file is missing.</p>
 <p>The class of object must implement the
-<a href="">IPersistentObject</a>
+<a href="../api/SaveSystem.IPersistentObject.html">IPersistentObject</a>
 interface and Save and Load methods.</p>
 <pre><code class="lang-csharp">public class MyObject : MonoBehaviour, IPersistentObject {
     public void Save (UnityWriter writer) { }

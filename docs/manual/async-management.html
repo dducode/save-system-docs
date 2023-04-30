@@ -75,10 +75,11 @@
         <article data-uid="">
 <h1 id="asynchronous-management">Asynchronous management</h1>
 
-<p><a href="">DataManager</a> can also save and load objects
-asynchronously. For example, if you're generating
-a heavy mesh and want to write down it, you wouldn't
-want to do it at runtime, else your game will freeze.</p>
+<p><a href="../api/SaveSystem.DataManager.html">DataManager</a>
+can also save and load objects asynchronously. For example,
+if you're generating a heavy mesh and want to write down it,
+you wouldn't want to do it at runtime, else your game
+will freeze.</p>
 <p>To do it you can persist MyGenerator by using
 SaveObjectAsync method. You can await it or continue</p>
 <pre><code class="lang-csharp">public async void Saving () {
@@ -100,7 +101,7 @@ public void Saving () {
 </code></pre>
 <div class="NOTE">
 <h5>Note</h5>
-<p>Before write down the mesh, you must get MeshData
+<p>Before write down the mesh, you must get <a href="../api/SaveSystem.MeshData.html">MeshData</a>
 struct inside an other method and save it as class
 field to pass it to writer.Write method. You just
 can cast Mesh to MeshData, ex.</p>
@@ -118,7 +119,7 @@ can cast Mesh to MeshData, ex.</p>
 </code></pre>
 </div>
 <p>For more information about AsyncMode, see the chapter
-<a href="">async modes</a></p>
+<a href="async-modes.html">async modes</a></p>
 <p>If you are saving a lot of objects, you can observe
 the progress by passing a object to the DataManager
 which implement the
