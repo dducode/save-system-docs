@@ -80,7 +80,7 @@
 
   <h1 id="SaveSystem_DataManager" data-uid="SaveSystem.DataManager" class="text-break">Class DataManager
 </h1>
-  <div class="markdown level0 summary"><p>Main class for handling objects</p>
+  <div class="markdown level0 summary"><p>Main class for handling data</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -112,12 +112,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool LoadObject&lt;T&gt;(string fileName, T obj) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool LoadObject&lt;T&gt;(string filePath, T obj) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file whereof the object data will be load</p>
 </dd>
     <dt><code>obj</code> <span class="xref">T</span></dt>
@@ -149,8 +149,8 @@
 
   <a id="SaveSystem_DataManager_LoadObjectAsync_" data-uid="SaveSystem.DataManager.LoadObjectAsync*"></a>
 
-  <h3 id="SaveSystem_DataManager_LoadObjectAsync__1_System_String___0_SaveSystem_AsyncMode_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)">
-  LoadObjectAsync&lt;T&gt;(string, T, AsyncMode, CancellationTokenSource, Action)
+  <h3 id="SaveSystem_DataManager_LoadObjectAsync_System_String_SaveSystem_IPersistentObject_SaveSystem_AsyncMode_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)">
+  LoadObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
   
   </h3>
 
@@ -159,15 +159,16 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; LoadObjectAsync&lt;T&gt;(string fileName, T obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file whereof the object data will be load</p>
 </dd>
-    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dt><code>obj</code> <a class="xref" href="SaveSystem.IPersistentObject.html">IPersistentObject</a></dt>
     <dd><p>the object which will be load</p>
 </dd>
     <dt><code>asyncMode</code> <a class="xref" href="SaveSystem.AsyncMode.html">AsyncMode</a></dt>
@@ -185,68 +186,6 @@
 </dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></dt>
-    <dd><p>throws when loading is canceled</p>
-</dd>
-  </dl>
-
-
-
-  <a id="SaveSystem_DataManager_LoadObjectAsyncAdvanced_" data-uid="SaveSystem.DataManager.LoadObjectAsyncAdvanced*"></a>
-
-  <h3 id="SaveSystem_DataManager_LoadObjectAsyncAdvanced__1_System_String___0_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)">
-  LoadObjectAsyncAdvanced&lt;T&gt;(string, T, CancellationTokenSource, Action)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Load one object async</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; LoadObjectAsyncAdvanced&lt;T&gt;(string fileName, T obj, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the file whereof the object data will be load</p>
-</dd>
-    <dt><code>obj</code> <span class="xref">T</span></dt>
-    <dd><p>the object which will be load</p>
-</dd>
-    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
-    <dd></dd>
-    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd><p>Returns true if there is saved data, otherwise false</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -265,8 +204,8 @@
 
   <a id="SaveSystem_DataManager_LoadObjects_" data-uid="SaveSystem.DataManager.LoadObjects*"></a>
 
-  <h3 id="SaveSystem_DataManager_LoadObjects__1_System_String___0___" data-uid="SaveSystem.DataManager.LoadObjects``1(System.String,``0[])">
-  LoadObjects&lt;T&gt;(string, T[])
+  <h3 id="SaveSystem_DataManager_LoadObjects__1_System_String_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+  LoadObjects&lt;T&gt;(string, IEnumerable&lt;T&gt;)
   
   </h3>
 
@@ -275,15 +214,15 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool LoadObjects&lt;T&gt;(string fileName, T[] objects) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool LoadObjects&lt;T&gt;(string filePath, IEnumerable&lt;T&gt; objects) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file whereof the object data will be load</p>
 </dd>
-    <dt><code>objects</code> T[]</dt>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd><p>the objects which will be load</p>
 </dd>
   </dl>
@@ -312,8 +251,8 @@
 
   <a id="SaveSystem_DataManager_LoadObjectsAsync_" data-uid="SaveSystem.DataManager.LoadObjectsAsync*"></a>
 
-  <h3 id="SaveSystem_DataManager_LoadObjectsAsync__1_System_String___0___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
-  LoadObjectsAsync&lt;T&gt;(string, T[], AsyncMode, IProgress&lt;float&gt;, CancellationTokenSource, Action)
+  <h3 id="SaveSystem_DataManager_LoadObjectsAsync_System_String_SaveSystem_IPersistentObject___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
+  LoadObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress&lt;float&gt;, CancellationTokenSource, Action)
   
   </h3>
 
@@ -322,15 +261,16 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; LoadObjectsAsync&lt;T&gt;(string fileName, T[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file whereof the object data will be load</p>
 </dd>
-    <dt><code>objects</code> T[]</dt>
+    <dt><code>objects</code> <a class="xref" href="SaveSystem.IPersistentObject.html">IPersistentObject</a>[]</dt>
     <dd><p>the objects which will be load</p>
 </dd>
     <dt><code>asyncMode</code> <a class="xref" href="SaveSystem.AsyncMode.html">AsyncMode</a></dt>
@@ -350,70 +290,6 @@
 </dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></dt>
-    <dd><p>throws when loading is canceled</p>
-</dd>
-  </dl>
-
-
-
-  <a id="SaveSystem_DataManager_LoadObjectsAsyncAdvanced_" data-uid="SaveSystem.DataManager.LoadObjectsAsyncAdvanced*"></a>
-
-  <h3 id="SaveSystem_DataManager_LoadObjectsAsyncAdvanced__1_System_String___0___System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
-  LoadObjectsAsyncAdvanced&lt;T&gt;(string, T[], IProgress&lt;float&gt;, CancellationTokenSource, Action)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Load many objects async</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask&lt;bool&gt; LoadObjectsAsyncAdvanced&lt;T&gt;(string fileName, T[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the file whereof the object data will be load</p>
-</dd>
-    <dt><code>objects</code> T[]</dt>
-    <dd><p>the objects which will be load</p>
-</dd>
-    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
-    <dd></dd>
-    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
-    <dd><p>Returns true if there is saved data, otherwise false</p>
-</dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -442,12 +318,12 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SaveObject&lt;T&gt;(string fileName, T obj) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SaveObject&lt;T&gt;(string filePath, T obj) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file where the object data will be saved</p>
 </dd>
     <dt><code>obj</code> <span class="xref">T</span></dt>
@@ -473,8 +349,8 @@
 
   <a id="SaveSystem_DataManager_SaveObjectAsync_" data-uid="SaveSystem.DataManager.SaveObjectAsync*"></a>
 
-  <h3 id="SaveSystem_DataManager_SaveObjectAsync__1_System_String___0_SaveSystem_AsyncMode_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)">
-  SaveObjectAsync&lt;T&gt;(string, T, AsyncMode, CancellationTokenSource, Action)
+  <h3 id="SaveSystem_DataManager_SaveObjectAsync_System_String_SaveSystem_IPersistentObject_SaveSystem_AsyncMode_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)">
+  SaveObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
   
   </h3>
 
@@ -483,15 +359,16 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask SaveObjectAsync&lt;T&gt;(string fileName, T obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file where the object data will be saved</p>
 </dd>
-    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dt><code>obj</code> <a class="xref" href="SaveSystem.IPersistentObject.html">IPersistentObject</a></dt>
     <dd><p>the object which will be saved</p>
 </dd>
     <dt><code>asyncMode</code> <a class="xref" href="SaveSystem.AsyncMode.html">AsyncMode</a></dt>
@@ -508,67 +385,6 @@
     <dd></dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></dt>
-    <dd><p>throws when saving is canceled</p>
-</dd>
-  </dl>
-
-
-
-  <a id="SaveSystem_DataManager_SaveObjectAsyncAdvanced_" data-uid="SaveSystem.DataManager.SaveObjectAsyncAdvanced*"></a>
-
-  <h3 id="SaveSystem_DataManager_SaveObjectAsyncAdvanced__1_System_String___0_System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)">
-  SaveObjectAsyncAdvanced&lt;T&gt;(string, T, CancellationTokenSource, Action)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Save one object async</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask SaveObjectAsyncAdvanced&lt;T&gt;(string fileName, T obj, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the file where the object data will be saved</p>
-</dd>
-    <dt><code>obj</code> <span class="xref">T</span></dt>
-    <dd><p>the object which will be saved</p>
-</dd>
-    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
-    <dd></dd>
-    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -587,8 +403,8 @@
 
   <a id="SaveSystem_DataManager_SaveObjects_" data-uid="SaveSystem.DataManager.SaveObjects*"></a>
 
-  <h3 id="SaveSystem_DataManager_SaveObjects__1_System_String___0___" data-uid="SaveSystem.DataManager.SaveObjects``1(System.String,``0[])">
-  SaveObjects&lt;T&gt;(string, T[])
+  <h3 id="SaveSystem_DataManager_SaveObjects__1_System_String_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+  SaveObjects&lt;T&gt;(string, IEnumerable&lt;T&gt;)
   
   </h3>
 
@@ -597,15 +413,15 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SaveObjects&lt;T&gt;(string fileName, T[] objects) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SaveObjects&lt;T&gt;(string filePath, IEnumerable&lt;T&gt; objects) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file where the object data will be saved</p>
 </dd>
-    <dt><code>objects</code> T[]</dt>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
     <dd><p>the objects which will be saved</p>
 </dd>
   </dl>
@@ -628,8 +444,8 @@
 
   <a id="SaveSystem_DataManager_SaveObjectsAsync_" data-uid="SaveSystem.DataManager.SaveObjectsAsync*"></a>
 
-  <h3 id="SaveSystem_DataManager_SaveObjectsAsync__1_System_String___0___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
-  SaveObjectsAsync&lt;T&gt;(string, T[], AsyncMode, IProgress&lt;float&gt;, CancellationTokenSource, Action)
+  <h3 id="SaveSystem_DataManager_SaveObjectsAsync_System_String_SaveSystem_IPersistentObject___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
+  SaveObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress&lt;float&gt;, CancellationTokenSource, Action)
   
   </h3>
 
@@ -638,15 +454,16 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask SaveObjectsAsync&lt;T&gt;(string fileName, T[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+public static UniTask SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file where the object data will be saved</p>
 </dd>
-    <dt><code>objects</code> T[]</dt>
+    <dt><code>objects</code> <a class="xref" href="SaveSystem.IPersistentObject.html">IPersistentObject</a>[]</dt>
     <dd><p>the objects which will be saved</p>
 </dd>
     <dt><code>asyncMode</code> <a class="xref" href="SaveSystem.AsyncMode.html">AsyncMode</a></dt>
@@ -665,69 +482,6 @@
     <dd></dd>
   </dl>
 
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></dt>
-    <dd><p>throws when saving is canceled</p>
-</dd>
-  </dl>
-
-
-
-  <a id="SaveSystem_DataManager_SaveObjectsAsyncAdvanced_" data-uid="SaveSystem.DataManager.SaveObjectsAsyncAdvanced*"></a>
-
-  <h3 id="SaveSystem_DataManager_SaveObjectsAsyncAdvanced__1_System_String___0___System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_" data-uid="SaveSystem.DataManager.SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)">
-  SaveObjectsAsyncAdvanced&lt;T&gt;(string, T[], IProgress&lt;float&gt;, CancellationTokenSource, Action)
-  
-  </h3>
-
-  <div class="markdown level1 summary"><p>Save many objects async</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask SaveObjectsAsyncAdvanced&lt;T&gt;(string fileName, T[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>fileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the file where the object data will be saved</p>
-</dd>
-    <dt><code>objects</code> T[]</dt>
-    <dd><p>the objects which will be saved</p>
-</dd>
-    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
-    <dd></dd>
-    <dt><code>onComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><span class="xref">UniTask</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Type Parameters</h4>
-  <dl class="parameters">
-    <dt><code>T</code></dt>
-    <dd></dd>
-  </dl>
 
 
 

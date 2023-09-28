@@ -1,0 +1,252 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Core.SaveEvents
+  commentId: T:SaveSystem.Core.SaveEvents
+  id: SaveEvents
+  parent: SaveSystem.Core
+  children:
+  - SaveSystem.Core.SaveEvents.All
+  - SaveSystem.Core.SaveEvents.AutoSave
+  - SaveSystem.Core.SaveEvents.None
+  - SaveSystem.Core.SaveEvents.OnExit
+  - SaveSystem.Core.SaveEvents.OnFocusLost
+  - SaveSystem.Core.SaveEvents.OnLowMemory
+  langs:
+  - csharp
+  - vb
+  name: SaveEvents
+  nameWithType: SaveEvents
+  fullName: SaveSystem.Core.SaveEvents
+  type: Enum
+  source:
+    id: SaveEvents
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 9
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Defines save events that can be managed by external code
+  remarks: You can combine events with each other
+  example:
+  - EnabledEvents = SaveEvents.AutoSave | SaveEvents.OnFocusChanged
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum SaveEvents
+    content.vb: >-
+      <Flags>
+
+      Public Enum SaveEvents
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: SaveSystem.Core.SaveEvents.None
+  commentId: F:SaveSystem.Core.SaveEvents.None
+  id: None
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: SaveEvents.None
+  fullName: SaveSystem.Core.SaveEvents.None
+  type: Field
+  source:
+    id: None
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: No save events will be invoked
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveEvents.AutoSave
+  commentId: F:SaveSystem.Core.SaveEvents.AutoSave
+  id: AutoSave
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: AutoSave
+  nameWithType: SaveEvents.AutoSave
+  fullName: SaveSystem.Core.SaveEvents.AutoSave
+  type: Field
+  source:
+    id: AutoSave
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 20
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Autosave will be executed once during each save period
+  example: []
+  syntax:
+    content: AutoSave = 1
+    return:
+      type: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveEvents.OnFocusLost
+  commentId: F:SaveSystem.Core.SaveEvents.OnFocusLost
+  id: OnFocusLost
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: OnFocusLost
+  nameWithType: SaveEvents.OnFocusLost
+  fullName: SaveSystem.Core.SaveEvents.OnFocusLost
+  type: Field
+  source:
+    id: OnFocusLost
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 25
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: If the application lose focus, this event will be invoked
+  example: []
+  syntax:
+    content: OnFocusLost = 2
+    return:
+      type: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveEvents.OnLowMemory
+  commentId: F:SaveSystem.Core.SaveEvents.OnLowMemory
+  id: OnLowMemory
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: OnLowMemory
+  nameWithType: SaveEvents.OnLowMemory
+  fullName: SaveSystem.Core.SaveEvents.OnLowMemory
+  type: Field
+  source:
+    id: OnLowMemory
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 30
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This event will be invoked when the application receives a low-memory notification
+  example: []
+  syntax:
+    content: OnLowMemory = 4
+    return:
+      type: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveEvents.OnExit
+  commentId: F:SaveSystem.Core.SaveEvents.OnExit
+  id: OnExit
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: OnExit
+  nameWithType: SaveEvents.OnExit
+  fullName: SaveSystem.Core.SaveEvents.OnExit
+  type: Field
+  source:
+    id: OnExit
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 45
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This event will be executed when the player will exit the game
+  remarks: >-
+    <p>
+
+    The Core will start saving all handlers, but async handlers will be run in the thread pool
+
+    and the Core will wait for them on the main thread.
+
+    </p>
+
+    <p>
+
+    If you want to manually save handlers and then quit the game, you can use
+
+    <xref href="SaveSystem.Core.SaveSystemCore.SaveAndQuit" data-throw-if-not-resolved="false"></xref> method
+
+    </p>
+  example: []
+  syntax:
+    content: OnExit = 8
+    return:
+      type: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveEvents.All
+  commentId: F:SaveSystem.Core.SaveEvents.All
+  id: All
+  parent: SaveSystem.Core.SaveEvents
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: SaveEvents.All
+  fullName: SaveSystem.Core.SaveEvents.All
+  type: Field
+  source:
+    id: All
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveEvents.cs
+    startLine: 50
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: All events will be executed
+  example: []
+  syntax:
+    content: All = -1
+    return:
+      type: SaveSystem.Core.SaveEvents
+references:
+- uid: SaveSystem.Core
+  commentId: N:SaveSystem.Core
+  href: SaveSystem.html
+  name: SaveSystem.Core
+  nameWithType: SaveSystem.Core
+  fullName: SaveSystem.Core
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+- uid: SaveSystem.Core.SaveEvents
+  commentId: T:SaveSystem.Core.SaveEvents
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveEvents.html
+  name: SaveEvents
+  nameWithType: SaveEvents
+  fullName: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  name: SaveAndQuit()
+  nameWithType: SaveSystemCore.SaveAndQuit()
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit()
+  spec.csharp:
+  - uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+    name: SaveAndQuit
+    href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+    name: SaveAndQuit
+    href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  - name: (
+  - name: )

@@ -1,0 +1,2339 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnityWriter
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnityWriter
+ ">
+      
+      <link rel="icon" href="../images/icon.png">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveSystem.UnityHandlers.UnityWriter">
+
+
+
+  <h1 id="SaveSystem_UnityHandlers_UnityWriter" data-uid="SaveSystem.UnityHandlers.UnityWriter" class="text-break">Class UnityWriter
+</h1>
+  <div class="markdown level0 summary"><p>Adapter to class <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a> for simplify writing data</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">UnityWriter</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.UnityHandlers.html">UnityHandlers</a></h6>
+  <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
+  <h5 id="SaveSystem_UnityHandlers_UnityWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class UnityWriter : IDisposable, IAsyncDisposable</code></pre>
+  </div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter__ctor_" data-uid="SaveSystem.UnityHandlers.UnityWriter.#ctor*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter__ctor_System_IO_BinaryWriter_System_String_" data-uid="SaveSystem.UnityHandlers.UnityWriter.#ctor(System.IO.BinaryWriter,System.String)">
+  UnityWriter(BinaryWriter, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityWriter(BinaryWriter writer, string fullPath = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.binarywriter">BinaryWriter</a></dt>
+    <dd></dd>
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Dispose_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Dispose*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Dispose" data-uid="SaveSystem.UnityHandlers.UnityWriter.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_DisposeAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.DisposeAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_DisposeAsync" data-uid="SaveSystem.UnityHandlers.UnityWriter.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_SaveSystem_MeshData_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(SaveSystem.MeshData)">
+  Write(MeshData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(MeshData mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="SaveSystem.MeshData.html">MeshData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Boolean_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Boolean)">
+  Write(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(bool boolValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boolValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Byte_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte)">
+  Write(byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(byte byteValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>byteValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Byte___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte[])">
+  Write(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(byte[] bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Char_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Char)">
+  Write(char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(char charValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>charValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Char___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Char[])">
+  Write(char[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(char[] chars)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Byte__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Byte})">
+  Write(IEnumerable&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Char__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Char})">
+  Write(IEnumerable&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;char&gt; chars)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Double__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Double})">
+  Write(IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;double&gt; doubles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doubles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Int16__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int16})">
+  Write(IEnumerable&lt;short&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;short&gt; shorts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shorts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int32})">
+  Write(IEnumerable&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;int&gt; ints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int64})">
+  Write(IEnumerable&lt;long&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;long&gt; longs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>longs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_Single__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Single})">
+  Write(IEnumerable&lt;float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;float&gt; floats)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>floats</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_System_String__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.String})">
+  Write(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Color__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color})">
+  Write(IEnumerable&lt;Color&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Color&gt; colors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Color</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Color32__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color32})">
+  Write(IEnumerable&lt;Color32&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Color32&gt; colors32)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors32</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Color32</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Matrix4x4__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})">
+  Write(IEnumerable&lt;Matrix4x4&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Matrix4x4&gt; matrices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Matrix4x4</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Vector2__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})">
+  Write(IEnumerable&lt;Vector2&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Vector2&gt; vector2Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector2Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector2</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Vector3__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})">
+  Write(IEnumerable&lt;Vector3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Vector3&gt; vector3Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector3Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Collections_Generic_IEnumerable_UnityEngine_Vector4__" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})">
+  Write(IEnumerable&lt;Vector4&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(IEnumerable&lt;Vector4&gt; vector4Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector4Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector4</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Double_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Double)">
+  Write(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(double doubleValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doubleValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Double___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Double[])">
+  Write(double[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(double[] doubles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doubles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int16_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16)">
+  Write(short)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(short shortValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shortValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int16___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16[])">
+  Write(short[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(short[] shorts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shorts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int32_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32)">
+  Write(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(int intValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int32___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32[])">
+  Write(int[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(int[] ints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int64_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64)">
+  Write(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(long longValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>longValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Int64___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64[])">
+  Write(long[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(long[] longs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>longs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Single_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Single)">
+  Write(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(float floatValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>floatValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Single___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Single[])">
+  Write(float[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(float[] floats)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>floats</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_String_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.String)">
+  Write(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string stringValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stringValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_String___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.String[])">
+  Write(string[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(string[] strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_System_Version_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)">
+  Write(Version)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Version version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Color_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color)">
+  Write(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Color___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color[])">
+  Write(Color[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Color[] colors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors</code> <span class="xref">Color</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Color32_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32)">
+  Write(Color32)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Color32 color32)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color32</code> <span class="xref">Color32</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Color32___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32[])">
+  Write(Color32[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Color32[] colors32)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors32</code> <span class="xref">Color32</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Matrix4x4_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4)">
+  Write(Matrix4x4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Matrix4x4 matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <span class="xref">Matrix4x4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Matrix4x4___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4[])">
+  Write(Matrix4x4[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Matrix4x4[] matrices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrices</code> <span class="xref">Matrix4x4</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Quaternion_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Quaternion)">
+  Write(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotation</code> <span class="xref">Quaternion</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector2_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2)">
+  Write(Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector2 vector2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector2</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector2___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2[])">
+  Write(Vector2[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector2[] vector2Array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector2Array</code> <span class="xref">Vector2</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector3_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3)">
+  Write(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector3 vector3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector3</code> <span class="xref">Vector3</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector3___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3[])">
+  Write(Vector3[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector3[] vector3Array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector3Array</code> <span class="xref">Vector3</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector4_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4)">
+  Write(Vector4)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector4 vector4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector4</code> <span class="xref">Vector4</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_Write_" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_Write_UnityEngine_Vector4___" data-uid="SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4[])">
+  Write(Vector4[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(Vector4[] vector4Array)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector4Array</code> <span class="xref">Vector4</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_SaveSystem_MeshData_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(SaveSystem.MeshData)">
+  WriteAsync(MeshData)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(MeshData mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <a class="xref" href="SaveSystem.MeshData.html">MeshData</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Byte__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Byte})">
+  WriteAsync(IEnumerable&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Char__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Char})">
+  WriteAsync(IEnumerable&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;char&gt; chars)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>chars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Double__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Double})">
+  WriteAsync(IEnumerable&lt;double&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;double&gt; doubles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doubles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Int16__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int16})">
+  WriteAsync(IEnumerable&lt;short&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;short&gt; shorts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shorts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int32})">
+  WriteAsync(IEnumerable&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;int&gt; ints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int64})">
+  WriteAsync(IEnumerable&lt;long&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;long&gt; longs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>longs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_Single__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Single})">
+  WriteAsync(IEnumerable&lt;float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;float&gt; floats)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>floats</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.String})">
+  WriteAsync(IEnumerable&lt;string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;string&gt; strings)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>strings</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Color__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color})">
+  WriteAsync(IEnumerable&lt;Color&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Color&gt; colors)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Color</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Color32__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color32})">
+  WriteAsync(IEnumerable&lt;Color32&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Color32&gt; colors32)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colors32</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Color32</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Matrix4x4__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})">
+  WriteAsync(IEnumerable&lt;Matrix4x4&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Matrix4x4&gt; matrices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Matrix4x4</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Vector2__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})">
+  WriteAsync(IEnumerable&lt;Vector2&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Vector2&gt; vector2Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector2Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector2</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Vector3__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})">
+  WriteAsync(IEnumerable&lt;Vector3&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Vector3&gt; vector3Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector3Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector3</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteAsync_System_Collections_Generic_IEnumerable_UnityEngine_Vector4__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})">
+  WriteAsync(IEnumerable&lt;Vector4&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteAsync(IEnumerable&lt;Vector4&gt; vector4Collection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector4Collection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector4</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteObject_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObject*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteObject__1___0_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)">
+  WriteObject&lt;T&gt;(T)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteObject&lt;T&gt;(T obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteObjects_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjects*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteObjects__1_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjects``1(System.Collections.Generic.IEnumerable{``0})">
+  WriteObjects&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteObjects&lt;T&gt;(IEnumerable&lt;T&gt; objects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteObjectsArray_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteObjectsArray__1___0___" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray``1(``0[])">
+  WriteObjectsArray&lt;T&gt;(T[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteObjectsArray&lt;T&gt;(T[] arrayObjects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arrayObjects</code> T[]</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_UnityHandlers_UnityWriter_WriteObjectsAsync_" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync*"></a>
+
+  <h3 id="SaveSystem_UnityHandlers_UnityWriter_WriteObjectsAsync__1_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})">
+  WriteObjectsAsync&lt;T&gt;(IEnumerable&lt;T&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UniTask WriteObjectsAsync&lt;T&gt;(IEnumerable&lt;T&gt; objects)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href="https://dotnet.github.io/docfx">docfx</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

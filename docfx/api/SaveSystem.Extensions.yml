@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Extensions
+  commentId: N:SaveSystem.Extensions
+  id: SaveSystem.Extensions
+  children:
+  - SaveSystem.Extensions.BinaryHandlersExtensions
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.Extensions
+  nameWithType: SaveSystem.Extensions
+  fullName: SaveSystem.Extensions
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.Extensions.BinaryHandlersExtensions
+  commentId: T:SaveSystem.Extensions.BinaryHandlersExtensions
+  href: SaveSystem.Extensions.BinaryHandlersExtensions.html
+  name: BinaryHandlersExtensions
+  nameWithType: BinaryHandlersExtensions
+  fullName: SaveSystem.Extensions.BinaryHandlersExtensions

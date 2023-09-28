@@ -140,8 +140,7 @@ DataManager.SaveObjectsAsync(
     fileName,
     myObjects,
     AsyncMode.OnThreadPool,
-    progress: null,
-    source
+    source: source
 );
 // some actions
 source.Cancel();
@@ -155,9 +154,7 @@ the process</p>
     fileName,
     myObjects,
     AsyncMode.OnThreadPool,
-    progress: null,
-    source: null,
-    () =&gt; Debug.Log(&quot;Objects saved&quot;)
+    onComplete: () =&gt; Debug.Log(&quot;Objects saved&quot;)
 );
 </code></pre>
 <p>When you load objects, you can await the result in

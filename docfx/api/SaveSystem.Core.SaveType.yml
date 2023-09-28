@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Core.SaveType
+  commentId: T:SaveSystem.Core.SaveType
+  id: SaveType
+  parent: SaveSystem.Core
+  children:
+  - SaveSystem.Core.SaveType.AutoSave
+  - SaveSystem.Core.SaveType.OnExit
+  - SaveSystem.Core.SaveType.OnFocusLost
+  - SaveSystem.Core.SaveType.OnLowMemory
+  - SaveSystem.Core.SaveType.QuickSave
+  - SaveSystem.Core.SaveType.SaveAtCheckpoint
+  langs:
+  - csharp
+  - vb
+  name: SaveType
+  nameWithType: SaveType
+  fullName: SaveSystem.Core.SaveType
+  type: Enum
+  source:
+    id: SaveType
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 5
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Contains information about the type of saving
+  example: []
+  syntax:
+    content: public enum SaveType
+    content.vb: Public Enum SaveType
+- uid: SaveSystem.Core.SaveType.QuickSave
+  commentId: F:SaveSystem.Core.SaveType.QuickSave
+  id: QuickSave
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: QuickSave
+  nameWithType: SaveType.QuickSave
+  fullName: SaveSystem.Core.SaveType.QuickSave
+  type: Field
+  source:
+    id: QuickSave
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 10
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the player uses quick-save
+  example: []
+  syntax:
+    content: QuickSave = 0
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.SaveAtCheckpoint
+  commentId: F:SaveSystem.Core.SaveType.SaveAtCheckpoint
+  id: SaveAtCheckpoint
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: SaveAtCheckpoint
+  nameWithType: SaveType.SaveAtCheckpoint
+  fullName: SaveSystem.Core.SaveType.SaveAtCheckpoint
+  type: Field
+  source:
+    id: SaveAtCheckpoint
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the player reaches a checkpoint
+  example: []
+  syntax:
+    content: SaveAtCheckpoint = 1
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.AutoSave
+  commentId: F:SaveSystem.Core.SaveType.AutoSave
+  id: AutoSave
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: AutoSave
+  nameWithType: SaveType.AutoSave
+  fullName: SaveSystem.Core.SaveType.AutoSave
+  type: Field
+  source:
+    id: AutoSave
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 20
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the Core starts saving in internal loop
+  example: []
+  syntax:
+    content: AutoSave = 2
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.OnExit
+  commentId: F:SaveSystem.Core.SaveType.OnExit
+  id: OnExit
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: OnExit
+  nameWithType: SaveType.OnExit
+  fullName: SaveSystem.Core.SaveType.OnExit
+  type: Field
+  source:
+    id: OnExit
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 25
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the player exit the game
+  example: []
+  syntax:
+    content: OnExit = 3
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.OnFocusLost
+  commentId: F:SaveSystem.Core.SaveType.OnFocusLost
+  id: OnFocusLost
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: OnFocusLost
+  nameWithType: SaveType.OnFocusLost
+  fullName: SaveSystem.Core.SaveType.OnFocusLost
+  type: Field
+  source:
+    id: OnFocusLost
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 30
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the application loses focus
+  example: []
+  syntax:
+    content: OnFocusLost = 4
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.OnLowMemory
+  commentId: F:SaveSystem.Core.SaveType.OnLowMemory
+  id: OnLowMemory
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: OnLowMemory
+  nameWithType: SaveType.OnLowMemory
+  fullName: SaveSystem.Core.SaveType.OnLowMemory
+  type: Field
+  source:
+    id: OnLowMemory
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 35
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the application receives a low-memory notification
+  example: []
+  syntax:
+    content: OnLowMemory = 5
+    return:
+      type: SaveSystem.Core.SaveType
+references:
+- uid: SaveSystem.Core
+  commentId: N:SaveSystem.Core
+  href: SaveSystem.html
+  name: SaveSystem.Core
+  nameWithType: SaveSystem.Core
+  fullName: SaveSystem.Core
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+- uid: SaveSystem.Core.SaveType
+  commentId: T:SaveSystem.Core.SaveType
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveType.html
+  name: SaveType
+  nameWithType: SaveType
+  fullName: SaveSystem.Core.SaveType

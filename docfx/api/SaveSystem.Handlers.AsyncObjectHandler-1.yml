@@ -1,0 +1,1071 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1
+  commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
+  id: AsyncObjectHandler`1
+  parent: SaveSystem.Handlers
+  children:
+  - SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+  - SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: AsyncObjectHandler<TO>
+  nameWithType: AsyncObjectHandler<TO>
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
+  type: Class
+  source:
+    id: AsyncObjectHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
+    startLine: 13
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: It's same as <xref href="SaveSystem.Handlers.ObjectHandler%601?text=Object+Handler" data-throw-if-not-resolved="false"></xref> but works with objects that are saved and loaded asynchronously
+  example: []
+  syntax:
+    content: 'public sealed class AsyncObjectHandler<TO> : AbstractHandler<AsyncObjectHandler<TO>, TO>, IAsyncObjectHandler where TO : IPersistentObjectAsync'
+    typeParameters:
+    - id: TO
+    content.vb: Public NotInheritable Class AsyncObjectHandler(Of [TO] As IPersistentObjectAsync) Inherits AbstractHandler(Of AsyncObjectHandler(Of TO), TO) Implements IAsyncObjectHandler
+  inheritance:
+  - System.Object
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  implements:
+  - SaveSystem.Handlers.IAsyncObjectHandler
+  inheritedMembers:
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObject({TO})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: AsyncObjectHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
+  name.vb: AsyncObjectHandler(Of TO)
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  id: SaveAsync(System.Threading.CancellationToken)
+  parent: SaveSystem.Handlers.AsyncObjectHandler`1
+  langs:
+  - csharp
+  - vb
+  name: SaveAsync(CancellationToken)
+  nameWithType: AsyncObjectHandler<TO>.SaveAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: SaveAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
+    startLine: 24
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Call it to start async objects saving
+  example: []
+  syntax:
+    content: public UniTask<HandlingResult> SaveAsync(CancellationToken token = default)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
+    content.vb: Public Function SaveAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
+  overload: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync*
+  implements:
+  - SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync(CancellationToken)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+  id: LoadAsync(System.Threading.CancellationToken)
+  parent: SaveSystem.Handlers.AsyncObjectHandler`1
+  langs:
+  - csharp
+  - vb
+  name: LoadAsync(CancellationToken)
+  nameWithType: AsyncObjectHandler<TO>.LoadAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: LoadAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
+    startLine: 45
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Call it to start async objects loading
+  example: []
+  syntax:
+    content: public UniTask<HandlingResult> LoadAsync(CancellationToken token = default)
+    parameters:
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
+    content.vb: Public Function LoadAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
+  overload: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync*
+  implements:
+  - SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync(CancellationToken)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
+references:
+- uid: SaveSystem.Handlers.ObjectHandler`1
+  commentId: T:SaveSystem.Handlers.ObjectHandler`1
+  href: SaveSystem.Handlers.ObjectHandler-1.html
+  name: ObjectHandler<TO>
+  nameWithType: ObjectHandler<TO>
+  fullName: SaveSystem.Handlers.ObjectHandler<TO>
+  nameWithType.vb: ObjectHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
+  name.vb: ObjectHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  href: SaveSystem.html
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  commentId: T:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}
+  parent: SaveSystem.Handlers
+  definition: SaveSystem.Handlers.AbstractHandler`2
+  href: SaveSystem.Handlers.AbstractHandler-2.html
+  name: AbstractHandler<AsyncObjectHandler<TO>, TO>
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO)
+  name.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: <
+  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
+    name: AsyncObjectHandler
+    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
+    name: AsyncObjectHandler
+    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.IAsyncObjectHandler
+  commentId: T:SaveSystem.Handlers.IAsyncObjectHandler
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.IAsyncObjectHandler.html
+  name: IAsyncObjectHandler
+  nameWithType: IAsyncObjectHandler
+  fullName: SaveSystem.Handlers.IAsyncObjectHandler
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObject({TO})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  name: AddObject(TO)
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.AddObject(TO)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.AddObject(TO)
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).AddObject(TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).AddObject(TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+    name: AddObject
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  - name: (
+  - name: TO
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+    name: AddObject
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  - name: (
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  name: AddObjects(ICollection<TO>)
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.AddObjects(ICollection<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).AddObjects(ICollection(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
+  name.vb: AddObjects(ICollection(Of TO))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+    name: AddObjects
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  - name: (
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: TO
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+    name: AddObjects
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  - name: (
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  name: SetFactoryFunc(Func<TO>)
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.SetFactoryFunc(Func<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.SetFactoryFunc(System.Func<TO>)
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).SetFactoryFunc(Func(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).SetFactoryFunc(System.Func(Of TO))
+  name.vb: SetFactoryFunc(Func(Of TO))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+    name: SetFactoryFunc
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TO
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+    name: SetFactoryFunc
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  name: ObserveProgress(IProgress<float>)
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single))
+  name.vb: ObserveProgress(IProgress(Of Single))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  name: ObserveProgress(IProgress<float>, IProgress<float>)
+  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SaveSystem.Handlers.AbstractHandler`2
+  commentId: T:SaveSystem.Handlers.AbstractHandler`2
+  href: SaveSystem.Handlers.AbstractHandler-2.html
+  name: AbstractHandler<T, TO>
+  nameWithType: AbstractHandler<T, TO>
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
+  nameWithType.vb: AbstractHandler(Of T, TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
+  name.vb: AbstractHandler(Of T, TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  name: AddObject(TO)
+  nameWithType: AbstractHandler<T, TO>.AddObject(TO)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject(TO)
+  nameWithType.vb: AbstractHandler(Of T, TO).AddObject(TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject(TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+    name: AddObject
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  - name: (
+  - name: TO
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+    name: AddObject
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
+  - name: (
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  isExternal: true
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  name: AddObjects(ICollection<TO>)
+  nameWithType: AbstractHandler<T, TO>.AddObjects(ICollection<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
+  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects(ICollection(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
+  name.vb: AddObjects(ICollection(Of TO))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+    name: AddObjects
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  - name: (
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: TO
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+    name: AddObjects
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
+  - name: (
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  isExternal: true
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  name: SetFactoryFunc(Func<TO>)
+  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc(Func<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc(System.Func<TO>)
+  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc(Func(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc(System.Func(Of TO))
+  name.vb: SetFactoryFunc(Func(Of TO))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+    name: SetFactoryFunc
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TO
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+    name: SetFactoryFunc
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
+  - name: (
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  isExternal: true
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  name: ObserveProgress(IProgress<float>)
+  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single))
+  name.vb: ObserveProgress(IProgress(Of Single))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  isExternal: true
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  name: ObserveProgress(IProgress<float>, IProgress<float>)
+  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    name: ObserveProgress
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - name: (
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync*
+  commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync
+  href: SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  name: SaveAsync
+  nameWithType: AsyncObjectHandler<TO>.SaveAsync
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync
+  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync
+- uid: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  parent: SaveSystem.Handlers.IAsyncObjectHandler
+  isExternal: true
+  href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  name: SaveAsync(CancellationToken)
+  nameWithType: IAsyncObjectHandler.SaveAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+    name: SaveAsync
+    href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+    name: SaveAsync
+    href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
+  commentId: T:Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
+  parent: Cysharp.Threading.Tasks
+  definition: Cysharp.Threading.Tasks.UniTask`1
+  href: SaveSystem.Handlers.HandlingResult.html
+  name: UniTask<HandlingResult>
+  nameWithType: UniTask<HandlingResult>
+  fullName: Cysharp.Threading.Tasks.UniTask<SaveSystem.Handlers.HandlingResult>
+  nameWithType.vb: UniTask(Of HandlingResult)
+  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of SaveSystem.Handlers.HandlingResult)
+  name.vb: UniTask(Of HandlingResult)
+  spec.csharp:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: <
+  - uid: SaveSystem.Handlers.HandlingResult
+    name: HandlingResult
+    href: SaveSystem.Handlers.HandlingResult.html
+  - name: '>'
+  spec.vb:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SaveSystem.Handlers.HandlingResult
+    name: HandlingResult
+    href: SaveSystem.Handlers.HandlingResult.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Cysharp.Threading.Tasks.UniTask`1
+  commentId: T:Cysharp.Threading.Tasks.UniTask`1
+  name: UniTask<T>
+  nameWithType: UniTask<T>
+  fullName: Cysharp.Threading.Tasks.UniTask<T>
+  nameWithType.vb: UniTask(Of T)
+  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T)
+  name.vb: UniTask(Of T)
+  spec.csharp:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync*
+  commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync
+  href: SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+  name: LoadAsync
+  nameWithType: AsyncObjectHandler<TO>.LoadAsync
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync
+  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync
+- uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  parent: SaveSystem.Handlers.IAsyncObjectHandler
+  isExternal: true
+  href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  name: LoadAsync(CancellationToken)
+  nameWithType: IAsyncObjectHandler.LoadAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+    name: LoadAsync
+    href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+    name: LoadAsync
+    href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )

@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Object Handlers </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Object Handlers ">
+      
+      <link rel="icon" href="../../images/icon.png">
+      <link rel="stylesheet" href="../../styles/docfx.min.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="object-handlers">Object Handlers</h1>
+
+<p>If you read &quot;Asynchronous Management&quot; chapter, you
+may have noticed that using the DataManager's async methods
+is a few fiddly.
+<a href="../../api/SaveSystem.Handlers.ObjectHandler-1.html"><code>ObjectHandler</code></a>
+and
+<a href="../../api/SaveSystem.Handlers.AsyncObjectHandler-1.html"><code>AsyncObjectHandler</code></a>
+classes was created for this reason. Just look to example:</p>
+<pre><code class="lang-csharp">// Earlier you was forced to use this method
+await DataManager.SaveObjectsAsync(
+    fileName,
+    myObjects,
+    AsyncMode.OnThreadPool,
+    onComplete: () =&gt; Debug.Log(&quot;Objects saved&quot;)
+);
+
+// However you can use Object Handler class instead this
+HandlingResult result = await ObjectHandlersFactory
+   .CreateAsyncHandler(myObjects, fileName)
+   .SaveAsync();
+   
+if (result == HandlingResult.Success)
+    Debug.Log(&quot;Objects saved&quot;);
+</code></pre>
+<blockquote>
+<p>One important change - <code>AsyncObjectHandler</code> doesn't accept onComplete
+callback, it returns HandlingResult instead this.</p>
+</blockquote>
+<h2 id="more-about-the-handlers">More about the handlers</h2>
+<p>In short, the <code>ObjectHandler</code> created for handling of
+objects which implement <code>IPersistentObject</code> interface.
+The <code>AsyncObjectHandler</code> handle <code>IPersistentObjectAsync</code> objects.
+None of them support async modes, but you still can pass
+<code>IProgress&lt;float&gt;</code> object to observe progress</p>
+<pre><code class="lang-csharp">await asyncHandler.ObserveProgress(m_progress).SaveAsync();
+// or
+await asyncHandler.ObserveProgress(m_savingProgress, m_loadingProgress).SaveAsync();
+</code></pre>
+<p>Also you can create an <code>ObjectHandler</code>, set
+its parameters and call saving later:</p>
+<pre><code class="lang-csharp">private ObjectHandler&lt;MyObject&gt; m_handler;
+private MyObject[] m_objects;
+
+private void Start() {
+    m_handler = ObjectHandlersFactory.CreateHandler(
+        localFilePath: &quot;MyGameProgress/GameObjects.bytes&quot;, m_objects
+    );
+}
+
+
+private void OnApplicationQuit() {
+    m_handler.Save();
+}
+</code></pre>
+<p>If you need to async save objects on the thread pool, you can write</p>
+<pre><code class="lang-csharp">await Task.Run(handler.Save, cancellationToken: token);
+// or
+await UniTask.RunOnThreadPool(() =&gt; handler.Save(), cancellationToken: token);
+</code></pre>
+<p>The <code>AsyncObjectHandler</code> accepts a cancellation token unlike the
+<code>DataManager</code> (it accepts a cancellation token source).</p>
+<pre><code class="lang-csharp">await DataManager.SaveObjectsAsync(filePath, objects, AsyncMode.OnPlayerLoop, source: m_tokenSource);
+await asyncObjectHandler.SaveAsync(m_tokenSource.Token);
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href="https://dotnet.github.io/docfx">docfx</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

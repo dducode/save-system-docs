@@ -80,7 +80,8 @@
 
   <h1 id="SaveSystem_IPersistentObjectAsync" data-uid="SaveSystem.IPersistentObjectAsync" class="text-break">Interface IPersistentObjectAsync
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>You can implement it to mark your object as persistent and also implement async handling</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a></h6>
   <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
@@ -96,21 +97,22 @@
 
   <a id="SaveSystem_IPersistentObjectAsync_Load_" data-uid="SaveSystem.IPersistentObjectAsync.Load*"></a>
 
-  <h3 id="SaveSystem_IPersistentObjectAsync_Load_SaveSystem_UnityAsyncReader_" data-uid="SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityAsyncReader)">
-  Load(UnityAsyncReader)
+  <h3 id="SaveSystem_IPersistentObjectAsync_Load_SaveSystem_UnityHandlers_UnityReader_" data-uid="SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityHandlers.UnityReader)">
+  Load(UnityReader)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It will be called when system will load data</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask Load(UnityAsyncReader asyncReader)</code></pre>
+    <pre><code class="lang-csharp hljs">UniTask Load(UnityReader reader)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>asyncReader</code> <a class="xref" href="SaveSystem.UnityAsyncReader.html">UnityAsyncReader</a></dt>
+    <dt><code>reader</code> <a class="xref" href="SaveSystem.UnityHandlers.UnityReader.html">UnityReader</a></dt>
     <dd></dd>
   </dl>
 
@@ -132,21 +134,22 @@
 
   <a id="SaveSystem_IPersistentObjectAsync_Save_" data-uid="SaveSystem.IPersistentObjectAsync.Save*"></a>
 
-  <h3 id="SaveSystem_IPersistentObjectAsync_Save_SaveSystem_UnityAsyncWriter_" data-uid="SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityAsyncWriter)">
-  Save(UnityAsyncWriter)
+  <h3 id="SaveSystem_IPersistentObjectAsync_Save_SaveSystem_UnityHandlers_UnityWriter_" data-uid="SaveSystem.IPersistentObjectAsync.Save(SaveSystem.UnityHandlers.UnityWriter)">
+  Save(UnityWriter)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>It will be called when system will save data</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">UniTask Save(UnityAsyncWriter asyncWriter)</code></pre>
+    <pre><code class="lang-csharp hljs">UniTask Save(UnityWriter writer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>asyncWriter</code> <a class="xref" href="SaveSystem.UnityAsyncWriter.html">UnityAsyncWriter</a></dt>
+    <dt><code>writer</code> <a class="xref" href="SaveSystem.UnityHandlers.UnityWriter.html">UnityWriter</a></dt>
     <dd></dd>
   </dl>
 

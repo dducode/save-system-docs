@@ -6,13 +6,11 @@ items:
   children:
   - SaveSystem.AsyncMode
   - SaveSystem.DataManager
+  - SaveSystem.DataManager.Advanced
   - SaveSystem.IPersistentObject
   - SaveSystem.IPersistentObjectAsync
   - SaveSystem.MeshData
-  - SaveSystem.UnityAsyncReader
-  - SaveSystem.UnityAsyncWriter
-  - SaveSystem.UnityReader
-  - SaveSystem.UnityWriter
+  - SaveSystem.Storage
   langs:
   - csharp
   - vb
@@ -23,39 +21,6 @@ items:
   assemblies:
   - SaveSystem
 references:
-- uid: SaveSystem.DataManager
-  commentId: T:SaveSystem.DataManager
-  href: SaveSystem.DataManager.html
-  name: DataManager
-  nameWithType: DataManager
-  fullName: SaveSystem.DataManager
-- uid: SaveSystem.IPersistentObjectAsync
-  commentId: T:SaveSystem.IPersistentObjectAsync
-  href: SaveSystem.IPersistentObjectAsync.html
-  name: IPersistentObjectAsync
-  nameWithType: IPersistentObjectAsync
-  fullName: SaveSystem.IPersistentObjectAsync
-- uid: SaveSystem.UnityAsyncWriter
-  commentId: T:SaveSystem.UnityAsyncWriter
-  parent: SaveSystem
-  href: SaveSystem.UnityAsyncWriter.html
-  name: UnityAsyncWriter
-  nameWithType: UnityAsyncWriter
-  fullName: SaveSystem.UnityAsyncWriter
-- uid: SaveSystem.AsyncMode
-  commentId: T:SaveSystem.AsyncMode
-  parent: SaveSystem
-  href: SaveSystem.AsyncMode.html
-  name: AsyncMode
-  nameWithType: AsyncMode
-  fullName: SaveSystem.AsyncMode
-- uid: SaveSystem.UnityWriter
-  commentId: T:SaveSystem.UnityWriter
-  parent: SaveSystem
-  href: SaveSystem.UnityWriter.html
-  name: UnityWriter
-  nameWithType: UnityWriter
-  fullName: SaveSystem.UnityWriter
 - uid: SaveSystem.MeshData
   commentId: T:SaveSystem.MeshData
   parent: SaveSystem
@@ -63,26 +28,61 @@ references:
   name: MeshData
   nameWithType: MeshData
   fullName: SaveSystem.MeshData
+- uid: SaveSystem.DataManager
+  commentId: T:SaveSystem.DataManager
+  href: SaveSystem.DataManager.html
+  name: DataManager
+  nameWithType: DataManager
+  fullName: SaveSystem.DataManager
+- uid: SaveSystem.DataManager.Advanced
+  commentId: T:SaveSystem.DataManager.Advanced
+  href: SaveSystem.DataManager.html
+  name: DataManager.Advanced
+  nameWithType: DataManager.Advanced
+  fullName: SaveSystem.DataManager.Advanced
+  spec.csharp:
+  - uid: SaveSystem.DataManager
+    name: DataManager
+    href: SaveSystem.DataManager.html
+  - name: .
+  - uid: SaveSystem.DataManager.Advanced
+    name: Advanced
+    href: SaveSystem.DataManager.Advanced.html
+  spec.vb:
+  - uid: SaveSystem.DataManager
+    name: DataManager
+    href: SaveSystem.DataManager.html
+  - name: .
+  - uid: SaveSystem.DataManager.Advanced
+    name: Advanced
+    href: SaveSystem.DataManager.Advanced.html
+- uid: SaveSystem.Storage
+  commentId: T:SaveSystem.Storage
+  href: SaveSystem.Storage.html
+  name: Storage
+  nameWithType: Storage
+  fullName: SaveSystem.Storage
+- uid: SaveSystem.AsyncMode
+  commentId: T:SaveSystem.AsyncMode
+  parent: SaveSystem
+  href: SaveSystem.AsyncMode.html
+  name: AsyncMode
+  nameWithType: AsyncMode
+  fullName: SaveSystem.AsyncMode
 - uid: SaveSystem.IPersistentObject
   commentId: T:SaveSystem.IPersistentObject
+  parent: SaveSystem
   href: SaveSystem.IPersistentObject.html
   name: IPersistentObject
   nameWithType: IPersistentObject
   fullName: SaveSystem.IPersistentObject
-- uid: SaveSystem.UnityAsyncReader
-  commentId: T:SaveSystem.UnityAsyncReader
+- uid: SaveSystem.IPersistentObjectAsync
+  commentId: T:SaveSystem.IPersistentObjectAsync
   parent: SaveSystem
-  href: SaveSystem.UnityAsyncReader.html
-  name: UnityAsyncReader
-  nameWithType: UnityAsyncReader
-  fullName: SaveSystem.UnityAsyncReader
-- uid: SaveSystem.UnityReader
-  commentId: T:SaveSystem.UnityReader
-  parent: SaveSystem
-  href: SaveSystem.UnityReader.html
-  name: UnityReader
-  nameWithType: UnityReader
-  fullName: SaveSystem.UnityReader
+  href: SaveSystem.IPersistentObjectAsync.html
+  name: IPersistentObjectAsync
+  nameWithType: IPersistentObjectAsync
+  fullName: SaveSystem.IPersistentObjectAsync
 - uid: SaveSystem
   commentId: N:SaveSystem
   href: SaveSystem.html

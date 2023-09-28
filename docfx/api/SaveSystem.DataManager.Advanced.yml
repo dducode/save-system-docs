@@ -1,0 +1,775 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.DataManager.Advanced
+  commentId: T:SaveSystem.DataManager.Advanced
+  id: DataManager.Advanced
+  parent: SaveSystem
+  children:
+  - SaveSystem.DataManager.Advanced.LoadObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.Advanced.LoadObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.Advanced.SaveObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.Advanced.SaveObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  langs:
+  - csharp
+  - vb
+  name: DataManager.Advanced
+  nameWithType: DataManager.Advanced
+  fullName: SaveSystem.DataManager.Advanced
+  type: Class
+  source:
+    id: Advanced
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 17
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: >-
+    Contains the methods for advanced objects handling
+
+    <p>
+
+    <a href="https://dducode.github.io/save-system-docs/manual/advanced.html">See manual</a>
+
+    </p>
+  example: []
+  syntax:
+    content: public static class DataManager.Advanced
+    content.vb: Public Module DataManager.Advanced
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SaveSystem.DataManager.Advanced.SaveObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.Advanced.SaveObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  id: SaveObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  parent: SaveSystem.DataManager.Advanced
+  langs:
+  - csharp
+  - vb
+  name: SaveObjectAsync(string, IPersistentObjectAsync, CancellationTokenSource, Action)
+  nameWithType: DataManager.Advanced.SaveObjectAsync(string, IPersistentObjectAsync, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.Advanced.SaveObjectAsync(string, SaveSystem.IPersistentObjectAsync, System.Threading.CancellationTokenSource, System.Action)
+  type: Method
+  source:
+    id: SaveObjectAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 27
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Save one object async
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")]
+
+      public static UniTask SaveObjectAsync(string fileName, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: obj
+      type: SaveSystem.IPersistentObjectAsync
+      description: the object which will be saved
+    - id: source
+      type: System.Threading.CancellationTokenSource
+    - id: onComplete
+      type: System.Action
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: >-
+      <Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")>
+
+      Public Shared Function SaveObjectAsync(fileName As String, obj As IPersistentObjectAsync, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+  overload: SaveSystem.DataManager.Advanced.SaveObjectAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: throws when saving is canceled
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this
+  nameWithType.vb: DataManager.Advanced.SaveObjectAsync(String, IPersistentObjectAsync, CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.Advanced.SaveObjectAsync(String, SaveSystem.IPersistentObjectAsync, System.Threading.CancellationTokenSource, System.Action)
+  name.vb: SaveObjectAsync(String, IPersistentObjectAsync, CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.Advanced.SaveObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.Advanced.SaveObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  id: SaveObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  parent: SaveSystem.DataManager.Advanced
+  langs:
+  - csharp
+  - vb
+  name: SaveObjectsAsync(string, IPersistentObjectAsync[], IProgress<float>, CancellationTokenSource, Action)
+  nameWithType: DataManager.Advanced.SaveObjectsAsync(string, IPersistentObjectAsync[], IProgress<float>, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.Advanced.SaveObjectsAsync(string, SaveSystem.IPersistentObjectAsync[], System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
+  type: Method
+  source:
+    id: SaveObjectsAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 39
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Save many objects async
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")]
+
+      public static UniTask SaveObjectsAsync(string fileName, IPersistentObjectAsync[] objects, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: objects
+      type: SaveSystem.IPersistentObjectAsync[]
+      description: the objects which will be saved
+    - id: progress
+      type: System.IProgress{System.Single}
+    - id: source
+      type: System.Threading.CancellationTokenSource
+    - id: onComplete
+      type: System.Action
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: >-
+      <Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")>
+
+      Public Shared Function SaveObjectsAsync(fileName As String, objects As IPersistentObjectAsync(), progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+  overload: SaveSystem.DataManager.Advanced.SaveObjectsAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: throws when saving is canceled
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this
+  nameWithType.vb: DataManager.Advanced.SaveObjectsAsync(String, IPersistentObjectAsync(), IProgress(Of Single), CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.Advanced.SaveObjectsAsync(String, SaveSystem.IPersistentObjectAsync(), System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
+  name.vb: SaveObjectsAsync(String, IPersistentObjectAsync(), IProgress(Of Single), CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.Advanced.LoadObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.Advanced.LoadObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  id: LoadObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  parent: SaveSystem.DataManager.Advanced
+  langs:
+  - csharp
+  - vb
+  name: LoadObjectAsync(string, IPersistentObjectAsync, CancellationTokenSource, Action)
+  nameWithType: DataManager.Advanced.LoadObjectAsync(string, IPersistentObjectAsync, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.Advanced.LoadObjectAsync(string, SaveSystem.IPersistentObjectAsync, System.Threading.CancellationTokenSource, System.Action)
+  type: Method
+  source:
+    id: LoadObjectAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 70
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Load one object async
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")]
+
+      public static UniTask<bool> LoadObjectAsync(string fileName, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: obj
+      type: SaveSystem.IPersistentObjectAsync
+      description: the object which will be load
+    - id: source
+      type: System.Threading.CancellationTokenSource
+    - id: onComplete
+      type: System.Action
+    return:
+      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
+      description: Returns true if there is saved data, otherwise false
+    content.vb: >-
+      <Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")>
+
+      Public Shared Function LoadObjectAsync(fileName As String, obj As IPersistentObjectAsync, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+  overload: SaveSystem.DataManager.Advanced.LoadObjectAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: throws when loading is canceled
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this
+  nameWithType.vb: DataManager.Advanced.LoadObjectAsync(String, IPersistentObjectAsync, CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.Advanced.LoadObjectAsync(String, SaveSystem.IPersistentObjectAsync, System.Threading.CancellationTokenSource, System.Action)
+  name.vb: LoadObjectAsync(String, IPersistentObjectAsync, CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.Advanced.LoadObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.Advanced.LoadObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  id: LoadObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  parent: SaveSystem.DataManager.Advanced
+  langs:
+  - csharp
+  - vb
+  name: LoadObjectsAsync(string, IPersistentObjectAsync[], IProgress<float>, CancellationTokenSource, Action)
+  nameWithType: DataManager.Advanced.LoadObjectsAsync(string, IPersistentObjectAsync[], IProgress<float>, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.Advanced.LoadObjectsAsync(string, SaveSystem.IPersistentObjectAsync[], System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
+  type: Method
+  source:
+    id: LoadObjectsAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 82
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Load many objects async
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")]
+
+      public static UniTask<bool> LoadObjectsAsync(string fileName, IPersistentObjectAsync[] objects, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: objects
+      type: SaveSystem.IPersistentObjectAsync[]
+      description: the objects which will be load
+    - id: progress
+      type: System.IProgress{System.Single}
+    - id: source
+      type: System.Threading.CancellationTokenSource
+    - id: onComplete
+      type: System.Action
+    return:
+      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
+      description: Returns true if there is saved data, otherwise false
+    content.vb: >-
+      <Obsolete("The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this")>
+
+      Public Shared Function LoadObjectsAsync(fileName As String, objects As IPersistentObjectAsync(), progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+  overload: SaveSystem.DataManager.Advanced.LoadObjectsAsync*
+  exceptions:
+  - type: System.OperationCanceledException
+    commentId: T:System.OperationCanceledException
+    description: throws when loading is canceled
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this
+  nameWithType.vb: DataManager.Advanced.LoadObjectsAsync(String, IPersistentObjectAsync(), IProgress(Of Single), CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.Advanced.LoadObjectsAsync(String, SaveSystem.IPersistentObjectAsync(), System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
+  name.vb: LoadObjectsAsync(String, IPersistentObjectAsync(), IProgress(Of Single), CancellationTokenSource, Action)
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.OperationCanceledException
+  commentId: T:System.OperationCanceledException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.operationcanceledexception
+  name: OperationCanceledException
+  nameWithType: OperationCanceledException
+  fullName: System.OperationCanceledException
+- uid: SaveSystem.DataManager.Advanced.SaveObjectAsync*
+  commentId: Overload:SaveSystem.DataManager.Advanced.SaveObjectAsync
+  href: SaveSystem.DataManager.Advanced.html#SaveSystem.DataManager.Advanced.SaveObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  name: SaveObjectAsync
+  nameWithType: DataManager.Advanced.SaveObjectAsync
+  fullName: SaveSystem.DataManager.Advanced.SaveObjectAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SaveSystem.IPersistentObjectAsync
+  commentId: T:SaveSystem.IPersistentObjectAsync
+  parent: SaveSystem
+  href: SaveSystem.IPersistentObjectAsync.html
+  name: IPersistentObjectAsync
+  nameWithType: IPersistentObjectAsync
+  fullName: SaveSystem.IPersistentObjectAsync
+- uid: System.Threading.CancellationTokenSource
+  commentId: T:System.Threading.CancellationTokenSource
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource
+  name: CancellationTokenSource
+  nameWithType: CancellationTokenSource
+  fullName: System.Threading.CancellationTokenSource
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: Cysharp.Threading.Tasks.UniTask
+  commentId: T:Cysharp.Threading.Tasks.UniTask
+  parent: Cysharp.Threading.Tasks
+  name: UniTask
+  nameWithType: UniTask
+  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: SaveSystem.DataManager.Advanced.SaveObjectsAsync*
+  commentId: Overload:SaveSystem.DataManager.Advanced.SaveObjectsAsync
+  href: SaveSystem.DataManager.Advanced.html#SaveSystem.DataManager.Advanced.SaveObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  name: SaveObjectsAsync
+  nameWithType: DataManager.Advanced.SaveObjectsAsync
+  fullName: SaveSystem.DataManager.Advanced.SaveObjectsAsync
+- uid: SaveSystem.IPersistentObjectAsync[]
+  isExternal: true
+  href: SaveSystem.IPersistentObjectAsync.html
+  name: IPersistentObjectAsync[]
+  nameWithType: IPersistentObjectAsync[]
+  fullName: SaveSystem.IPersistentObjectAsync[]
+  nameWithType.vb: IPersistentObjectAsync()
+  fullName.vb: SaveSystem.IPersistentObjectAsync()
+  name.vb: IPersistentObjectAsync()
+  spec.csharp:
+  - uid: SaveSystem.IPersistentObjectAsync
+    name: IPersistentObjectAsync
+    href: SaveSystem.IPersistentObjectAsync.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SaveSystem.IPersistentObjectAsync
+    name: IPersistentObjectAsync
+    href: SaveSystem.IPersistentObjectAsync.html
+  - name: (
+  - name: )
+- uid: System.IProgress{System.Single}
+  commentId: T:System.IProgress{System.Single}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<float>
+  nameWithType: IProgress<float>
+  fullName: System.IProgress<float>
+  nameWithType.vb: IProgress(Of Single)
+  fullName.vb: System.IProgress(Of Single)
+  name.vb: IProgress(Of Single)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SaveSystem.DataManager.Advanced.LoadObjectAsync*
+  commentId: Overload:SaveSystem.DataManager.Advanced.LoadObjectAsync
+  href: SaveSystem.DataManager.Advanced.html#SaveSystem.DataManager.Advanced.LoadObjectAsync(System.String,SaveSystem.IPersistentObjectAsync,System.Threading.CancellationTokenSource,System.Action)
+  name: LoadObjectAsync
+  nameWithType: DataManager.Advanced.LoadObjectAsync
+  fullName: SaveSystem.DataManager.Advanced.LoadObjectAsync
+- uid: Cysharp.Threading.Tasks.UniTask{System.Boolean}
+  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Boolean}
+  parent: Cysharp.Threading.Tasks
+  definition: Cysharp.Threading.Tasks.UniTask`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: UniTask<bool>
+  nameWithType: UniTask<bool>
+  fullName: Cysharp.Threading.Tasks.UniTask<bool>
+  nameWithType.vb: UniTask(Of Boolean)
+  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Boolean)
+  name.vb: UniTask(Of Boolean)
+  spec.csharp:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cysharp.Threading.Tasks.UniTask`1
+  commentId: T:Cysharp.Threading.Tasks.UniTask`1
+  name: UniTask<T>
+  nameWithType: UniTask<T>
+  fullName: Cysharp.Threading.Tasks.UniTask<T>
+  nameWithType.vb: UniTask(Of T)
+  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T)
+  name.vb: UniTask(Of T)
+  spec.csharp:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cysharp.Threading.Tasks.UniTask`1
+    name: UniTask
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SaveSystem.DataManager.Advanced.LoadObjectsAsync*
+  commentId: Overload:SaveSystem.DataManager.Advanced.LoadObjectsAsync
+  href: SaveSystem.DataManager.Advanced.html#SaveSystem.DataManager.Advanced.LoadObjectsAsync(System.String,SaveSystem.IPersistentObjectAsync[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  name: LoadObjectsAsync
+  nameWithType: DataManager.Advanced.LoadObjectsAsync
+  fullName: SaveSystem.DataManager.Advanced.LoadObjectsAsync

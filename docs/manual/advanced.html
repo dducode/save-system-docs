@@ -102,11 +102,11 @@ interface instead of the IPersistentObject</p>
 }
 </code></pre>
 <p>To save the object, you can pass it to
-DataManager.SaveObjectAsyncAdvanced method</p>
-<pre><code class="lang-csharp">await DataManager.SaveObjectAsyncAdvanced(fileName, myObject);
+DataManager.Advanced.SaveObjectAsync method</p>
+<pre><code class="lang-csharp">await DataManager.Advanced.SaveObjectAsync(fileName, myObject);
 </code></pre>
 <p>Notice that you don't pass AsyncMode to either
-SaveObjectAsyncAdvanced method, or the data handlers,
+Advanced.SaveObjectAsync method, or the data handlers,
 because the data handlers handle data the same in both
 modes, so only one mode was chosen which support in
 every platforms.</p>

@@ -3,23 +3,4 @@
 - name: Install Package
   href: installing.md
 - name: Using the save system
-  href: using.md
-  items:
-    - name: Saving and loading objects
-      href: saving-and-loading.md
-    - name: Writing and reading data
-      href: writing-and-reading.md
-      items:
-        - name: Objects control
-          href: objects-control.md
-    - name: Asynchronous management
-      href: async-management.md
-      items:
-        - name: Async modes
-          href: async-modes.md
-        - name: Advanced
-          href: advanced.md
-    - name: Backward compatibility advice
-      href: advice.md
-    - name: In editor
-      href: in-editor.md
+  href: using_save_system/

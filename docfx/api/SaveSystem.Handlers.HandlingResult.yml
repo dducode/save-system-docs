@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Handlers.HandlingResult
+  commentId: T:SaveSystem.Handlers.HandlingResult
+  id: HandlingResult
+  parent: SaveSystem.Handlers
+  children:
+  - SaveSystem.Handlers.HandlingResult.CanceledOperation
+  - SaveSystem.Handlers.HandlingResult.FileNotExists
+  - SaveSystem.Handlers.HandlingResult.NetworkError
+  - SaveSystem.Handlers.HandlingResult.Success
+  - SaveSystem.Handlers.HandlingResult.UnknownError
+  langs:
+  - csharp
+  - vb
+  name: HandlingResult
+  nameWithType: HandlingResult
+  fullName: SaveSystem.Handlers.HandlingResult
+  type: Enum
+  source:
+    id: HandlingResult
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 5
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Possible results enumeration of objects handling
+  example: []
+  syntax:
+    content: public enum HandlingResult
+    content.vb: Public Enum HandlingResult
+- uid: SaveSystem.Handlers.HandlingResult.Success
+  commentId: F:SaveSystem.Handlers.HandlingResult.Success
+  id: Success
+  parent: SaveSystem.Handlers.HandlingResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: HandlingResult.Success
+  fullName: SaveSystem.Handlers.HandlingResult.Success
+  type: Field
+  source:
+    id: Success
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 10
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: The handling succeeded
+  example: []
+  syntax:
+    content: Success = 0
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+- uid: SaveSystem.Handlers.HandlingResult.FileNotExists
+  commentId: F:SaveSystem.Handlers.HandlingResult.FileNotExists
+  id: FileNotExists
+  parent: SaveSystem.Handlers.HandlingResult
+  langs:
+  - csharp
+  - vb
+  name: FileNotExists
+  nameWithType: HandlingResult.FileNotExists
+  fullName: SaveSystem.Handlers.HandlingResult.FileNotExists
+  type: Field
+  source:
+    id: FileNotExists
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: There aren't any files in the local storage at the specified path
+  example: []
+  syntax:
+    content: FileNotExists = 1
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+- uid: SaveSystem.Handlers.HandlingResult.CanceledOperation
+  commentId: F:SaveSystem.Handlers.HandlingResult.CanceledOperation
+  id: CanceledOperation
+  parent: SaveSystem.Handlers.HandlingResult
+  langs:
+  - csharp
+  - vb
+  name: CanceledOperation
+  nameWithType: HandlingResult.CanceledOperation
+  fullName: SaveSystem.Handlers.HandlingResult.CanceledOperation
+  type: Field
+  source:
+    id: CanceledOperation
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 20
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Handling operation was canceled by external code
+  example: []
+  syntax:
+    content: CanceledOperation = 2
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+- uid: SaveSystem.Handlers.HandlingResult.NetworkError
+  commentId: F:SaveSystem.Handlers.HandlingResult.NetworkError
+  id: NetworkError
+  parent: SaveSystem.Handlers.HandlingResult
+  langs:
+  - csharp
+  - vb
+  name: NetworkError
+  nameWithType: HandlingResult.NetworkError
+  fullName: SaveSystem.Handlers.HandlingResult.NetworkError
+  type: Field
+  source:
+    id: NetworkError
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 25
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: An error occured while retrieving data from a remote storage
+  example: []
+  syntax:
+    content: NetworkError = 3
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+- uid: SaveSystem.Handlers.HandlingResult.UnknownError
+  commentId: F:SaveSystem.Handlers.HandlingResult.UnknownError
+  id: UnknownError
+  parent: SaveSystem.Handlers.HandlingResult
+  langs:
+  - csharp
+  - vb
+  name: UnknownError
+  nameWithType: HandlingResult.UnknownError
+  fullName: SaveSystem.Handlers.HandlingResult.UnknownError
+  type: Field
+  source:
+    id: UnknownError
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\HandlingResult.cs
+    startLine: 30
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Defines other errors
+  example: []
+  syntax:
+    content: UnknownError = 4
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+references:
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  href: SaveSystem.html
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+- uid: SaveSystem.Handlers.HandlingResult
+  commentId: T:SaveSystem.Handlers.HandlingResult
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.HandlingResult.html
+  name: HandlingResult
+  nameWithType: HandlingResult
+  fullName: SaveSystem.Handlers.HandlingResult

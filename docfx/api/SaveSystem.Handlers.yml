@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  id: SaveSystem.Handlers
+  children:
+  - SaveSystem.Handlers.AbstractHandler`2
+  - SaveSystem.Handlers.AsyncObjectHandler`1
+  - SaveSystem.Handlers.HandlingResult
+  - SaveSystem.Handlers.IAsyncObjectHandler
+  - SaveSystem.Handlers.IObjectHandler
+  - SaveSystem.Handlers.ObjectHandler`1
+  - SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.Handlers.IObjectHandler
+  commentId: T:SaveSystem.Handlers.IObjectHandler
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.IObjectHandler.html
+  name: IObjectHandler
+  nameWithType: IObjectHandler
+  fullName: SaveSystem.Handlers.IObjectHandler
+- uid: SaveSystem.Handlers.ObjectHandlersFactory
+  commentId: T:SaveSystem.Handlers.ObjectHandlersFactory
+  href: SaveSystem.Handlers.ObjectHandlersFactory.html
+  name: ObjectHandlersFactory
+  nameWithType: ObjectHandlersFactory
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory
+- uid: SaveSystem.Handlers.HandlingResult
+  commentId: T:SaveSystem.Handlers.HandlingResult
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.HandlingResult.html
+  name: HandlingResult
+  nameWithType: HandlingResult
+  fullName: SaveSystem.Handlers.HandlingResult
+- uid: SaveSystem.Handlers.ObjectHandler`1
+  commentId: T:SaveSystem.Handlers.ObjectHandler`1
+  href: SaveSystem.Handlers.ObjectHandler-1.html
+  name: ObjectHandler<TO>
+  nameWithType: ObjectHandler<TO>
+  fullName: SaveSystem.Handlers.ObjectHandler<TO>
+  nameWithType.vb: ObjectHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
+  name.vb: ObjectHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.AsyncObjectHandler`1
+  commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
+  href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  name: AsyncObjectHandler<TO>
+  nameWithType: AsyncObjectHandler<TO>
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
+  nameWithType.vb: AsyncObjectHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
+  name.vb: AsyncObjectHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
+    name: AsyncObjectHandler
+    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
+    name: AsyncObjectHandler
+    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2
+  commentId: T:SaveSystem.Handlers.AbstractHandler`2
+  href: SaveSystem.Handlers.AbstractHandler-2.html
+  name: AbstractHandler<T, TO>
+  nameWithType: AbstractHandler<T, TO>
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
+  nameWithType.vb: AbstractHandler(Of T, TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
+  name.vb: AbstractHandler(Of T, TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler
+    href: SaveSystem.Handlers.AbstractHandler-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.IAsyncObjectHandler
+  commentId: T:SaveSystem.Handlers.IAsyncObjectHandler
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.IAsyncObjectHandler.html
+  name: IAsyncObjectHandler
+  nameWithType: IAsyncObjectHandler
+  fullName: SaveSystem.Handlers.IAsyncObjectHandler
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  href: SaveSystem.html
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html

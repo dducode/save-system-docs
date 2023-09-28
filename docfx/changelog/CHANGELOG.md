@@ -1,5 +1,35 @@
 # Changelog
 
+## [1.5.0] - 2023-09-28
+
+### Added
+
+* Added Object Handlers. You can use these instead of
+  the obsolete DataManager class methods
+
+* Added Checkpoints. You can set checkpoints in a scene
+  in the editor, or at runtime by use the
+  CheckPointsCreator class
+
+* Added the Save System Core. This is a new subsystem that can
+  save your objects and handlers in the internal loop,
+  during a quick-save and when the player hits any checkpoint
+
+### Changed
+
+* Advanced methods have been moved to the Advanced class -
+  the nested class within the DataManager. These methods have
+  been renamed
+* Data handlers (UnityWriter, UnityReader, etc.)
+  have been moved to SaveSystem.UnityHandlers namespace
+
+### Fixed
+
+* Fixed catching the exception that throws when the binary
+  reader is null
+* Fixed file deleting when canceling a save, now UnityWriter
+writes data to a memory stream instead of writing directly to the file
+
 ## [1.4.0] - 2023-04-22
 
 ### Added

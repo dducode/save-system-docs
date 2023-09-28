@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ObjectHandlersFactory
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ObjectHandlersFactory
+ ">
+      
+      <link rel="icon" href="../images/icon.png">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveSystem.Handlers.ObjectHandlersFactory">
+
+
+
+  <h1 id="SaveSystem_Handlers_ObjectHandlersFactory" data-uid="SaveSystem.Handlers.ObjectHandlersFactory" class="text-break">Class ObjectHandlersFactory
+</h1>
+  <div class="markdown level0 summary"><p>Use it to create <a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">Object Handlers</a>,
+and <a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">Async Object Handlers</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ObjectHandlersFactory</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Handlers.html">Handlers</a></h6>
+  <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
+  <h5 id="SaveSystem_Handlers_ObjectHandlersFactory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ObjectHandlersFactory</code></pre>
+  </div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_RegisterImmediately_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_RegisterImmediately" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately">
+  RegisterImmediately
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configure it to automatically register handlers in the Save System Core</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RegisterImmediately { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, the Handlers Provider will register all created handlers in the Core,
+otherwise you will have to do it manually (it's false by default)</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String___0_System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,``0,System.String)">
+  CreateAsyncHandler&lt;TO&gt;(string, TO, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving a single object async</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncObjectHandler&lt;TO&gt; CreateAsyncHandler&lt;TO&gt;(string filePath, TO obj, string caller = &quot;&quot;) where TO : IPersistentObjectAsync</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>obj</code> <span class="xref">TO</span></dt>
+    <dd><p>Objects which will be saved</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)">
+  CreateAsyncHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving some objects async</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncObjectHandler&lt;TO&gt; CreateAsyncHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, string caller = &quot;&quot;) where TO : IPersistentObjectAsync</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String_System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Func{``0},System.String)">
+  CreateAsyncHandler&lt;TO&gt;(string, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty async handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncObjectHandler&lt;TO&gt; CreateAsyncHandler&lt;TO&gt;(string filePath, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IPersistentObjectAsync</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String___0_System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,``0,System.String)">
+  CreateHandler&lt;TO&gt;(string, TO, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving a single object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectHandler&lt;TO&gt; CreateHandler&lt;TO&gt;(string filePath, TO obj, string caller = &quot;&quot;) where TO : IPersistentObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>obj</code> <span class="xref">TO</span></dt>
+    <dd><p>Object which will be saved and loaded</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)">
+  CreateHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving some objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectHandler&lt;TO&gt; CreateHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, string caller = &quot;&quot;) where TO : IPersistentObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Func{``0},System.String)">
+  CreateHandler&lt;TO&gt;(string, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectHandler&lt;TO&gt; CreateHandler&lt;TO&gt;(string filePath, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IPersistentObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href="https://dotnet.github.io/docfx">docfx</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

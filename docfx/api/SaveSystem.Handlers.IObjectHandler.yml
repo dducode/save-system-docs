@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Handlers.IObjectHandler
+  commentId: T:SaveSystem.Handlers.IObjectHandler
+  id: IObjectHandler
+  parent: SaveSystem.Handlers
+  children:
+  - SaveSystem.Handlers.IObjectHandler.Load
+  - SaveSystem.Handlers.IObjectHandler.Save
+  langs:
+  - csharp
+  - vb
+  name: IObjectHandler
+  nameWithType: IObjectHandler
+  fullName: SaveSystem.Handlers.IObjectHandler
+  type: Interface
+  source:
+    id: IObjectHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IObjectHandler.cs
+    startLine: 5
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Defines methods for simple object handling
+  example: []
+  syntax:
+    content: public interface IObjectHandler
+    content.vb: Public Interface IObjectHandler
+- uid: SaveSystem.Handlers.IObjectHandler.Save
+  commentId: M:SaveSystem.Handlers.IObjectHandler.Save
+  id: Save
+  parent: SaveSystem.Handlers.IObjectHandler
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: IObjectHandler.Save()
+  fullName: SaveSystem.Handlers.IObjectHandler.Save()
+  type: Method
+  source:
+    id: Save
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IObjectHandler.cs
+    startLine: 10
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Call it to start objects saving
+  example: []
+  syntax:
+    content: void Save()
+    content.vb: Sub Save()
+  overload: SaveSystem.Handlers.IObjectHandler.Save*
+- uid: SaveSystem.Handlers.IObjectHandler.Load
+  commentId: M:SaveSystem.Handlers.IObjectHandler.Load
+  id: Load
+  parent: SaveSystem.Handlers.IObjectHandler
+  langs:
+  - csharp
+  - vb
+  name: Load()
+  nameWithType: IObjectHandler.Load()
+  fullName: SaveSystem.Handlers.IObjectHandler.Load()
+  type: Method
+  source:
+    id: Load
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IObjectHandler.cs
+    startLine: 16
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Call it to start objects loading
+  example: []
+  syntax:
+    content: HandlingResult Load()
+    return:
+      type: SaveSystem.Handlers.HandlingResult
+    content.vb: Function Load() As HandlingResult
+  overload: SaveSystem.Handlers.IObjectHandler.Load*
+references:
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  href: SaveSystem.html
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+- uid: SaveSystem.Handlers.IObjectHandler.Save*
+  commentId: Overload:SaveSystem.Handlers.IObjectHandler.Save
+  href: SaveSystem.Handlers.IObjectHandler.html#SaveSystem.Handlers.IObjectHandler.Save
+  name: Save
+  nameWithType: IObjectHandler.Save
+  fullName: SaveSystem.Handlers.IObjectHandler.Save
+- uid: SaveSystem.Handlers.IObjectHandler.Load*
+  commentId: Overload:SaveSystem.Handlers.IObjectHandler.Load
+  href: SaveSystem.Handlers.IObjectHandler.html#SaveSystem.Handlers.IObjectHandler.Load
+  name: Load
+  nameWithType: IObjectHandler.Load
+  fullName: SaveSystem.Handlers.IObjectHandler.Load
+- uid: SaveSystem.Handlers.HandlingResult
+  commentId: T:SaveSystem.Handlers.HandlingResult
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.HandlingResult.html
+  name: HandlingResult
+  nameWithType: HandlingResult
+  fullName: SaveSystem.Handlers.HandlingResult

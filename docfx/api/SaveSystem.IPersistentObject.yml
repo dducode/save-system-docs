@@ -5,8 +5,8 @@ items:
   id: IPersistentObject
   parent: SaveSystem
   children:
-  - SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
-  - SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  - SaveSystem.IPersistentObject.Load(SaveSystem.UnityHandlers.UnityReader)
+  - SaveSystem.IPersistentObject.Save(SaveSystem.UnityHandlers.UnityWriter)
   langs:
   - csharp
   - vb
@@ -16,62 +16,70 @@ items:
   type: Interface
   source:
     id: IPersistentObject
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
-    startLine: 2
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 7
   assemblies:
   - SaveSystem
   namespace: SaveSystem
+  summary: You can implement it to mark your object as persistent
+  example: []
   syntax:
     content: public interface IPersistentObject
     content.vb: Public Interface IPersistentObject
-- uid: SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
-  commentId: M:SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
-  id: Save(SaveSystem.UnityWriter)
+- uid: SaveSystem.IPersistentObject.Save(SaveSystem.UnityHandlers.UnityWriter)
+  commentId: M:SaveSystem.IPersistentObject.Save(SaveSystem.UnityHandlers.UnityWriter)
+  id: Save(SaveSystem.UnityHandlers.UnityWriter)
   parent: SaveSystem.IPersistentObject
   langs:
   - csharp
   - vb
   name: Save(UnityWriter)
   nameWithType: IPersistentObject.Save(UnityWriter)
-  fullName: SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  fullName: SaveSystem.IPersistentObject.Save(SaveSystem.UnityHandlers.UnityWriter)
   type: Method
   source:
     id: Save
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
-    startLine: 4
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 13
   assemblies:
   - SaveSystem
   namespace: SaveSystem
+  summary: It will be called when system will saving data
+  example: []
   syntax:
     content: void Save(UnityWriter writer)
     parameters:
     - id: writer
-      type: SaveSystem.UnityWriter
+      type: SaveSystem.UnityHandlers.UnityWriter
+      description: <xref href="SaveSystem.UnityHandlers.UnityWriter" data-throw-if-not-resolved="false"></xref>
     content.vb: Sub Save(writer As UnityWriter)
   overload: SaveSystem.IPersistentObject.Save*
-- uid: SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
-  commentId: M:SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
-  id: Load(SaveSystem.UnityReader)
+- uid: SaveSystem.IPersistentObject.Load(SaveSystem.UnityHandlers.UnityReader)
+  commentId: M:SaveSystem.IPersistentObject.Load(SaveSystem.UnityHandlers.UnityReader)
+  id: Load(SaveSystem.UnityHandlers.UnityReader)
   parent: SaveSystem.IPersistentObject
   langs:
   - csharp
   - vb
   name: Load(UnityReader)
   nameWithType: IPersistentObject.Load(UnityReader)
-  fullName: SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  fullName: SaveSystem.IPersistentObject.Load(SaveSystem.UnityHandlers.UnityReader)
   type: Method
   source:
     id: Load
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
-    startLine: 5
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObject.cs
+    startLine: 20
   assemblies:
   - SaveSystem
   namespace: SaveSystem
+  summary: It will be called when system will loading data
+  example: []
   syntax:
     content: void Load(UnityReader reader)
     parameters:
     - id: reader
-      type: SaveSystem.UnityReader
+      type: SaveSystem.UnityHandlers.UnityReader
+      description: <xref href="SaveSystem.UnityHandlers.UnityReader" data-throw-if-not-resolved="false"></xref>
     content.vb: Sub Load(reader As UnityReader)
   overload: SaveSystem.IPersistentObject.Load*
 references:
@@ -81,29 +89,51 @@ references:
   name: SaveSystem
   nameWithType: SaveSystem
   fullName: SaveSystem
+- uid: SaveSystem.UnityHandlers.UnityWriter
+  commentId: T:SaveSystem.UnityHandlers.UnityWriter
+  parent: SaveSystem.UnityHandlers
+  href: SaveSystem.UnityHandlers.UnityWriter.html
+  name: UnityWriter
+  nameWithType: UnityWriter
+  fullName: SaveSystem.UnityHandlers.UnityWriter
 - uid: SaveSystem.IPersistentObject.Save*
   commentId: Overload:SaveSystem.IPersistentObject.Save
-  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Save(SaveSystem.UnityWriter)
+  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Save(SaveSystem.UnityHandlers.UnityWriter)
   name: Save
   nameWithType: IPersistentObject.Save
   fullName: SaveSystem.IPersistentObject.Save
-- uid: SaveSystem.UnityWriter
-  commentId: T:SaveSystem.UnityWriter
-  parent: SaveSystem
-  href: SaveSystem.UnityWriter.html
-  name: UnityWriter
-  nameWithType: UnityWriter
-  fullName: SaveSystem.UnityWriter
+- uid: SaveSystem.UnityHandlers
+  commentId: N:SaveSystem.UnityHandlers
+  href: SaveSystem.html
+  name: SaveSystem.UnityHandlers
+  nameWithType: SaveSystem.UnityHandlers
+  fullName: SaveSystem.UnityHandlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html
+- uid: SaveSystem.UnityHandlers.UnityReader
+  commentId: T:SaveSystem.UnityHandlers.UnityReader
+  parent: SaveSystem.UnityHandlers
+  href: SaveSystem.UnityHandlers.UnityReader.html
+  name: UnityReader
+  nameWithType: UnityReader
+  fullName: SaveSystem.UnityHandlers.UnityReader
 - uid: SaveSystem.IPersistentObject.Load*
   commentId: Overload:SaveSystem.IPersistentObject.Load
-  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Load(SaveSystem.UnityReader)
+  href: SaveSystem.IPersistentObject.html#SaveSystem.IPersistentObject.Load(SaveSystem.UnityHandlers.UnityReader)
   name: Load
   nameWithType: IPersistentObject.Load
   fullName: SaveSystem.IPersistentObject.Load
-- uid: SaveSystem.UnityReader
-  commentId: T:SaveSystem.UnityReader
-  parent: SaveSystem
-  href: SaveSystem.UnityReader.html
-  name: UnityReader
-  nameWithType: UnityReader
-  fullName: SaveSystem.UnityReader

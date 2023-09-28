@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Core
+  commentId: N:SaveSystem.Core
+  id: SaveSystem.Core
+  children:
+  - SaveSystem.Core.SaveEvents
+  - SaveSystem.Core.SaveSystemCore
+  - SaveSystem.Core.SaveSystemSettings
+  - SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.Core
+  nameWithType: SaveSystem.Core
+  fullName: SaveSystem.Core
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.Core.SaveType
+  commentId: T:SaveSystem.Core.SaveType
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveType.html
+  name: SaveType
+  nameWithType: SaveType
+  fullName: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveEvents
+  commentId: T:SaveSystem.Core.SaveEvents
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveEvents.html
+  name: SaveEvents
+  nameWithType: SaveEvents
+  fullName: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveSystemSettings
+  commentId: T:SaveSystem.Core.SaveSystemSettings
+  href: SaveSystem.Core.SaveSystemSettings.html
+  name: SaveSystemSettings
+  nameWithType: SaveSystemSettings
+  fullName: SaveSystem.Core.SaveSystemSettings
+- uid: SaveSystem.Core.SaveSystemCore
+  commentId: T:SaveSystem.Core.SaveSystemCore
+  href: SaveSystem.Core.SaveSystemCore.html
+  name: SaveSystemCore
+  nameWithType: SaveSystemCore
+  fullName: SaveSystem.Core.SaveSystemCore
+- uid: SaveSystem.Core
+  commentId: N:SaveSystem.Core
+  href: SaveSystem.html
+  name: SaveSystem.Core
+  nameWithType: SaveSystem.Core
+  fullName: SaveSystem.Core
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html

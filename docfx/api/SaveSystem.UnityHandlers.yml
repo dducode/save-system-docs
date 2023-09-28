@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.UnityHandlers
+  commentId: N:SaveSystem.UnityHandlers
+  id: SaveSystem.UnityHandlers
+  children:
+  - SaveSystem.UnityHandlers.UnityReader
+  - SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.UnityHandlers
+  nameWithType: SaveSystem.UnityHandlers
+  fullName: SaveSystem.UnityHandlers
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.UnityHandlers.UnityWriter
+  commentId: T:SaveSystem.UnityHandlers.UnityWriter
+  parent: SaveSystem.UnityHandlers
+  href: SaveSystem.UnityHandlers.UnityWriter.html
+  name: UnityWriter
+  nameWithType: UnityWriter
+  fullName: SaveSystem.UnityHandlers.UnityWriter
+- uid: SaveSystem.UnityHandlers.UnityReader
+  commentId: T:SaveSystem.UnityHandlers.UnityReader
+  parent: SaveSystem.UnityHandlers
+  href: SaveSystem.UnityHandlers.UnityReader.html
+  name: UnityReader
+  nameWithType: UnityReader
+  fullName: SaveSystem.UnityHandlers.UnityReader
+- uid: SaveSystem.UnityHandlers
+  commentId: N:SaveSystem.UnityHandlers
+  href: SaveSystem.html
+  name: SaveSystem.UnityHandlers
+  nameWithType: SaveSystem.UnityHandlers
+  fullName: SaveSystem.UnityHandlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html

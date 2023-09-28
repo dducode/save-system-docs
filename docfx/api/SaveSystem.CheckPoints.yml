@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.CheckPoints
+  commentId: N:SaveSystem.CheckPoints
+  id: SaveSystem.CheckPoints
+  children:
+  - SaveSystem.CheckPoints.CheckPoint
+  - SaveSystem.CheckPoints.CheckPoint2D
+  - SaveSystem.CheckPoints.CheckPointBase
+  - SaveSystem.CheckPoints.CheckPointsFactory
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.CheckPoints
+  nameWithType: SaveSystem.CheckPoints
+  fullName: SaveSystem.CheckPoints
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.CheckPoints.CheckPointBase
+  commentId: T:SaveSystem.CheckPoints.CheckPointBase
+  parent: SaveSystem.CheckPoints
+  href: SaveSystem.CheckPoints.CheckPointBase.html
+  name: CheckPointBase
+  nameWithType: CheckPointBase
+  fullName: SaveSystem.CheckPoints.CheckPointBase
+- uid: SaveSystem.CheckPoints.CheckPoint
+  commentId: T:SaveSystem.CheckPoints.CheckPoint
+  parent: SaveSystem.CheckPoints
+  href: SaveSystem.CheckPoints.CheckPoint.html
+  name: CheckPoint
+  nameWithType: CheckPoint
+  fullName: SaveSystem.CheckPoints.CheckPoint
+- uid: SaveSystem.CheckPoints.CheckPointsFactory
+  commentId: T:SaveSystem.CheckPoints.CheckPointsFactory
+  href: SaveSystem.CheckPoints.CheckPointsFactory.html
+  name: CheckPointsFactory
+  nameWithType: CheckPointsFactory
+  fullName: SaveSystem.CheckPoints.CheckPointsFactory
+- uid: SaveSystem.CheckPoints.CheckPoint2D
+  commentId: T:SaveSystem.CheckPoints.CheckPoint2D
+  parent: SaveSystem.CheckPoints
+  href: SaveSystem.CheckPoints.CheckPoint2D.html
+  name: CheckPoint2D
+  nameWithType: CheckPoint2D
+  fullName: SaveSystem.CheckPoints.CheckPoint2D
+- uid: SaveSystem.CheckPoints
+  commentId: N:SaveSystem.CheckPoints
+  href: SaveSystem.html
+  name: SaveSystem.CheckPoints
+  nameWithType: SaveSystem.CheckPoints
+  fullName: SaveSystem.CheckPoints
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.CheckPoints
+    name: CheckPoints
+    href: SaveSystem.CheckPoints.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.CheckPoints
+    name: CheckPoints
+    href: SaveSystem.CheckPoints.html

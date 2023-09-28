@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/UnityProjects/UnityPackages/Documentation/save-system/docfx",
+  "source_base_path": "C:/UnityProjects/UnityPackages/Documentation/save-system/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -23,10 +23,220 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.CheckPoints.CheckPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.CheckPoints.CheckPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.CheckPoints.CheckPoint2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.CheckPoints.CheckPoint2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.CheckPoints.CheckPointBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.CheckPoints.CheckPointBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.CheckPoints.CheckPointsFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.CheckPoints.CheckPointsFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.CheckPoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.CheckPoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Core.SaveEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Core.SaveEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Core.SaveSystemCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Core.SaveSystemCore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Core.SaveSystemSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Core.SaveSystemSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Core.SaveType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Core.SaveType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.DataManager.Advanced.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.DataManager.Advanced.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SaveSystem.DataManager.yml",
       "output": {
         ".html": {
           "relative_path": "api/SaveSystem.DataManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Extensions.BinaryHandlersExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Extensions.BinaryHandlersExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.AbstractHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.AbstractHandler-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.AsyncObjectHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.AsyncObjectHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.HandlingResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.HandlingResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.IAsyncObjectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.IAsyncObjectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.IObjectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.IObjectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.ObjectHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.ObjectHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.ObjectHandlersFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.ObjectHandlersFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.html"
         }
       },
       "version": ""
@@ -63,40 +273,40 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SaveSystem.UnityAsyncReader.yml",
+      "source_relative_path": "api/SaveSystem.Storage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SaveSystem.UnityAsyncReader.html"
+          "relative_path": "api/SaveSystem.Storage.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SaveSystem.UnityAsyncWriter.yml",
+      "source_relative_path": "api/SaveSystem.UnityHandlers.UnityReader.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SaveSystem.UnityAsyncWriter.html"
+          "relative_path": "api/SaveSystem.UnityHandlers.UnityReader.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SaveSystem.UnityReader.yml",
+      "source_relative_path": "api/SaveSystem.UnityHandlers.UnityWriter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SaveSystem.UnityReader.html"
+          "relative_path": "api/SaveSystem.UnityHandlers.UnityWriter.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/SaveSystem.UnityWriter.yml",
+      "source_relative_path": "api/SaveSystem.UnityHandlers.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SaveSystem.UnityWriter.html"
+          "relative_path": "api/SaveSystem.UnityHandlers.html"
         }
       },
       "version": ""
@@ -239,6 +449,56 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Screenshot_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Screenshot_9.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/checkpoints_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/checkpoints_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/checkpoints_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/checkpoints_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/checkpoints_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/checkpoints_3.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/checkpoints_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/checkpoints_4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/icon.png",
       "output": {
         "resource": {
@@ -292,56 +552,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/advanced.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/advanced.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/advice.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/advice.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/async-management.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/async-management.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/async-modes.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/async-modes.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/in-editor.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/in-editor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "manual/installing.md",
       "output": {
         ".html": {
@@ -361,26 +571,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "manual/objects-control.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/objects-control.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "manual/saving-and-loading.md",
-      "output": {
-        ".html": {
-          "relative_path": "manual/saving-and-loading.html"
-        }
-      },
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "manual/toc.yml",
       "output": {
@@ -395,20 +585,143 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/using.md",
+      "source_relative_path": "manual/using_save_system/advanced.md",
       "output": {
         ".html": {
-          "relative_path": "manual/using.html"
+          "relative_path": "manual/using_save_system/advanced.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "manual/writing-and-reading.md",
+      "source_relative_path": "manual/using_save_system/advice.md",
       "output": {
         ".html": {
-          "relative_path": "manual/writing-and-reading.html"
+          "relative_path": "manual/using_save_system/advice.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/async-management.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/async-management.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/async-modes.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/async-modes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/checkpoints.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/checkpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/dynamic-objects-handling.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/dynamic-objects-handling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/in-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/in-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/object-handlers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/object-handlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/objects-control.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/objects-control.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/save-system-core.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/save-system-core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/saving-and-loading.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/saving-and-loading.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/using_save_system/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/using_save_system/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/using.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/using.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/writing-and-reading.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/writing-and-reading.html"
         }
       },
       "version": ""

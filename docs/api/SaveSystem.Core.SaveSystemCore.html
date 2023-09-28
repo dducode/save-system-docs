@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SaveSystemCore
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SaveSystemCore
+ ">
+      
+      <link rel="icon" href="../images/icon.png">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="SaveSystem.Core.SaveSystemCore">
+
+
+
+  <h1 id="SaveSystem_Core_SaveSystemCore" data-uid="SaveSystem.Core.SaveSystemCore" class="text-break">Class SaveSystemCore
+</h1>
+  <div class="markdown level0 summary"><p>The Core of the Save System. It accepts <a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">object handlers</a>
+and <a class="xref" href="SaveSystem.IPersistentObject.html">persistent objects</a>
+and starts saving in three main modes - autosave, quick-save and save at checkpoint.
+Also it starts the saving when the player exit the game</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SaveSystemCore</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Core.html">Core</a></h6>
+  <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
+  <h5 id="SaveSystem_Core_SaveSystemCore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SaveSystemCore</code></pre>
+  </div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_DebugEnabled_" data-uid="SaveSystem.Core.SaveSystemCore.DebugEnabled*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_DebugEnabled" data-uid="SaveSystem.Core.SaveSystemCore.DebugEnabled">
+  DebugEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables logs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DebugEnabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="SaveSystem_Core_SaveSystemCore_DebugEnabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>It configures only simple logs, other logs (warnings and errors) will be written to console anyway.</p>
+</div>
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_DestroyCheckPoints_" data-uid="SaveSystem.Core.SaveSystemCore.DestroyCheckPoints*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_DestroyCheckPoints" data-uid="SaveSystem.Core.SaveSystemCore.DestroyCheckPoints">
+  DestroyCheckPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether checkpoints will be destroyed after saving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DestroyCheckPoints { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, triggered checkpoint will be deleted from scene after saving</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_EnabledSaveEvents_" data-uid="SaveSystem.Core.SaveSystemCore.EnabledSaveEvents*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_EnabledSaveEvents" data-uid="SaveSystem.Core.SaveSystemCore.EnabledSaveEvents">
+  EnabledSaveEvents
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>It's used to manage autosave loop, save on focus changed, on low memory and on quitting the game</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SaveEvents EnabledSaveEvents { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Core.SaveEvents.html">SaveEvents</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div>
+      <div><a class="xref" href="SaveSystem.Core.SaveEvents.html">SaveEvents</a></div>
+    </div>
+    </dd>
+  </dl>
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_IsParallel_" data-uid="SaveSystem.Core.SaveSystemCore.IsParallel*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_IsParallel" data-uid="SaveSystem.Core.SaveSystemCore.IsParallel">
+  IsParallel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configure it to set parallel saving handlers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsParallel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_PlayerTag_" data-uid="SaveSystem.Core.SaveSystemCore.PlayerTag*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_PlayerTag" data-uid="SaveSystem.Core.SaveSystemCore.PlayerTag">
+  PlayerTag
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Player tag is used to filtering messages from triggered checkpoints</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PlayerTag { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Tag of the player object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_SavePeriod_" data-uid="SaveSystem.Core.SaveSystemCore.SavePeriod*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_SavePeriod" data-uid="SaveSystem.Core.SaveSystemCore.SavePeriod">
+  SavePeriod
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>It's used into autosave loop to determine saving frequency</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float SavePeriod { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Saving period in seconds</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="SaveSystem_Core_SaveSystemCore_SavePeriod_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If it equals 0, saving will be executed at every frame</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_BindKey_" data-uid="SaveSystem.Core.SaveSystemCore.BindKey*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_BindKey_UnityEngine_KeyCode_" data-uid="SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)">
+  BindKey(KeyCode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binds any key with quick save</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BindKey(KeyCode keyCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keyCode</code> <span class="xref">KeyCode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_ConfigureParameters_" data-uid="SaveSystem.Core.SaveSystemCore.ConfigureParameters*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_ConfigureParameters_SaveSystem_Core_SaveEvents_System_Boolean_System_Boolean_System_Boolean_System_String_System_Single_" data-uid="SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)">
+  ConfigureParameters(SaveEvents, bool, bool, bool, string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Configures all the Core parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConfigureParameters(SaveEvents enabledSaveEvents, bool isParallel, bool debugEnabled, bool destroyCheckPoints, string playerTag, float savePeriod = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enabledSaveEvents</code> <a class="xref" href="SaveSystem.Core.SaveEvents.html">SaveEvents</a></dt>
+    <dd></dd>
+    <dt><code>isParallel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>debugEnabled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_DebugEnabled">DebugEnabled</a></p>
+</dd>
+    <dt><code>destroyCheckPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_DestroyCheckPoints">DestroyCheckPoints</a></p>
+</dd>
+    <dt><code>playerTag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p><a class="xref" href="SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_PlayerTag">PlayerTag</a></p>
+</dd>
+    <dt><code>savePeriod</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_SavePeriod">SavePeriod</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="SaveSystem_Core_SaveSystemCore_ConfigureParameters_SaveSystem_Core_SaveEvents_System_Boolean_System_Boolean_System_Boolean_System_String_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>You can skip it if you have configured the settings in the editor</p>
+</div>
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_ObserveProgress_" data-uid="SaveSystem.Core.SaveSystemCore.ObserveProgress*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_ObserveProgress_System_IProgress_System_Single__" data-uid="SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})">
+  ObserveProgress(IProgress&lt;float&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pass <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1"> IProgress object </a> to observe async saving progress
+when it'll be started</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ObserveProgress(IProgress&lt;float&gt; progress)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>progress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iprogress-1">IProgress</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="SaveSystem_Core_SaveSystemCore_ObserveProgress_System_IProgress_System_Single___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The Core will report progress only during async save</p>
+</div>
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_QuickSave_" data-uid="SaveSystem.Core.SaveSystemCore.QuickSave*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_QuickSave" data-uid="SaveSystem.Core.SaveSystemCore.QuickSave">
+  QuickSave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>You can call it when any event was happened</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QuickSave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_RegisterAsyncObjectHandler_" data-uid="SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_RegisterAsyncObjectHandler_SaveSystem_Handlers_IAsyncObjectHandler_" data-uid="SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)">
+  RegisterAsyncObjectHandler(IAsyncObjectHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers an async handler to automatic save, quick-save, save at checkpoit and at save on exit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterAsyncObjectHandler(IAsyncObjectHandler handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="SaveSystem.Handlers.IAsyncObjectHandler.html">IAsyncObjectHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_RegisterObjectHandler_" data-uid="SaveSystem.Core.SaveSystemCore.RegisterObjectHandler*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_RegisterObjectHandler_SaveSystem_Handlers_IObjectHandler_" data-uid="SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)">
+  RegisterObjectHandler(IObjectHandler)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a handler to automatic save, quick-save, save at checkpoit and at save on exit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterObjectHandler(IObjectHandler handler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handler</code> <a class="xref" href="SaveSystem.Handlers.IObjectHandler.html">IObjectHandler</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_SaveAndQuit_" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndQuit*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_SaveAndQuit" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndQuit">
+  SaveAndQuit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call this to manually save handlers before quitting the application</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UniTask SaveAndQuit()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UniTask</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="SaveSystem_Core_SaveSystemCore_SaveAndQuit_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This will immediately exit the game after saving.
+You should make sure that you don't need to do anything else before calling it</p>
+</div>
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_OnSaveEnd" data-uid="SaveSystem.Core.SaveSystemCore.OnSaveEnd">
+  OnSaveEnd
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is called after saving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action&lt;SaveType&gt; OnSaveEnd</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SaveSystem.Core.SaveType.html">SaveType</a>&gt;</dt>
+    <dd><p>Listeners that will be called when core will finish saving.
+Listeners must accept <a class="xref" href="SaveSystem.Core.SaveType.html">SaveType</a> enumeration</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_OnSaveStart" data-uid="SaveSystem.Core.SaveSystemCore.OnSaveStart">
+  OnSaveStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event that is called before saving. It can be useful when you use async saving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event Action&lt;SaveType&gt; OnSaveStart</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="SaveSystem.Core.SaveType.html">SaveType</a>&gt;</dt>
+    <dd><p>Listeners that will be called when core will start saving.
+Listeners must accept <a class="xref" href="SaveSystem.Core.SaveType.html">SaveType</a> enumeration</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href="https://dotnet.github.io/docfx">docfx</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

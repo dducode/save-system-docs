@@ -6,17 +6,13 @@ items:
   parent: SaveSystem
   children:
   - SaveSystem.DataManager.LoadObject``1(System.String,``0)
-  - SaveSystem.DataManager.LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.LoadObjects``1(System.String,``0[])
-  - SaveSystem.DataManager.LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  - SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   - SaveSystem.DataManager.SaveObject``1(System.String,``0)
-  - SaveSystem.DataManager.SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.SaveObjects``1(System.String,``0[])
-  - SaveSystem.DataManager.SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  - SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  - SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   langs:
   - csharp
   - vb
@@ -26,12 +22,12 @@ items:
   type: Class
   source:
     id: DataManager
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 11
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
+    startLine: 9
   assemblies:
   - SaveSystem
   namespace: SaveSystem
-  summary: Main class for handling objects
+  summary: Main class for handling data
   example: []
   syntax:
     content: public static class DataManager
@@ -59,17 +55,17 @@ items:
   type: Method
   source:
     id: SaveObject
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 20
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 28
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Save one object
   example: []
   syntax:
-    content: 'public static void SaveObject<T>(string fileName, T obj) where T : IPersistentObject'
+    content: 'public static void SaveObject<T>(string filePath, T obj) where T : IPersistentObject'
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file where the object data will be saved
     - id: obj
@@ -77,47 +73,47 @@ items:
       description: the object which will be saved
     typeParameters:
     - id: T
-    content.vb: Public Shared Sub SaveObject(Of T As IPersistentObject)(fileName As String, obj As T)
+    content.vb: Public Shared Sub SaveObject(Of T As IPersistentObject)(filePath As String, obj As T)
   overload: SaveSystem.DataManager.SaveObject*
   nameWithType.vb: DataManager.SaveObject(Of T)(String, T)
   fullName.vb: SaveSystem.DataManager.SaveObject(Of T)(String, T)
   name.vb: SaveObject(Of T)(String, T)
-- uid: SaveSystem.DataManager.SaveObjects``1(System.String,``0[])
-  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,``0[])
-  id: SaveObjects``1(System.String,``0[])
+- uid: SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  id: SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: SaveObjects<T>(string, T[])
-  nameWithType: DataManager.SaveObjects<T>(string, T[])
-  fullName: SaveSystem.DataManager.SaveObjects<T>(string, T[])
+  name: SaveObjects<T>(string, IEnumerable<T>)
+  nameWithType: DataManager.SaveObjects<T>(string, IEnumerable<T>)
+  fullName: SaveSystem.DataManager.SaveObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
     id: SaveObjects
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 35
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 38
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Save many objects
   example: []
   syntax:
-    content: 'public static void SaveObjects<T>(string fileName, T[] objects) where T : IPersistentObject'
+    content: 'public static void SaveObjects<T>(string filePath, IEnumerable<T> objects) where T : IPersistentObject'
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file where the object data will be saved
     - id: objects
-      type: '{T}[]'
+      type: System.Collections.Generic.IEnumerable{{T}}
       description: the objects which will be saved
     typeParameters:
     - id: T
-    content.vb: Public Shared Sub SaveObjects(Of T As IPersistentObject)(fileName As String, objects As T())
+    content.vb: Public Shared Sub SaveObjects(Of T As IPersistentObject)(filePath As String, objects As IEnumerable(Of T))
   overload: SaveSystem.DataManager.SaveObjects*
-  nameWithType.vb: DataManager.SaveObjects(Of T)(String, T())
-  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, T())
-  name.vb: SaveObjects(Of T)(String, T())
+  nameWithType.vb: DataManager.SaveObjects(Of T)(String, IEnumerable(Of T))
+  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: SaveObjects(Of T)(String, IEnumerable(Of T))
 - uid: SaveSystem.DataManager.LoadObject``1(System.String,``0)
   commentId: M:SaveSystem.DataManager.LoadObject``1(System.String,``0)
   id: LoadObject``1(System.String,``0)
@@ -131,17 +127,17 @@ items:
   type: Method
   source:
     id: LoadObject
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 64
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 60
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Load one object
   example: []
   syntax:
-    content: 'public static bool LoadObject<T>(string fileName, T obj) where T : IPersistentObject'
+    content: 'public static bool LoadObject<T>(string filePath, T obj) where T : IPersistentObject'
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file whereof the object data will be load
     - id: obj
@@ -152,78 +148,81 @@ items:
     return:
       type: System.Boolean
       description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObject(Of T As IPersistentObject)(fileName As String, obj As T) As Boolean
+    content.vb: Public Shared Function LoadObject(Of T As IPersistentObject)(filePath As String, obj As T) As Boolean
   overload: SaveSystem.DataManager.LoadObject*
   nameWithType.vb: DataManager.LoadObject(Of T)(String, T)
   fullName.vb: SaveSystem.DataManager.LoadObject(Of T)(String, T)
   name.vb: LoadObject(Of T)(String, T)
-- uid: SaveSystem.DataManager.LoadObjects``1(System.String,``0[])
-  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,``0[])
-  id: LoadObjects``1(System.String,``0[])
+- uid: SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  id: LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: LoadObjects<T>(string, T[])
-  nameWithType: DataManager.LoadObjects<T>(string, T[])
-  fullName: SaveSystem.DataManager.LoadObjects<T>(string, T[])
+  name: LoadObjects<T>(string, IEnumerable<T>)
+  nameWithType: DataManager.LoadObjects<T>(string, IEnumerable<T>)
+  fullName: SaveSystem.DataManager.LoadObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
   type: Method
   source:
     id: LoadObjects
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 80
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 71
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Load many objects
   example: []
   syntax:
-    content: 'public static bool LoadObjects<T>(string fileName, T[] objects) where T : IPersistentObject'
+    content: 'public static bool LoadObjects<T>(string filePath, IEnumerable<T> objects) where T : IPersistentObject'
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file whereof the object data will be load
     - id: objects
-      type: '{T}[]'
+      type: System.Collections.Generic.IEnumerable{{T}}
       description: the objects which will be load
     typeParameters:
     - id: T
     return:
       type: System.Boolean
       description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjects(Of T As IPersistentObject)(fileName As String, objects As T()) As Boolean
+    content.vb: Public Shared Function LoadObjects(Of T As IPersistentObject)(filePath As String, objects As IEnumerable(Of T)) As Boolean
   overload: SaveSystem.DataManager.LoadObjects*
-  nameWithType.vb: DataManager.LoadObjects(Of T)(String, T())
-  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, T())
-  name.vb: LoadObjects(Of T)(String, T())
-- uid: SaveSystem.DataManager.SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  id: SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  nameWithType.vb: DataManager.LoadObjects(Of T)(String, IEnumerable(Of T))
+  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: LoadObjects(Of T)(String, IEnumerable(Of T))
+- uid: SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  id: SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: SaveObjectAsync<T>(string, T, AsyncMode, CancellationTokenSource, Action)
-  nameWithType: DataManager.SaveObjectAsync<T>(string, T, AsyncMode, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.SaveObjectAsync<T>(string, T, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
+  name: SaveObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  nameWithType: DataManager.SaveObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.SaveObjectAsync(string, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
   type: Method
   source:
     id: SaveObjectAsync
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 113
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 96
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Save one object async
   example: []
   syntax:
-    content: 'public static UniTask SaveObjectAsync<T>(string fileName, T obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject'
+    content: >-
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+
+      public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file where the object data will be saved
     - id: obj
-      type: '{T}'
+      type: SaveSystem.IPersistentObject
       description: the object which will be saved
     - id: asyncMode
       type: SaveSystem.AsyncMode
@@ -231,47 +230,57 @@ items:
       type: System.Threading.CancellationTokenSource
     - id: onComplete
       type: System.Action
-    typeParameters:
-    - id: T
     return:
       type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Shared Function SaveObjectAsync(Of T As IPersistentObject)(fileName As String, obj As T, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+    content.vb: >-
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+
+      Public Shared Function SaveObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
   overload: SaveSystem.DataManager.SaveObjectAsync*
   exceptions:
   - type: System.OperationCanceledException
     commentId: T:System.OperationCanceledException
     description: throws when saving is canceled
-  nameWithType.vb: DataManager.SaveObjectAsync(Of T)(String, T, AsyncMode, CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.SaveObjectAsync(Of T)(String, T, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
-  name.vb: SaveObjectAsync(Of T)(String, T, AsyncMode, CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  id: SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+  nameWithType.vb: DataManager.SaveObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.SaveObjectAsync(String, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
+  name.vb: SaveObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  id: SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: SaveObjectsAsync<T>(string, T[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
-  nameWithType: DataManager.SaveObjectsAsync<T>(string, T[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.SaveObjectsAsync<T>(string, T[], SaveSystem.AsyncMode, System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
+  name: SaveObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
+  nameWithType: DataManager.SaveObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.SaveObjectsAsync(string, SaveSystem.IPersistentObject[], SaveSystem.AsyncMode, System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
   type: Method
   source:
     id: SaveObjectsAsync
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 134
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 113
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Save many objects async
   example: []
   syntax:
-    content: 'public static UniTask SaveObjectsAsync<T>(string fileName, T[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject'
+    content: >-
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+
+      public static UniTask SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file where the object data will be saved
     - id: objects
-      type: '{T}[]'
+      type: SaveSystem.IPersistentObject[]
       description: the objects which will be saved
     - id: asyncMode
       type: SaveSystem.AsyncMode
@@ -281,47 +290,57 @@ items:
       type: System.Threading.CancellationTokenSource
     - id: onComplete
       type: System.Action
-    typeParameters:
-    - id: T
     return:
       type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Shared Function SaveObjectsAsync(Of T As IPersistentObject)(fileName As String, objects As T(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+    content.vb: >-
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+
+      Public Shared Function SaveObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
   overload: SaveSystem.DataManager.SaveObjectsAsync*
   exceptions:
   - type: System.OperationCanceledException
     commentId: T:System.OperationCanceledException
     description: throws when saving is canceled
-  nameWithType.vb: DataManager.SaveObjectsAsync(Of T)(String, T(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.SaveObjectsAsync(Of T)(String, T(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
-  name.vb: SaveObjectsAsync(Of T)(String, T(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  id: LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+  nameWithType.vb: DataManager.SaveObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.SaveObjectsAsync(String, SaveSystem.IPersistentObject(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
+  name.vb: SaveObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  id: LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: LoadObjectAsync<T>(string, T, AsyncMode, CancellationTokenSource, Action)
-  nameWithType: DataManager.LoadObjectAsync<T>(string, T, AsyncMode, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.LoadObjectAsync<T>(string, T, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
+  name: LoadObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  nameWithType: DataManager.LoadObjectAsync(string, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.LoadObjectAsync(string, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
   type: Method
   source:
     id: LoadObjectAsync
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 215
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 171
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Load one object async
   example: []
   syntax:
-    content: 'public static UniTask<bool> LoadObjectAsync<T>(string fileName, T obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject'
+    content: >-
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+
+      public static UniTask<bool> LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file whereof the object data will be load
     - id: obj
-      type: '{T}'
+      type: SaveSystem.IPersistentObject
       description: the object which will be load
     - id: asyncMode
       type: SaveSystem.AsyncMode
@@ -329,48 +348,58 @@ items:
       type: System.Threading.CancellationTokenSource
     - id: onComplete
       type: System.Action
-    typeParameters:
-    - id: T
     return:
       type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
       description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjectAsync(Of T As IPersistentObject)(fileName As String, obj As T, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+    content.vb: >-
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+
+      Public Shared Function LoadObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectAsync*
   exceptions:
   - type: System.OperationCanceledException
     commentId: T:System.OperationCanceledException
     description: throws when loading is canceled
-  nameWithType.vb: DataManager.LoadObjectAsync(Of T)(String, T, AsyncMode, CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.LoadObjectAsync(Of T)(String, T, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
-  name.vb: LoadObjectAsync(Of T)(String, T, AsyncMode, CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  id: LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+  nameWithType.vb: DataManager.LoadObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.LoadObjectAsync(String, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
+  name.vb: LoadObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
+- uid: SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  commentId: M:SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  id: LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: LoadObjectsAsync<T>(string, T[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
-  nameWithType: DataManager.LoadObjectsAsync<T>(string, T[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.LoadObjectsAsync<T>(string, T[], SaveSystem.AsyncMode, System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
+  name: LoadObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
+  nameWithType: DataManager.LoadObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
+  fullName: SaveSystem.DataManager.LoadObjectsAsync(string, SaveSystem.IPersistentObject[], SaveSystem.AsyncMode, System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
   type: Method
   source:
     id: LoadObjectsAsync
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 236
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
+    startLine: 188
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Load many objects async
   example: []
   syntax:
-    content: 'public static UniTask<bool> LoadObjectsAsync<T>(string fileName, T[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObject'
+    content: >-
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+
+      public static UniTask<bool> LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
-    - id: fileName
+    - id: filePath
       type: System.String
       description: the file whereof the object data will be load
     - id: objects
-      type: '{T}[]'
+      type: SaveSystem.IPersistentObject[]
       description: the objects which will be load
     - id: asyncMode
       type: SaveSystem.AsyncMode
@@ -380,210 +409,27 @@ items:
       type: System.Threading.CancellationTokenSource
     - id: onComplete
       type: System.Action
-    typeParameters:
-    - id: T
     return:
       type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
       description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjectsAsync(Of T As IPersistentObject)(fileName As String, objects As T(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+    content.vb: >-
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+
+      Public Shared Function LoadObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectsAsync*
   exceptions:
   - type: System.OperationCanceledException
     commentId: T:System.OperationCanceledException
     description: throws when loading is canceled
-  nameWithType.vb: DataManager.LoadObjectsAsync(Of T)(String, T(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.LoadObjectsAsync(Of T)(String, T(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
-  name.vb: LoadObjectsAsync(Of T)(String, T(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  id: SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  parent: SaveSystem.DataManager
-  langs:
-  - csharp
-  - vb
-  name: SaveObjectAsyncAdvanced<T>(string, T, CancellationTokenSource, Action)
-  nameWithType: DataManager.SaveObjectAsyncAdvanced<T>(string, T, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.SaveObjectAsyncAdvanced<T>(string, T, System.Threading.CancellationTokenSource, System.Action)
-  type: Method
-  source:
-    id: SaveObjectAsyncAdvanced
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 319
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem
-  summary: Save one object async
-  example: []
-  syntax:
-    content: 'public static UniTask SaveObjectAsyncAdvanced<T>(string fileName, T obj, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync'
-    parameters:
-    - id: fileName
-      type: System.String
-      description: the file where the object data will be saved
-    - id: obj
-      type: '{T}'
-      description: the object which will be saved
-    - id: source
-      type: System.Threading.CancellationTokenSource
-    - id: onComplete
-      type: System.Action
-    typeParameters:
-    - id: T
-    return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Shared Function SaveObjectAsyncAdvanced(Of T As IPersistentObjectAsync)(fileName As String, obj As T, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
-  overload: SaveSystem.DataManager.SaveObjectAsyncAdvanced*
-  exceptions:
-  - type: System.OperationCanceledException
-    commentId: T:System.OperationCanceledException
-    description: throws when saving is canceled
-  nameWithType.vb: DataManager.SaveObjectAsyncAdvanced(Of T)(String, T, CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.SaveObjectAsyncAdvanced(Of T)(String, T, System.Threading.CancellationTokenSource, System.Action)
-  name.vb: SaveObjectAsyncAdvanced(Of T)(String, T, CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  id: SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  parent: SaveSystem.DataManager
-  langs:
-  - csharp
-  - vb
-  name: SaveObjectsAsyncAdvanced<T>(string, T[], IProgress<float>, CancellationTokenSource, Action)
-  nameWithType: DataManager.SaveObjectsAsyncAdvanced<T>(string, T[], IProgress<float>, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.SaveObjectsAsyncAdvanced<T>(string, T[], System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
-  type: Method
-  source:
-    id: SaveObjectsAsyncAdvanced
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 335
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem
-  summary: Save many objects async
-  example: []
-  syntax:
-    content: 'public static UniTask SaveObjectsAsyncAdvanced<T>(string fileName, T[] objects, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync'
-    parameters:
-    - id: fileName
-      type: System.String
-      description: the file where the object data will be saved
-    - id: objects
-      type: '{T}[]'
-      description: the objects which will be saved
-    - id: progress
-      type: System.IProgress{System.Single}
-    - id: source
-      type: System.Threading.CancellationTokenSource
-    - id: onComplete
-      type: System.Action
-    typeParameters:
-    - id: T
-    return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Shared Function SaveObjectsAsyncAdvanced(Of T As IPersistentObjectAsync)(fileName As String, objects As T(), progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
-  overload: SaveSystem.DataManager.SaveObjectsAsyncAdvanced*
-  exceptions:
-  - type: System.OperationCanceledException
-    commentId: T:System.OperationCanceledException
-    description: throws when saving is canceled
-  nameWithType.vb: DataManager.SaveObjectsAsyncAdvanced(Of T)(String, T(), IProgress(Of Single), CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.SaveObjectsAsyncAdvanced(Of T)(String, T(), System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
-  name.vb: SaveObjectsAsyncAdvanced(Of T)(String, T(), IProgress(Of Single), CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  id: LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  parent: SaveSystem.DataManager
-  langs:
-  - csharp
-  - vb
-  name: LoadObjectAsyncAdvanced<T>(string, T, CancellationTokenSource, Action)
-  nameWithType: DataManager.LoadObjectAsyncAdvanced<T>(string, T, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.LoadObjectAsyncAdvanced<T>(string, T, System.Threading.CancellationTokenSource, System.Action)
-  type: Method
-  source:
-    id: LoadObjectAsyncAdvanced
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 391
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem
-  summary: Load one object async
-  example: []
-  syntax:
-    content: 'public static UniTask<bool> LoadObjectAsyncAdvanced<T>(string fileName, T obj, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync'
-    parameters:
-    - id: fileName
-      type: System.String
-      description: the file whereof the object data will be load
-    - id: obj
-      type: '{T}'
-      description: the object which will be load
-    - id: source
-      type: System.Threading.CancellationTokenSource
-    - id: onComplete
-      type: System.Action
-    typeParameters:
-    - id: T
-    return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
-      description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjectAsyncAdvanced(Of T As IPersistentObjectAsync)(fileName As String, obj As T, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
-  overload: SaveSystem.DataManager.LoadObjectAsyncAdvanced*
-  exceptions:
-  - type: System.OperationCanceledException
-    commentId: T:System.OperationCanceledException
-    description: throws when loading is canceled
-  nameWithType.vb: DataManager.LoadObjectAsyncAdvanced(Of T)(String, T, CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.LoadObjectAsyncAdvanced(Of T)(String, T, System.Threading.CancellationTokenSource, System.Action)
-  name.vb: LoadObjectAsyncAdvanced(Of T)(String, T, CancellationTokenSource, Action)
-- uid: SaveSystem.DataManager.LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  commentId: M:SaveSystem.DataManager.LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  id: LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  parent: SaveSystem.DataManager
-  langs:
-  - csharp
-  - vb
-  name: LoadObjectsAsyncAdvanced<T>(string, T[], IProgress<float>, CancellationTokenSource, Action)
-  nameWithType: DataManager.LoadObjectsAsyncAdvanced<T>(string, T[], IProgress<float>, CancellationTokenSource, Action)
-  fullName: SaveSystem.DataManager.LoadObjectsAsyncAdvanced<T>(string, T[], System.IProgress<float>, System.Threading.CancellationTokenSource, System.Action)
-  type: Method
-  source:
-    id: LoadObjectsAsyncAdvanced
-    path: c:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 407
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem
-  summary: Load many objects async
-  example: []
-  syntax:
-    content: 'public static UniTask<bool> LoadObjectsAsyncAdvanced<T>(string fileName, T[] objects, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null) where T : IPersistentObjectAsync'
-    parameters:
-    - id: fileName
-      type: System.String
-      description: the file whereof the object data will be load
-    - id: objects
-      type: '{T}[]'
-      description: the objects which will be load
-    - id: progress
-      type: System.IProgress{System.Single}
-    - id: source
-      type: System.Threading.CancellationTokenSource
-    - id: onComplete
-      type: System.Action
-    typeParameters:
-    - id: T
-    return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
-      description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjectsAsyncAdvanced(Of T As IPersistentObjectAsync)(fileName As String, objects As T(), progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
-  overload: SaveSystem.DataManager.LoadObjectsAsyncAdvanced*
-  exceptions:
-  - type: System.OperationCanceledException
-    commentId: T:System.OperationCanceledException
-    description: throws when loading is canceled
-  nameWithType.vb: DataManager.LoadObjectsAsyncAdvanced(Of T)(String, T(), IProgress(Of Single), CancellationTokenSource, Action)
-  fullName.vb: SaveSystem.DataManager.LoadObjectsAsyncAdvanced(Of T)(String, T(), System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
-  name.vb: LoadObjectsAsyncAdvanced(Of T)(String, T(), IProgress(Of Single), CancellationTokenSource, Action)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+  nameWithType.vb: DataManager.LoadObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
+  fullName.vb: SaveSystem.DataManager.LoadObjectsAsync(String, SaveSystem.IPersistentObject(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
+  name.vb: LoadObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
 references:
 - uid: SaveSystem
   commentId: N:SaveSystem
@@ -857,26 +703,104 @@ references:
   fullName: T
 - uid: SaveSystem.DataManager.SaveObjects*
   commentId: Overload:SaveSystem.DataManager.SaveObjects
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjects``1(System.String,``0[])
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
   name: SaveObjects
   nameWithType: DataManager.SaveObjects
   fullName: SaveSystem.DataManager.SaveObjects
-- uid: '{T}[]'
-  isExternal: true
-  name: T[]
-  nameWithType: T[]
-  fullName: T[]
-  nameWithType.vb: T()
-  fullName.vb: T()
-  name.vb: T()
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
   - name: T
-  - name: '['
-  - name: ']'
+  - name: '>'
   spec.vb:
-  - name: T
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: (
+  - name: Of
+  - name: " "
+  - name: T
   - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: SaveSystem.DataManager.LoadObject*
   commentId: Overload:SaveSystem.DataManager.LoadObject
   href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObject``1(System.String,``0)
@@ -896,7 +820,7 @@ references:
   name.vb: Boolean
 - uid: SaveSystem.DataManager.LoadObjects*
   commentId: Overload:SaveSystem.DataManager.LoadObjects
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjects``1(System.String,``0[])
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
   name: LoadObjects
   nameWithType: DataManager.LoadObjects
   fullName: SaveSystem.DataManager.LoadObjects
@@ -909,10 +833,17 @@ references:
   fullName: System.OperationCanceledException
 - uid: SaveSystem.DataManager.SaveObjectAsync*
   commentId: Overload:SaveSystem.DataManager.SaveObjectAsync
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   name: SaveObjectAsync
   nameWithType: DataManager.SaveObjectAsync
   fullName: SaveSystem.DataManager.SaveObjectAsync
+- uid: SaveSystem.IPersistentObject
+  commentId: T:SaveSystem.IPersistentObject
+  parent: SaveSystem
+  href: SaveSystem.IPersistentObject.html
+  name: IPersistentObject
+  nameWithType: IPersistentObject
+  fullName: SaveSystem.IPersistentObject
 - uid: SaveSystem.AsyncMode
   commentId: T:SaveSystem.AsyncMode
   parent: SaveSystem
@@ -994,10 +925,31 @@ references:
     name: Tasks
 - uid: SaveSystem.DataManager.SaveObjectsAsync*
   commentId: Overload:SaveSystem.DataManager.SaveObjectsAsync
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   name: SaveObjectsAsync
   nameWithType: DataManager.SaveObjectsAsync
   fullName: SaveSystem.DataManager.SaveObjectsAsync
+- uid: SaveSystem.IPersistentObject[]
+  isExternal: true
+  href: SaveSystem.IPersistentObject.html
+  name: IPersistentObject[]
+  nameWithType: IPersistentObject[]
+  fullName: SaveSystem.IPersistentObject[]
+  nameWithType.vb: IPersistentObject()
+  fullName.vb: SaveSystem.IPersistentObject()
+  name.vb: IPersistentObject()
+  spec.csharp:
+  - uid: SaveSystem.IPersistentObject
+    name: IPersistentObject
+    href: SaveSystem.IPersistentObject.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SaveSystem.IPersistentObject
+    name: IPersistentObject
+    href: SaveSystem.IPersistentObject.html
+  - name: (
+  - name: )
 - uid: System.IProgress{System.Single}
   commentId: T:System.IProgress{System.Single}
   parent: System
@@ -1063,7 +1015,7 @@ references:
   - name: )
 - uid: SaveSystem.DataManager.LoadObjectAsync*
   commentId: Overload:SaveSystem.DataManager.LoadObjectAsync
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectAsync``1(System.String,``0,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   name: LoadObjectAsync
   nameWithType: DataManager.LoadObjectAsync
   fullName: SaveSystem.DataManager.LoadObjectAsync
@@ -1122,31 +1074,7 @@ references:
   - name: )
 - uid: SaveSystem.DataManager.LoadObjectsAsync*
   commentId: Overload:SaveSystem.DataManager.LoadObjectsAsync
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectsAsync``1(System.String,``0[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   name: LoadObjectsAsync
   nameWithType: DataManager.LoadObjectsAsync
   fullName: SaveSystem.DataManager.LoadObjectsAsync
-- uid: SaveSystem.DataManager.SaveObjectAsyncAdvanced*
-  commentId: Overload:SaveSystem.DataManager.SaveObjectAsyncAdvanced
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  name: SaveObjectAsyncAdvanced
-  nameWithType: DataManager.SaveObjectAsyncAdvanced
-  fullName: SaveSystem.DataManager.SaveObjectAsyncAdvanced
-- uid: SaveSystem.DataManager.SaveObjectsAsyncAdvanced*
-  commentId: Overload:SaveSystem.DataManager.SaveObjectsAsyncAdvanced
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  name: SaveObjectsAsyncAdvanced
-  nameWithType: DataManager.SaveObjectsAsyncAdvanced
-  fullName: SaveSystem.DataManager.SaveObjectsAsyncAdvanced
-- uid: SaveSystem.DataManager.LoadObjectAsyncAdvanced*
-  commentId: Overload:SaveSystem.DataManager.LoadObjectAsyncAdvanced
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectAsyncAdvanced``1(System.String,``0,System.Threading.CancellationTokenSource,System.Action)
-  name: LoadObjectAsyncAdvanced
-  nameWithType: DataManager.LoadObjectAsyncAdvanced
-  fullName: SaveSystem.DataManager.LoadObjectAsyncAdvanced
-- uid: SaveSystem.DataManager.LoadObjectsAsyncAdvanced*
-  commentId: Overload:SaveSystem.DataManager.LoadObjectsAsyncAdvanced
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjectsAsyncAdvanced``1(System.String,``0[],System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
-  name: LoadObjectsAsyncAdvanced
-  nameWithType: DataManager.LoadObjectsAsyncAdvanced
-  fullName: SaveSystem.DataManager.LoadObjectsAsyncAdvanced

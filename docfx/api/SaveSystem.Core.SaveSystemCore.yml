@@ -1,0 +1,1151 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Core.SaveSystemCore
+  commentId: T:SaveSystem.Core.SaveSystemCore
+  id: SaveSystemCore
+  parent: SaveSystem.Core
+  children:
+  - SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)
+  - SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)
+  - SaveSystem.Core.SaveSystemCore.DebugEnabled
+  - SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  - SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  - SaveSystem.Core.SaveSystemCore.IsParallel
+  - SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
+  - SaveSystem.Core.SaveSystemCore.OnSaveEnd
+  - SaveSystem.Core.SaveSystemCore.OnSaveStart
+  - SaveSystem.Core.SaveSystemCore.PlayerTag
+  - SaveSystem.Core.SaveSystemCore.QuickSave
+  - SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  - SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  - SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  - SaveSystem.Core.SaveSystemCore.SavePeriod
+  langs:
+  - csharp
+  - vb
+  name: SaveSystemCore
+  nameWithType: SaveSystemCore
+  fullName: SaveSystem.Core.SaveSystemCore
+  type: Class
+  source:
+    id: SaveSystemCore
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 29
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: >-
+    The Core of the Save System. It accepts <xref href="SaveSystem.Handlers.ObjectHandler%601?text=object+handlers" data-throw-if-not-resolved="false"></xref>
+
+    and <xref href="SaveSystem.IPersistentObject?text=persistent+objects" data-throw-if-not-resolved="false"></xref>
+
+    and starts saving in three main modes - autosave, quick-save and save at checkpoint.
+
+    Also it starts the saving when the player exit the game
+  example: []
+  syntax:
+    content: public static class SaveSystemCore
+    content.vb: Public Module SaveSystemCore
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  commentId: P:SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  id: EnabledSaveEvents
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: EnabledSaveEvents
+  nameWithType: SaveSystemCore.EnabledSaveEvents
+  fullName: SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  type: Property
+  source:
+    id: EnabledSaveEvents
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 39
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: It's used to manage autosave loop, save on focus changed, on low memory and on quitting the game
+  example: []
+  syntax:
+    content: public static SaveEvents EnabledSaveEvents { get; set; }
+    parameters: []
+    return:
+      type: SaveSystem.Core.SaveEvents
+    content.vb: Public Shared Property EnabledSaveEvents As SaveEvents
+  overload: SaveSystem.Core.SaveSystemCore.EnabledSaveEvents*
+  seealso:
+  - linkId: SaveSystem.Core.SaveEvents
+    commentId: T:SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveSystemCore.SavePeriod
+  commentId: P:SaveSystem.Core.SaveSystemCore.SavePeriod
+  id: SavePeriod
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: SavePeriod
+  nameWithType: SaveSystemCore.SavePeriod
+  fullName: SaveSystem.Core.SaveSystemCore.SavePeriod
+  type: Property
+  source:
+    id: SavePeriod
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 46
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: It's used into autosave loop to determine saving frequency
+  remarks: If it equals 0, saving will be executed at every frame
+  example: []
+  syntax:
+    content: public static float SavePeriod { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+      description: Saving period in seconds
+    content.vb: Public Shared Property SavePeriod As Single
+  overload: SaveSystem.Core.SaveSystemCore.SavePeriod*
+- uid: SaveSystem.Core.SaveSystemCore.IsParallel
+  commentId: P:SaveSystem.Core.SaveSystemCore.IsParallel
+  id: IsParallel
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: IsParallel
+  nameWithType: SaveSystemCore.IsParallel
+  fullName: SaveSystem.Core.SaveSystemCore.IsParallel
+  type: Property
+  source:
+    id: IsParallel
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 51
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Configure it to set parallel saving handlers
+  example: []
+  syntax:
+    content: public static bool IsParallel { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property IsParallel As Boolean
+  overload: SaveSystem.Core.SaveSystemCore.IsParallel*
+- uid: SaveSystem.Core.SaveSystemCore.DebugEnabled
+  commentId: P:SaveSystem.Core.SaveSystemCore.DebugEnabled
+  id: DebugEnabled
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: DebugEnabled
+  nameWithType: SaveSystemCore.DebugEnabled
+  fullName: SaveSystem.Core.SaveSystemCore.DebugEnabled
+  type: Property
+  source:
+    id: DebugEnabled
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 59
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Enables logs
+  remarks: It configures only simple logs, other logs (warnings and errors) will be written to console anyway.
+  example: []
+  syntax:
+    content: public static bool DebugEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property DebugEnabled As Boolean
+  overload: SaveSystem.Core.SaveSystemCore.DebugEnabled*
+- uid: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  commentId: P:SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  id: DestroyCheckPoints
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: DestroyCheckPoints
+  nameWithType: SaveSystemCore.DestroyCheckPoints
+  fullName: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  type: Property
+  source:
+    id: DestroyCheckPoints
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 65
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Determines whether checkpoints will be destroyed after saving
+  example: []
+  syntax:
+    content: public static bool DestroyCheckPoints { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: If true, triggered checkpoint will be deleted from scene after saving
+    content.vb: Public Shared Property DestroyCheckPoints As Boolean
+  overload: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints*
+- uid: SaveSystem.Core.SaveSystemCore.PlayerTag
+  commentId: P:SaveSystem.Core.SaveSystemCore.PlayerTag
+  id: PlayerTag
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: PlayerTag
+  nameWithType: SaveSystemCore.PlayerTag
+  fullName: SaveSystem.Core.SaveSystemCore.PlayerTag
+  type: Property
+  source:
+    id: PlayerTag
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 71
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Player tag is used to filtering messages from triggered checkpoints
+  example: []
+  syntax:
+    content: public static string PlayerTag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: Tag of the player object
+    content.vb: Public Shared Property PlayerTag As String
+  overload: SaveSystem.Core.SaveSystemCore.PlayerTag*
+- uid: SaveSystem.Core.SaveSystemCore.OnSaveStart
+  commentId: E:SaveSystem.Core.SaveSystemCore.OnSaveStart
+  id: OnSaveStart
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: OnSaveStart
+  nameWithType: SaveSystemCore.OnSaveStart
+  fullName: SaveSystem.Core.SaveSystemCore.OnSaveStart
+  type: Event
+  source:
+    id: OnSaveStart
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 80
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Event that is called before saving. It can be useful when you use async saving
+  example: []
+  syntax:
+    content: public static event Action<SaveType> OnSaveStart
+    return:
+      type: System.Action{SaveSystem.Core.SaveType}
+      description: >-
+        Listeners that will be called when core will start saving.
+
+        Listeners must accept <xref href="SaveSystem.Core.SaveType" data-throw-if-not-resolved="false"></xref> enumeration
+    content.vb: Public Shared Event OnSaveStart As Action(Of SaveType)
+- uid: SaveSystem.Core.SaveSystemCore.OnSaveEnd
+  commentId: E:SaveSystem.Core.SaveSystemCore.OnSaveEnd
+  id: OnSaveEnd
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: OnSaveEnd
+  nameWithType: SaveSystemCore.OnSaveEnd
+  fullName: SaveSystem.Core.SaveSystemCore.OnSaveEnd
+  type: Event
+  source:
+    id: OnSaveEnd
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 89
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Event that is called after saving
+  example: []
+  syntax:
+    content: public static event Action<SaveType> OnSaveEnd
+    return:
+      type: System.Action{SaveSystem.Core.SaveType}
+      description: >-
+        Listeners that will be called when core will finish saving.
+
+        Listeners must accept <xref href="SaveSystem.Core.SaveType" data-throw-if-not-resolved="false"></xref> enumeration
+    content.vb: Public Shared Event OnSaveEnd As Action(Of SaveType)
+- uid: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  commentId: M:SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  id: RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: RegisterObjectHandler(IObjectHandler)
+  nameWithType: SaveSystemCore.RegisterObjectHandler(IObjectHandler)
+  fullName: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  type: Method
+  source:
+    id: RegisterObjectHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 152
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Registers a handler to automatic save, quick-save, save at checkpoit and at save on exit
+  example: []
+  syntax:
+    content: public static void RegisterObjectHandler(IObjectHandler handler)
+    parameters:
+    - id: handler
+      type: SaveSystem.Handlers.IObjectHandler
+    content.vb: Public Shared Sub RegisterObjectHandler(handler As IObjectHandler)
+  overload: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler*
+- uid: SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  commentId: M:SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  id: RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsyncObjectHandler(IAsyncObjectHandler)
+  nameWithType: SaveSystemCore.RegisterAsyncObjectHandler(IAsyncObjectHandler)
+  fullName: SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  type: Method
+  source:
+    id: RegisterAsyncObjectHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 166
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Registers an async handler to automatic save, quick-save, save at checkpoit and at save on exit
+  example: []
+  syntax:
+    content: public static void RegisterAsyncObjectHandler(IAsyncObjectHandler handler)
+    parameters:
+    - id: handler
+      type: SaveSystem.Handlers.IAsyncObjectHandler
+    content.vb: Public Shared Sub RegisterAsyncObjectHandler(handler As IAsyncObjectHandler)
+  overload: SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler*
+- uid: SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)
+  commentId: M:SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)
+  id: ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: ConfigureParameters(SaveEvents, bool, bool, bool, string, float)
+  nameWithType: SaveSystemCore.ConfigureParameters(SaveEvents, bool, bool, bool, string, float)
+  fullName: SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents, bool, bool, bool, string, float)
+  type: Method
+  source:
+    id: ConfigureParameters
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 187
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Configures all the Core parameters
+  remarks: You can skip it if you have configured the settings in the editor
+  example: []
+  syntax:
+    content: public static void ConfigureParameters(SaveEvents enabledSaveEvents, bool isParallel, bool debugEnabled, bool destroyCheckPoints, string playerTag, float savePeriod = 0)
+    parameters:
+    - id: enabledSaveEvents
+      type: SaveSystem.Core.SaveEvents
+      description: ''
+    - id: isParallel
+      type: System.Boolean
+      description: ''
+    - id: debugEnabled
+      type: System.Boolean
+      description: <xref href="SaveSystem.Core.SaveSystemCore.DebugEnabled" data-throw-if-not-resolved="false"></xref>
+    - id: destroyCheckPoints
+      type: System.Boolean
+      description: <xref href="SaveSystem.Core.SaveSystemCore.DestroyCheckPoints" data-throw-if-not-resolved="false"></xref>
+    - id: playerTag
+      type: System.String
+      description: <xref href="SaveSystem.Core.SaveSystemCore.PlayerTag" data-throw-if-not-resolved="false"></xref>
+    - id: savePeriod
+      type: System.Single
+      description: <xref href="SaveSystem.Core.SaveSystemCore.SavePeriod" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Shared Sub ConfigureParameters(enabledSaveEvents As SaveEvents, isParallel As Boolean, debugEnabled As Boolean, destroyCheckPoints As Boolean, playerTag As String, savePeriod As Single = 0)
+  overload: SaveSystem.Core.SaveSystemCore.ConfigureParameters*
+  nameWithType.vb: SaveSystemCore.ConfigureParameters(SaveEvents, Boolean, Boolean, Boolean, String, Single)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents, Boolean, Boolean, Boolean, String, Single)
+  name.vb: ConfigureParameters(SaveEvents, Boolean, Boolean, Boolean, String, Single)
+- uid: SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
+  commentId: M:SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
+  id: ObserveProgress(System.IProgress{System.Single})
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: ObserveProgress(IProgress<float>)
+  nameWithType: SaveSystemCore.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress<float>)
+  type: Method
+  source:
+    id: ObserveProgress
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 234
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: >-
+    Pass <xref href="System.IProgress%601?text=+IProgress+object+" data-throw-if-not-resolved="false"></xref> to observe async saving progress
+
+    when it'll be started
+  remarks: The Core will report progress only during async save
+  example: []
+  syntax:
+    content: public static void ObserveProgress(IProgress<float> progress)
+    parameters:
+    - id: progress
+      type: System.IProgress{System.Single}
+    content.vb: Public Shared Sub ObserveProgress(progress As IProgress(Of Single))
+  overload: SaveSystem.Core.SaveSystemCore.ObserveProgress*
+  nameWithType.vb: SaveSystemCore.ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress(Of Single))
+  name.vb: ObserveProgress(IProgress(Of Single))
+- uid: SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)
+  commentId: M:SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)
+  id: BindKey(UnityEngine.KeyCode)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: BindKey(KeyCode)
+  nameWithType: SaveSystemCore.BindKey(KeyCode)
+  fullName: SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)
+  type: Method
+  source:
+    id: BindKey
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 245
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Binds any key with quick save
+  example: []
+  syntax:
+    content: public static void BindKey(KeyCode keyCode)
+    parameters:
+    - id: keyCode
+      type: UnityEngine.KeyCode
+    content.vb: Public Shared Sub BindKey(keyCode As KeyCode)
+  overload: SaveSystem.Core.SaveSystemCore.BindKey*
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  id: SaveAndQuit
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: SaveAndQuit()
+  nameWithType: SaveSystemCore.SaveAndQuit()
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit()
+  type: Method
+  source:
+    id: SaveAndQuit
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 260
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Call this to manually save handlers before quitting the application
+  remarks: >-
+    This will immediately exit the game after saving.
+
+    You should make sure that you don't need to do anything else before calling it
+  example: []
+  syntax:
+    content: public static UniTask SaveAndQuit()
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Shared Function SaveAndQuit() As UniTask
+  overload: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
+- uid: SaveSystem.Core.SaveSystemCore.QuickSave
+  commentId: M:SaveSystem.Core.SaveSystemCore.QuickSave
+  id: QuickSave
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: QuickSave()
+  nameWithType: SaveSystemCore.QuickSave()
+  fullName: SaveSystem.Core.SaveSystemCore.QuickSave()
+  type: Method
+  source:
+    id: QuickSave
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
+    startLine: 286
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: You can call it when any event was happened
+  example: []
+  syntax:
+    content: public static void QuickSave()
+    content.vb: Public Shared Sub QuickSave()
+  overload: SaveSystem.Core.SaveSystemCore.QuickSave*
+references:
+- uid: SaveSystem.Handlers.ObjectHandler`1
+  commentId: T:SaveSystem.Handlers.ObjectHandler`1
+  href: SaveSystem.Handlers.ObjectHandler-1.html
+  name: ObjectHandler<TO>
+  nameWithType: ObjectHandler<TO>
+  fullName: SaveSystem.Handlers.ObjectHandler<TO>
+  nameWithType.vb: ObjectHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
+  name.vb: ObjectHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler
+    href: SaveSystem.Handlers.ObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.IPersistentObject
+  commentId: T:SaveSystem.IPersistentObject
+  parent: SaveSystem
+  href: SaveSystem.IPersistentObject.html
+  name: IPersistentObject
+  nameWithType: IPersistentObject
+  fullName: SaveSystem.IPersistentObject
+- uid: SaveSystem.Core
+  commentId: N:SaveSystem.Core
+  href: SaveSystem.html
+  name: SaveSystem.Core
+  nameWithType: SaveSystem.Core
+  fullName: SaveSystem.Core
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Core
+    name: Core
+    href: SaveSystem.Core.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SaveSystem.Core.SaveEvents
+  commentId: T:SaveSystem.Core.SaveEvents
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveEvents.html
+  name: SaveEvents
+  nameWithType: SaveEvents
+  fullName: SaveSystem.Core.SaveEvents
+- uid: SaveSystem.Core.SaveSystemCore.EnabledSaveEvents*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+  name: EnabledSaveEvents
+  nameWithType: SaveSystemCore.EnabledSaveEvents
+  fullName: SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
+- uid: SaveSystem.Core.SaveSystemCore.SavePeriod*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.SavePeriod
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SavePeriod
+  name: SavePeriod
+  nameWithType: SaveSystemCore.SavePeriod
+  fullName: SaveSystem.Core.SaveSystemCore.SavePeriod
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: SaveSystem.Core.SaveSystemCore.IsParallel*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.IsParallel
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.IsParallel
+  name: IsParallel
+  nameWithType: SaveSystemCore.IsParallel
+  fullName: SaveSystem.Core.SaveSystemCore.IsParallel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SaveSystem.Core.SaveSystemCore.DebugEnabled*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.DebugEnabled
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.DebugEnabled
+  name: DebugEnabled
+  nameWithType: SaveSystemCore.DebugEnabled
+  fullName: SaveSystem.Core.SaveSystemCore.DebugEnabled
+- uid: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  name: DestroyCheckPoints
+  nameWithType: SaveSystemCore.DestroyCheckPoints
+  fullName: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+- uid: SaveSystem.Core.SaveSystemCore.PlayerTag*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.PlayerTag
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.PlayerTag
+  name: PlayerTag
+  nameWithType: SaveSystemCore.PlayerTag
+  fullName: SaveSystem.Core.SaveSystemCore.PlayerTag
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SaveSystem.Core.SaveType
+  commentId: T:SaveSystem.Core.SaveType
+  parent: SaveSystem.Core
+  href: SaveSystem.Core.SaveType.html
+  name: SaveType
+  nameWithType: SaveType
+  fullName: SaveSystem.Core.SaveType
+- uid: System.Action{SaveSystem.Core.SaveType}
+  commentId: T:System.Action{SaveSystem.Core.SaveType}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<SaveType>
+  nameWithType: Action<SaveType>
+  fullName: System.Action<SaveSystem.Core.SaveType>
+  nameWithType.vb: Action(Of SaveType)
+  fullName.vb: System.Action(Of SaveSystem.Core.SaveType)
+  name.vb: Action(Of SaveType)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: SaveSystem.Core.SaveType
+    name: SaveType
+    href: SaveSystem.Core.SaveType.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SaveSystem.Core.SaveType
+    name: SaveType
+    href: SaveSystem.Core.SaveType.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.RegisterObjectHandler
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  name: RegisterObjectHandler
+  nameWithType: SaveSystemCore.RegisterObjectHandler
+  fullName: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler
+- uid: SaveSystem.Handlers.IObjectHandler
+  commentId: T:SaveSystem.Handlers.IObjectHandler
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.IObjectHandler.html
+  name: IObjectHandler
+  nameWithType: IObjectHandler
+  fullName: SaveSystem.Handlers.IObjectHandler
+- uid: SaveSystem.Handlers
+  commentId: N:SaveSystem.Handlers
+  href: SaveSystem.html
+  name: SaveSystem.Handlers
+  nameWithType: SaveSystem.Handlers
+  fullName: SaveSystem.Handlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.Handlers
+    name: Handlers
+    href: SaveSystem.Handlers.html
+- uid: SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
+  name: RegisterAsyncObjectHandler
+  nameWithType: SaveSystemCore.RegisterAsyncObjectHandler
+  fullName: SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler
+- uid: SaveSystem.Handlers.IAsyncObjectHandler
+  commentId: T:SaveSystem.Handlers.IAsyncObjectHandler
+  parent: SaveSystem.Handlers
+  href: SaveSystem.Handlers.IAsyncObjectHandler.html
+  name: IAsyncObjectHandler
+  nameWithType: IAsyncObjectHandler
+  fullName: SaveSystem.Handlers.IAsyncObjectHandler
+- uid: SaveSystem.Core.SaveSystemCore.DebugEnabled
+  commentId: P:SaveSystem.Core.SaveSystemCore.DebugEnabled
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.DebugEnabled
+  name: DebugEnabled
+  nameWithType: SaveSystemCore.DebugEnabled
+  fullName: SaveSystem.Core.SaveSystemCore.DebugEnabled
+- uid: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  commentId: P:SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+  name: DestroyCheckPoints
+  nameWithType: SaveSystemCore.DestroyCheckPoints
+  fullName: SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
+- uid: SaveSystem.Core.SaveSystemCore.PlayerTag
+  commentId: P:SaveSystem.Core.SaveSystemCore.PlayerTag
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.PlayerTag
+  name: PlayerTag
+  nameWithType: SaveSystemCore.PlayerTag
+  fullName: SaveSystem.Core.SaveSystemCore.PlayerTag
+- uid: SaveSystem.Core.SaveSystemCore.SavePeriod
+  commentId: P:SaveSystem.Core.SaveSystemCore.SavePeriod
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SavePeriod
+  name: SavePeriod
+  nameWithType: SaveSystemCore.SavePeriod
+  fullName: SaveSystem.Core.SaveSystemCore.SavePeriod
+- uid: SaveSystem.Core.SaveSystemCore.ConfigureParameters*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.ConfigureParameters
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.ConfigureParameters(SaveSystem.Core.SaveEvents,System.Boolean,System.Boolean,System.Boolean,System.String,System.Single)
+  name: ConfigureParameters
+  nameWithType: SaveSystemCore.ConfigureParameters
+  fullName: SaveSystem.Core.SaveSystemCore.ConfigureParameters
+- uid: System.IProgress`1
+  commentId: T:System.IProgress`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<T>
+  nameWithType: IProgress<T>
+  fullName: System.IProgress<T>
+  nameWithType.vb: IProgress(Of T)
+  fullName.vb: System.IProgress(Of T)
+  name.vb: IProgress(Of T)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SaveSystem.Core.SaveSystemCore.ObserveProgress*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.ObserveProgress
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
+  name: ObserveProgress
+  nameWithType: SaveSystemCore.ObserveProgress
+  fullName: SaveSystem.Core.SaveSystemCore.ObserveProgress
+- uid: System.IProgress{System.Single}
+  commentId: T:System.IProgress{System.Single}
+  parent: System
+  definition: System.IProgress`1
+  href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  name: IProgress<float>
+  nameWithType: IProgress<float>
+  fullName: System.IProgress<float>
+  nameWithType.vb: IProgress(Of Single)
+  fullName.vb: System.IProgress(Of Single)
+  name.vb: IProgress(Of Single)
+  spec.csharp:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.IProgress`1
+    name: IProgress
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iprogress-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: SaveSystem.Core.SaveSystemCore.BindKey*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.BindKey
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.BindKey(UnityEngine.KeyCode)
+  name: BindKey
+  nameWithType: SaveSystemCore.BindKey
+  fullName: SaveSystem.Core.SaveSystemCore.BindKey
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  name: SaveAndQuit
+  nameWithType: SaveSystemCore.SaveAndQuit
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+- uid: Cysharp.Threading.Tasks.UniTask
+  commentId: T:Cysharp.Threading.Tasks.UniTask
+  parent: Cysharp.Threading.Tasks
+  name: UniTask
+  nameWithType: UniTask
+  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: SaveSystem.Core.SaveSystemCore.QuickSave*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.QuickSave
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.QuickSave
+  name: QuickSave
+  nameWithType: SaveSystemCore.QuickSave
+  fullName: SaveSystem.Core.SaveSystemCore.QuickSave

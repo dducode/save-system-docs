@@ -7,18 +7,68 @@ items:
     name: AsyncMode
   - uid: SaveSystem.DataManager
     name: DataManager
+  - uid: SaveSystem.DataManager.Advanced
+    name: DataManager.Advanced
   - uid: SaveSystem.IPersistentObject
     name: IPersistentObject
   - uid: SaveSystem.IPersistentObjectAsync
     name: IPersistentObjectAsync
   - uid: SaveSystem.MeshData
     name: MeshData
-  - uid: SaveSystem.UnityAsyncReader
-    name: UnityAsyncReader
-  - uid: SaveSystem.UnityAsyncWriter
-    name: UnityAsyncWriter
-  - uid: SaveSystem.UnityReader
+  - uid: SaveSystem.Storage
+    name: Storage
+- uid: SaveSystem.CheckPoints
+  name: SaveSystem.CheckPoints
+  items:
+  - uid: SaveSystem.CheckPoints.CheckPoint
+    name: CheckPoint
+  - uid: SaveSystem.CheckPoints.CheckPoint2D
+    name: CheckPoint2D
+  - uid: SaveSystem.CheckPoints.CheckPointBase
+    name: CheckPointBase
+  - uid: SaveSystem.CheckPoints.CheckPointsFactory
+    name: CheckPointsFactory
+- uid: SaveSystem.Core
+  name: SaveSystem.Core
+  items:
+  - uid: SaveSystem.Core.SaveEvents
+    name: SaveEvents
+  - uid: SaveSystem.Core.SaveSystemCore
+    name: SaveSystemCore
+  - uid: SaveSystem.Core.SaveSystemSettings
+    name: SaveSystemSettings
+  - uid: SaveSystem.Core.SaveType
+    name: SaveType
+- uid: SaveSystem.Extensions
+  name: SaveSystem.Extensions
+  items:
+  - uid: SaveSystem.Extensions.BinaryHandlersExtensions
+    name: BinaryHandlersExtensions
+- uid: SaveSystem.Handlers
+  name: SaveSystem.Handlers
+  items:
+  - uid: SaveSystem.Handlers.AbstractHandler`2
+    name: AbstractHandler<T, TO>
+    name.vb: AbstractHandler(Of T, TO)
+  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
+    name: AsyncObjectHandler<TO>
+    name.vb: AsyncObjectHandler(Of TO)
+  - uid: SaveSystem.Handlers.HandlingResult
+    name: HandlingResult
+  - uid: SaveSystem.Handlers.IAsyncObjectHandler
+    name: IAsyncObjectHandler
+  - uid: SaveSystem.Handlers.IObjectHandler
+    name: IObjectHandler
+  - uid: SaveSystem.Handlers.ObjectHandler`1
+    name: ObjectHandler<TO>
+    name.vb: ObjectHandler(Of TO)
+  - uid: SaveSystem.Handlers.ObjectHandlersFactory
+    name: ObjectHandlersFactory
+- uid: SaveSystem.UnityHandlers
+  name: SaveSystem.UnityHandlers
+  items:
+  - uid: SaveSystem.UnityHandlers.UnityReader
     name: UnityReader
-  - uid: SaveSystem.UnityWriter
+  - uid: SaveSystem.UnityHandlers.UnityWriter
     name: UnityWriter
 memberLayout: SamePage

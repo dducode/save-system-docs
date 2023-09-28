@@ -1,0 +1,3557 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.UnityHandlers.UnityWriter
+  commentId: T:SaveSystem.UnityHandlers.UnityWriter
+  id: UnityWriter
+  parent: SaveSystem.UnityHandlers
+  children:
+  - SaveSystem.UnityHandlers.UnityWriter.#ctor(System.IO.BinaryWriter,System.String)
+  - SaveSystem.UnityHandlers.UnityWriter.Dispose
+  - SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+  - SaveSystem.UnityHandlers.UnityWriter.Write(SaveSystem.MeshData)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Boolean)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Char)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Char[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Byte})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Char})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Double})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int16})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int32})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int64})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Single})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.String})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Double)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Double[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Single)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Single[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.String)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.String[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Quaternion)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3[])
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4)
+  - SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4[])
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(SaveSystem.MeshData)
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Byte})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Char})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Double})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int16})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int32})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int64})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Single})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.String})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
+  - SaveSystem.UnityHandlers.UnityWriter.WriteObjects``1(System.Collections.Generic.IEnumerable{``0})
+  - SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray``1(``0[])
+  - SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})
+  langs:
+  - csharp
+  - vb
+  name: UnityWriter
+  nameWithType: UnityWriter
+  fullName: SaveSystem.UnityHandlers.UnityWriter
+  type: Class
+  source:
+    id: UnityWriter
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  summary: Adapter to class <xref href="System.IO.BinaryWriter" data-throw-if-not-resolved="false"></xref> for simplify writing data
+  example: []
+  syntax:
+    content: 'public sealed class UnityWriter : IDisposable, IAsyncDisposable'
+    content.vb: Public NotInheritable Class UnityWriter Implements IDisposable, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SaveSystem.UnityHandlers.UnityWriter.#ctor(System.IO.BinaryWriter,System.String)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.#ctor(System.IO.BinaryWriter,System.String)
+  id: '#ctor(System.IO.BinaryWriter,System.String)'
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: UnityWriter(BinaryWriter, string)
+  nameWithType: UnityWriter.UnityWriter(BinaryWriter, string)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.UnityWriter(System.IO.BinaryWriter, string)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 21
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UnityWriter(BinaryWriter writer, string fullPath = "")
+    parameters:
+    - id: writer
+      type: System.IO.BinaryWriter
+    - id: fullPath
+      type: System.String
+    content.vb: Public Sub New(writer As BinaryWriter, fullPath As String = "")
+  overload: SaveSystem.UnityHandlers.UnityWriter.#ctor*
+  nameWithType.vb: UnityWriter.New(BinaryWriter, String)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.New(System.IO.BinaryWriter, String)
+  name.vb: New(BinaryWriter, String)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)
+  id: Write(System.Version)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Version)
+  nameWithType: UnityWriter.Write(Version)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 27
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Version version)
+    parameters:
+    - id: version
+      type: System.Version
+    content.vb: Public Sub Write(version As Version)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2)
+  id: Write(UnityEngine.Vector2)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector2)
+  nameWithType: UnityWriter.Write(Vector2)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 35
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector2 vector2)
+    parameters:
+    - id: vector2
+      type: UnityEngine.Vector2
+    content.vb: Public Sub Write(vector2 As Vector2)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2[])
+  id: Write(UnityEngine.Vector2[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector2[])
+  nameWithType: UnityWriter.Write(Vector2[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 41
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector2[] vector2Array)
+    parameters:
+    - id: vector2Array
+      type: UnityEngine.Vector2[]
+    content.vb: Public Sub Write(vector2Array As Vector2())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Vector2())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector2())
+  name.vb: Write(Vector2())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Vector2>)
+  nameWithType: UnityWriter.Write(IEnumerable<Vector2>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Vector2>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 48
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Vector2> vector2Collection)
+    parameters:
+    - id: vector2Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector2}
+    content.vb: Public Sub Write(vector2Collection As IEnumerable(Of Vector2))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Vector2))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector2))
+  name.vb: Write(IEnumerable(Of Vector2))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Vector2>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Vector2>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Vector2>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 54
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Vector2> vector2Collection)
+    parameters:
+    - id: vector2Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector2}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(vector2Collection As IEnumerable(Of Vector2)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector2))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector2))
+  name.vb: WriteAsync(IEnumerable(Of Vector2))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3)
+  id: Write(UnityEngine.Vector3)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector3)
+  nameWithType: UnityWriter.Write(Vector3)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 59
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector3 vector3)
+    parameters:
+    - id: vector3
+      type: UnityEngine.Vector3
+    content.vb: Public Sub Write(vector3 As Vector3)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3[])
+  id: Write(UnityEngine.Vector3[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector3[])
+  nameWithType: UnityWriter.Write(Vector3[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 66
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector3[] vector3Array)
+    parameters:
+    - id: vector3Array
+      type: UnityEngine.Vector3[]
+    content.vb: Public Sub Write(vector3Array As Vector3())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Vector3())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector3())
+  name.vb: Write(Vector3())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Vector3>)
+  nameWithType: UnityWriter.Write(IEnumerable<Vector3>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Vector3>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 73
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Vector3> vector3Collection)
+    parameters:
+    - id: vector3Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector3}
+    content.vb: Public Sub Write(vector3Collection As IEnumerable(Of Vector3))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Vector3))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector3))
+  name.vb: Write(IEnumerable(Of Vector3))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector3})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Vector3>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Vector3>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Vector3>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 79
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Vector3> vector3Collection)
+    parameters:
+    - id: vector3Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector3}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(vector3Collection As IEnumerable(Of Vector3)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector3))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector3))
+  name.vb: WriteAsync(IEnumerable(Of Vector3))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4)
+  id: Write(UnityEngine.Vector4)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector4)
+  nameWithType: UnityWriter.Write(Vector4)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 84
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector4 vector4)
+    parameters:
+    - id: vector4
+      type: UnityEngine.Vector4
+    content.vb: Public Sub Write(vector4 As Vector4)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4[])
+  id: Write(UnityEngine.Vector4[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Vector4[])
+  nameWithType: UnityWriter.Write(Vector4[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 92
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Vector4[] vector4Array)
+    parameters:
+    - id: vector4Array
+      type: UnityEngine.Vector4[]
+    content.vb: Public Sub Write(vector4Array As Vector4())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Vector4())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Vector4())
+  name.vb: Write(Vector4())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Vector4>)
+  nameWithType: UnityWriter.Write(IEnumerable<Vector4>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Vector4>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 99
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Vector4> vector4Collection)
+    parameters:
+    - id: vector4Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector4}
+    content.vb: Public Sub Write(vector4Collection As IEnumerable(Of Vector4))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Vector4))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector4))
+  name.vb: Write(IEnumerable(Of Vector4))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector4})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Vector4>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Vector4>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Vector4>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 105
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Vector4> vector4Collection)
+    parameters:
+    - id: vector4Collection
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Vector4}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(vector4Collection As IEnumerable(Of Vector4)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector4))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector4))
+  name.vb: WriteAsync(IEnumerable(Of Vector4))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Quaternion)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Quaternion)
+  id: Write(UnityEngine.Quaternion)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Quaternion)
+  nameWithType: UnityWriter.Write(Quaternion)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Quaternion)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 110
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Quaternion rotation)
+    parameters:
+    - id: rotation
+      type: UnityEngine.Quaternion
+    content.vb: Public Sub Write(rotation As Quaternion)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color)
+  id: Write(UnityEngine.Color)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color)
+  nameWithType: UnityWriter.Write(Color)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 118
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Color color)
+    parameters:
+    - id: color
+      type: UnityEngine.Color
+    content.vb: Public Sub Write(color As Color)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color[])
+  id: Write(UnityEngine.Color[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color[])
+  nameWithType: UnityWriter.Write(Color[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 126
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Color[] colors)
+    parameters:
+    - id: colors
+      type: UnityEngine.Color[]
+    content.vb: Public Sub Write(colors As Color())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Color())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color())
+  name.vb: Write(Color())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Color>)
+  nameWithType: UnityWriter.Write(IEnumerable<Color>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Color>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 133
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Color> colors)
+    parameters:
+    - id: colors
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Color}
+    content.vb: Public Sub Write(colors As IEnumerable(Of Color))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Color))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Color))
+  name.vb: Write(IEnumerable(Of Color))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Color>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Color>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Color>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 139
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Color> colors)
+    parameters:
+    - id: colors
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Color}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(colors As IEnumerable(Of Color)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Color))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Color))
+  name.vb: WriteAsync(IEnumerable(Of Color))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32)
+  id: Write(UnityEngine.Color32)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color32)
+  nameWithType: UnityWriter.Write(Color32)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 144
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Color32 color32)
+    parameters:
+    - id: color32
+      type: UnityEngine.Color32
+    content.vb: Public Sub Write(color32 As Color32)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32[])
+  id: Write(UnityEngine.Color32[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Color32[])
+  nameWithType: UnityWriter.Write(Color32[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 152
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Color32[] colors32)
+    parameters:
+    - id: colors32
+      type: UnityEngine.Color32[]
+    content.vb: Public Sub Write(colors32 As Color32())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Color32())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Color32())
+  name.vb: Write(Color32())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Color32>)
+  nameWithType: UnityWriter.Write(IEnumerable<Color32>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Color32>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 159
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Color32> colors32)
+    parameters:
+    - id: colors32
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Color32}
+    content.vb: Public Sub Write(colors32 As IEnumerable(Of Color32))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Color32))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Color32))
+  name.vb: Write(IEnumerable(Of Color32))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Color32})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Color32>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Color32>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Color32>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 165
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Color32> colors32)
+    parameters:
+    - id: colors32
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Color32}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(colors32 As IEnumerable(Of Color32)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Color32))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Color32))
+  name.vb: WriteAsync(IEnumerable(Of Color32))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4)
+  id: Write(UnityEngine.Matrix4x4)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Matrix4x4)
+  nameWithType: UnityWriter.Write(Matrix4x4)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 170
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Matrix4x4 matrix)
+    parameters:
+    - id: matrix
+      type: UnityEngine.Matrix4x4
+    content.vb: Public Sub Write(matrix As Matrix4x4)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4[])
+  id: Write(UnityEngine.Matrix4x4[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(Matrix4x4[])
+  nameWithType: UnityWriter.Write(Matrix4x4[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 176
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(Matrix4x4[] matrices)
+    parameters:
+    - id: matrices
+      type: UnityEngine.Matrix4x4[]
+    content.vb: Public Sub Write(matrices As Matrix4x4())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Matrix4x4())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(UnityEngine.Matrix4x4())
+  name.vb: Write(Matrix4x4())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  id: Write(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<Matrix4x4>)
+  nameWithType: UnityWriter.Write(IEnumerable<Matrix4x4>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<UnityEngine.Matrix4x4>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 183
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<Matrix4x4> matrices)
+    parameters:
+    - id: matrices
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4}
+    content.vb: Public Sub Write(matrices As IEnumerable(Of Matrix4x4))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Matrix4x4))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of UnityEngine.Matrix4x4))
+  name.vb: Write(IEnumerable(Of Matrix4x4))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<Matrix4x4>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<Matrix4x4>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<UnityEngine.Matrix4x4>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 189
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<Matrix4x4> matrices)
+    parameters:
+    - id: matrices
+      type: System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(matrices As IEnumerable(Of Matrix4x4)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Matrix4x4))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Matrix4x4))
+  name.vb: WriteAsync(IEnumerable(Of Matrix4x4))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(SaveSystem.MeshData)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(SaveSystem.MeshData)
+  id: Write(SaveSystem.MeshData)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(MeshData)
+  nameWithType: UnityWriter.Write(MeshData)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(SaveSystem.MeshData)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 194
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(MeshData mesh)
+    parameters:
+    - id: mesh
+      type: SaveSystem.MeshData
+    content.vb: Public Sub Write(mesh As MeshData)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(SaveSystem.MeshData)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(SaveSystem.MeshData)
+  id: WriteAsync(SaveSystem.MeshData)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(MeshData)
+  nameWithType: UnityWriter.WriteAsync(MeshData)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(SaveSystem.MeshData)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 238
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(MeshData mesh)
+    parameters:
+    - id: mesh
+      type: SaveSystem.MeshData
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(mesh As MeshData) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
+  id: WriteObject``1(``0)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteObject<T>(T)
+  nameWithType: UnityWriter.WriteObject<T>(T)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObject<T>(T)
+  type: Method
+  source:
+    id: WriteObject
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 243
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void WriteObject<T>(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    content.vb: Public Sub WriteObject(Of T)(obj As T)
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteObject*
+  nameWithType.vb: UnityWriter.WriteObject(Of T)(T)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteObject(Of T)(T)
+  name.vb: WriteObject(Of T)(T)
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjects``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteObjects``1(System.Collections.Generic.IEnumerable{``0})
+  id: WriteObjects``1(System.Collections.Generic.IEnumerable{``0})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteObjects<T>(IEnumerable<T>)
+  nameWithType: UnityWriter.WriteObjects<T>(IEnumerable<T>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjects<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: WriteObjects
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 248
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void WriteObjects<T>(IEnumerable<T> objects)
+    parameters:
+    - id: objects
+      type: System.Collections.Generic.IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    content.vb: Public Sub WriteObjects(Of T)(objects As IEnumerable(Of T))
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteObjects*
+  nameWithType.vb: UnityWriter.WriteObjects(Of T)(IEnumerable(Of T))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteObjects(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteObjects(Of T)(IEnumerable(Of T))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})
+  id: WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteObjectsAsync<T>(IEnumerable<T>)
+  nameWithType: UnityWriter.WriteObjectsAsync<T>(IEnumerable<T>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: WriteObjectsAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 254
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteObjectsAsync<T>(IEnumerable<T> objects)
+    parameters:
+    - id: objects
+      type: System.Collections.Generic.IEnumerable{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteObjectsAsync(Of T)(objects As IEnumerable(Of T)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync*
+  nameWithType.vb: UnityWriter.WriteObjectsAsync(Of T)(IEnumerable(Of T))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: WriteObjectsAsync(Of T)(IEnumerable(Of T))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray``1(``0[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray``1(``0[])
+  id: WriteObjectsArray``1(``0[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteObjectsArray<T>(T[])
+  nameWithType: UnityWriter.WriteObjectsArray<T>(T[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray<T>(T[])
+  type: Method
+  source:
+    id: WriteObjectsArray
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 259
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void WriteObjectsArray<T>(T[] arrayObjects)
+    parameters:
+    - id: arrayObjects
+      type: '{T}[]'
+    typeParameters:
+    - id: T
+    content.vb: Public Sub WriteObjectsArray(Of T)(arrayObjects As T())
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray*
+  nameWithType.vb: UnityWriter.WriteObjectsArray(Of T)(T())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray(Of T)(T())
+  name.vb: WriteObjectsArray(Of T)(T())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte)
+  id: Write(System.Byte)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte)
+  nameWithType: UnityWriter.Write(byte)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(byte)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 266
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(byte byteValue)
+    parameters:
+    - id: byteValue
+      type: System.Byte
+    content.vb: Public Sub Write(byteValue As Byte)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Byte)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Byte)
+  name.vb: Write(Byte)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte[])
+  nameWithType: UnityWriter.Write(byte[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(byte[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 271
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+    content.vb: Public Sub Write(bytes As Byte())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Byte())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Byte())
+  name.vb: Write(Byte())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Byte})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Byte})
+  id: Write(System.Collections.Generic.IEnumerable{System.Byte})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<byte>)
+  nameWithType: UnityWriter.Write(IEnumerable<byte>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<byte>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 278
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<byte> bytes)
+    parameters:
+    - id: bytes
+      type: System.Collections.Generic.IEnumerable{System.Byte}
+    content.vb: Public Sub Write(bytes As IEnumerable(Of Byte))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Byte))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Byte))
+  name.vb: Write(IEnumerable(Of Byte))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Byte})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Byte})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Byte})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<byte>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<byte>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<byte>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 284
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<byte> bytes)
+    parameters:
+    - id: bytes
+      type: System.Collections.Generic.IEnumerable{System.Byte}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(bytes As IEnumerable(Of Byte)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Byte))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Byte))
+  name.vb: WriteAsync(IEnumerable(Of Byte))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16)
+  id: Write(System.Int16)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(short)
+  nameWithType: UnityWriter.Write(short)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(short)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 289
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(short shortValue)
+    parameters:
+    - id: shortValue
+      type: System.Int16
+    content.vb: Public Sub Write(shortValue As Short)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Short)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Short)
+  name.vb: Write(Short)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int16[])
+  id: Write(System.Int16[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(short[])
+  nameWithType: UnityWriter.Write(short[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(short[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 294
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(short[] shorts)
+    parameters:
+    - id: shorts
+      type: System.Int16[]
+    content.vb: Public Sub Write(shorts As Short())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Short())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Short())
+  name.vb: Write(Short())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int16})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int16})
+  id: Write(System.Collections.Generic.IEnumerable{System.Int16})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<short>)
+  nameWithType: UnityWriter.Write(IEnumerable<short>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<short>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 301
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<short> shorts)
+    parameters:
+    - id: shorts
+      type: System.Collections.Generic.IEnumerable{System.Int16}
+    content.vb: Public Sub Write(shorts As IEnumerable(Of Short))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Short))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Short))
+  name.vb: Write(IEnumerable(Of Short))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int16})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int16})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Int16})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<short>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<short>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<short>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 307
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<short> shorts)
+    parameters:
+    - id: shorts
+      type: System.Collections.Generic.IEnumerable{System.Int16}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(shorts As IEnumerable(Of Short)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Short))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Short))
+  name.vb: WriteAsync(IEnumerable(Of Short))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32)
+  id: Write(System.Int32)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(int)
+  nameWithType: UnityWriter.Write(int)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(int)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 312
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(int intValue)
+    parameters:
+    - id: intValue
+      type: System.Int32
+    content.vb: Public Sub Write(intValue As Integer)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Integer)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Integer)
+  name.vb: Write(Integer)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int32[])
+  id: Write(System.Int32[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(int[])
+  nameWithType: UnityWriter.Write(int[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(int[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 317
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(int[] ints)
+    parameters:
+    - id: ints
+      type: System.Int32[]
+    content.vb: Public Sub Write(ints As Integer())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Integer())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Integer())
+  name.vb: Write(Integer())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int32})
+  id: Write(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<int>)
+  nameWithType: UnityWriter.Write(IEnumerable<int>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<int>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 324
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<int> ints)
+    parameters:
+    - id: ints
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    content.vb: Public Sub Write(ints As IEnumerable(Of Integer))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Integer))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: Write(IEnumerable(Of Integer))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int32})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<int>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<int>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<int>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 330
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<int> ints)
+    parameters:
+    - id: ints
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(ints As IEnumerable(Of Integer)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Integer))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: WriteAsync(IEnumerable(Of Integer))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64)
+  id: Write(System.Int64)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(long)
+  nameWithType: UnityWriter.Write(long)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(long)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 335
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(long longValue)
+    parameters:
+    - id: longValue
+      type: System.Int64
+    content.vb: Public Sub Write(longValue As Long)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Long)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Long)
+  name.vb: Write(Long)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Int64[])
+  id: Write(System.Int64[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(long[])
+  nameWithType: UnityWriter.Write(long[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(long[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 340
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(long[] longs)
+    parameters:
+    - id: longs
+      type: System.Int64[]
+    content.vb: Public Sub Write(longs As Long())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Long())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Long())
+  name.vb: Write(Long())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int64})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Int64})
+  id: Write(System.Collections.Generic.IEnumerable{System.Int64})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<long>)
+  nameWithType: UnityWriter.Write(IEnumerable<long>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<long>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 347
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<long> longs)
+    parameters:
+    - id: longs
+      type: System.Collections.Generic.IEnumerable{System.Int64}
+    content.vb: Public Sub Write(longs As IEnumerable(Of Long))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Long))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Long))
+  name.vb: Write(IEnumerable(Of Long))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int64})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Int64})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Int64})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<long>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<long>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<long>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 353
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<long> longs)
+    parameters:
+    - id: longs
+      type: System.Collections.Generic.IEnumerable{System.Int64}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(longs As IEnumerable(Of Long)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Long))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Long))
+  name.vb: WriteAsync(IEnumerable(Of Long))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Char)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Char)
+  id: Write(System.Char)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char)
+  nameWithType: UnityWriter.Write(char)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(char)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 358
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(char charValue)
+    parameters:
+    - id: charValue
+      type: System.Char
+    content.vb: Public Sub Write(charValue As Char)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Char)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Char)
+  name.vb: Write(Char)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Char[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Char[])
+  id: Write(System.Char[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(char[])
+  nameWithType: UnityWriter.Write(char[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(char[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 363
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(char[] chars)
+    parameters:
+    - id: chars
+      type: System.Char[]
+    content.vb: Public Sub Write(chars As Char())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Char())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Char())
+  name.vb: Write(Char())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Char})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Char})
+  id: Write(System.Collections.Generic.IEnumerable{System.Char})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<char>)
+  nameWithType: UnityWriter.Write(IEnumerable<char>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<char>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 370
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<char> chars)
+    parameters:
+    - id: chars
+      type: System.Collections.Generic.IEnumerable{System.Char}
+    content.vb: Public Sub Write(chars As IEnumerable(Of Char))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Char))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Char))
+  name.vb: Write(IEnumerable(Of Char))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Char})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Char})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Char})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<char>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<char>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<char>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 376
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<char> chars)
+    parameters:
+    - id: chars
+      type: System.Collections.Generic.IEnumerable{System.Char}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(chars As IEnumerable(Of Char)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Char))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Char))
+  name.vb: WriteAsync(IEnumerable(Of Char))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.String)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.String)
+  id: Write(System.String)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(string)
+  nameWithType: UnityWriter.Write(string)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(string)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 381
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(string stringValue)
+    parameters:
+    - id: stringValue
+      type: System.String
+    content.vb: Public Sub Write(stringValue As String)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(String)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(String)
+  name.vb: Write(String)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.String[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.String[])
+  id: Write(System.String[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(string[])
+  nameWithType: UnityWriter.Write(string[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(string[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 386
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(string[] strings)
+    parameters:
+    - id: strings
+      type: System.String[]
+    content.vb: Public Sub Write(strings As String())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(String())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(String())
+  name.vb: Write(String())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.String})
+  id: Write(System.Collections.Generic.IEnumerable{System.String})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<string>)
+  nameWithType: UnityWriter.Write(IEnumerable<string>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 393
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<string> strings)
+    parameters:
+    - id: strings
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub Write(strings As IEnumerable(Of String))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of String))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Write(IEnumerable(Of String))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.String})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.String})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<string>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<string>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 399
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<string> strings)
+    parameters:
+    - id: strings
+      type: System.Collections.Generic.IEnumerable{System.String}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(strings As IEnumerable(Of String)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of String))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: WriteAsync(IEnumerable(Of String))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Single)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Single)
+  id: Write(System.Single)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(float)
+  nameWithType: UnityWriter.Write(float)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(float)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 404
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(float floatValue)
+    parameters:
+    - id: floatValue
+      type: System.Single
+    content.vb: Public Sub Write(floatValue As Single)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Single)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Single)
+  name.vb: Write(Single)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Single[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Single[])
+  id: Write(System.Single[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(float[])
+  nameWithType: UnityWriter.Write(float[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(float[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 409
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(float[] floats)
+    parameters:
+    - id: floats
+      type: System.Single[]
+    content.vb: Public Sub Write(floats As Single())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Single())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Single())
+  name.vb: Write(Single())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Single})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Single})
+  id: Write(System.Collections.Generic.IEnumerable{System.Single})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<float>)
+  nameWithType: UnityWriter.Write(IEnumerable<float>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<float>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 416
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<float> floats)
+    parameters:
+    - id: floats
+      type: System.Collections.Generic.IEnumerable{System.Single}
+    content.vb: Public Sub Write(floats As IEnumerable(Of Single))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Single))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Single))
+  name.vb: Write(IEnumerable(Of Single))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Single})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Single})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Single})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<float>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<float>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<float>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 422
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<float> floats)
+    parameters:
+    - id: floats
+      type: System.Collections.Generic.IEnumerable{System.Single}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(floats As IEnumerable(Of Single)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Single))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Single))
+  name.vb: WriteAsync(IEnumerable(Of Single))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Double)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Double)
+  id: Write(System.Double)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(double)
+  nameWithType: UnityWriter.Write(double)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(double)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 427
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(double doubleValue)
+    parameters:
+    - id: doubleValue
+      type: System.Double
+    content.vb: Public Sub Write(doubleValue As Double)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Double)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Double)
+  name.vb: Write(Double)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Double[])
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Double[])
+  id: Write(System.Double[])
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(double[])
+  nameWithType: UnityWriter.Write(double[])
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(double[])
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 432
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(double[] doubles)
+    parameters:
+    - id: doubles
+      type: System.Double[]
+    content.vb: Public Sub Write(doubles As Double())
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Double())
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Double())
+  name.vb: Write(Double())
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Double})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable{System.Double})
+  id: Write(System.Collections.Generic.IEnumerable{System.Double})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(IEnumerable<double>)
+  nameWithType: UnityWriter.Write(IEnumerable<double>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable<double>)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 439
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(IEnumerable<double> doubles)
+    parameters:
+    - id: doubles
+      type: System.Collections.Generic.IEnumerable{System.Double}
+    content.vb: Public Sub Write(doubles As IEnumerable(Of Double))
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(IEnumerable(Of Double))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(System.Collections.Generic.IEnumerable(Of Double))
+  name.vb: Write(IEnumerable(Of Double))
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Double})
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{System.Double})
+  id: WriteAsync(System.Collections.Generic.IEnumerable{System.Double})
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(IEnumerable<double>)
+  nameWithType: UnityWriter.WriteAsync(IEnumerable<double>)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable<double>)
+  type: Method
+  source:
+    id: WriteAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 445
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public UniTask WriteAsync(IEnumerable<double> doubles)
+    parameters:
+    - id: doubles
+      type: System.Collections.Generic.IEnumerable{System.Double}
+    return:
+      type: Cysharp.Threading.Tasks.UniTask
+    content.vb: Public Function WriteAsync(doubles As IEnumerable(Of Double)) As UniTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Double))
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Double))
+  name.vb: WriteAsync(IEnumerable(Of Double))
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write(System.Boolean)
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Write(System.Boolean)
+  id: Write(System.Boolean)
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(bool)
+  nameWithType: UnityWriter.Write(bool)
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write(bool)
+  type: Method
+  source:
+    id: Write
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 450
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  syntax:
+    content: public void Write(bool boolValue)
+    parameters:
+    - id: boolValue
+      type: System.Boolean
+    content.vb: Public Sub Write(boolValue As Boolean)
+  overload: SaveSystem.UnityHandlers.UnityWriter.Write*
+  nameWithType.vb: UnityWriter.Write(Boolean)
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.Write(Boolean)
+  name.vb: Write(Boolean)
+- uid: SaveSystem.UnityHandlers.UnityWriter.Dispose
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.Dispose
+  id: Dispose
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UnityWriter.Dispose()
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 455
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: SaveSystem.UnityHandlers.UnityWriter.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+  commentId: M:SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+  id: DisposeAsync
+  parent: SaveSystem.UnityHandlers.UnityWriter
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: UnityWriter.DisposeAsync()
+  fullName: SaveSystem.UnityHandlers.UnityWriter.DisposeAsync()
+  type: Method
+  source:
+    id: DisposeAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
+    startLine: 460
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.UnityHandlers
+  example: []
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: SaveSystem.UnityHandlers.UnityWriter.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+references:
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter
+- uid: SaveSystem.UnityHandlers
+  commentId: N:SaveSystem.UnityHandlers
+  href: SaveSystem.html
+  name: SaveSystem.UnityHandlers
+  nameWithType: SaveSystem.UnityHandlers
+  fullName: SaveSystem.UnityHandlers
+  spec.csharp:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html
+  spec.vb:
+  - uid: SaveSystem
+    name: SaveSystem
+    href: SaveSystem.html
+  - name: .
+  - uid: SaveSystem.UnityHandlers
+    name: UnityHandlers
+    href: SaveSystem.UnityHandlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SaveSystem.UnityHandlers.UnityWriter.#ctor*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.#ctor
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.#ctor(System.IO.BinaryWriter,System.String)
+  name: UnityWriter
+  nameWithType: UnityWriter.UnityWriter
+  fullName: SaveSystem.UnityHandlers.UnityWriter.UnityWriter
+  nameWithType.vb: UnityWriter.New
+  fullName.vb: SaveSystem.UnityHandlers.UnityWriter.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SaveSystem.UnityHandlers.UnityWriter.Write*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.Write
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.Write(System.Version)
+  name: Write
+  nameWithType: UnityWriter.Write
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Write
+- uid: System.Version
+  commentId: T:System.Version
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.version
+  name: Version
+  nameWithType: Version
+  fullName: System.Version
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Vector2[]
+  isExternal: true
+  name: Vector2[]
+  nameWithType: Vector2[]
+  fullName: UnityEngine.Vector2[]
+  nameWithType.vb: Vector2()
+  fullName.vb: UnityEngine.Vector2()
+  name.vb: Vector2()
+  spec.csharp:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Vector2>
+  nameWithType: IEnumerable<Vector2>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Vector2>
+  nameWithType.vb: IEnumerable(Of Vector2)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Vector2)
+  name.vb: IEnumerable(Of Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.WriteAsync
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable{UnityEngine.Vector2})
+  name: WriteAsync
+  nameWithType: UnityWriter.WriteAsync
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync
+- uid: Cysharp.Threading.Tasks.UniTask
+  commentId: T:Cysharp.Threading.Tasks.UniTask
+  parent: Cysharp.Threading.Tasks
+  name: UniTask
+  nameWithType: UniTask
+  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: Cysharp.Threading.Tasks
+  commentId: N:Cysharp.Threading.Tasks
+  name: Cysharp.Threading.Tasks
+  nameWithType: Cysharp.Threading.Tasks
+  fullName: Cysharp.Threading.Tasks
+  spec.csharp:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+  spec.vb:
+  - uid: Cysharp
+    name: Cysharp
+  - name: .
+  - uid: Cysharp.Threading
+    name: Threading
+  - name: .
+  - uid: Cysharp.Threading.Tasks
+    name: Tasks
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.Vector3[]
+  isExternal: true
+  name: Vector3[]
+  nameWithType: Vector3[]
+  fullName: UnityEngine.Vector3[]
+  nameWithType.vb: Vector3()
+  fullName.vb: UnityEngine.Vector3()
+  name.vb: Vector3()
+  spec.csharp:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Vector3}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Vector3}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Vector3>
+  nameWithType: IEnumerable<Vector3>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Vector3>
+  nameWithType.vb: IEnumerable(Of Vector3)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Vector3)
+  name.vb: IEnumerable(Of Vector3)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: UnityEngine.Vector4[]
+  isExternal: true
+  name: Vector4[]
+  nameWithType: Vector4[]
+  fullName: UnityEngine.Vector4[]
+  nameWithType.vb: Vector4()
+  fullName.vb: UnityEngine.Vector4()
+  name.vb: Vector4()
+  spec.csharp:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Vector4}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Vector4}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Vector4>
+  nameWithType: IEnumerable<Vector4>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Vector4>
+  nameWithType.vb: IEnumerable(Of Vector4)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Vector4)
+  name.vb: IEnumerable(Of Vector4)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine.Color[]
+  isExternal: true
+  name: Color[]
+  nameWithType: Color[]
+  fullName: UnityEngine.Color[]
+  nameWithType.vb: Color()
+  fullName.vb: UnityEngine.Color()
+  name.vb: Color()
+  spec.csharp:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Color}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Color}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Color>
+  nameWithType: IEnumerable<Color>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Color>
+  nameWithType.vb: IEnumerable(Of Color)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Color)
+  name.vb: IEnumerable(Of Color)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Color32
+  commentId: T:UnityEngine.Color32
+  parent: UnityEngine
+  isExternal: true
+  name: Color32
+  nameWithType: Color32
+  fullName: UnityEngine.Color32
+- uid: UnityEngine.Color32[]
+  isExternal: true
+  name: Color32[]
+  nameWithType: Color32[]
+  fullName: UnityEngine.Color32[]
+  nameWithType.vb: Color32()
+  fullName.vb: UnityEngine.Color32()
+  name.vb: Color32()
+  spec.csharp:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Color32}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Color32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Color32>
+  nameWithType: IEnumerable<Color32>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Color32>
+  nameWithType.vb: IEnumerable(Of Color32)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Color32)
+  name.vb: IEnumerable(Of Color32)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Matrix4x4
+  commentId: T:UnityEngine.Matrix4x4
+  parent: UnityEngine
+  isExternal: true
+  name: Matrix4x4
+  nameWithType: Matrix4x4
+  fullName: UnityEngine.Matrix4x4
+- uid: UnityEngine.Matrix4x4[]
+  isExternal: true
+  name: Matrix4x4[]
+  nameWithType: Matrix4x4[]
+  fullName: UnityEngine.Matrix4x4[]
+  nameWithType.vb: Matrix4x4()
+  fullName.vb: UnityEngine.Matrix4x4()
+  name.vb: Matrix4x4()
+  spec.csharp:
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4}
+  commentId: T:System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Matrix4x4>
+  nameWithType: IEnumerable<Matrix4x4>
+  fullName: System.Collections.Generic.IEnumerable<UnityEngine.Matrix4x4>
+  nameWithType.vb: IEnumerable(Of Matrix4x4)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of UnityEngine.Matrix4x4)
+  name.vb: IEnumerable(Of Matrix4x4)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: )
+- uid: SaveSystem.MeshData
+  commentId: T:SaveSystem.MeshData
+  parent: SaveSystem
+  href: SaveSystem.MeshData.html
+  name: MeshData
+  nameWithType: MeshData
+  fullName: SaveSystem.MeshData
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObject*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.WriteObject
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
+  name: WriteObject
+  nameWithType: UnityWriter.WriteObject
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjects*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.WriteObjects
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.WriteObjects``1(System.Collections.Generic.IEnumerable{``0})
+  name: WriteObjects
+  nameWithType: UnityWriter.WriteObjects
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjects
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync``1(System.Collections.Generic.IEnumerable{``0})
+  name: WriteObjectsAsync
+  nameWithType: UnityWriter.WriteObjectsAsync
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync
+- uid: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray``1(``0[])
+  name: WriteObjectsArray
+  nameWithType: UnityWriter.WriteObjectsArray
+  fullName: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Byte}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Byte}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<byte>
+  nameWithType: IEnumerable<byte>
+  fullName: System.Collections.Generic.IEnumerable<byte>
+  nameWithType.vb: IEnumerable(Of Byte)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Byte)
+  name.vb: IEnumerable(Of Byte)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Int16[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short[]
+  nameWithType: short[]
+  fullName: short[]
+  nameWithType.vb: Short()
+  fullName.vb: Short()
+  name.vb: Short()
+  spec.csharp:
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Int16}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int16}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<short>
+  nameWithType: IEnumerable<short>
+  fullName: System.Collections.Generic.IEnumerable<short>
+  nameWithType.vb: IEnumerable(Of Short)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Short)
+  name.vb: IEnumerable(Of Short)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Int64[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long[]
+  nameWithType: long[]
+  fullName: long[]
+  nameWithType.vb: Long()
+  fullName.vb: Long()
+  name.vb: Long()
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Int64}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int64}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<long>
+  nameWithType: IEnumerable<long>
+  fullName: System.Collections.Generic.IEnumerable<long>
+  nameWithType.vb: IEnumerable(Of Long)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Long)
+  name.vb: IEnumerable(Of Long)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Char}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Char}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<char>
+  nameWithType: IEnumerable<char>
+  fullName: System.Collections.Generic.IEnumerable<char>
+  nameWithType.vb: IEnumerable(Of Char)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Char)
+  name.vb: IEnumerable(Of Char)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Single}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<float>
+  nameWithType: IEnumerable<float>
+  fullName: System.Collections.Generic.IEnumerable<float>
+  nameWithType.vb: IEnumerable(Of Single)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Single)
+  name.vb: IEnumerable(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Double}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<double>
+  nameWithType: IEnumerable<double>
+  fullName: System.Collections.Generic.IEnumerable<double>
+  nameWithType.vb: IEnumerable(Of Double)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Double)
+  name.vb: IEnumerable(Of Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: SaveSystem.UnityHandlers.UnityWriter.Dispose*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.Dispose
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.Dispose
+  name: Dispose
+  nameWithType: UnityWriter.Dispose
+  fullName: SaveSystem.UnityHandlers.UnityWriter.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: SaveSystem.UnityHandlers.UnityWriter.DisposeAsync*
+  commentId: Overload:SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+  href: SaveSystem.UnityHandlers.UnityWriter.html#SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+  name: DisposeAsync
+  nameWithType: UnityWriter.DisposeAsync
+  fullName: SaveSystem.UnityHandlers.UnityWriter.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

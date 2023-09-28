@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>The Save System Core </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="The Save System Core ">
+      
+      <link rel="icon" href="../../images/icon.png">
+      <link rel="stylesheet" href="../../styles/docfx.min.css">
+      <link rel="stylesheet" href="../../styles/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      <meta name="docfx:docurl" content="https://github.com/dducode/com.dducode.save-system">
+
+      <script>
+        MathJax = {
+          options: {
+            processHtmlClass: ['tex2jax_process', 'math']
+          }
+        };
+      </script>
+
+      <script type="text/javascript" src="../../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../../styles/main.js"></script>
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="the-save-system-core">The Save System Core</h1>
+
+<p>All this time you were forced to manually handle objects.
+But now you can create handler and pass it into the
+<a href="../../api/SaveSystem.Core.SaveSystemCore.html"><code>SaveSystemCore</code></a></p>
+<p>The <code>SaveSystemCore</code> is the system which supports 6 saving methods:</p>
+<ol>
+<li>Quick-save - just call <code>QuickSave()</code> method or bind any key
+using <code>BindKey(KeyCode keyCode)</code> method.</li>
+<li>Save at checkpoint - when the player reaches any checkpoint,
+the Core will automatically save the game.</li>
+<li>Auto save - <code>SaveSystemCore</code> can save the game automatically during
+each period which you configure using <code>SavePeriod</code> property.</li>
+<li>Save on exit - also it can save the game during the quitting.</li>
+<li>Save on focus lost - if the application loses focus
+(ex. the player minimized the app), <code>SaveSystemCore</code>
+will save the game immediately.</li>
+<li>Save on low memory - if there is low memory left on the device,
+the application receives a notification and the game will be saved.</li>
+</ol>
+<p>Internally, the <code>SaveSystemCore</code> uses <code>ObjectHandler</code> and <code>AsyncObjectHandler</code>
+to save. So it can do this, you should register handlers.</p>
+<pre><code class="lang-csharp">SaveSystemCore.RegisterObjectHandler(m_handler);
+SaveSystemCore.RegisterAsyncObjectHandler(m_asyncHandler);
+</code></pre>
+<p>Also you can enable <code>RegisterImmediately</code> property in
+<code>ObjectHandlersFactory</code> and then create handlers.</p>
+<pre><code class="lang-csharp">ObjectHandlersFactory.RegisterImmediately = true;
+ObjectHandlersFactory.CreateHandler(filePath, objects); // this handler will be registered automatically
+ObjectHandlersFactory.CreareAsyncHandler(filePath, asyncObjects); // and this
+</code></pre>
+<h2 id="save-events">Save Events</h2>
+<p>The auto save, save on exit, save on focus lost and save on low memory
+are events which you can configure using the <code>EnabledSaveEvents</code> property
+in the <code>SaveSystemCore</code>.</p>
+<pre><code class="lang-csharp">SaveSystemCore.EnabledSaveEvents = SaveEvents.AutoSave | SaveEvents.OnExit;
+// if you want to enable all events
+SaveSystemCore.EnabledSaveEvents = SaveEvents.All;
+</code></pre>
+<h2 id="parallel-saving">Parallel saving</h2>
+<p>To speed up saving on multi-core devices,
+you can enable <code>IsParallel</code> property.</p>
+<pre><code class="lang-csharp">SaveSystemCore.IsParallel = true;
+</code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>Not recommended unless your objects are thread safe.</p>
+</div>
+<h2 id="other-parameters">Other parameters</h2>
+<p>Also you can enable debug messages from <code>SaveSystemCore</code>.</p>
+<pre><code class="lang-csharp">SaveSystemCore.DebugEnabled = true;
+</code></pre>
+<p>It will write all logs in the debug console (warnings
+and errors will be written regardless of settings).</p>
+<p>Configure checkpoints destroying after saving at checkpoint:</p>
+<pre><code class="lang-csharp">SaveSystemCore.DestroyCheckPoints = true;
+</code></pre>
+<p>And pass player tag (is used to filtering messages
+from triggered checkpoints):</p>
+<pre><code class="lang-csharp">SaveSystemCore.PlayerTag = &quot;Player&quot;;
+</code></pre>
+<p>Configure all parameters in code:</p>
+<pre><code class="lang-csharp">SaveSystemCore.ConfigureParameters(
+    enabledSaveEvents: SaveEvents.AutoSave | SaveEvents.OnExit,
+    isParallel: false,
+    debugEnabled: false,
+    destroyCheckPoints: true,
+    playerTag: &quot;Player&quot;,
+    savePeriod: 15
+);
+</code></pre>
+<p>All these parameters you can configure in the <a href="in-editor.html">console</a>:</p>
+<p><img src="../../images/Screenshot_9.png" alt=""></p>
+<h1 id="save-on-exit">Save on exit</h1>
+<p>It’s worth mentioning separately about saving before exiting the game.
+Since there is no way to wait saving asynchronously in this case,
+the <code>SaveSystemCore</code> run saving of async handlers on the thread pool
+and waits them in the main thread. Because saving run on the thread
+pool, your async objects must be thread safe. But otherwise
+you can call <code>SaveAndQuit()</code>:</p>
+<pre><code class="lang-csharp">await SaveSystemCore.SaveAndQuit();
+// there shouldn't be any code after this as SaveSystemCore will close the application
+</code></pre>
+<p>However, it isn't always known when to call it: the player can
+exit the game at any time in any way, so automatic saving
+may be more reliable (but you can combine these methods, manual saving
+cancels automatic saving). Anyway the choice is yours.</p>
+<h1 id="observe-progress">Observe progress</h1>
+<p>You can pass <code>IProgress&lt;float&gt;</code> object in the same way you pass it to
+handlers:</p>
+<pre><code class="lang-csharp">SaveSystemCore.ObserveProgress(m_savingProgress);
+</code></pre>
+<p>And you can subscribe to 2 events - <code>OnSaveStart</code> and <code>OnSaveEnd</code>:</p>
+<pre><code class="lang-csharp">SaveSystemCore.OnSaveStart += saveType =&gt; {
+    if (saveType == SaveType.AutoSave)
+    // some actions
+    if (saveType == SaveType.SaveAtCheckpoint)
+    // and so on
+}
+
+SaveSystemCore.OnSaveEnd += saveType =&gt; {
+    // similarly
+}
+</code></pre>
+</article>
+
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <p>Copyright © 2023 Denis Dmitriev</p><p>Made with <a href="https://dotnet.github.io/docfx">docfx</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

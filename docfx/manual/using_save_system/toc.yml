@@ -1,0 +1,31 @@
+﻿- name: Using the save system
+  href: using.md
+- name: Saving and loading objects
+  href: saving-and-loading.md
+- name: Writing and reading data
+  href: writing-and-reading.md
+  items:
+    - name: Objects control
+      href: objects-control.md
+- name: Object Handlers
+  href: object-handlers.md
+  items:
+    - name: Dynamic Objects Handling
+      href: dynamic-objects-handling.md
+- name: Checkpoints
+  href: checkpoints.md
+- name: Save System Core
+  href: save-system-core.md
+- name: Backward compatibility advice
+  href: advice.md
+- name: In editor
+  href: in-editor.md
+- name: Obsolete API
+  items:
+    - name: Asynchronous management
+      href: async-management.md
+      items:
+        - name: Async modes
+          href: async-modes.md
+        - name: Advanced
+          href: advanced.md
