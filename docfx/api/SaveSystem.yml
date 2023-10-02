@@ -5,10 +5,12 @@ items:
   id: SaveSystem
   children:
   - SaveSystem.AsyncMode
+  - SaveSystem.DataBuffer
   - SaveSystem.DataManager
   - SaveSystem.DataManager.Advanced
   - SaveSystem.IPersistentObject
   - SaveSystem.IPersistentObjectAsync
+  - SaveSystem.IStorable
   - SaveSystem.MeshData
   - SaveSystem.Storage
   langs:
@@ -69,6 +71,12 @@ references:
   name: AsyncMode
   nameWithType: AsyncMode
   fullName: SaveSystem.AsyncMode
+- uid: SaveSystem.IStorable
+  commentId: T:SaveSystem.IStorable
+  href: SaveSystem.IStorable.html
+  name: IStorable
+  nameWithType: IStorable
+  fullName: SaveSystem.IStorable
 - uid: SaveSystem.IPersistentObject
   commentId: T:SaveSystem.IPersistentObject
   parent: SaveSystem
@@ -83,6 +91,13 @@ references:
   name: IPersistentObjectAsync
   nameWithType: IPersistentObjectAsync
   fullName: SaveSystem.IPersistentObjectAsync
+- uid: SaveSystem.DataBuffer
+  commentId: T:SaveSystem.DataBuffer
+  parent: SaveSystem
+  href: SaveSystem.DataBuffer.html
+  name: DataBuffer
+  nameWithType: DataBuffer
+  fullName: SaveSystem.DataBuffer
 - uid: SaveSystem
   commentId: N:SaveSystem
   href: SaveSystem.html

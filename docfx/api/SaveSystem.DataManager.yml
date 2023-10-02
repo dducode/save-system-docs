@@ -7,11 +7,11 @@ items:
   children:
   - SaveSystem.DataManager.LoadObject``1(System.String,``0)
   - SaveSystem.DataManager.LoadObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  - SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   - SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   - SaveSystem.DataManager.SaveObject``1(System.String,``0)
   - SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
-  - SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  - SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   - SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   langs:
   - csharp
@@ -23,7 +23,7 @@ items:
   source:
     id: DataManager
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -56,7 +56,7 @@ items:
   source:
     id: SaveObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 28
+    startLine: 29
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -68,9 +68,17 @@ items:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: obj
       type: '{T}'
       description: the object which will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     typeParameters:
     - id: T
     content.vb: Public Shared Sub SaveObject(Of T As IPersistentObject)(filePath As String, obj As T)
@@ -78,42 +86,50 @@ items:
   nameWithType.vb: DataManager.SaveObject(Of T)(String, T)
   fullName.vb: SaveSystem.DataManager.SaveObject(Of T)(String, T)
   name.vb: SaveObject(Of T)(String, T)
-- uid: SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  id: SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+- uid: SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  id: SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: SaveObjects<T>(string, IEnumerable<T>)
-  nameWithType: DataManager.SaveObjects<T>(string, IEnumerable<T>)
-  fullName: SaveSystem.DataManager.SaveObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
+  name: SaveObjects<T>(string, ICollection<T>)
+  nameWithType: DataManager.SaveObjects<T>(string, ICollection<T>)
+  fullName: SaveSystem.DataManager.SaveObjects<T>(string, System.Collections.Generic.ICollection<T>)
   type: Method
   source:
     id: SaveObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Save many objects
   example: []
   syntax:
-    content: 'public static void SaveObjects<T>(string filePath, IEnumerable<T> objects) where T : IPersistentObject'
+    content: 'public static void SaveObjects<T>(string filePath, ICollection<T> objects) where T : IPersistentObject'
     parameters:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: objects
-      type: System.Collections.Generic.IEnumerable{{T}}
+      type: System.Collections.Generic.ICollection{{T}}
       description: the objects which will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     typeParameters:
     - id: T
-    content.vb: Public Shared Sub SaveObjects(Of T As IPersistentObject)(filePath As String, objects As IEnumerable(Of T))
+    content.vb: Public Shared Sub SaveObjects(Of T As IPersistentObject)(filePath As String, objects As ICollection(Of T))
   overload: SaveSystem.DataManager.SaveObjects*
-  nameWithType.vb: DataManager.SaveObjects(Of T)(String, IEnumerable(Of T))
-  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
-  name.vb: SaveObjects(Of T)(String, IEnumerable(Of T))
+  nameWithType.vb: DataManager.SaveObjects(Of T)(String, ICollection(Of T))
+  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, System.Collections.Generic.ICollection(Of T))
+  name.vb: SaveObjects(Of T)(String, ICollection(Of T))
 - uid: SaveSystem.DataManager.LoadObject``1(System.String,``0)
   commentId: M:SaveSystem.DataManager.LoadObject``1(System.String,``0)
   id: LoadObject``1(System.String,``0)
@@ -128,7 +144,7 @@ items:
   source:
     id: LoadObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 60
+    startLine: 65
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -140,9 +156,17 @@ items:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: obj
       type: '{T}'
       description: the object which will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     typeParameters:
     - id: T
     return:
@@ -153,45 +177,53 @@ items:
   nameWithType.vb: DataManager.LoadObject(Of T)(String, T)
   fullName.vb: SaveSystem.DataManager.LoadObject(Of T)(String, T)
   name.vb: LoadObject(Of T)(String, T)
-- uid: SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  id: LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+- uid: SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  id: LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   parent: SaveSystem.DataManager
   langs:
   - csharp
   - vb
-  name: LoadObjects<T>(string, IEnumerable<T>)
-  nameWithType: DataManager.LoadObjects<T>(string, IEnumerable<T>)
-  fullName: SaveSystem.DataManager.LoadObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
+  name: LoadObjects<T>(string, ICollection<T>)
+  nameWithType: DataManager.LoadObjects<T>(string, ICollection<T>)
+  fullName: SaveSystem.DataManager.LoadObjects<T>(string, System.Collections.Generic.ICollection<T>)
   type: Method
   source:
     id: LoadObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 71
+    startLine: 78
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: Load many objects
   example: []
   syntax:
-    content: 'public static bool LoadObjects<T>(string filePath, IEnumerable<T> objects) where T : IPersistentObject'
+    content: 'public static bool LoadObjects<T>(string filePath, ICollection<T> objects) where T : IPersistentObject'
     parameters:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: objects
-      type: System.Collections.Generic.IEnumerable{{T}}
+      type: System.Collections.Generic.ICollection{{T}}
       description: the objects which will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     typeParameters:
     - id: T
     return:
       type: System.Boolean
       description: Returns true if there is saved data, otherwise false
-    content.vb: Public Shared Function LoadObjects(Of T As IPersistentObject)(filePath As String, objects As IEnumerable(Of T)) As Boolean
+    content.vb: Public Shared Function LoadObjects(Of T As IPersistentObject)(filePath As String, objects As ICollection(Of T)) As Boolean
   overload: SaveSystem.DataManager.LoadObjects*
-  nameWithType.vb: DataManager.LoadObjects(Of T)(String, IEnumerable(Of T))
-  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
-  name.vb: LoadObjects(Of T)(String, IEnumerable(Of T))
+  nameWithType.vb: DataManager.LoadObjects(Of T)(String, ICollection(Of T))
+  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, System.Collections.Generic.ICollection(Of T))
+  name.vb: LoadObjects(Of T)(String, ICollection(Of T))
 - uid: SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   commentId: M:SaveSystem.DataManager.SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
   id: SaveObjectAsync(System.String,SaveSystem.IPersistentObject,SaveSystem.AsyncMode,System.Threading.CancellationTokenSource,System.Action)
@@ -206,7 +238,7 @@ items:
   source:
     id: SaveObjectAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 96
+    startLine: 107
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -214,16 +246,24 @@ items:
   example: []
   syntax:
     content: >-
-      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
       public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: obj
       type: SaveSystem.IPersistentObject
       description: the object which will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: source
@@ -233,7 +273,7 @@ items:
     return:
       type: Cysharp.Threading.Tasks.UniTask
     content.vb: >-
-      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
       Public Shared Function SaveObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
   overload: SaveSystem.DataManager.SaveObjectAsync*
@@ -246,7 +286,7 @@ items:
     ctor: System.ObsoleteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.
   nameWithType.vb: DataManager.SaveObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
   fullName.vb: SaveSystem.DataManager.SaveObjectAsync(String, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
   name.vb: SaveObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
@@ -264,7 +304,7 @@ items:
   source:
     id: SaveObjectsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 113
+    startLine: 126
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -272,16 +312,24 @@ items:
   example: []
   syntax:
     content: >-
-      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
       public static UniTask SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: objects
       type: SaveSystem.IPersistentObject[]
       description: the objects which will be saved
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: progress
@@ -293,7 +341,7 @@ items:
     return:
       type: Cysharp.Threading.Tasks.UniTask
     content.vb: >-
-      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
       Public Shared Function SaveObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
   overload: SaveSystem.DataManager.SaveObjectsAsync*
@@ -306,7 +354,7 @@ items:
     ctor: System.ObsoleteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.
   nameWithType.vb: DataManager.SaveObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
   fullName.vb: SaveSystem.DataManager.SaveObjectsAsync(String, SaveSystem.IPersistentObject(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
   name.vb: SaveObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
@@ -324,7 +372,7 @@ items:
   source:
     id: LoadObjectAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 171
+    startLine: 188
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -332,16 +380,24 @@ items:
   example: []
   syntax:
     content: >-
-      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
       public static UniTask<bool> LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: obj
       type: SaveSystem.IPersistentObject
       description: the object which will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: source
@@ -352,7 +408,7 @@ items:
       type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
       description: Returns true if there is saved data, otherwise false
     content.vb: >-
-      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
       Public Shared Function LoadObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectAsync*
@@ -365,7 +421,7 @@ items:
     ctor: System.ObsoleteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.
   nameWithType.vb: DataManager.LoadObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
   fullName.vb: SaveSystem.DataManager.LoadObjectAsync(String, SaveSystem.IPersistentObject, SaveSystem.AsyncMode, System.Threading.CancellationTokenSource, System.Action)
   name.vb: LoadObjectAsync(String, IPersistentObject, AsyncMode, CancellationTokenSource, Action)
@@ -383,7 +439,7 @@ items:
   source:
     id: LoadObjectsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 188
+    startLine: 207
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -391,16 +447,24 @@ items:
   example: []
   syntax:
     content: >-
-      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")]
+      [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
       public static UniTask<bool> LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: objects
       type: SaveSystem.IPersistentObject[]
       description: the objects which will be load
+      attributes:
+      - type: JetBrains.Annotations.NotNullAttribute
+        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
+        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: progress
@@ -413,7 +477,7 @@ items:
       type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
       description: Returns true if there is saved data, otherwise false
     content.vb: >-
-      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this")>
+      <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
       Public Shared Function LoadObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectsAsync*
@@ -426,7 +490,7 @@ items:
     ctor: System.ObsoleteAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this
+      value: It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.
   nameWithType.vb: DataManager.LoadObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
   fullName.vb: SaveSystem.DataManager.LoadObjectsAsync(String, SaveSystem.IPersistentObject(), SaveSystem.AsyncMode, System.IProgress(Of Single), System.Threading.CancellationTokenSource, System.Action)
   name.vb: LoadObjectsAsync(String, IPersistentObject(), AsyncMode, IProgress(Of Single), CancellationTokenSource, Action)
@@ -703,62 +767,62 @@ references:
   fullName: T
 - uid: SaveSystem.DataManager.SaveObjects*
   commentId: Overload:SaveSystem.DataManager.SaveObjects
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   name: SaveObjects
   nameWithType: DataManager.SaveObjects
   fullName: SaveSystem.DataManager.SaveObjects
-- uid: System.Collections.Generic.IEnumerable{{T}}
-  commentId: T:System.Collections.Generic.IEnumerable{``0}
+- uid: System.Collections.Generic.ICollection{{T}}
+  commentId: T:System.Collections.Generic.ICollection{``0}
   parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: (
   - name: Of
   - name: " "
   - name: T
   - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: (
   - name: Of
   - name: " "
@@ -820,7 +884,7 @@ references:
   name.vb: Boolean
 - uid: SaveSystem.DataManager.LoadObjects*
   commentId: Overload:SaveSystem.DataManager.LoadObjects
-  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
+  href: SaveSystem.DataManager.html#SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
   name: LoadObjects
   nameWithType: DataManager.LoadObjects
   fullName: SaveSystem.DataManager.LoadObjects

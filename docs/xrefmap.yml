@@ -418,6 +418,150 @@ references:
   commentId: F:SaveSystem.Core.SaveType.SaveAtCheckpoint
   fullName: SaveSystem.Core.SaveType.SaveAtCheckpoint
   nameWithType: SaveType.SaveAtCheckpoint
+- uid: SaveSystem.DataBuffer
+  name: DataBuffer
+  href: api/SaveSystem.DataBuffer.html
+  commentId: T:SaveSystem.DataBuffer
+  fullName: SaveSystem.DataBuffer
+  nameWithType: DataBuffer
+- uid: SaveSystem.DataBuffer.boolean
+  name: boolean
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_boolean
+  commentId: F:SaveSystem.DataBuffer.boolean
+  fullName: SaveSystem.DataBuffer.boolean
+  nameWithType: DataBuffer.boolean
+- uid: SaveSystem.DataBuffer.bytes
+  name: bytes
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_bytes
+  commentId: F:SaveSystem.DataBuffer.bytes
+  fullName: SaveSystem.DataBuffer.bytes
+  nameWithType: DataBuffer.bytes
+- uid: SaveSystem.DataBuffer.charBuffer
+  name: charBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_charBuffer
+  commentId: F:SaveSystem.DataBuffer.charBuffer
+  fullName: SaveSystem.DataBuffer.charBuffer
+  nameWithType: DataBuffer.charBuffer
+- uid: SaveSystem.DataBuffer.color
+  name: color
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_color
+  commentId: F:SaveSystem.DataBuffer.color
+  fullName: SaveSystem.DataBuffer.color
+  nameWithType: DataBuffer.color
+- uid: SaveSystem.DataBuffer.color32
+  name: color32
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_color32
+  commentId: F:SaveSystem.DataBuffer.color32
+  fullName: SaveSystem.DataBuffer.color32
+  nameWithType: DataBuffer.color32
+- uid: SaveSystem.DataBuffer.colors
+  name: colors
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_colors
+  commentId: F:SaveSystem.DataBuffer.colors
+  fullName: SaveSystem.DataBuffer.colors
+  nameWithType: DataBuffer.colors
+- uid: SaveSystem.DataBuffer.colors32
+  name: colors32
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_colors32
+  commentId: F:SaveSystem.DataBuffer.colors32
+  fullName: SaveSystem.DataBuffer.colors32
+  nameWithType: DataBuffer.colors32
+- uid: SaveSystem.DataBuffer.doubleBuffer
+  name: doubleBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_doubleBuffer
+  commentId: F:SaveSystem.DataBuffer.doubleBuffer
+  fullName: SaveSystem.DataBuffer.doubleBuffer
+  nameWithType: DataBuffer.doubleBuffer
+- uid: SaveSystem.DataBuffer.floatBuffer
+  name: floatBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_floatBuffer
+  commentId: F:SaveSystem.DataBuffer.floatBuffer
+  fullName: SaveSystem.DataBuffer.floatBuffer
+  nameWithType: DataBuffer.floatBuffer
+- uid: SaveSystem.DataBuffer.intBuffer
+  name: intBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_intBuffer
+  commentId: F:SaveSystem.DataBuffer.intBuffer
+  fullName: SaveSystem.DataBuffer.intBuffer
+  nameWithType: DataBuffer.intBuffer
+- uid: SaveSystem.DataBuffer.longBuffer
+  name: longBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_longBuffer
+  commentId: F:SaveSystem.DataBuffer.longBuffer
+  fullName: SaveSystem.DataBuffer.longBuffer
+  nameWithType: DataBuffer.longBuffer
+- uid: SaveSystem.DataBuffer.matrices
+  name: matrices
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_matrices
+  commentId: F:SaveSystem.DataBuffer.matrices
+  fullName: SaveSystem.DataBuffer.matrices
+  nameWithType: DataBuffer.matrices
+- uid: SaveSystem.DataBuffer.matrix
+  name: matrix
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_matrix
+  commentId: F:SaveSystem.DataBuffer.matrix
+  fullName: SaveSystem.DataBuffer.matrix
+  nameWithType: DataBuffer.matrix
+- uid: SaveSystem.DataBuffer.meshData
+  name: meshData
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_meshData
+  commentId: F:SaveSystem.DataBuffer.meshData
+  fullName: SaveSystem.DataBuffer.meshData
+  nameWithType: DataBuffer.meshData
+- uid: SaveSystem.DataBuffer.quaternion
+  name: quaternion
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_quaternion
+  commentId: F:SaveSystem.DataBuffer.quaternion
+  fullName: SaveSystem.DataBuffer.quaternion
+  nameWithType: DataBuffer.quaternion
+- uid: SaveSystem.DataBuffer.shorts
+  name: shorts
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_shorts
+  commentId: F:SaveSystem.DataBuffer.shorts
+  fullName: SaveSystem.DataBuffer.shorts
+  nameWithType: DataBuffer.shorts
+- uid: SaveSystem.DataBuffer.stringBuffer
+  name: stringBuffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_stringBuffer
+  commentId: F:SaveSystem.DataBuffer.stringBuffer
+  fullName: SaveSystem.DataBuffer.stringBuffer
+  nameWithType: DataBuffer.stringBuffer
+- uid: SaveSystem.DataBuffer.vector2
+  name: vector2
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector2
+  commentId: F:SaveSystem.DataBuffer.vector2
+  fullName: SaveSystem.DataBuffer.vector2
+  nameWithType: DataBuffer.vector2
+- uid: SaveSystem.DataBuffer.vector2Buffer
+  name: vector2Buffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector2Buffer
+  commentId: F:SaveSystem.DataBuffer.vector2Buffer
+  fullName: SaveSystem.DataBuffer.vector2Buffer
+  nameWithType: DataBuffer.vector2Buffer
+- uid: SaveSystem.DataBuffer.vector3
+  name: vector3
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector3
+  commentId: F:SaveSystem.DataBuffer.vector3
+  fullName: SaveSystem.DataBuffer.vector3
+  nameWithType: DataBuffer.vector3
+- uid: SaveSystem.DataBuffer.vector3Buffer
+  name: vector3Buffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector3Buffer
+  commentId: F:SaveSystem.DataBuffer.vector3Buffer
+  fullName: SaveSystem.DataBuffer.vector3Buffer
+  nameWithType: DataBuffer.vector3Buffer
+- uid: SaveSystem.DataBuffer.vector4
+  name: vector4
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector4
+  commentId: F:SaveSystem.DataBuffer.vector4
+  fullName: SaveSystem.DataBuffer.vector4
+  nameWithType: DataBuffer.vector4
+- uid: SaveSystem.DataBuffer.vector4Buffer
+  name: vector4Buffer
+  href: api/SaveSystem.DataBuffer.html#SaveSystem_DataBuffer_vector4Buffer
+  commentId: F:SaveSystem.DataBuffer.vector4Buffer
+  fullName: SaveSystem.DataBuffer.vector4Buffer
+  nameWithType: DataBuffer.vector4Buffer
 - uid: SaveSystem.DataManager
   name: DataManager
   href: api/SaveSystem.DataManager.html
@@ -533,15 +677,15 @@ references:
   isSpec: "True"
   fullName: SaveSystem.DataManager.LoadObjects
   nameWithType: DataManager.LoadObjects
-- uid: SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  name: LoadObjects<T>(string, IEnumerable<T>)
-  href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_LoadObjects__1_System_String_System_Collections_Generic_IEnumerable___0__
-  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  name.vb: LoadObjects(Of T)(String, IEnumerable(Of T))
-  fullName: SaveSystem.DataManager.LoadObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: DataManager.LoadObjects<T>(string, IEnumerable<T>)
-  nameWithType.vb: DataManager.LoadObjects(Of T)(String, IEnumerable(Of T))
+- uid: SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  name: LoadObjects<T>(string, ICollection<T>)
+  href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_LoadObjects__1_System_String_System_Collections_Generic_ICollection___0__
+  commentId: M:SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  name.vb: LoadObjects(Of T)(String, ICollection(Of T))
+  fullName: SaveSystem.DataManager.LoadObjects<T>(string, System.Collections.Generic.ICollection<T>)
+  fullName.vb: SaveSystem.DataManager.LoadObjects(Of T)(String, System.Collections.Generic.ICollection(Of T))
+  nameWithType: DataManager.LoadObjects<T>(string, ICollection<T>)
+  nameWithType.vb: DataManager.LoadObjects(Of T)(String, ICollection(Of T))
 - uid: SaveSystem.DataManager.LoadObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   name: LoadObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
   href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_LoadObjectsAsync_System_String_SaveSystem_IPersistentObject___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_
@@ -597,15 +741,15 @@ references:
   isSpec: "True"
   fullName: SaveSystem.DataManager.SaveObjects
   nameWithType: DataManager.SaveObjects
-- uid: SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  name: SaveObjects<T>(string, IEnumerable<T>)
-  href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_SaveObjects__1_System_String_System_Collections_Generic_IEnumerable___0__
-  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})
-  name.vb: SaveObjects(Of T)(String, IEnumerable(Of T))
-  fullName: SaveSystem.DataManager.SaveObjects<T>(string, System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: DataManager.SaveObjects<T>(string, IEnumerable<T>)
-  nameWithType.vb: DataManager.SaveObjects(Of T)(String, IEnumerable(Of T))
+- uid: SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  name: SaveObjects<T>(string, ICollection<T>)
+  href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_SaveObjects__1_System_String_System_Collections_Generic_ICollection___0__
+  commentId: M:SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})
+  name.vb: SaveObjects(Of T)(String, ICollection(Of T))
+  fullName: SaveSystem.DataManager.SaveObjects<T>(string, System.Collections.Generic.ICollection<T>)
+  fullName.vb: SaveSystem.DataManager.SaveObjects(Of T)(String, System.Collections.Generic.ICollection(Of T))
+  nameWithType: DataManager.SaveObjects<T>(string, ICollection<T>)
+  nameWithType.vb: DataManager.SaveObjects(Of T)(String, ICollection(Of T))
 - uid: SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
   name: SaveObjectsAsync(string, IPersistentObject[], AsyncMode, IProgress<float>, CancellationTokenSource, Action)
   href: api/SaveSystem.DataManager.html#SaveSystem_DataManager_SaveObjectsAsync_System_String_SaveSystem_IPersistentObject___SaveSystem_AsyncMode_System_IProgress_System_Single__System_Threading_CancellationTokenSource_System_Action_
@@ -675,24 +819,15 @@ references:
   fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
   nameWithType: AbstractHandler<T, TO>
   nameWithType.vb: AbstractHandler(Of T, TO)
-- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
-  name: AbstractHandler(string, TO[])
-  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___
-  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
-  name.vb: New(String, TO())
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[])
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO())
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[])
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO())
-- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})
-  name: AbstractHandler(string, Func<TO>)
-  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_System_String_System_Func__1__
-  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})
-  name.vb: New(String, Func(Of TO))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, System.Func<TO>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, System.Func(Of TO))
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, Func<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, Func(Of TO))
+- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
+  name: AbstractHandler(string, TO[], Func<TO>)
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___System_Func__1__
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
+  name.vb: New(String, TO(), Func(Of TO))
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[], System.Func<TO>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO(), System.Func(Of TO))
+  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[], Func<TO>)
+  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO(), Func(Of TO))
 - uid: SaveSystem.Handlers.AbstractHandler`2.#ctor*
   name: AbstractHandler
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_
@@ -1039,6 +1174,15 @@ references:
   fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, TO, String)
   nameWithType: ObjectHandlersFactory.CreateAsyncHandler<TO>(string, TO, string)
   nameWithType.vb: ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, TO, String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name: CreateAsyncHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name.vb: CreateAsyncHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  nameWithType: ObjectHandlersFactory.CreateAsyncHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
 - uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
   name: CreateAsyncHandler<TO>(string, ICollection<TO>, string)
   href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_
@@ -1073,6 +1217,15 @@ references:
   fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler(Of TO)(String, TO, String)
   nameWithType: ObjectHandlersFactory.CreateHandler<TO>(string, TO, string)
   nameWithType.vb: ObjectHandlersFactory.CreateHandler(Of TO)(String, TO, String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name: CreateHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name.vb: CreateHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  nameWithType: ObjectHandlersFactory.CreateHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
 - uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
   name: CreateHandler<TO>(string, ICollection<TO>, string)
   href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_
@@ -1091,6 +1244,49 @@ references:
   fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler(Of TO)(String, System.Func(Of TO), String)
   nameWithType: ObjectHandlersFactory.CreateHandler<TO>(string, Func<TO>, string)
   nameWithType.vb: ObjectHandlersFactory.CreateHandler(Of TO)(String, Func(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  name: CreateSmartHandler
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler_
+  commentId: Overload:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler
+  isSpec: "True"
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)
+  name: CreateSmartHandler<TO>(string, TO, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String___0_System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)
+  name.vb: CreateSmartHandler(Of TO)(String, TO, String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, TO, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, TO, String)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, TO, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, TO, String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name: CreateSmartHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  name.vb: CreateSmartHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  name: CreateSmartHandler<TO>(string, ICollection<TO>, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  name.vb: CreateSmartHandler(Of TO)(String, ICollection(Of TO), String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Collections.Generic.ICollection<TO>, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), String)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, ICollection<TO>, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, ICollection(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  name: CreateSmartHandler<TO>(string, Func<TO>, string)
+  href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Func___0__System_String_
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  name.vb: CreateSmartHandler(Of TO)(String, Func(Of TO), String)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Func<TO>, string)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Func(Of TO), String)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, Func<TO>, string)
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, Func(Of TO), String)
 - uid: SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately
   name: RegisterImmediately
   href: api/SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem_Handlers_ObjectHandlersFactory_RegisterImmediately
@@ -1104,6 +1300,49 @@ references:
   isSpec: "True"
   fullName: SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately
   nameWithType: ObjectHandlersFactory.RegisterImmediately
+- uid: SaveSystem.Handlers.SmartHandler`1
+  name: SmartHandler<TO>
+  href: api/SaveSystem.Handlers.SmartHandler-1.html
+  commentId: T:SaveSystem.Handlers.SmartHandler`1
+  name.vb: SmartHandler(Of TO)
+  fullName: SaveSystem.Handlers.SmartHandler<TO>
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
+  nameWithType: SmartHandler<TO>
+  nameWithType.vb: SmartHandler(Of TO)
+- uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
+  name: LoadAsync(CancellationToken)
+  href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_LoadAsync_System_Threading_CancellationToken_
+  commentId: M:SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TO>.LoadAsync(CancellationToken)
+  nameWithType.vb: SmartHandler(Of TO).LoadAsync(CancellationToken)
+- uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync*
+  name: LoadAsync
+  href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_LoadAsync_
+  commentId: Overload:SaveSystem.Handlers.SmartHandler`1.LoadAsync
+  isSpec: "True"
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync
+  nameWithType: SmartHandler<TO>.LoadAsync
+  nameWithType.vb: SmartHandler(Of TO).LoadAsync
+- uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
+  name: SaveAsync(CancellationToken)
+  href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_SaveAsync_System_Threading_CancellationToken_
+  commentId: M:SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TO>.SaveAsync(CancellationToken)
+  nameWithType.vb: SmartHandler(Of TO).SaveAsync(CancellationToken)
+- uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync*
+  name: SaveAsync
+  href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_SaveAsync_
+  commentId: Overload:SaveSystem.Handlers.SmartHandler`1.SaveAsync
+  isSpec: "True"
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync
+  nameWithType: SmartHandler<TO>.SaveAsync
+  nameWithType.vb: SmartHandler(Of TO).SaveAsync
 - uid: SaveSystem.IPersistentObject
   name: IPersistentObject
   href: api/SaveSystem.IPersistentObject.html
@@ -1168,6 +1407,38 @@ references:
   isSpec: "True"
   fullName: SaveSystem.IPersistentObjectAsync.Save
   nameWithType: IPersistentObjectAsync.Save
+- uid: SaveSystem.IStorable
+  name: IStorable
+  href: api/SaveSystem.IStorable.html
+  commentId: T:SaveSystem.IStorable
+  fullName: SaveSystem.IStorable
+  nameWithType: IStorable
+- uid: SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  name: Load(DataBuffer)
+  href: api/SaveSystem.IStorable.html#SaveSystem_IStorable_Load_SaveSystem_DataBuffer_
+  commentId: M:SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  fullName: SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  nameWithType: IStorable.Load(DataBuffer)
+- uid: SaveSystem.IStorable.Load*
+  name: Load
+  href: api/SaveSystem.IStorable.html#SaveSystem_IStorable_Load_
+  commentId: Overload:SaveSystem.IStorable.Load
+  isSpec: "True"
+  fullName: SaveSystem.IStorable.Load
+  nameWithType: IStorable.Load
+- uid: SaveSystem.IStorable.Save
+  name: Save()
+  href: api/SaveSystem.IStorable.html#SaveSystem_IStorable_Save
+  commentId: M:SaveSystem.IStorable.Save
+  fullName: SaveSystem.IStorable.Save()
+  nameWithType: IStorable.Save()
+- uid: SaveSystem.IStorable.Save*
+  name: Save
+  href: api/SaveSystem.IStorable.html#SaveSystem_IStorable_Save_
+  commentId: Overload:SaveSystem.IStorable.Save
+  isSpec: "True"
+  fullName: SaveSystem.IStorable.Save
+  nameWithType: IStorable.Save
 - uid: SaveSystem.MeshData
   name: MeshData
   href: api/SaveSystem.MeshData.html

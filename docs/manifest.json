@@ -123,6 +123,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.DataBuffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.DataBuffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SaveSystem.DataManager.Advanced.yml",
       "output": {
         ".html": {
@@ -233,6 +243,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Handlers.SmartHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Handlers.SmartHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SaveSystem.Handlers.yml",
       "output": {
         ".html": {
@@ -257,6 +277,16 @@
       "output": {
         ".html": {
           "relative_path": "api/SaveSystem.IPersistentObjectAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.IStorable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.IStorable.html"
         }
       },
       "version": ""
@@ -629,6 +659,16 @@
       "output": {
         ".html": {
           "relative_path": "manual/using_save_system/checkpoints.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/using_save_system/data-buffer.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/using_save_system/data-buffer.html"
         }
       },
       "version": ""

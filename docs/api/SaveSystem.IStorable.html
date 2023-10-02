@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Namespace SaveSystem.Internal
+      <title>Interface IStorable
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Namespace SaveSystem.Internal
+      <meta name="title" content="Interface IStorable
  ">
       
       <link rel="icon" href="../images/icon.png">
@@ -74,20 +74,91 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SaveSystem.Internal">
+        <article data-uid="SaveSystem.IStorable">
 
-  <h1 id="SaveSystem_Internal" data-uid="SaveSystem.Internal" class="text-break">Namespace SaveSystem.Internal
+
+
+  <h1 id="SaveSystem_IStorable" data-uid="SaveSystem.IStorable" class="text-break">Interface IStorable
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Implement this for simplifed handling of your objects.
+It's easier in use than <a class="xref" href="SaveSystem.IPersistentObject.html">IPersistentObject</a></p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a></h6>
+  <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
+  <h5 id="SaveSystem_IStorable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IStorable</code></pre>
+  </div>
 
-    <h3 id="classes">Classes
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="SaveSystem.Internal.PathPreparing.html">PathPreparing</a></dt>
-      <dd></dd>
-    </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="SaveSystem_IStorable_Load_" data-uid="SaveSystem.IStorable.Load*"></a>
+
+  <h3 id="SaveSystem_IStorable_Load_SaveSystem_DataBuffer_" data-uid="SaveSystem.IStorable.Load(SaveSystem.DataBuffer)">
+  Load(DataBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets <a class="xref" href="SaveSystem.DataBuffer.html">DataBuffer</a> and read data from this</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Load(DataBuffer buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="SaveSystem.DataBuffer.html">DataBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_IStorable_Save_" data-uid="SaveSystem.IStorable.Save*"></a>
+
+  <h3 id="SaveSystem_IStorable_Save" data-uid="SaveSystem.IStorable.Save">
+  Save()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Writes some data to <a class="xref" href="SaveSystem.DataBuffer.html">DataBuffer</a> and return this</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DataBuffer Save()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.DataBuffer.html">DataBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
 </article>

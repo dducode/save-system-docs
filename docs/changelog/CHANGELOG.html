@@ -75,8 +75,33 @@
         <article data-uid="">
 <h1 id="changelog">Changelog</h1>
 
-<h2 id="150---2023-09-21">[1.5.0] - 2023-09-21</h2>
+<h2 id="160---2023-10-02">[1.6.0] - 2023-10-02</h2>
 <h3 id="added">Added</h3>
+<ul>
+<li>Added new feature - saving and loading data using a
+data buffer
+<ul>
+<li>Added new structure - DataBuffer</li>
+<li>Added new interface - IStorable, the interface implemented by objects
+that write data to DataBuffer and read data from it</li>
+<li>Added new handler - SmartHandler, the new handler
+handles IStorable objects</li>
+</ul>
+</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Unity handlers was separated as buffering and direct.
+Buffering handlers write and read data using MemoryStream,
+direct handlers write and read data using FileStream</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<ul>
+<li>Fixed missing validation in the DataManager methods parameters</li>
+<li>Fixed missing validation in the SaveSystemCore properties</li>
+</ul>
+<h2 id="150---2023-09-28">[1.5.0] - 2023-09-28</h2>
+<h3 id="added-1">Added</h3>
 <ul>
 <li><p>Added Object Handlers. You can use these instead of
 the obsolete DataManager class methods</p>
@@ -89,15 +114,8 @@ CheckPointsCreator class</p>
 save your objects and handlers in the internal loop,
 during a quick-save and when the player hits any checkpoint</p>
 </li>
-<li><p>Added remote objects handling</p>
-<ul>
-<li>Added methods for saving to and loading
-from remote storage. They're contained in the Remote Handler
-class</li>
 </ul>
-</li>
-</ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Advanced methods have been moved to the Advanced class -
 the nested class within the DataManager. These methods have
@@ -105,13 +123,15 @@ been renamed</li>
 <li>Data handlers (UnityWriter, UnityReader, etc.)
 have been moved to SaveSystem.UnityHandlers namespace</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed-1">Fixed</h3>
 <ul>
 <li>Fixed catching the exception that throws when the binary
 reader is null</li>
+<li>Fixed file deleting when canceling a save, now UnityWriter
+writes data to a memory stream instead of writing directly to the file</li>
 </ul>
 <h2 id="140---2023-04-22">[1.4.0] - 2023-04-22</h2>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Added asynchronous data handling:
 <ul>
@@ -124,7 +144,7 @@ to save and load objects</li>
 </ul>
 </li>
 </ul>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li>Removed write and read meshes array methods</li>
 <li>Removed methods for writing and reading a list of objects.
@@ -133,51 +153,51 @@ Instead, use the write and read methods of an array of objects.</li>
 Instead, use the save and load methods of an array of objects.</li>
 </ul>
 <h2 id="130---2023-04-17">[1.3.0] - 2023-04-17</h2>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li>Added write and read mesh and meshes array methods</li>
 <li>Added methods for writing and reading arrays of
 basic data types and unity structures</li>
 </ul>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li>Removed methods for writing and reading MonoBehaviour classes.
 Use SaveObject method instead and implement the
 IPersistentObject interface in your MonoBehaviour classes</li>
 </ul>
 <h2 id="120---2023-04-15">[1.2.0] - 2023-04-15</h2>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li>Added methods for writing and reading unity
 structures such as Color32, Matrix4X4, Vector2, Vector4.</li>
 <li>Added methods for writing and reading classes
 which inherits from MonoBehaviour</li>
 </ul>
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li>Renamed &quot;ReadPosition&quot; method to &quot;ReadVector3&quot;
 (in UnityReader class)</li>
 </ul>
-<h3 id="fixed-1">Fixed</h3>
+<h3 id="fixed-2">Fixed</h3>
 <ul>
 <li>Fixed problem with writing data to file. UnityWriter
 was leaving &quot;trash&quot; bytes at the end of the file if it wrote
 fewer bytes than the file contains</li>
 </ul>
 <h2 id="111---2023-04-14">[1.1.1] - 2023-04-14</h2>
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 <ul>
 <li>Added displaying of size of data
 (in &quot;Data Manager / Get Data Size&quot; menu in editor)</li>
 </ul>
 <h2 id="110---2023-04-14">[1.1.0] - 2023-04-14</h2>
-<h3 id="added-5">Added</h3>
+<h3 id="added-6">Added</h3>
 <ul>
 <li>Added support of saving single object and list
 of objects</li>
 </ul>
 <h2 id="100---2023-04-13">[1.0.0] - 2023-04-13</h2>
-<h3 id="added-6">Added</h3>
+<h3 id="added-7">Added</h3>
 <ul>
 <li>Create package</li>
 </ul>

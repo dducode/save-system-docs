@@ -11,6 +11,7 @@ items:
   - SaveSystem.Handlers.IObjectHandler
   - SaveSystem.Handlers.ObjectHandler`1
   - SaveSystem.Handlers.ObjectHandlersFactory
+  - SaveSystem.Handlers.SmartHandler`1
   langs:
   - csharp
   - vb
@@ -119,6 +120,31 @@ references:
   - name: " "
   - name: T
   - name: ','
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.SmartHandler`1
+  commentId: T:SaveSystem.Handlers.SmartHandler`1
+  href: SaveSystem.Handlers.SmartHandler-1.html
+  name: SmartHandler<TO>
+  nameWithType: SmartHandler<TO>
+  fullName: SaveSystem.Handlers.SmartHandler<TO>
+  nameWithType.vb: SmartHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
+  name.vb: SmartHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
+  - name: (
+  - name: Of
   - name: " "
   - name: TO
   - name: )

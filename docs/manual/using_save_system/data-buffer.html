@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Object Handlers </title>
+      <title>Handle objects using data buffer </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Object Handlers ">
+      <meta name="title" content="Handle objects using data buffer ">
       
       <link rel="icon" href="../../images/icon.png">
       <link rel="stylesheet" href="../../styles/docfx.min.css">
@@ -73,77 +73,54 @@
         </div>
 
         <article data-uid="">
-<h1 id="object-handlers">Object Handlers</h1>
+<h1 id="handle-objects-using-data-buffer">Handle objects using data buffer</h1>
 
-<p>If you read &quot;Asynchronous Management&quot; chapter, you
-may have noticed that using the DataManager's async methods
-is a few fiddly.
-<a href="../../api/SaveSystem.Handlers.ObjectHandler-1.html"><code>ObjectHandler</code></a>
-and
-<a href="../../api/SaveSystem.Handlers.AsyncObjectHandler-1.html"><code>AsyncObjectHandler</code></a>
-classes was created for this reason. Just look to example:</p>
-<pre><code class="lang-csharp">// Earlier you was forced to use this method
-await DataManager.SaveObjectsAsync(
-    fileName,
-    myObjects,
-    AsyncMode.OnThreadPool,
-    onComplete: () =&gt; Debug.Log(&quot;Objects saved&quot;)
-);
+<p>The Save System provides a more convenient way for data handling.
+You can implement <a href="../../api/SaveSystem.IStorable.html"><code>IStorable</code></a>
+interface in your objects for simplified writing and reading data
+using <a href="../../api/SaveSystem.DataBuffer.html"><code>DataBuffer</code></a> structure:</p>
+<pre><code class="lang-csharp">public class MyObject : MonoBehaviour, IStorable {
 
-// However you can use Object Handler class instead this
-HandlingResult result = await ObjectHandlersFactory
-   .CreateAsyncHandler(myObjects, fileName)
-   .SaveAsync();
-   
-if (result == HandlingResult.Success)
-    Debug.Log(&quot;Objects saved&quot;);
-</code></pre>
-<blockquote>
-<p>One important change - <code>AsyncObjectHandler</code> doesn't accept onComplete
-callback, it returns HandlingResult instead this.</p>
-</blockquote>
-<h2 id="more-about-the-handlers">More about the handlers</h2>
-<p>In short, the <code>ObjectHandler</code> created for handling of
-objects which implement <code>IPersistentObject</code> interface.
-The <code>AsyncObjectHandler</code> handle <code>IPersistentObjectAsync</code> objects.
-None of them support async modes, but you still can pass
-<code>IProgress&lt;float&gt;</code> object to observe progress</p>
-<pre><code class="lang-csharp">await asyncHandler.ObserveProgress(m_progress).SaveAsync();
-// or
-await asyncHandler.ObserveProgress(m_savingProgress, m_loadingProgress).SaveAsync();
-</code></pre>
-<p>Also you can create an <code>ObjectHandler</code>, set
-its parameters and call saving later:</p>
-<pre><code class="lang-csharp">private ObjectHandler&lt;MyObject&gt; m_handler;
-private MyObject[] m_objects;
-
-private void Start() {
-    m_handler = ObjectHandlersFactory.CreateHandler(
-        localFilePath: &quot;MyGameProgress/GameObjects.bytes&quot;, m_objects
-    );
-}
-
-
-private void OnApplicationQuit() {
-    m_handler.Save();
+    private MeshRenderer m_renderer;
+    
+    
+    public DataBuffer Save () {
+        return new DataBuffer {
+            vector3 = transform.position,
+            quaternion = transfrom.rotation,
+            color = m_renderer.material.color  
+        };
+    }
+    
+    
+    public void Load (DataBuffer buffer) {
+        m_renderer.material.color = buffer.color;
+        transform.position = buffer.vector3;
+        transform.rotation = buffer.quaternion
+    }
+    
 }
 </code></pre>
-<p>If you need to async save objects on the thread pool, you can write</p>
-<pre><code class="lang-csharp">await Task.Run(handler.Save, cancellationToken: token);
-// or
-await UniTask.RunOnThreadPool(() =&gt; handler.Save(), cancellationToken: token);
+<p>And then pass it to <a href="../../api/SaveSystem.Handlers.SmartHandler-1.html"><code>SmartHandler</code></a>:</p>
+<pre><code class="lang-csharp">m_smartHalder = ObjectHandlersFactory.CreateSmartHandler(m_filePath, m_object);
+// some actions
+await m_smartHalder.SaveAsync();
 </code></pre>
-<p>The <code>AsyncObjectHandler</code> accepts a cancellation token unlike the
-<code>DataManager</code> (it accepts a cancellation token source).</p>
-<pre><code class="lang-csharp">await DataManager.SaveObjectsAsync(filePath, objects, AsyncMode.OnPlayerLoop, source: m_tokenSource);
-await asyncObjectHandler.SaveAsync(m_tokenSource.Token);
+<p>Passing of the cancellation token has no effect.</p>
+<p>The <code>SmartHandler</code> can be passed to <code>SaveSystemCore</code> just like
+others (see <a href="save-system-core.html">this part</a> about <code>SaveSystemCore</code>)</p>
+<pre><code class="lang-csharp">SaveSystemCore.RegisterAsyncHandler(m_smartHalder);
 </code></pre>
-<p>Since an async data processing can be canceled, <code>AsyncObjectHandler</code>
-will be write the data to the buffer at first, and then to a file.
-Otherwise (if it'll write directly to a file), when canceling
-the operation, the data would be considered invalid.
-This protects the file, but writes a more bytes than
-directly writing.</p>
+<p>What are the benefits of this approach?</p>
+<ol>
+<li>You don't have to worry about the order of writing and reading.</li>
+<li>Data collecting is processed by synchronously,
+the system receives a snapshot of data in once game frame and then
+writes data asynchronously.</li>
+<li>Since data writing cannot be canceled,
+the data will be written to file immediately
+and then it'll take up less memory.</li>
+</ol>
 </article>
 
 

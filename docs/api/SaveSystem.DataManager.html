@@ -159,7 +159,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.&quot;)]
 public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
@@ -204,8 +204,8 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
 
   <a id="SaveSystem_DataManager_LoadObjects_" data-uid="SaveSystem.DataManager.LoadObjects*"></a>
 
-  <h3 id="SaveSystem_DataManager_LoadObjects__1_System_String_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})">
-  LoadObjects&lt;T&gt;(string, IEnumerable&lt;T&gt;)
+  <h3 id="SaveSystem_DataManager_LoadObjects__1_System_String_System_Collections_Generic_ICollection___0__" data-uid="SaveSystem.DataManager.LoadObjects``1(System.String,System.Collections.Generic.ICollection{``0})">
+  LoadObjects&lt;T&gt;(string, ICollection&lt;T&gt;)
   
   </h3>
 
@@ -214,7 +214,7 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool LoadObjects&lt;T&gt;(string filePath, IEnumerable&lt;T&gt; objects) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool LoadObjects&lt;T&gt;(string filePath, ICollection&lt;T&gt; objects) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -222,7 +222,7 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
     <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file whereof the object data will be load</p>
 </dd>
-    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
     <dd><p>the objects which will be load</p>
 </dd>
   </dl>
@@ -261,7 +261,7 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.&quot;)]
 public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
@@ -359,7 +359,7 @@ public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentO
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.&quot;)]
 public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
@@ -403,8 +403,8 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, As
 
   <a id="SaveSystem_DataManager_SaveObjects_" data-uid="SaveSystem.DataManager.SaveObjects*"></a>
 
-  <h3 id="SaveSystem_DataManager_SaveObjects__1_System_String_System_Collections_Generic_IEnumerable___0__" data-uid="SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.IEnumerable{``0})">
-  SaveObjects&lt;T&gt;(string, IEnumerable&lt;T&gt;)
+  <h3 id="SaveSystem_DataManager_SaveObjects__1_System_String_System_Collections_Generic_ICollection___0__" data-uid="SaveSystem.DataManager.SaveObjects``1(System.String,System.Collections.Generic.ICollection{``0})">
+  SaveObjects&lt;T&gt;(string, ICollection&lt;T&gt;)
   
   </h3>
 
@@ -413,7 +413,7 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, As
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SaveObjects&lt;T&gt;(string filePath, IEnumerable&lt;T&gt; objects) where T : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SaveObjects&lt;T&gt;(string filePath, ICollection&lt;T&gt; objects) where T : IPersistentObject</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -421,7 +421,7 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, As
     <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>the file where the object data will be saved</p>
 </dd>
-    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;T&gt;</dt>
     <dd><p>the objects which will be saved</p>
 </dd>
   </dl>
@@ -454,7 +454,7 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, As
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this&quot;)]
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It&#39;s the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.&quot;)]
 public static UniTask SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 

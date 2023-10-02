@@ -77,3 +77,10 @@ The `AsyncObjectHandler` accepts a cancellation token unlike the
 await DataManager.SaveObjectsAsync(filePath, objects, AsyncMode.OnPlayerLoop, source: m_tokenSource);
 await asyncObjectHandler.SaveAsync(m_tokenSource.Token);
 ```
+
+Since an async data processing can be canceled, `AsyncObjectHandler`
+will be write the data to the buffer at first, and then to a file.
+Otherwise (if it'll write directly to a file), when canceling
+the operation, the data would be considered invalid.
+This protects the file, but writes a more bytes than
+directly writing.

@@ -146,7 +146,7 @@ otherwise you will have to do it manually (it's false by default)</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an object handler that will saving a single object async</p>
+  <div class="markdown level1 summary"><p>Creates an async object handler that will saving and loading a single object async</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -160,7 +160,59 @@ otherwise you will have to do it manually (it's false by default)</p>
     <dd><p>Path to save and load objects</p>
 </dd>
     <dt><code>obj</code> <span class="xref">TO</span></dt>
-    <dd><p>Objects which will be saved</p>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateAsyncHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)">
+  CreateAsyncHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving and loading some objects async</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsyncObjectHandler&lt;TO&gt; CreateAsyncHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IPersistentObjectAsync</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
 </dd>
     <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>For internal use (no need to pass it manually)</p>
@@ -195,7 +247,7 @@ otherwise you will have to do it manually (it's false by default)</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an object handler that will saving some objects async</p>
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving and loading some objects async</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -209,7 +261,7 @@ otherwise you will have to do it manually (it's false by default)</p>
     <dd><p>Path to save and load objects</p>
 </dd>
     <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
-    <dd><p>Objects which will be saved</p>
+    <dd><p>Objects which will be saved and loaded</p>
 </dd>
     <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>For internal use (no need to pass it manually)</p>
@@ -293,7 +345,7 @@ otherwise you will have to do it manually (it's false by default)</p>
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an object handler that will saving a single object</p>
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving and loading a single object</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -337,12 +389,64 @@ otherwise you will have to do it manually (it's false by default)</p>
 
   <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*"></a>
 
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)">
+  CreateHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving and loading some objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectHandler&lt;TO&gt; CreateHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IPersistentObject</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*"></a>
+
   <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)">
   CreateHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, string)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates an object handler that will saving some objects</p>
+  <div class="markdown level1 summary"><p>Creates an object handler that will saving and loading some objects</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -415,6 +519,205 @@ otherwise you will have to do it manually (it's false by default)</p>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String___0_System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)">
+  CreateSmartHandler&lt;TO&gt;(string, TO, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a smart handler that will saving and loading a single storable object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SmartHandler&lt;TO&gt; CreateSmartHandler&lt;TO&gt;(string filePath, TO obj, string caller = &quot;&quot;) where TO : IStorable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>obj</code> <span class="xref">TO</span></dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Collections_Generic_ICollection___0__System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)">
+  CreateSmartHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a smart handler that will saving and loading some storable objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SmartHandler&lt;TO&gt; CreateSmartHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IStorable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Collections_Generic_ICollection___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)">
+  CreateSmartHandler&lt;TO&gt;(string, ICollection&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a smart handler that will saving and loading some storable objects</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SmartHandler&lt;TO&gt; CreateSmartHandler&lt;TO&gt;(string filePath, ICollection&lt;TO&gt; objects, string caller = &quot;&quot;) where TO : IStorable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dd><p>Objects which will be saved and loaded</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler</a>&lt;TO&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TO</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*"></a>
+
+  <h3 id="SaveSystem_Handlers_ObjectHandlersFactory_CreateSmartHandler__1_System_String_System_Func___0__System_String_" data-uid="SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)">
+  CreateSmartHandler&lt;TO&gt;(string, Func&lt;TO&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates an empty smart handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SmartHandler&lt;TO&gt; CreateSmartHandler&lt;TO&gt;(string filePath, Func&lt;TO&gt; factoryFunc, string caller = &quot;&quot;) where TO : IStorable</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Path to save and load objects</p>
+</dd>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dd><p>Function for objects spawn. This is necessary to load dynamic objects</p>
+</dd>
+    <dt><code>caller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>For internal use (no need to pass it manually)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler</a>&lt;TO&gt;</dt>
     <dd></dd>
   </dl>
 

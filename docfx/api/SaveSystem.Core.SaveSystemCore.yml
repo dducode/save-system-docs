@@ -100,7 +100,7 @@ items:
   source:
     id: SavePeriod
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 46
+    startLine: 75
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -129,7 +129,7 @@ items:
   source:
     id: IsParallel
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 51
+    startLine: 89
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -156,7 +156,7 @@ items:
   source:
     id: DebugEnabled
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 59
+    startLine: 97
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -184,7 +184,7 @@ items:
   source:
     id: DestroyCheckPoints
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 65
+    startLine: 103
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -212,7 +212,7 @@ items:
   source:
     id: PlayerTag
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 71
+    startLine: 109
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -240,7 +240,7 @@ items:
   source:
     id: OnSaveStart
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 80
+    startLine: 127
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -269,7 +269,7 @@ items:
   source:
     id: OnSaveEnd
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 89
+    startLine: 136
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -298,7 +298,7 @@ items:
   source:
     id: RegisterObjectHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 152
+    startLine: 192
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -325,7 +325,7 @@ items:
   source:
     id: RegisterAsyncObjectHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 166
+    startLine: 206
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -352,7 +352,7 @@ items:
   source:
     id: ConfigureParameters
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 187
+    startLine: 227
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -399,7 +399,7 @@ items:
   source:
     id: ObserveProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 234
+    startLine: 260
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -433,7 +433,7 @@ items:
   source:
     id: BindKey
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 245
+    startLine: 271
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -460,7 +460,7 @@ items:
   source:
     id: SaveAndQuit
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 260
+    startLine: 286
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -490,7 +490,7 @@ items:
   source:
     id: QuickSave
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 286
+    startLine: 312
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core

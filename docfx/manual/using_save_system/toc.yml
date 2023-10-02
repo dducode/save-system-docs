@@ -7,6 +7,8 @@
   items:
     - name: Objects control
       href: objects-control.md
+    - name: Handle objects using data buffer
+      href: data-buffer.md
 - name: Object Handlers
   href: object-handlers.md
   items:

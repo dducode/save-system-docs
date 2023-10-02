@@ -1,0 +1,1388 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.DataBuffer
+  commentId: T:SaveSystem.DataBuffer
+  id: DataBuffer
+  parent: SaveSystem
+  children:
+  - SaveSystem.DataBuffer.boolean
+  - SaveSystem.DataBuffer.bytes
+  - SaveSystem.DataBuffer.charBuffer
+  - SaveSystem.DataBuffer.color
+  - SaveSystem.DataBuffer.color32
+  - SaveSystem.DataBuffer.colors
+  - SaveSystem.DataBuffer.colors32
+  - SaveSystem.DataBuffer.doubleBuffer
+  - SaveSystem.DataBuffer.floatBuffer
+  - SaveSystem.DataBuffer.intBuffer
+  - SaveSystem.DataBuffer.longBuffer
+  - SaveSystem.DataBuffer.matrices
+  - SaveSystem.DataBuffer.matrix
+  - SaveSystem.DataBuffer.meshData
+  - SaveSystem.DataBuffer.quaternion
+  - SaveSystem.DataBuffer.shorts
+  - SaveSystem.DataBuffer.stringBuffer
+  - SaveSystem.DataBuffer.vector2
+  - SaveSystem.DataBuffer.vector2Buffer
+  - SaveSystem.DataBuffer.vector3
+  - SaveSystem.DataBuffer.vector3Buffer
+  - SaveSystem.DataBuffer.vector4
+  - SaveSystem.DataBuffer.vector4Buffer
+  langs:
+  - csharp
+  - vb
+  name: DataBuffer
+  nameWithType: DataBuffer
+  fullName: SaveSystem.DataBuffer
+  type: Struct
+  source:
+    id: DataBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 9
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: The buffer for writing and reading data from buffered objects
+  example: []
+  syntax:
+    content: public struct DataBuffer
+    content.vb: Public Structure DataBuffer
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: SaveSystem.DataBuffer.vector2
+  commentId: F:SaveSystem.DataBuffer.vector2
+  id: vector2
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector2
+  nameWithType: DataBuffer.vector2
+  fullName: SaveSystem.DataBuffer.vector2
+  type: Field
+  source:
+    id: vector2
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 12
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector2 vector2
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public vector2 As Vector2
+- uid: SaveSystem.DataBuffer.vector2Buffer
+  commentId: F:SaveSystem.DataBuffer.vector2Buffer
+  id: vector2Buffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector2Buffer
+  nameWithType: DataBuffer.vector2Buffer
+  fullName: SaveSystem.DataBuffer.vector2Buffer
+  type: Field
+  source:
+    id: vector2Buffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 13
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Vector2> vector2Buffer
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Vector2}
+    content.vb: Public vector2Buffer As ReadOnlyMemory(Of Vector2)
+- uid: SaveSystem.DataBuffer.vector3
+  commentId: F:SaveSystem.DataBuffer.vector3
+  id: vector3
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector3
+  nameWithType: DataBuffer.vector3
+  fullName: SaveSystem.DataBuffer.vector3
+  type: Field
+  source:
+    id: vector3
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 15
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector3 vector3
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public vector3 As Vector3
+- uid: SaveSystem.DataBuffer.vector3Buffer
+  commentId: F:SaveSystem.DataBuffer.vector3Buffer
+  id: vector3Buffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector3Buffer
+  nameWithType: DataBuffer.vector3Buffer
+  fullName: SaveSystem.DataBuffer.vector3Buffer
+  type: Field
+  source:
+    id: vector3Buffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 16
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Vector3> vector3Buffer
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Vector3}
+    content.vb: Public vector3Buffer As ReadOnlyMemory(Of Vector3)
+- uid: SaveSystem.DataBuffer.vector4
+  commentId: F:SaveSystem.DataBuffer.vector4
+  id: vector4
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector4
+  nameWithType: DataBuffer.vector4
+  fullName: SaveSystem.DataBuffer.vector4
+  type: Field
+  source:
+    id: vector4
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 18
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Vector4 vector4
+    return:
+      type: UnityEngine.Vector4
+    content.vb: Public vector4 As Vector4
+- uid: SaveSystem.DataBuffer.vector4Buffer
+  commentId: F:SaveSystem.DataBuffer.vector4Buffer
+  id: vector4Buffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: vector4Buffer
+  nameWithType: DataBuffer.vector4Buffer
+  fullName: SaveSystem.DataBuffer.vector4Buffer
+  type: Field
+  source:
+    id: vector4Buffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 19
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Vector4> vector4Buffer
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Vector4}
+    content.vb: Public vector4Buffer As ReadOnlyMemory(Of Vector4)
+- uid: SaveSystem.DataBuffer.quaternion
+  commentId: F:SaveSystem.DataBuffer.quaternion
+  id: quaternion
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: quaternion
+  nameWithType: DataBuffer.quaternion
+  fullName: SaveSystem.DataBuffer.quaternion
+  type: Field
+  source:
+    id: quaternion
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 21
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Quaternion quaternion
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: Public quaternion As Quaternion
+- uid: SaveSystem.DataBuffer.color
+  commentId: F:SaveSystem.DataBuffer.color
+  id: color
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: color
+  nameWithType: DataBuffer.color
+  fullName: SaveSystem.DataBuffer.color
+  type: Field
+  source:
+    id: color
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 23
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Color color
+    return:
+      type: UnityEngine.Color
+    content.vb: Public color As Color
+- uid: SaveSystem.DataBuffer.colors
+  commentId: F:SaveSystem.DataBuffer.colors
+  id: colors
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: colors
+  nameWithType: DataBuffer.colors
+  fullName: SaveSystem.DataBuffer.colors
+  type: Field
+  source:
+    id: colors
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 24
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Color> colors
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Color}
+    content.vb: Public colors As ReadOnlyMemory(Of Color)
+- uid: SaveSystem.DataBuffer.color32
+  commentId: F:SaveSystem.DataBuffer.color32
+  id: color32
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: color32
+  nameWithType: DataBuffer.color32
+  fullName: SaveSystem.DataBuffer.color32
+  type: Field
+  source:
+    id: color32
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 26
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Color32 color32
+    return:
+      type: UnityEngine.Color32
+    content.vb: Public color32 As Color32
+- uid: SaveSystem.DataBuffer.colors32
+  commentId: F:SaveSystem.DataBuffer.colors32
+  id: colors32
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: colors32
+  nameWithType: DataBuffer.colors32
+  fullName: SaveSystem.DataBuffer.colors32
+  type: Field
+  source:
+    id: colors32
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 27
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Color32> colors32
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Color32}
+    content.vb: Public colors32 As ReadOnlyMemory(Of Color32)
+- uid: SaveSystem.DataBuffer.matrix
+  commentId: F:SaveSystem.DataBuffer.matrix
+  id: matrix
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: matrix
+  nameWithType: DataBuffer.matrix
+  fullName: SaveSystem.DataBuffer.matrix
+  type: Field
+  source:
+    id: matrix
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 29
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public Matrix4x4 matrix
+    return:
+      type: UnityEngine.Matrix4x4
+    content.vb: Public matrix As Matrix4x4
+- uid: SaveSystem.DataBuffer.matrices
+  commentId: F:SaveSystem.DataBuffer.matrices
+  id: matrices
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: matrices
+  nameWithType: DataBuffer.matrices
+  fullName: SaveSystem.DataBuffer.matrices
+  type: Field
+  source:
+    id: matrices
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 30
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<Matrix4x4> matrices
+    return:
+      type: System.ReadOnlyMemory{UnityEngine.Matrix4x4}
+    content.vb: Public matrices As ReadOnlyMemory(Of Matrix4x4)
+- uid: SaveSystem.DataBuffer.meshData
+  commentId: F:SaveSystem.DataBuffer.meshData
+  id: meshData
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: meshData
+  nameWithType: DataBuffer.meshData
+  fullName: SaveSystem.DataBuffer.meshData
+  type: Field
+  source:
+    id: meshData
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 32
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public MeshData meshData
+    return:
+      type: SaveSystem.MeshData
+    content.vb: Public meshData As MeshData
+- uid: SaveSystem.DataBuffer.bytes
+  commentId: F:SaveSystem.DataBuffer.bytes
+  id: bytes
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: bytes
+  nameWithType: DataBuffer.bytes
+  fullName: SaveSystem.DataBuffer.bytes
+  type: Field
+  source:
+    id: bytes
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 34
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<byte> bytes
+    return:
+      type: System.ReadOnlyMemory{System.Byte}
+    content.vb: Public bytes As ReadOnlyMemory(Of Byte)
+- uid: SaveSystem.DataBuffer.shorts
+  commentId: F:SaveSystem.DataBuffer.shorts
+  id: shorts
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: shorts
+  nameWithType: DataBuffer.shorts
+  fullName: SaveSystem.DataBuffer.shorts
+  type: Field
+  source:
+    id: shorts
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 35
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<short> shorts
+    return:
+      type: System.ReadOnlyMemory{System.Int16}
+    content.vb: Public shorts As ReadOnlyMemory(Of Short)
+- uid: SaveSystem.DataBuffer.intBuffer
+  commentId: F:SaveSystem.DataBuffer.intBuffer
+  id: intBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: intBuffer
+  nameWithType: DataBuffer.intBuffer
+  fullName: SaveSystem.DataBuffer.intBuffer
+  type: Field
+  source:
+    id: intBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 36
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<int> intBuffer
+    return:
+      type: System.ReadOnlyMemory{System.Int32}
+    content.vb: Public intBuffer As ReadOnlyMemory(Of Integer)
+- uid: SaveSystem.DataBuffer.longBuffer
+  commentId: F:SaveSystem.DataBuffer.longBuffer
+  id: longBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: longBuffer
+  nameWithType: DataBuffer.longBuffer
+  fullName: SaveSystem.DataBuffer.longBuffer
+  type: Field
+  source:
+    id: longBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 37
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<long> longBuffer
+    return:
+      type: System.ReadOnlyMemory{System.Int64}
+    content.vb: Public longBuffer As ReadOnlyMemory(Of Long)
+- uid: SaveSystem.DataBuffer.charBuffer
+  commentId: F:SaveSystem.DataBuffer.charBuffer
+  id: charBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: charBuffer
+  nameWithType: DataBuffer.charBuffer
+  fullName: SaveSystem.DataBuffer.charBuffer
+  type: Field
+  source:
+    id: charBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 38
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<char> charBuffer
+    return:
+      type: System.ReadOnlyMemory{System.Char}
+    content.vb: Public charBuffer As ReadOnlyMemory(Of Char)
+- uid: SaveSystem.DataBuffer.stringBuffer
+  commentId: F:SaveSystem.DataBuffer.stringBuffer
+  id: stringBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: stringBuffer
+  nameWithType: DataBuffer.stringBuffer
+  fullName: SaveSystem.DataBuffer.stringBuffer
+  type: Field
+  source:
+    id: stringBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 39
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<string> stringBuffer
+    return:
+      type: System.ReadOnlyMemory{System.String}
+    content.vb: Public stringBuffer As ReadOnlyMemory(Of String)
+- uid: SaveSystem.DataBuffer.floatBuffer
+  commentId: F:SaveSystem.DataBuffer.floatBuffer
+  id: floatBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: floatBuffer
+  nameWithType: DataBuffer.floatBuffer
+  fullName: SaveSystem.DataBuffer.floatBuffer
+  type: Field
+  source:
+    id: floatBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 40
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<float> floatBuffer
+    return:
+      type: System.ReadOnlyMemory{System.Single}
+    content.vb: Public floatBuffer As ReadOnlyMemory(Of Single)
+- uid: SaveSystem.DataBuffer.doubleBuffer
+  commentId: F:SaveSystem.DataBuffer.doubleBuffer
+  id: doubleBuffer
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: doubleBuffer
+  nameWithType: DataBuffer.doubleBuffer
+  fullName: SaveSystem.DataBuffer.doubleBuffer
+  type: Field
+  source:
+    id: doubleBuffer
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 41
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public ReadOnlyMemory<double> doubleBuffer
+    return:
+      type: System.ReadOnlyMemory{System.Double}
+    content.vb: Public doubleBuffer As ReadOnlyMemory(Of Double)
+- uid: SaveSystem.DataBuffer.boolean
+  commentId: F:SaveSystem.DataBuffer.boolean
+  id: boolean
+  parent: SaveSystem.DataBuffer
+  langs:
+  - csharp
+  - vb
+  name: boolean
+  nameWithType: DataBuffer.boolean
+  fullName: SaveSystem.DataBuffer.boolean
+  type: Field
+  source:
+    id: boolean
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataBuffer.cs
+    startLine: 42
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  syntax:
+    content: public bool boolean
+    return:
+      type: System.Boolean
+    content.vb: Public [boolean] As Boolean
+references:
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.ReadOnlyMemory{UnityEngine.Vector2}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Vector2}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Vector2>
+  nameWithType: ReadOnlyMemory<Vector2>
+  fullName: System.ReadOnlyMemory<UnityEngine.Vector2>
+  nameWithType.vb: ReadOnlyMemory(Of Vector2)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Vector2)
+  name.vb: ReadOnlyMemory(Of Vector2)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.ReadOnlyMemory{UnityEngine.Vector3}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Vector3}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Vector3>
+  nameWithType: ReadOnlyMemory<Vector3>
+  fullName: System.ReadOnlyMemory<UnityEngine.Vector3>
+  nameWithType.vb: ReadOnlyMemory(Of Vector3)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Vector3)
+  name.vb: ReadOnlyMemory(Of Vector3)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Vector4
+  commentId: T:UnityEngine.Vector4
+  parent: UnityEngine
+  isExternal: true
+  name: Vector4
+  nameWithType: Vector4
+  fullName: UnityEngine.Vector4
+- uid: System.ReadOnlyMemory{UnityEngine.Vector4}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Vector4}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Vector4>
+  nameWithType: ReadOnlyMemory<Vector4>
+  fullName: System.ReadOnlyMemory<UnityEngine.Vector4>
+  nameWithType.vb: ReadOnlyMemory(Of Vector4)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Vector4)
+  name.vb: ReadOnlyMemory(Of Vector4)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector4
+    name: Vector4
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.ReadOnlyMemory{UnityEngine.Color}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Color}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Color>
+  nameWithType: ReadOnlyMemory<Color>
+  fullName: System.ReadOnlyMemory<UnityEngine.Color>
+  nameWithType.vb: ReadOnlyMemory(Of Color)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Color)
+  name.vb: ReadOnlyMemory(Of Color)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color
+    name: Color
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Color32
+  commentId: T:UnityEngine.Color32
+  parent: UnityEngine
+  isExternal: true
+  name: Color32
+  nameWithType: Color32
+  fullName: UnityEngine.Color32
+- uid: System.ReadOnlyMemory{UnityEngine.Color32}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Color32}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Color32>
+  nameWithType: ReadOnlyMemory<Color32>
+  fullName: System.ReadOnlyMemory<UnityEngine.Color32>
+  nameWithType.vb: ReadOnlyMemory(Of Color32)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Color32)
+  name.vb: ReadOnlyMemory(Of Color32)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Color32
+    name: Color32
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Matrix4x4
+  commentId: T:UnityEngine.Matrix4x4
+  parent: UnityEngine
+  isExternal: true
+  name: Matrix4x4
+  nameWithType: Matrix4x4
+  fullName: UnityEngine.Matrix4x4
+- uid: System.ReadOnlyMemory{UnityEngine.Matrix4x4}
+  commentId: T:System.ReadOnlyMemory{UnityEngine.Matrix4x4}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<Matrix4x4>
+  nameWithType: ReadOnlyMemory<Matrix4x4>
+  fullName: System.ReadOnlyMemory<UnityEngine.Matrix4x4>
+  nameWithType.vb: ReadOnlyMemory(Of Matrix4x4)
+  fullName.vb: System.ReadOnlyMemory(Of UnityEngine.Matrix4x4)
+  name.vb: ReadOnlyMemory(Of Matrix4x4)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Matrix4x4
+    name: Matrix4x4
+    isExternal: true
+  - name: )
+- uid: SaveSystem.MeshData
+  commentId: T:SaveSystem.MeshData
+  parent: SaveSystem
+  href: SaveSystem.MeshData.html
+  name: MeshData
+  nameWithType: MeshData
+  fullName: SaveSystem.MeshData
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlyMemory{System.Int16}
+  commentId: T:System.ReadOnlyMemory{System.Int16}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<short>
+  nameWithType: ReadOnlyMemory<short>
+  fullName: System.ReadOnlyMemory<short>
+  nameWithType.vb: ReadOnlyMemory(Of Short)
+  fullName.vb: System.ReadOnlyMemory(Of Short)
+  name.vb: ReadOnlyMemory(Of Short)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: System.ReadOnlyMemory{System.Int32}
+  commentId: T:System.ReadOnlyMemory{System.Int32}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<int>
+  nameWithType: ReadOnlyMemory<int>
+  fullName: System.ReadOnlyMemory<int>
+  nameWithType.vb: ReadOnlyMemory(Of Integer)
+  fullName.vb: System.ReadOnlyMemory(Of Integer)
+  name.vb: ReadOnlyMemory(Of Integer)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ReadOnlyMemory{System.Int64}
+  commentId: T:System.ReadOnlyMemory{System.Int64}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<long>
+  nameWithType: ReadOnlyMemory<long>
+  fullName: System.ReadOnlyMemory<long>
+  nameWithType.vb: ReadOnlyMemory(Of Long)
+  fullName.vb: System.ReadOnlyMemory(Of Long)
+  name.vb: ReadOnlyMemory(Of Long)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: System.ReadOnlyMemory{System.Char}
+  commentId: T:System.ReadOnlyMemory{System.Char}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<char>
+  nameWithType: ReadOnlyMemory<char>
+  fullName: System.ReadOnlyMemory<char>
+  nameWithType.vb: ReadOnlyMemory(Of Char)
+  fullName.vb: System.ReadOnlyMemory(Of Char)
+  name.vb: ReadOnlyMemory(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.ReadOnlyMemory{System.String}
+  commentId: T:System.ReadOnlyMemory{System.String}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<string>
+  nameWithType: ReadOnlyMemory<string>
+  fullName: System.ReadOnlyMemory<string>
+  nameWithType.vb: ReadOnlyMemory(Of String)
+  fullName.vb: System.ReadOnlyMemory(Of String)
+  name.vb: ReadOnlyMemory(Of String)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.ReadOnlyMemory{System.Single}
+  commentId: T:System.ReadOnlyMemory{System.Single}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<float>
+  nameWithType: ReadOnlyMemory<float>
+  fullName: System.ReadOnlyMemory<float>
+  nameWithType.vb: ReadOnlyMemory(Of Single)
+  fullName.vb: System.ReadOnlyMemory(Of Single)
+  name.vb: ReadOnlyMemory(Of Single)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.ReadOnlyMemory{System.Double}
+  commentId: T:System.ReadOnlyMemory{System.Double}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<double>
+  nameWithType: ReadOnlyMemory<double>
+  fullName: System.ReadOnlyMemory<double>
+  nameWithType.vb: ReadOnlyMemory(Of Double)
+  fullName.vb: System.ReadOnlyMemory(Of Double)
+  name.vb: ReadOnlyMemory(Of Double)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

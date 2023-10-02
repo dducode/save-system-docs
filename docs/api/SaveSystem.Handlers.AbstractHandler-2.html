@@ -89,6 +89,7 @@
     <div class="level1"><span class="xref">AbstractHandler&lt;T, TO&gt;</span></div>
       <div class="level2"><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler&lt;TO&gt;</a></div>
       <div class="level2"><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler&lt;TO&gt;</a></div>
+      <div class="level2"><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler&lt;TO&gt;</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Handlers.html">Handlers</a></h6>
   <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
@@ -125,8 +126,8 @@
 
   <a id="SaveSystem_Handlers_AbstractHandler_2__ctor_" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor*"></a>
 
-  <h3 id="SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])">
-  AbstractHandler(string, TO[])
+  <h3 id="SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___System_Func__1__" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})">
+  AbstractHandler(string, TO[], Func&lt;TO&gt;)
   
   </h3>
 
@@ -134,7 +135,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AbstractHandler(string localFilePath, TO[] staticObjects)</code></pre>
+    <pre><code class="lang-csharp hljs">protected AbstractHandler(string localFilePath, TO[] staticObjects, Func&lt;TO&gt; factoryFunc)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -142,37 +143,6 @@
     <dt><code>localFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>staticObjects</code> TO[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="SaveSystem_Handlers_AbstractHandler_2__ctor_" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor*"></a>
-
-  <h3 id="SaveSystem_Handlers_AbstractHandler_2__ctor_System_String_System_Func__1__" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})">
-  AbstractHandler(string, Func&lt;TO&gt;)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AbstractHandler(string localFilePath, Func&lt;TO&gt; factoryFunc)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>localFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
     <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
     <dd></dd>

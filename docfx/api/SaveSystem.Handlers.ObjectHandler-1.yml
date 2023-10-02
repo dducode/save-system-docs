@@ -65,7 +65,7 @@ items:
   source:
     id: Save
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandler.cs
-    startLine: 21
+    startLine: 19
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -93,7 +93,7 @@ items:
   source:
     id: Load
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandler.cs
-    startLine: 35
+    startLine: 32
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers

@@ -1,67 +1,74 @@
 ### YamlMime:ManagedReference
 items:
-- uid: SaveSystem.Handlers.AsyncObjectHandler`1
-  commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
-  id: AsyncObjectHandler`1
+- uid: SaveSystem.Handlers.SmartHandler`1
+  commentId: T:SaveSystem.Handlers.SmartHandler`1
+  id: SmartHandler`1
   parent: SaveSystem.Handlers
   children:
-  - SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
-  - SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  - SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
+  - SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
   langs:
   - csharp
   - vb
-  name: AsyncObjectHandler<TO>
-  nameWithType: AsyncObjectHandler<TO>
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
+  name: SmartHandler<TO>
+  nameWithType: SmartHandler<TO>
+  fullName: SaveSystem.Handlers.SmartHandler<TO>
   type: Class
   source:
-    id: AsyncObjectHandler
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
+    id: SmartHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\SmartHandler.cs
     startLine: 13
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
-  summary: It's same as <xref href="SaveSystem.Handlers.ObjectHandler%601?text=Object+Handler" data-throw-if-not-resolved="false"></xref> but works with objects that are saved and loaded asynchronously
+  summary: You can handle <xref href="SaveSystem.IStorable?text=storable+objects" data-throw-if-not-resolved="false"></xref> using this
   example: []
   syntax:
-    content: 'public sealed class AsyncObjectHandler<TO> : AbstractHandler<AsyncObjectHandler<TO>, TO>, IAsyncObjectHandler where TO : IPersistentObjectAsync'
+    content: 'public class SmartHandler<TO> : AbstractHandler<SmartHandler<TO>, TO>, IAsyncObjectHandler where TO : IStorable'
     typeParameters:
     - id: TO
-    content.vb: Public NotInheritable Class AsyncObjectHandler(Of [TO] As IPersistentObjectAsync) Inherits AbstractHandler(Of AsyncObjectHandler(Of TO), TO) Implements IAsyncObjectHandler
+    content.vb: Public Class SmartHandler(Of [TO] As IStorable) Inherits AbstractHandler(Of SmartHandler(Of TO), TO) Implements IAsyncObjectHandler
   inheritance:
   - System.Object
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   implements:
   - SaveSystem.Handlers.IAsyncObjectHandler
   inheritedMembers:
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObject({TO})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.localFilePath
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.staticObjects
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.dynamicObjects
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.savingProgress
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.loadingProgress
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.factoryFunc
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.AddObject({TO})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
+  - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  nameWithType.vb: AsyncObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
-  name.vb: AsyncObjectHandler(Of TO)
-- uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
-  commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+  nameWithType.vb: SmartHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
+  name.vb: SmartHandler(Of TO)
+- uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
   id: SaveAsync(System.Threading.CancellationToken)
-  parent: SaveSystem.Handlers.AsyncObjectHandler`1
+  parent: SaveSystem.Handlers.SmartHandler`1
   langs:
   - csharp
   - vb
   name: SaveAsync(CancellationToken)
-  nameWithType: AsyncObjectHandler<TO>.SaveAsync(CancellationToken)
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TO>.SaveAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync(System.Threading.CancellationToken)
   type: Method
   source:
     id: SaveAsync
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\SmartHandler.cs
     startLine: 20
   assemblies:
   - SaveSystem
@@ -76,26 +83,26 @@ items:
     return:
       type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
     content.vb: Public Function SaveAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
-  overload: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync*
+  overload: SaveSystem.Handlers.SmartHandler`1.SaveAsync*
   implements:
   - SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
-  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync(CancellationToken)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
-- uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
-  commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+  nameWithType.vb: SmartHandler(Of TO).SaveAsync(CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
+- uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
+  commentId: M:SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
   id: LoadAsync(System.Threading.CancellationToken)
-  parent: SaveSystem.Handlers.AsyncObjectHandler`1
+  parent: SaveSystem.Handlers.SmartHandler`1
   langs:
   - csharp
   - vb
   name: LoadAsync(CancellationToken)
-  nameWithType: AsyncObjectHandler<TO>.LoadAsync(CancellationToken)
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TO>.LoadAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync(System.Threading.CancellationToken)
   type: Method
   source:
     id: LoadAsync
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AsyncObjectHandler.cs
-    startLine: 41
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\SmartHandler.cs
+    startLine: 44
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -109,37 +116,18 @@ items:
     return:
       type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
     content.vb: Public Function LoadAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
-  overload: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync*
+  overload: SaveSystem.Handlers.SmartHandler`1.LoadAsync*
   implements:
   - SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
-  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync(CancellationToken)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
+  nameWithType.vb: SmartHandler(Of TO).LoadAsync(CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
 references:
-- uid: SaveSystem.Handlers.ObjectHandler`1
-  commentId: T:SaveSystem.Handlers.ObjectHandler`1
-  href: SaveSystem.Handlers.ObjectHandler-1.html
-  name: ObjectHandler<TO>
-  nameWithType: ObjectHandler<TO>
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
-  nameWithType.vb: ObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  name.vb: ObjectHandler(Of TO)
-  spec.csharp:
-  - uid: SaveSystem.Handlers.ObjectHandler`1
-    name: ObjectHandler
-    href: SaveSystem.Handlers.ObjectHandler-1.html
-  - name: <
-  - name: TO
-  - name: '>'
-  spec.vb:
-  - uid: SaveSystem.Handlers.ObjectHandler`1
-    name: ObjectHandler
-    href: SaveSystem.Handlers.ObjectHandler-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TO
-  - name: )
+- uid: SaveSystem.IStorable
+  commentId: T:SaveSystem.IStorable
+  href: SaveSystem.IStorable.html
+  name: IStorable
+  nameWithType: IStorable
+  fullName: SaveSystem.IStorable
 - uid: SaveSystem.Handlers
   commentId: N:SaveSystem.Handlers
   href: SaveSystem.html
@@ -173,25 +161,25 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
-  commentId: T:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  commentId: T:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}
   parent: SaveSystem.Handlers
   definition: SaveSystem.Handlers.AbstractHandler`2
   href: SaveSystem.Handlers.AbstractHandler-2.html
-  name: AbstractHandler<AsyncObjectHandler<TO>, TO>
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO)
-  name.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO)
+  name: AbstractHandler<SmartHandler<TO>, TO>
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO)
+  name.vb: AbstractHandler(Of SmartHandler(Of TO), TO)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2
     name: AbstractHandler
     href: SaveSystem.Handlers.AbstractHandler-2.html
   - name: <
-  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
-    name: AsyncObjectHandler
-    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
   - name: <
   - name: TO
   - name: '>'
@@ -206,9 +194,9 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - uid: SaveSystem.Handlers.AsyncObjectHandler`1
-    name: AsyncObjectHandler
-    href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
   - name: (
   - name: Of
   - name: " "
@@ -225,45 +213,105 @@ references:
   name: IAsyncObjectHandler
   nameWithType: IAsyncObjectHandler
   fullName: SaveSystem.Handlers.IAsyncObjectHandler
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObject({TO})
-  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.localFilePath
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.localFilePath
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.localFilePath
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.localFilePath
+  name: localFilePath
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.localFilePath
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.localFilePath
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).localFilePath
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).localFilePath
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.staticObjects
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.staticObjects
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.staticObjects
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.staticObjects
+  name: staticObjects
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.staticObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.staticObjects
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).staticObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).staticObjects
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.dynamicObjects
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.dynamicObjects
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.dynamicObjects
+  name: dynamicObjects
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.dynamicObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.dynamicObjects
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).dynamicObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).dynamicObjects
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.savingProgress
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.savingProgress
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.savingProgress
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.savingProgress
+  name: savingProgress
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.savingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.savingProgress
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).savingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).savingProgress
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.loadingProgress
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.loadingProgress
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.loadingProgress
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.loadingProgress
+  name: loadingProgress
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.loadingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.loadingProgress
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).loadingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).loadingProgress
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.factoryFunc
+  commentId: F:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.factoryFunc
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.factoryFunc
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.factoryFunc
+  name: factoryFunc
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.factoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.factoryFunc
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).factoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).factoryFunc
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.AddObject({TO})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   definition: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
-  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
   name: AddObject(TO)
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.AddObject(TO)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.AddObject(TO)
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).AddObject(TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).AddObject(TO)
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.AddObject(TO)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.AddObject(TO)
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).AddObject(TO)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).AddObject(TO)
   spec.csharp:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
     name: AddObject
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
   - name: (
   - name: TO
   - name: )
   spec.vb:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
     name: AddObject
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObject(`0)
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObject(`0)
   - name: (
   - name: TO
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
-  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   definition: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
-  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
   name: AddObjects(ICollection<TO>)
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.AddObjects(ICollection<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).AddObjects(ICollection(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.AddObjects(ICollection<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).AddObjects(ICollection(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
   name.vb: AddObjects(ICollection(Of TO))
   spec.csharp:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
     name: AddObjects
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
   - name: (
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
@@ -274,9 +322,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
     name: AddObjects
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
   - name: (
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
@@ -288,21 +336,21 @@ references:
   - name: TO
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
-  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   definition: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
-  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
   name: SetFactoryFunc(Func<TO>)
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.SetFactoryFunc(Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.SetFactoryFunc(System.Func<TO>)
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).SetFactoryFunc(Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).SetFactoryFunc(System.Func(Of TO))
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.SetFactoryFunc(Func<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.SetFactoryFunc(System.Func<TO>)
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).SetFactoryFunc(Func(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).SetFactoryFunc(System.Func(Of TO))
   name.vb: SetFactoryFunc(Func(Of TO))
   spec.csharp:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
     name: SetFactoryFunc
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
   - name: (
   - uid: System.Func`1
     name: Func
@@ -313,9 +361,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
     name: SetFactoryFunc
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.SetFactoryFunc(System.Func{`0})
   - name: (
   - uid: System.Func`1
     name: Func
@@ -327,21 +375,21 @@ references:
   - name: TO
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
-  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
-  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>)
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single))
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.ObserveProgress(System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single))
   spec.csharp:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
     name: ObserveProgress
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
   - name: (
   - uid: System.IProgress`1
     name: IProgress
@@ -355,9 +403,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
     name: ObserveProgress
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
   - name: (
   - uid: System.IProgress`1
     name: IProgress
@@ -372,21 +420,21 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
-  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,{TO}}
   definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
-  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>, IProgress<float>)
-  nameWithType: AbstractHandler<AsyncObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.AsyncObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of AsyncObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.AsyncObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  nameWithType: AbstractHandler<SmartHandler<TO>, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.SmartHandler<TO>, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of SmartHandler(Of TO), TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.SmartHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
   spec.csharp:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
     name: ObserveProgress
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   - name: (
   - uid: System.IProgress`1
     name: IProgress
@@ -412,9 +460,9 @@ references:
   - name: '>'
   - name: )
   spec.vb:
-  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
     name: ObserveProgress
-    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.AsyncObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.SmartHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   - name: (
   - uid: System.IProgress`1
     name: IProgress
@@ -569,6 +617,30 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
   - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
@@ -676,6 +748,54 @@ references:
   - name: " "
   - name: TO
   - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.localFilePath
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.localFilePath
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.localFilePath
+  name: localFilePath
+  nameWithType: AbstractHandler<T, TO>.localFilePath
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.localFilePath
+  nameWithType.vb: AbstractHandler(Of T, TO).localFilePath
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).localFilePath
+- uid: SaveSystem.Handlers.AbstractHandler`2.staticObjects
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.staticObjects
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.staticObjects
+  name: staticObjects
+  nameWithType: AbstractHandler<T, TO>.staticObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.staticObjects
+  nameWithType.vb: AbstractHandler(Of T, TO).staticObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).staticObjects
+- uid: SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
+  name: dynamicObjects
+  nameWithType: AbstractHandler<T, TO>.dynamicObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.dynamicObjects
+  nameWithType.vb: AbstractHandler(Of T, TO).dynamicObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).dynamicObjects
+- uid: SaveSystem.Handlers.AbstractHandler`2.savingProgress
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.savingProgress
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.savingProgress
+  name: savingProgress
+  nameWithType: AbstractHandler<T, TO>.savingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.savingProgress
+  nameWithType.vb: AbstractHandler(Of T, TO).savingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).savingProgress
+- uid: SaveSystem.Handlers.AbstractHandler`2.loadingProgress
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.loadingProgress
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.loadingProgress
+  name: loadingProgress
+  nameWithType: AbstractHandler<T, TO>.loadingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.loadingProgress
+  nameWithType.vb: AbstractHandler(Of T, TO).loadingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).loadingProgress
+- uid: SaveSystem.Handlers.AbstractHandler`2.factoryFunc
+  commentId: F:SaveSystem.Handlers.AbstractHandler`2.factoryFunc
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.factoryFunc
+  name: factoryFunc
+  nameWithType: AbstractHandler<T, TO>.factoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.factoryFunc
+  nameWithType.vb: AbstractHandler(Of T, TO).factoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).factoryFunc
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
@@ -888,14 +1008,14 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync*
-  commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync
-  href: SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
+- uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync*
+  commentId: Overload:SaveSystem.Handlers.SmartHandler`1.SaveAsync
+  href: SaveSystem.Handlers.SmartHandler-1.html#SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
   name: SaveAsync
-  nameWithType: AsyncObjectHandler<TO>.SaveAsync
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync
-  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync
+  nameWithType: SmartHandler<TO>.SaveAsync
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync
+  nameWithType.vb: SmartHandler(Of TO).SaveAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync
 - uid: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
   commentId: M:SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync(System.Threading.CancellationToken)
   parent: SaveSystem.Handlers.IAsyncObjectHandler
@@ -1033,14 +1153,14 @@ references:
   - name: .
   - uid: Cysharp.Threading.Tasks
     name: Tasks
-- uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync*
-  commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync
-  href: SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
+- uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync*
+  commentId: Overload:SaveSystem.Handlers.SmartHandler`1.LoadAsync
+  href: SaveSystem.Handlers.SmartHandler-1.html#SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
   name: LoadAsync
-  nameWithType: AsyncObjectHandler<TO>.LoadAsync
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync
-  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync
+  nameWithType: SmartHandler<TO>.LoadAsync
+  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync
+  nameWithType.vb: SmartHandler(Of TO).LoadAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync
 - uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
   commentId: M:SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
   parent: SaveSystem.Handlers.IAsyncObjectHandler

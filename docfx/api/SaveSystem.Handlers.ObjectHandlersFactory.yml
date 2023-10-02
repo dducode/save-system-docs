@@ -6,11 +6,17 @@ items:
   parent: SaveSystem.Handlers
   children:
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,``0,System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Func{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,``0,System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Func{``0},System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  - SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
   - SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately
   langs:
   - csharp
@@ -130,11 +136,11 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 75
+    startLine: 62
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
-  summary: Creates an object handler that will saving a single object
+  summary: Creates an object handler that will saving and loading a single object
   example: []
   syntax:
     content: 'public static ObjectHandler<TO> CreateHandler<TO>(string filePath, TO obj, string caller = "") where TO : IPersistentObject'
@@ -171,11 +177,11 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 103
+    startLine: 78
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
-  summary: Creates an object handler that will saving some objects
+  summary: Creates an object handler that will saving and loading some objects
   example: []
   syntax:
     content: 'public static ObjectHandler<TO> CreateHandler<TO>(string filePath, ICollection<TO> objects, string caller = "") where TO : IPersistentObject'
@@ -198,6 +204,50 @@ items:
   nameWithType.vb: ObjectHandlersFactory.CreateHandler(Of TO)(String, ICollection(Of TO), String)
   fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), String)
   name.vb: CreateHandler(Of TO)(String, ICollection(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  id: CreateHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType: ObjectHandlersFactory.CreateHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  type: Method
+  source:
+    id: CreateHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 94
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates an object handler that will saving and loading some objects
+  example: []
+  syntax:
+    content: 'public static ObjectHandler<TO> CreateHandler<TO>(string filePath, ICollection<TO> objects, Func<TO> factoryFunc, string caller = "") where TO : IPersistentObject'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: objects
+      type: System.Collections.Generic.ICollection{{TO}}
+      description: Objects which will be saved and loaded
+    - id: factoryFunc
+      type: System.Func{{TO}}
+      description: Function for objects spawn. This is necessary to load dynamic objects
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.ObjectHandler{{TO}}
+    content.vb: Public Shared Function CreateHandler(Of [TO] As IPersistentObject)(filePath As String, objects As ICollection(Of [TO]), factoryFunc As Func(Of [TO]), caller As String = "") As ObjectHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  name.vb: CreateHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
 - uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Func{``0},System.String)
   commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Func{``0},System.String)
   id: CreateAsyncHandler``1(System.String,System.Func{``0},System.String)
@@ -212,7 +262,7 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 133
+    startLine: 123
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -253,11 +303,11 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 161
+    startLine: 138
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
-  summary: Creates an object handler that will saving a single object async
+  summary: Creates an async object handler that will saving and loading a single object async
   example: []
   syntax:
     content: 'public static AsyncObjectHandler<TO> CreateAsyncHandler<TO>(string filePath, TO obj, string caller = "") where TO : IPersistentObjectAsync'
@@ -267,7 +317,7 @@ items:
       description: Path to save and load objects
     - id: obj
       type: '{TO}'
-      description: Objects which will be saved
+      description: Objects which will be saved and loaded
     - id: caller
       type: System.String
       description: For internal use (no need to pass it manually)
@@ -294,11 +344,11 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 189
+    startLine: 154
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
-  summary: Creates an object handler that will saving some objects async
+  summary: Creates an object handler that will saving and loading some objects async
   example: []
   syntax:
     content: 'public static AsyncObjectHandler<TO> CreateAsyncHandler<TO>(string filePath, ICollection<TO> objects, string caller = "") where TO : IPersistentObjectAsync'
@@ -308,7 +358,7 @@ items:
       description: Path to save and load objects
     - id: objects
       type: System.Collections.Generic.ICollection{{TO}}
-      description: Objects which will be saved
+      description: Objects which will be saved and loaded
     - id: caller
       type: System.String
       description: For internal use (no need to pass it manually)
@@ -321,6 +371,217 @@ items:
   nameWithType.vb: ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, ICollection(Of TO), String)
   fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), String)
   name.vb: CreateAsyncHandler(Of TO)(String, ICollection(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  id: CreateAsyncHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateAsyncHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType: ObjectHandlersFactory.CreateAsyncHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  type: Method
+  source:
+    id: CreateAsyncHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 170
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates an object handler that will saving and loading some objects async
+  example: []
+  syntax:
+    content: 'public static AsyncObjectHandler<TO> CreateAsyncHandler<TO>(string filePath, ICollection<TO> objects, Func<TO> factoryFunc, string caller = "") where TO : IPersistentObjectAsync'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: objects
+      type: System.Collections.Generic.ICollection{{TO}}
+      description: Objects which will be saved and loaded
+    - id: factoryFunc
+      type: System.Func{{TO}}
+      description: Function for objects spawn. This is necessary to load dynamic objects
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.AsyncObjectHandler{{TO}}
+    content.vb: Public Shared Function CreateAsyncHandler(Of [TO] As IPersistentObjectAsync)(filePath As String, objects As ICollection(Of [TO]), factoryFunc As Func(Of [TO]), caller As String = "") As AsyncObjectHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateAsyncHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  name.vb: CreateAsyncHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  id: CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSmartHandler<TO>(string, Func<TO>, string)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, Func<TO>, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Func<TO>, string)
+  type: Method
+  source:
+    id: CreateSmartHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 199
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates an empty smart handler
+  example: []
+  syntax:
+    content: 'public static SmartHandler<TO> CreateSmartHandler<TO>(string filePath, Func<TO> factoryFunc, string caller = "") where TO : IStorable'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: factoryFunc
+      type: System.Func{{TO}}
+      description: Function for objects spawn. This is necessary to load dynamic objects
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.SmartHandler{{TO}}
+    content.vb: Public Shared Function CreateSmartHandler(Of [TO] As IStorable)(filePath As String, factoryFunc As Func(Of [TO]), caller As String = "") As SmartHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, Func(Of TO), String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Func(Of TO), String)
+  name.vb: CreateSmartHandler(Of TO)(String, Func(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,``0,System.String)
+  id: CreateSmartHandler``1(System.String,``0,System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSmartHandler<TO>(string, TO, string)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, TO, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, TO, string)
+  type: Method
+  source:
+    id: CreateSmartHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 214
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates a smart handler that will saving and loading a single storable object
+  example: []
+  syntax:
+    content: 'public static SmartHandler<TO> CreateSmartHandler<TO>(string filePath, TO obj, string caller = "") where TO : IStorable'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: obj
+      type: '{TO}'
+      description: Objects which will be saved and loaded
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.SmartHandler{{TO}}
+    content.vb: Public Shared Function CreateSmartHandler(Of [TO] As IStorable)(filePath As String, obj As [TO], caller As String = "") As SmartHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, TO, String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, TO, String)
+  name.vb: CreateSmartHandler(Of TO)(String, TO, String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  id: CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSmartHandler<TO>(string, ICollection<TO>, string)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, ICollection<TO>, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Collections.Generic.ICollection<TO>, string)
+  type: Method
+  source:
+    id: CreateSmartHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 230
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates a smart handler that will saving and loading some storable objects
+  example: []
+  syntax:
+    content: 'public static SmartHandler<TO> CreateSmartHandler<TO>(string filePath, ICollection<TO> objects, string caller = "") where TO : IStorable'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: objects
+      type: System.Collections.Generic.ICollection{{TO}}
+      description: Objects which will be saved and loaded
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.SmartHandler{{TO}}
+    content.vb: Public Shared Function CreateSmartHandler(Of [TO] As IStorable)(filePath As String, objects As ICollection(Of [TO]), caller As String = "") As SmartHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, ICollection(Of TO), String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), String)
+  name.vb: CreateSmartHandler(Of TO)(String, ICollection(Of TO), String)
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  commentId: M:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  id: CreateSmartHandler``1(System.String,System.Collections.Generic.ICollection{``0},System.Func{``0},System.String)
+  parent: SaveSystem.Handlers.ObjectHandlersFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSmartHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler<TO>(string, ICollection<TO>, Func<TO>, string)
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler<TO>(string, System.Collections.Generic.ICollection<TO>, System.Func<TO>, string)
+  type: Method
+  source:
+    id: CreateSmartHandler
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
+    startLine: 246
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  summary: Creates a smart handler that will saving and loading some storable objects
+  example: []
+  syntax:
+    content: 'public static SmartHandler<TO> CreateSmartHandler<TO>(string filePath, ICollection<TO> objects, Func<TO> factoryFunc, string caller = "") where TO : IStorable'
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to save and load objects
+    - id: objects
+      type: System.Collections.Generic.ICollection{{TO}}
+      description: Objects which will be saved and loaded
+    - id: factoryFunc
+      type: System.Func{{TO}}
+      description: Function for objects spawn. This is necessary to load dynamic objects
+    - id: caller
+      type: System.String
+      description: For internal use (no need to pass it manually)
+    typeParameters:
+    - id: TO
+    return:
+      type: SaveSystem.Handlers.SmartHandler{{TO}}
+    content.vb: Public Shared Function CreateSmartHandler(Of [TO] As IStorable)(filePath As String, objects As ICollection(Of [TO]), factoryFunc As Func(Of [TO]), caller As String = "") As SmartHandler(Of [TO])
+  overload: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  nameWithType.vb: ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
+  fullName.vb: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler(Of TO)(String, System.Collections.Generic.ICollection(Of TO), System.Func(Of TO), String)
+  name.vb: CreateSmartHandler(Of TO)(String, ICollection(Of TO), Func(Of TO), String)
 references:
 - uid: SaveSystem.Handlers.ObjectHandler`1
   commentId: T:SaveSystem.Handlers.ObjectHandler`1
@@ -881,6 +1142,64 @@ references:
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
     name: AsyncObjectHandler
     href: SaveSystem.Handlers.AsyncObjectHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler*
+  commentId: Overload:SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler
+  href: SaveSystem.Handlers.ObjectHandlersFactory.html#SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler``1(System.String,System.Func{``0},System.String)
+  name: CreateSmartHandler
+  nameWithType: ObjectHandlersFactory.CreateSmartHandler
+  fullName: SaveSystem.Handlers.ObjectHandlersFactory.CreateSmartHandler
+- uid: SaveSystem.Handlers.SmartHandler{{TO}}
+  commentId: T:SaveSystem.Handlers.SmartHandler{``0}
+  parent: SaveSystem.Handlers
+  definition: SaveSystem.Handlers.SmartHandler`1
+  href: SaveSystem.Handlers.SmartHandler-1.html
+  name: SmartHandler<TO>
+  nameWithType: SmartHandler<TO>
+  fullName: SaveSystem.Handlers.SmartHandler<TO>
+  nameWithType.vb: SmartHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
+  name.vb: SmartHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TO
+  - name: )
+- uid: SaveSystem.Handlers.SmartHandler`1
+  commentId: T:SaveSystem.Handlers.SmartHandler`1
+  href: SaveSystem.Handlers.SmartHandler-1.html
+  name: SmartHandler<TO>
+  nameWithType: SmartHandler<TO>
+  fullName: SaveSystem.Handlers.SmartHandler<TO>
+  nameWithType.vb: SmartHandler(Of TO)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
+  name.vb: SmartHandler(Of TO)
+  spec.csharp:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
+  - name: <
+  - name: TO
+  - name: '>'
+  spec.vb:
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler
+    href: SaveSystem.Handlers.SmartHandler-1.html
   - name: (
   - name: Of
   - name: " "

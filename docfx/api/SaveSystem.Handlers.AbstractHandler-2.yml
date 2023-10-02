@@ -5,8 +5,7 @@ items:
   id: AbstractHandler`2
   parent: SaveSystem.Handlers
   children:
-  - SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
-  - SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})
+  - SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
   - SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   - SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   - SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
@@ -47,6 +46,7 @@ items:
   derivedClasses:
   - SaveSystem.Handlers.AsyncObjectHandler`1
   - SaveSystem.Handlers.ObjectHandler`1
+  - SaveSystem.Handlers.SmartHandler`1
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -208,16 +208,16 @@ items:
     content.vb: Protected factoryFunc As Func(Of [TO])
   nameWithType.vb: AbstractHandler(Of T, TO).factoryFunc
   fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).factoryFunc
-- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
-  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
-  id: '#ctor(System.String,`1[])'
+- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
+  id: '#ctor(System.String,`1[],System.Func{`1})'
   parent: SaveSystem.Handlers.AbstractHandler`2
   langs:
   - csharp
   - vb
-  name: AbstractHandler(string, TO[])
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[])
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[])
+  name: AbstractHandler(string, TO[], Func<TO>)
+  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[], Func<TO>)
+  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[], System.Func<TO>)
   type: Constructor
   source:
     id: .ctor
@@ -227,47 +227,19 @@ items:
   - SaveSystem
   namespace: SaveSystem.Handlers
   syntax:
-    content: protected AbstractHandler(string localFilePath, TO[] staticObjects)
+    content: protected AbstractHandler(string localFilePath, TO[] staticObjects, Func<TO> factoryFunc)
     parameters:
     - id: localFilePath
       type: System.String
     - id: staticObjects
       type: '{TO}[]'
-    content.vb: Protected Sub New(localFilePath As String, staticObjects As [TO]())
-  overload: SaveSystem.Handlers.AbstractHandler`2.#ctor*
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO())
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO())
-  name.vb: New(String, TO())
-- uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})
-  commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,System.Func{`1})
-  id: '#ctor(System.String,System.Func{`1})'
-  parent: SaveSystem.Handlers.AbstractHandler`2
-  langs:
-  - csharp
-  - vb
-  name: AbstractHandler(string, Func<TO>)
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, System.Func<TO>)
-  type: Constructor
-  source:
-    id: .ctor
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 31
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem.Handlers
-  syntax:
-    content: protected AbstractHandler(string localFilePath, Func<TO> factoryFunc)
-    parameters:
-    - id: localFilePath
-      type: System.String
     - id: factoryFunc
       type: System.Func{{TO}}
-    content.vb: Protected Sub New(localFilePath As String, factoryFunc As Func(Of [TO]))
+    content.vb: Protected Sub New(localFilePath As String, staticObjects As [TO](), factoryFunc As Func(Of [TO]))
   overload: SaveSystem.Handlers.AbstractHandler`2.#ctor*
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, System.Func(Of TO))
-  name.vb: New(String, Func(Of TO))
+  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO(), Func(Of TO))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO(), System.Func(Of TO))
+  name.vb: New(String, TO(), Func(Of TO))
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   id: AddObject(`1)
@@ -282,7 +254,7 @@ items:
   source:
     id: AddObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 41
+    startLine: 36
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -318,7 +290,7 @@ items:
   source:
     id: AddObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 55
+    startLine: 50
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -355,7 +327,7 @@ items:
   source:
     id: SetFactoryFunc
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 68
+    startLine: 63
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -391,7 +363,7 @@ items:
   source:
     id: ObserveProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 78
+    startLine: 73
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -424,7 +396,7 @@ items:
   source:
     id: ObserveProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 90
+    startLine: 85
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -949,7 +921,7 @@ references:
   - name: )
 - uid: SaveSystem.Handlers.AbstractHandler`2.#ctor*
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.#ctor
-  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[])
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
   name: AbstractHandler
   nameWithType: AbstractHandler<T, TO>.AbstractHandler
   fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler

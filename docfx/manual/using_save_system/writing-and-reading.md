@@ -8,7 +8,7 @@ and
 They can write and read data respectively. Your
 `MonoBehaviour` classes get these data handler from the
 `DataManager` when you're saving or loading them. To write and
-read data you would write
+read data you would write:
 
 ```csharp
 public void Save (UnityWriter writer) {
@@ -35,6 +35,10 @@ public void Load (UnityReader reader) {
 
 > [!IMPORTANT]
 > You must read data in the same order as you write it.
+> If you don't want to worry about this, implement 
+> [`IStorable`](../../api/SaveSystem.IStorable.yml) interface and use
+> [`SmartHandler`](../../api/SaveSystem.Handlers.SmartHandler-1.yml).
+> Read [this](data-buffer.md) article for more information.
 
 To learn how to control custom classes and structs see 
-[this part](objects-control.md)
+[this part](objects-control.md).

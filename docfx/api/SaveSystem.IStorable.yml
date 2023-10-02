@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.IStorable
+  commentId: T:SaveSystem.IStorable
+  id: IStorable
+  parent: SaveSystem
+  children:
+  - SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  - SaveSystem.IStorable.Save
+  langs:
+  - csharp
+  - vb
+  name: IStorable
+  nameWithType: IStorable
+  fullName: SaveSystem.IStorable
+  type: Interface
+  source:
+    id: IStorable
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IStorable.cs
+    startLine: 6
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: >-
+    Implement this for simplifed handling of your objects.
+
+    It's easier in use than <xref href="SaveSystem.IPersistentObject" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public interface IStorable
+    content.vb: Public Interface IStorable
+- uid: SaveSystem.IStorable.Save
+  commentId: M:SaveSystem.IStorable.Save
+  id: Save
+  parent: SaveSystem.IStorable
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: IStorable.Save()
+  fullName: SaveSystem.IStorable.Save()
+  type: Method
+  source:
+    id: Save
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IStorable.cs
+    startLine: 11
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Writes some data to <xref href="SaveSystem.DataBuffer" data-throw-if-not-resolved="false"></xref> and return this
+  example: []
+  syntax:
+    content: DataBuffer Save()
+    return:
+      type: SaveSystem.DataBuffer
+    content.vb: Function Save() As DataBuffer
+  overload: SaveSystem.IStorable.Save*
+- uid: SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  commentId: M:SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  id: Load(SaveSystem.DataBuffer)
+  parent: SaveSystem.IStorable
+  langs:
+  - csharp
+  - vb
+  name: Load(DataBuffer)
+  nameWithType: IStorable.Load(DataBuffer)
+  fullName: SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  type: Method
+  source:
+    id: Load
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IStorable.cs
+    startLine: 17
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem
+  summary: Gets <xref href="SaveSystem.DataBuffer" data-throw-if-not-resolved="false"></xref> and read data from this
+  example: []
+  syntax:
+    content: void Load(DataBuffer buffer)
+    parameters:
+    - id: buffer
+      type: SaveSystem.DataBuffer
+    content.vb: Sub Load(buffer As DataBuffer)
+  overload: SaveSystem.IStorable.Load*
+references:
+- uid: SaveSystem.IPersistentObject
+  commentId: T:SaveSystem.IPersistentObject
+  parent: SaveSystem
+  href: SaveSystem.IPersistentObject.html
+  name: IPersistentObject
+  nameWithType: IPersistentObject
+  fullName: SaveSystem.IPersistentObject
+- uid: SaveSystem
+  commentId: N:SaveSystem
+  href: SaveSystem.html
+  name: SaveSystem
+  nameWithType: SaveSystem
+  fullName: SaveSystem
+- uid: SaveSystem.DataBuffer
+  commentId: T:SaveSystem.DataBuffer
+  parent: SaveSystem
+  href: SaveSystem.DataBuffer.html
+  name: DataBuffer
+  nameWithType: DataBuffer
+  fullName: SaveSystem.DataBuffer
+- uid: SaveSystem.IStorable.Save*
+  commentId: Overload:SaveSystem.IStorable.Save
+  href: SaveSystem.IStorable.html#SaveSystem.IStorable.Save
+  name: Save
+  nameWithType: IStorable.Save
+  fullName: SaveSystem.IStorable.Save
+- uid: SaveSystem.IStorable.Load*
+  commentId: Overload:SaveSystem.IStorable.Load
+  href: SaveSystem.IStorable.html#SaveSystem.IStorable.Load(SaveSystem.DataBuffer)
+  name: Load
+  nameWithType: IStorable.Load
+  fullName: SaveSystem.IStorable.Load

@@ -5,6 +5,8 @@ items:
   items:
   - uid: SaveSystem.AsyncMode
     name: AsyncMode
+  - uid: SaveSystem.DataBuffer
+    name: DataBuffer
   - uid: SaveSystem.DataManager
     name: DataManager
   - uid: SaveSystem.DataManager.Advanced
@@ -13,6 +15,8 @@ items:
     name: IPersistentObject
   - uid: SaveSystem.IPersistentObjectAsync
     name: IPersistentObjectAsync
+  - uid: SaveSystem.IStorable
+    name: IStorable
   - uid: SaveSystem.MeshData
     name: MeshData
   - uid: SaveSystem.Storage
@@ -64,6 +68,9 @@ items:
     name.vb: ObjectHandler(Of TO)
   - uid: SaveSystem.Handlers.ObjectHandlersFactory
     name: ObjectHandlersFactory
+  - uid: SaveSystem.Handlers.SmartHandler`1
+    name: SmartHandler<TO>
+    name.vb: SmartHandler(Of TO)
 - uid: SaveSystem.UnityHandlers
   name: SaveSystem.UnityHandlers
   items:

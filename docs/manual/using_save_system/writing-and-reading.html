@@ -83,7 +83,7 @@ and
 They can write and read data respectively. Your
 <code>MonoBehaviour</code> classes get these data handler from the
 <code>DataManager</code> when you're saving or loading them. To write and
-read data you would write</p>
+read data you would write:</p>
 <pre><code class="lang-csharp">public void Save (UnityWriter writer) {
     writer.Write(transform.position);
     writer.Write(transform.rotation);
@@ -107,10 +107,14 @@ public void Load (UnityReader reader) {
 </code></pre>
 <div class="IMPORTANT">
 <h5>Important</h5>
-<p>You must read data in the same order as you write it.</p>
+<p>You must read data in the same order as you write it.
+If you don't want to worry about this, implement
+<a href="../../api/SaveSystem.IStorable.html"><code>IStorable</code></a> interface and use
+<a href="../../api/SaveSystem.Handlers.SmartHandler-1.html"><code>SmartHandler</code></a>.
+Read <a href="data-buffer.html">this</a> article for more information.</p>
 </div>
 <p>To learn how to control custom classes and structs see
-<a href="objects-control.html">this part</a></p>
+<a href="objects-control.html">this part</a>.</p>
 </article>
 
 
