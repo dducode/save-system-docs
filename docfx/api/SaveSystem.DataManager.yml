@@ -23,7 +23,7 @@ items:
   source:
     id: DataManager
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.advanced.cs
-    startLine: 10
+    startLine: 19
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -56,7 +56,7 @@ items:
   source:
     id: SaveObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 29
+    startLine: 41
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -68,17 +68,9 @@ items:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: obj
       type: '{T}'
       description: the object which will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     typeParameters:
     - id: T
     content.vb: Public Shared Sub SaveObject(Of T As IPersistentObject)(filePath As String, obj As T)
@@ -100,7 +92,7 @@ items:
   source:
     id: SaveObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 41
+    startLine: 53
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -112,17 +104,9 @@ items:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: objects
       type: System.Collections.Generic.ICollection{{T}}
       description: the objects which will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     typeParameters:
     - id: T
     content.vb: Public Shared Sub SaveObjects(Of T As IPersistentObject)(filePath As String, objects As ICollection(Of T))
@@ -144,7 +128,7 @@ items:
   source:
     id: LoadObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 65
+    startLine: 77
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -156,17 +140,9 @@ items:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: obj
       type: '{T}'
       description: the object which will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     typeParameters:
     - id: T
     return:
@@ -191,7 +167,7 @@ items:
   source:
     id: LoadObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 78
+    startLine: 90
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -203,17 +179,9 @@ items:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: objects
       type: System.Collections.Generic.ICollection{{T}}
       description: the objects which will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     typeParameters:
     - id: T
     return:
@@ -238,7 +206,7 @@ items:
   source:
     id: SaveObjectAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 107
+    startLine: 119
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -248,22 +216,14 @@ items:
     content: >-
       [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
-      public static UniTask SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
+      public static Task SaveObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: obj
       type: SaveSystem.IPersistentObject
       description: the object which will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: source
@@ -271,11 +231,11 @@ items:
     - id: onComplete
       type: System.Action
     return:
-      type: Cysharp.Threading.Tasks.UniTask
+      type: System.Threading.Tasks.Task
     content.vb: >-
       <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
-      Public Shared Function SaveObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+      Public Shared Function SaveObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As Task
   overload: SaveSystem.DataManager.SaveObjectAsync*
   exceptions:
   - type: System.OperationCanceledException
@@ -304,7 +264,7 @@ items:
   source:
     id: SaveObjectsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 126
+    startLine: 138
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -314,22 +274,14 @@ items:
     content: >-
       [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
-      public static UniTask SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
+      public static Task SaveObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file where the object data will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: objects
       type: SaveSystem.IPersistentObject[]
       description: the objects which will be saved
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: progress
@@ -339,11 +291,11 @@ items:
     - id: onComplete
       type: System.Action
     return:
-      type: Cysharp.Threading.Tasks.UniTask
+      type: System.Threading.Tasks.Task
     content.vb: >-
       <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
-      Public Shared Function SaveObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask
+      Public Shared Function SaveObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As Task
   overload: SaveSystem.DataManager.SaveObjectsAsync*
   exceptions:
   - type: System.OperationCanceledException
@@ -372,7 +324,7 @@ items:
   source:
     id: LoadObjectAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 188
+    startLine: 209
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -382,22 +334,14 @@ items:
     content: >-
       [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
-      public static UniTask<bool> LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
+      public static Task<bool> LoadObjectAsync(string filePath, IPersistentObject obj, AsyncMode asyncMode, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: obj
       type: SaveSystem.IPersistentObject
       description: the object which will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: source
@@ -405,12 +349,12 @@ items:
     - id: onComplete
       type: System.Action
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
+      type: System.Threading.Tasks.Task{System.Boolean}
       description: Returns true if there is saved data, otherwise false
     content.vb: >-
       <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
-      Public Shared Function LoadObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+      Public Shared Function LoadObjectAsync(filePath As String, obj As IPersistentObject, asyncMode As AsyncMode, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As Task(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectAsync*
   exceptions:
   - type: System.OperationCanceledException
@@ -439,7 +383,7 @@ items:
   source:
     id: LoadObjectsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\DataManager.main.cs
-    startLine: 207
+    startLine: 228
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -449,22 +393,14 @@ items:
     content: >-
       [Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")]
 
-      public static UniTask<bool> LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
+      public static Task<bool> LoadObjectsAsync(string filePath, IPersistentObject[] objects, AsyncMode asyncMode, IProgress<float> progress = null, CancellationTokenSource source = null, Action onComplete = null)
     parameters:
     - id: filePath
       type: System.String
       description: the file whereof the object data will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: objects
       type: SaveSystem.IPersistentObject[]
       description: the objects which will be load
-      attributes:
-      - type: JetBrains.Annotations.NotNullAttribute
-        ctor: JetBrains.Annotations.NotNullAttribute.#ctor
-        arguments: []
     - id: asyncMode
       type: SaveSystem.AsyncMode
     - id: progress
@@ -474,12 +410,12 @@ items:
     - id: onComplete
       type: System.Action
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Boolean}
+      type: System.Threading.Tasks.Task{System.Boolean}
       description: Returns true if there is saved data, otherwise false
     content.vb: >-
       <Obsolete("It's the obsolete method and it may be removed later. Use methods of the HandlersProvider class instead this.")>
 
-      Public Shared Function LoadObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As UniTask(Of Boolean)
+      Public Shared Function LoadObjectsAsync(filePath As String, objects As IPersistentObject(), asyncMode As AsyncMode, progress As IProgress(Of Single) = Nothing, source As CancellationTokenSource = Nothing, onComplete As Action = Nothing) As Task(Of Boolean)
   overload: SaveSystem.DataManager.LoadObjectsAsync*
   exceptions:
   - type: System.OperationCanceledException
@@ -931,12 +867,14 @@ references:
   name: Action
   nameWithType: Action
   fullName: System.Action
-- uid: Cysharp.Threading.Tasks.UniTask
-  commentId: T:Cysharp.Threading.Tasks.UniTask
-  parent: Cysharp.Threading.Tasks
-  name: UniTask
-  nameWithType: UniTask
-  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
 - uid: System.Threading
   commentId: N:System.Threading
   isExternal: true
@@ -964,29 +902,43 @@ references:
     name: Threading
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
   spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
   spec.vb:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: SaveSystem.DataManager.SaveObjectsAsync*
   commentId: Overload:SaveSystem.DataManager.SaveObjectsAsync
   href: SaveSystem.DataManager.html#SaveSystem.DataManager.SaveObjectsAsync(System.String,SaveSystem.IPersistentObject[],SaveSystem.AsyncMode,System.IProgress{System.Single},System.Threading.CancellationTokenSource,System.Action)
@@ -1083,20 +1035,22 @@ references:
   name: LoadObjectAsync
   nameWithType: DataManager.LoadObjectAsync
   fullName: SaveSystem.DataManager.LoadObjectAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Boolean}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Boolean}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: UniTask<bool>
-  nameWithType: UniTask<bool>
-  fullName: Cysharp.Threading.Tasks.UniTask<bool>
-  nameWithType.vb: UniTask(Of Boolean)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Boolean)
-  name.vb: UniTask(Of Boolean)
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Boolean
     name: bool
@@ -1104,8 +1058,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -1114,27 +1070,33 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
-- uid: Cysharp.Threading.Tasks.UniTask`1
-  commentId: T:Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<T>
-  nameWithType: UniTask<T>
-  fullName: Cysharp.Threading.Tasks.UniTask<T>
-  nameWithType.vb: UniTask(Of T)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T)
-  name.vb: UniTask(Of T)
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - name: T
+  - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: TResult
   - name: )
 - uid: SaveSystem.DataManager.LoadObjectsAsync*
   commentId: Overload:SaveSystem.DataManager.LoadObjectsAsync

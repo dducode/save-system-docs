@@ -5,6 +5,8 @@ items:
   items:
   - uid: SaveSystem.AsyncMode
     name: AsyncMode
+  - uid: SaveSystem.BootstrapCallbackAttribute
+    name: BootstrapCallbackAttribute
   - uid: SaveSystem.DataBuffer
     name: DataBuffer
   - uid: SaveSystem.DataManager
@@ -19,6 +21,10 @@ items:
     name: IStorable
   - uid: SaveSystem.MeshData
     name: MeshData
+  - uid: SaveSystem.ProjectBootstrapAttribute
+    name: ProjectBootstrapAttribute
+  - uid: SaveSystem.SceneBootstrapAttribute
+    name: SceneBootstrapAttribute
   - uid: SaveSystem.Storage
     name: Storage
 - uid: SaveSystem.CheckPoints
@@ -43,6 +49,11 @@ items:
     name: SaveSystemSettings
   - uid: SaveSystem.Core.SaveType
     name: SaveType
+- uid: SaveSystem.Exceptions
+  name: SaveSystem.Exceptions
+  items:
+  - uid: SaveSystem.Exceptions.SaveSystemException
+    name: SaveSystemException
 - uid: SaveSystem.Extensions
   name: SaveSystem.Extensions
   items:
@@ -52,11 +63,11 @@ items:
   name: SaveSystem.Handlers
   items:
   - uid: SaveSystem.Handlers.AbstractHandler`2
-    name: AbstractHandler<T, TO>
-    name.vb: AbstractHandler(Of T, TO)
+    name: AbstractHandler<THandler, TObject>
+    name.vb: AbstractHandler(Of THandler, TObject)
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
-    name: AsyncObjectHandler<TO>
-    name.vb: AsyncObjectHandler(Of TO)
+    name: AsyncObjectHandler<TObject>
+    name.vb: AsyncObjectHandler(Of TObject)
   - uid: SaveSystem.Handlers.HandlingResult
     name: HandlingResult
   - uid: SaveSystem.Handlers.IAsyncObjectHandler
@@ -64,13 +75,13 @@ items:
   - uid: SaveSystem.Handlers.IObjectHandler
     name: IObjectHandler
   - uid: SaveSystem.Handlers.ObjectHandler`1
-    name: ObjectHandler<TO>
-    name.vb: ObjectHandler(Of TO)
+    name: ObjectHandler<TObject>
+    name.vb: ObjectHandler(Of TObject)
   - uid: SaveSystem.Handlers.ObjectHandlersFactory
     name: ObjectHandlersFactory
   - uid: SaveSystem.Handlers.SmartHandler`1
-    name: SmartHandler<TO>
-    name.vb: SmartHandler(Of TO)
+    name: SmartHandler<TObject>
+    name.vb: SmartHandler(Of TObject)
 - uid: SaveSystem.UnityHandlers
   name: SaveSystem.UnityHandlers
   items:

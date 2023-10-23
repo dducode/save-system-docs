@@ -17,7 +17,7 @@ items:
   source:
     id: IAsyncObjectHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IAsyncObjectHandler.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -40,20 +40,20 @@ items:
   source:
     id: SaveAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IAsyncObjectHandler.cs
-    startLine: 13
+    startLine: 18
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Call it to start async objects saving
   example: []
   syntax:
-    content: UniTask<HandlingResult> SaveAsync(CancellationToken token = default)
+    content: Task<HandlingResult> SaveAsync(CancellationToken token = default)
     parameters:
     - id: token
       type: System.Threading.CancellationToken
     return:
-      type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
-    content.vb: Function SaveAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
+      type: System.Threading.Tasks.Task{SaveSystem.Handlers.HandlingResult}
+    content.vb: Function SaveAsync(token As CancellationToken = Nothing) As Task(Of HandlingResult)
   overload: SaveSystem.Handlers.IAsyncObjectHandler.SaveAsync*
 - uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
   commentId: M:SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)
@@ -69,20 +69,20 @@ items:
   source:
     id: LoadAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\IAsyncObjectHandler.cs
-    startLine: 19
+    startLine: 24
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Call it to start async objects loading
   example: []
   syntax:
-    content: UniTask<HandlingResult> LoadAsync(CancellationToken token = default)
+    content: Task<HandlingResult> LoadAsync(CancellationToken token = default)
     parameters:
     - id: token
       type: System.Threading.CancellationToken
     return:
-      type: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
-    content.vb: Function LoadAsync(token As CancellationToken = Nothing) As UniTask(Of HandlingResult)
+      type: System.Threading.Tasks.Task{SaveSystem.Handlers.HandlingResult}
+    content.vb: Function LoadAsync(token As CancellationToken = Nothing) As Task(Of HandlingResult)
   overload: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync*
 references:
 - uid: SaveSystem.Handlers
@@ -121,28 +121,32 @@ references:
   name: CancellationToken
   nameWithType: CancellationToken
   fullName: System.Threading.CancellationToken
-- uid: Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{SaveSystem.Handlers.HandlingResult}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: SaveSystem.Handlers.HandlingResult.html
-  name: UniTask<HandlingResult>
-  nameWithType: UniTask<HandlingResult>
-  fullName: Cysharp.Threading.Tasks.UniTask<SaveSystem.Handlers.HandlingResult>
-  nameWithType.vb: UniTask(Of HandlingResult)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of SaveSystem.Handlers.HandlingResult)
-  name.vb: UniTask(Of HandlingResult)
+- uid: System.Threading.Tasks.Task{SaveSystem.Handlers.HandlingResult}
+  commentId: T:System.Threading.Tasks.Task{SaveSystem.Handlers.HandlingResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HandlingResult>
+  nameWithType: Task<HandlingResult>
+  fullName: System.Threading.Tasks.Task<SaveSystem.Handlers.HandlingResult>
+  nameWithType.vb: Task(Of HandlingResult)
+  fullName.vb: System.Threading.Tasks.Task(Of SaveSystem.Handlers.HandlingResult)
+  name.vb: Task(Of HandlingResult)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: SaveSystem.Handlers.HandlingResult
     name: HandlingResult
     href: SaveSystem.Handlers.HandlingResult.html
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -177,51 +181,71 @@ references:
     name: Threading
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading
-- uid: Cysharp.Threading.Tasks.UniTask`1
-  commentId: T:Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<T>
-  nameWithType: UniTask<T>
-  fullName: Cysharp.Threading.Tasks.UniTask<T>
-  nameWithType.vb: UniTask(Of T)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T)
-  name.vb: UniTask(Of T)
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - name: T
+  - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: TResult
   - name: )
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
   spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
   spec.vb:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync*
   commentId: Overload:SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync
   href: SaveSystem.Handlers.IAsyncObjectHandler.html#SaveSystem.Handlers.IAsyncObjectHandler.LoadAsync(System.Threading.CancellationToken)

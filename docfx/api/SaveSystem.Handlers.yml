@@ -45,18 +45,18 @@ references:
 - uid: SaveSystem.Handlers.ObjectHandler`1
   commentId: T:SaveSystem.Handlers.ObjectHandler`1
   href: SaveSystem.Handlers.ObjectHandler-1.html
-  name: ObjectHandler<TO>
-  nameWithType: ObjectHandler<TO>
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
-  nameWithType.vb: ObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  name.vb: ObjectHandler(Of TO)
+  name: ObjectHandler<TObject>
+  nameWithType: ObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>
+  nameWithType.vb: ObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject)
+  name.vb: ObjectHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.ObjectHandler`1
     name: ObjectHandler
     href: SaveSystem.Handlers.ObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.ObjectHandler`1
@@ -65,23 +65,23 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1
   commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
   href: SaveSystem.Handlers.AsyncObjectHandler-1.html
-  name: AsyncObjectHandler<TO>
-  nameWithType: AsyncObjectHandler<TO>
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
-  nameWithType.vb: AsyncObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
-  name.vb: AsyncObjectHandler(Of TO)
+  name: AsyncObjectHandler<TObject>
+  nameWithType: AsyncObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>
+  nameWithType.vb: AsyncObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject)
+  name.vb: AsyncObjectHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
     name: AsyncObjectHandler
     href: SaveSystem.Handlers.AsyncObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
@@ -90,26 +90,26 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.AbstractHandler`2
   commentId: T:SaveSystem.Handlers.AbstractHandler`2
   href: SaveSystem.Handlers.AbstractHandler-2.html
-  name: AbstractHandler<T, TO>
-  nameWithType: AbstractHandler<T, TO>
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
-  nameWithType.vb: AbstractHandler(Of T, TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
-  name.vb: AbstractHandler(Of T, TO)
+  name: AbstractHandler<THandler, TObject>
+  nameWithType: AbstractHandler<THandler, TObject>
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>
+  nameWithType.vb: AbstractHandler(Of THandler, TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject)
+  name.vb: AbstractHandler(Of THandler, TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2
     name: AbstractHandler
     href: SaveSystem.Handlers.AbstractHandler-2.html
   - name: <
-  - name: T
+  - name: THandler
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.AbstractHandler`2
@@ -118,26 +118,26 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: THandler
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.SmartHandler`1
   commentId: T:SaveSystem.Handlers.SmartHandler`1
   href: SaveSystem.Handlers.SmartHandler-1.html
-  name: SmartHandler<TO>
-  nameWithType: SmartHandler<TO>
-  fullName: SaveSystem.Handlers.SmartHandler<TO>
-  nameWithType.vb: SmartHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
-  name.vb: SmartHandler(Of TO)
+  name: SmartHandler<TObject>
+  nameWithType: SmartHandler<TObject>
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>
+  nameWithType.vb: SmartHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject)
+  name.vb: SmartHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.SmartHandler`1
     name: SmartHandler
     href: SaveSystem.Handlers.SmartHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.SmartHandler`1
@@ -146,7 +146,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.IAsyncObjectHandler
   commentId: T:SaveSystem.Handlers.IAsyncObjectHandler

@@ -116,7 +116,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this&quot;)]
-public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
+public static Task&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -135,7 +135,7 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>Returns true if there is saved data, otherwise false</p>
 </dd>
   </dl>
@@ -169,7 +169,7 @@ public static UniTask&lt;bool&gt; LoadObjectAsync(string filePath, IPersistentOb
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this&quot;)]
-public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentObjectAsync[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
+public static Task&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentObjectAsync[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -190,7 +190,7 @@ public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentO
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">UniTask</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
     <dd><p>Returns true if there is saved data, otherwise false</p>
 </dd>
   </dl>
@@ -224,7 +224,7 @@ public static UniTask&lt;bool&gt; LoadObjectsAsync(string filePath, IPersistentO
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this&quot;)]
-public static UniTask SaveObjectAsync(string filePath, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
+public static Task SaveObjectAsync(string filePath, IPersistentObjectAsync obj, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -243,7 +243,7 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObjectAsync ob
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">UniTask</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 
@@ -276,7 +276,7 @@ public static UniTask SaveObjectAsync(string filePath, IPersistentObjectAsync ob
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Obsolete(&quot;The method is obsolete and may be removed later. Use the AdvancedDataHandler instead this&quot;)]
-public static UniTask SaveObjectsAsync(string filePath, IPersistentObjectAsync[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
+public static Task SaveObjectsAsync(string filePath, IPersistentObjectAsync[] objects, IProgress&lt;float&gt; progress = null, CancellationTokenSource source = null, Action onComplete = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -297,7 +297,7 @@ public static UniTask SaveObjectsAsync(string filePath, IPersistentObjectAsync[]
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">UniTask</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 

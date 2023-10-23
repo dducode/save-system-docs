@@ -83,7 +83,7 @@ items:
   source:
     id: UnityWriter
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 15
+    startLine: 22
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -118,7 +118,7 @@ items:
   source:
     id: .ctor
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 21
+    startLine: 30
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -148,7 +148,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 27
+    startLine: 36
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -173,7 +173,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 35
+    startLine: 44
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -198,7 +198,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 41
+    startLine: 50
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -226,7 +226,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 48
+    startLine: 57
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -254,18 +254,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 54
+    startLine: 68
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Vector2> vector2Collection)
+    content: public Task WriteAsync(IEnumerable<Vector2> vector2Collection)
     parameters:
     - id: vector2Collection
       type: System.Collections.Generic.IEnumerable{UnityEngine.Vector2}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(vector2Collection As IEnumerable(Of Vector2)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(vector2Collection As IEnumerable(Of Vector2)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector2))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector2))
@@ -284,7 +284,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 59
+    startLine: 74
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -309,7 +309,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 66
+    startLine: 81
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -337,7 +337,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 73
+    startLine: 88
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -365,18 +365,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 79
+    startLine: 99
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Vector3> vector3Collection)
+    content: public Task WriteAsync(IEnumerable<Vector3> vector3Collection)
     parameters:
     - id: vector3Collection
       type: System.Collections.Generic.IEnumerable{UnityEngine.Vector3}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(vector3Collection As IEnumerable(Of Vector3)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(vector3Collection As IEnumerable(Of Vector3)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector3))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector3))
@@ -395,7 +395,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 84
+    startLine: 105
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -420,7 +420,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 92
+    startLine: 113
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -448,7 +448,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 99
+    startLine: 120
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -476,18 +476,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 105
+    startLine: 131
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Vector4> vector4Collection)
+    content: public Task WriteAsync(IEnumerable<Vector4> vector4Collection)
     parameters:
     - id: vector4Collection
       type: System.Collections.Generic.IEnumerable{UnityEngine.Vector4}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(vector4Collection As IEnumerable(Of Vector4)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(vector4Collection As IEnumerable(Of Vector4)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Vector4))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Vector4))
@@ -506,7 +506,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 110
+    startLine: 137
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -531,7 +531,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 118
+    startLine: 145
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -556,7 +556,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 126
+    startLine: 153
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -584,7 +584,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 133
+    startLine: 160
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -612,18 +612,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 139
+    startLine: 171
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Color> colors)
+    content: public Task WriteAsync(IEnumerable<Color> colors)
     parameters:
     - id: colors
       type: System.Collections.Generic.IEnumerable{UnityEngine.Color}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(colors As IEnumerable(Of Color)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(colors As IEnumerable(Of Color)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Color))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Color))
@@ -642,7 +642,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 144
+    startLine: 177
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -667,7 +667,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 152
+    startLine: 185
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -695,7 +695,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 159
+    startLine: 192
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -723,18 +723,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 165
+    startLine: 203
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Color32> colors32)
+    content: public Task WriteAsync(IEnumerable<Color32> colors32)
     parameters:
     - id: colors32
       type: System.Collections.Generic.IEnumerable{UnityEngine.Color32}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(colors32 As IEnumerable(Of Color32)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(colors32 As IEnumerable(Of Color32)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Color32))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Color32))
@@ -753,7 +753,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 170
+    startLine: 209
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -778,7 +778,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 176
+    startLine: 215
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -806,7 +806,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 183
+    startLine: 222
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -834,18 +834,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 189
+    startLine: 233
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<Matrix4x4> matrices)
+    content: public Task WriteAsync(IEnumerable<Matrix4x4> matrices)
     parameters:
     - id: matrices
       type: System.Collections.Generic.IEnumerable{UnityEngine.Matrix4x4}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(matrices As IEnumerable(Of Matrix4x4)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(matrices As IEnumerable(Of Matrix4x4)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Matrix4x4))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of UnityEngine.Matrix4x4))
@@ -864,7 +864,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 194
+    startLine: 239
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -889,18 +889,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 238
+    startLine: 288
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(MeshData mesh)
+    content: public Task WriteAsync(MeshData mesh)
     parameters:
     - id: mesh
       type: SaveSystem.MeshData
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(mesh As MeshData) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(mesh As MeshData) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
 - uid: SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
   commentId: M:SaveSystem.UnityHandlers.UnityWriter.WriteObject``1(``0)
@@ -916,7 +916,7 @@ items:
   source:
     id: WriteObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 243
+    startLine: 294
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -946,7 +946,7 @@ items:
   source:
     id: WriteObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 248
+    startLine: 299
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -976,20 +976,20 @@ items:
   source:
     id: WriteObjectsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 254
+    startLine: 310
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteObjectsAsync<T>(IEnumerable<T> objects)
+    content: public Task WriteObjectsAsync<T>(IEnumerable<T> objects)
     parameters:
     - id: objects
       type: System.Collections.Generic.IEnumerable{{T}}
     typeParameters:
     - id: T
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteObjectsAsync(Of T)(objects As IEnumerable(Of T)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteObjectsAsync(Of T)(objects As IEnumerable(Of T)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync*
   nameWithType.vb: UnityWriter.WriteObjectsAsync(Of T)(IEnumerable(Of T))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteObjectsAsync(Of T)(System.Collections.Generic.IEnumerable(Of T))
@@ -1008,7 +1008,7 @@ items:
   source:
     id: WriteObjectsArray
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 259
+    startLine: 316
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1038,7 +1038,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 266
+    startLine: 323
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1066,7 +1066,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 271
+    startLine: 328
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1094,7 +1094,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 278
+    startLine: 335
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1122,18 +1122,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 284
+    startLine: 346
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<byte> bytes)
+    content: public Task WriteAsync(IEnumerable<byte> bytes)
     parameters:
     - id: bytes
       type: System.Collections.Generic.IEnumerable{System.Byte}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(bytes As IEnumerable(Of Byte)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(bytes As IEnumerable(Of Byte)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Byte))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Byte))
@@ -1152,7 +1152,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 289
+    startLine: 352
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1180,7 +1180,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 294
+    startLine: 357
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1208,7 +1208,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 301
+    startLine: 364
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1236,18 +1236,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 307
+    startLine: 375
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<short> shorts)
+    content: public Task WriteAsync(IEnumerable<short> shorts)
     parameters:
     - id: shorts
       type: System.Collections.Generic.IEnumerable{System.Int16}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(shorts As IEnumerable(Of Short)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(shorts As IEnumerable(Of Short)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Short))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Short))
@@ -1266,7 +1266,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 312
+    startLine: 381
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1294,7 +1294,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 317
+    startLine: 386
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1322,7 +1322,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 324
+    startLine: 393
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1350,18 +1350,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 330
+    startLine: 404
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<int> ints)
+    content: public Task WriteAsync(IEnumerable<int> ints)
     parameters:
     - id: ints
       type: System.Collections.Generic.IEnumerable{System.Int32}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(ints As IEnumerable(Of Integer)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(ints As IEnumerable(Of Integer)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Integer))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Integer))
@@ -1380,7 +1380,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 335
+    startLine: 410
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1408,7 +1408,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 340
+    startLine: 415
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1436,7 +1436,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 347
+    startLine: 422
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1464,18 +1464,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 353
+    startLine: 433
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<long> longs)
+    content: public Task WriteAsync(IEnumerable<long> longs)
     parameters:
     - id: longs
       type: System.Collections.Generic.IEnumerable{System.Int64}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(longs As IEnumerable(Of Long)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(longs As IEnumerable(Of Long)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Long))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Long))
@@ -1494,7 +1494,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 358
+    startLine: 439
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1522,7 +1522,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 363
+    startLine: 444
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1550,7 +1550,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 370
+    startLine: 451
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1578,18 +1578,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 376
+    startLine: 462
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<char> chars)
+    content: public Task WriteAsync(IEnumerable<char> chars)
     parameters:
     - id: chars
       type: System.Collections.Generic.IEnumerable{System.Char}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(chars As IEnumerable(Of Char)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(chars As IEnumerable(Of Char)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Char))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Char))
@@ -1608,7 +1608,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 381
+    startLine: 468
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1636,7 +1636,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 386
+    startLine: 473
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1664,7 +1664,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 393
+    startLine: 480
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1692,18 +1692,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 399
+    startLine: 491
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<string> strings)
+    content: public Task WriteAsync(IEnumerable<string> strings)
     parameters:
     - id: strings
       type: System.Collections.Generic.IEnumerable{System.String}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(strings As IEnumerable(Of String)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(strings As IEnumerable(Of String)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of String))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of String))
@@ -1722,7 +1722,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 404
+    startLine: 497
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1750,7 +1750,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 409
+    startLine: 502
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1778,7 +1778,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 416
+    startLine: 509
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1806,18 +1806,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 422
+    startLine: 520
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<float> floats)
+    content: public Task WriteAsync(IEnumerable<float> floats)
     parameters:
     - id: floats
       type: System.Collections.Generic.IEnumerable{System.Single}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(floats As IEnumerable(Of Single)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(floats As IEnumerable(Of Single)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Single))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Single))
@@ -1836,7 +1836,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 427
+    startLine: 526
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1864,7 +1864,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 432
+    startLine: 531
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1892,7 +1892,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 439
+    startLine: 538
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1920,18 +1920,18 @@ items:
   source:
     id: WriteAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 445
+    startLine: 549
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask WriteAsync(IEnumerable<double> doubles)
+    content: public Task WriteAsync(IEnumerable<double> doubles)
     parameters:
     - id: doubles
       type: System.Collections.Generic.IEnumerable{System.Double}
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Function WriteAsync(doubles As IEnumerable(Of Double)) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(doubles As IEnumerable(Of Double)) As Task
   overload: SaveSystem.UnityHandlers.UnityWriter.WriteAsync*
   nameWithType.vb: UnityWriter.WriteAsync(IEnumerable(Of Double))
   fullName.vb: SaveSystem.UnityHandlers.UnityWriter.WriteAsync(System.Collections.Generic.IEnumerable(Of Double))
@@ -1950,7 +1950,7 @@ items:
   source:
     id: Write
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 450
+    startLine: 555
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1978,7 +1978,7 @@ items:
   source:
     id: Dispose
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 455
+    startLine: 560
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -2003,7 +2003,7 @@ items:
   source:
     id: DisposeAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityWriter.cs
-    startLine: 460
+    startLine: 565
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -2474,35 +2474,51 @@ references:
   name: WriteAsync
   nameWithType: UnityWriter.WriteAsync
   fullName: SaveSystem.UnityHandlers.UnityWriter.WriteAsync
-- uid: Cysharp.Threading.Tasks.UniTask
-  commentId: T:Cysharp.Threading.Tasks.UniTask
-  parent: Cysharp.Threading.Tasks
-  name: UniTask
-  nameWithType: UniTask
-  fullName: Cysharp.Threading.Tasks.UniTask
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
   spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
   spec.vb:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: UnityEngine.Vector3
   commentId: T:UnityEngine.Vector3
   parent: UnityEngine
@@ -3518,40 +3534,3 @@ references:
   name: ValueTask
   nameWithType: ValueTask
   fullName: System.Threading.Tasks.ValueTask
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -397,6 +397,77 @@ Also it starts the saving when the player exit the game</p>
 
 
 
+  <a id="SaveSystem_Core_SaveSystemCore_LoadSavedScene_" data-uid="SaveSystem.Core.SaveSystemCore.LoadSavedScene*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_LoadSavedScene_System_Int32_" data-uid="SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)">
+  LoadSavedScene(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a scene which was saved at last session</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LoadSavedScene(int defaultSceneIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>defaultSceneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>If there is no saved scene, load a scene by the index</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Core_SaveSystemCore_LoadSavedSceneAsync_" data-uid="SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_LoadSavedSceneAsync_System_Int32_" data-uid="SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)">
+  LoadSavedSceneAsync(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Loads a scene which was saved at last session (async version)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator LoadSavedSceneAsync(int defaultSceneIndex = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>defaultSceneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>If there is no saved scene, load a scene by the index</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="SaveSystem_Core_SaveSystemCore_ObserveProgress_" data-uid="SaveSystem.Core.SaveSystemCore.ObserveProgress*"></a>
 
   <h3 id="SaveSystem_Core_SaveSystemCore_ObserveProgress_System_IProgress_System_Single__" data-uid="SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})">
@@ -524,6 +595,47 @@ when it'll be started</p>
 
 
 
+  <a id="SaveSystem_Core_SaveSystemCore_SaveAndLoadScene_" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndLoadScene*"></a>
+
+  <h3 id="SaveSystem_Core_SaveSystemCore_SaveAndLoadScene_System_Int32_System_Boolean_" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)">
+  SaveAndLoadScene(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call this to manually save handlers before loading another scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SaveAndLoadScene(int sceneIndex, bool asyncLoad = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sceneIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Loading scene index</p>
+</dd>
+    <dt><code>asyncLoad</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Load scene asynchronously (only for UniTask)?</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="SaveSystem_Core_SaveSystemCore_SaveAndQuit_" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndQuit*"></a>
 
   <h3 id="SaveSystem_Core_SaveSystemCore_SaveAndQuit" data-uid="SaveSystem.Core.SaveSystemCore.SaveAndQuit">
@@ -536,13 +648,13 @@ when it'll be started</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UniTask SaveAndQuit()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Task SaveAndQuit()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">UniTask</span></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 

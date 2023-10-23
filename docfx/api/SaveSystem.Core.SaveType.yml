@@ -9,6 +9,7 @@ items:
   - SaveSystem.Core.SaveType.OnExit
   - SaveSystem.Core.SaveType.OnFocusLost
   - SaveSystem.Core.SaveType.OnLowMemory
+  - SaveSystem.Core.SaveType.OnSwitchScene
   - SaveSystem.Core.SaveType.QuickSave
   - SaveSystem.Core.SaveType.SaveAtCheckpoint
   langs:
@@ -172,6 +173,30 @@ items:
   example: []
   syntax:
     content: OnLowMemory = 5
+    return:
+      type: SaveSystem.Core.SaveType
+- uid: SaveSystem.Core.SaveType.OnSwitchScene
+  commentId: F:SaveSystem.Core.SaveType.OnSwitchScene
+  id: OnSwitchScene
+  parent: SaveSystem.Core.SaveType
+  langs:
+  - csharp
+  - vb
+  name: OnSwitchScene
+  nameWithType: SaveType.OnSwitchScene
+  fullName: SaveSystem.Core.SaveType.OnSwitchScene
+  type: Field
+  source:
+    id: OnSwitchScene
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveType.cs
+    startLine: 40
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: This is sent when the player switches a scene
+  example: []
+  syntax:
+    content: OnSwitchScene = 6
     return:
       type: SaveSystem.Core.SaveType
 references:

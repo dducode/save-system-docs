@@ -23,6 +23,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.BootstrapCallbackAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.BootstrapCallbackAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/SaveSystem.CheckPoints.CheckPoint.yml",
       "output": {
         ".html": {
@@ -147,6 +157,26 @@
       "output": {
         ".html": {
           "relative_path": "api/SaveSystem.DataManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Exceptions.SaveSystemException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Exceptions.SaveSystemException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.Exceptions.html"
         }
       },
       "version": ""
@@ -297,6 +327,26 @@
       "output": {
         ".html": {
           "relative_path": "api/SaveSystem.MeshData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.ProjectBootstrapAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.ProjectBootstrapAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SaveSystem.SceneBootstrapAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SaveSystem.SceneBootstrapAttribute.html"
         }
       },
       "version": ""

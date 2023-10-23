@@ -67,7 +67,7 @@ items:
   source:
     id: UnityReader
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 11
+    startLine: 21
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -101,7 +101,7 @@ items:
   source:
     id: .ctor
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 17
+    startLine: 29
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -131,7 +131,7 @@ items:
   source:
     id: ReadVersion
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 23
+    startLine: 35
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -155,7 +155,7 @@ items:
   source:
     id: ReadVector2
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 38
+    startLine: 50
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -179,7 +179,7 @@ items:
   source:
     id: ReadVector2Array
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 46
+    startLine: 58
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -203,15 +203,15 @@ items:
   source:
     id: ReadVector2ArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 57
+    startLine: 74
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Vector2[]> ReadVector2ArrayAsync()
+    content: public Task<Vector2[]> ReadVector2ArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector2[]}
-    content.vb: Public Function ReadVector2ArrayAsync() As UniTask(Of Vector2())
+      type: System.Threading.Tasks.Task{UnityEngine.Vector2[]}
+    content.vb: Public Function ReadVector2ArrayAsync() As Task(Of Vector2())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadVector2ArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadVector3
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadVector3
@@ -227,7 +227,7 @@ items:
   source:
     id: ReadVector3
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 64
+    startLine: 80
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -251,7 +251,7 @@ items:
   source:
     id: ReadVector3Array
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 73
+    startLine: 89
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -275,15 +275,15 @@ items:
   source:
     id: ReadVector3ArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 84
+    startLine: 105
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Vector3[]> ReadVector3ArrayAsync()
+    content: public Task<Vector3[]> ReadVector3ArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector3[]}
-    content.vb: Public Function ReadVector3ArrayAsync() As UniTask(Of Vector3())
+      type: System.Threading.Tasks.Task{UnityEngine.Vector3[]}
+    content.vb: Public Function ReadVector3ArrayAsync() As Task(Of Vector3())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadVector3ArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadVector4
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadVector4
@@ -299,7 +299,7 @@ items:
   source:
     id: ReadVector4
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 91
+    startLine: 111
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -323,7 +323,7 @@ items:
   source:
     id: ReadVector4Array
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 101
+    startLine: 121
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -347,15 +347,15 @@ items:
   source:
     id: ReadVector4ArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 112
+    startLine: 137
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Vector4[]> ReadVector4ArrayAsync()
+    content: public Task<Vector4[]> ReadVector4ArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector4[]}
-    content.vb: Public Function ReadVector4ArrayAsync() As UniTask(Of Vector4())
+      type: System.Threading.Tasks.Task{UnityEngine.Vector4[]}
+    content.vb: Public Function ReadVector4ArrayAsync() As Task(Of Vector4())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadVector4ArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadRotation
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadRotation
@@ -371,7 +371,7 @@ items:
   source:
     id: ReadRotation
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 119
+    startLine: 143
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -395,7 +395,7 @@ items:
   source:
     id: ReadColor
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 129
+    startLine: 153
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -419,7 +419,7 @@ items:
   source:
     id: ReadColors
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 139
+    startLine: 163
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -443,15 +443,15 @@ items:
   source:
     id: ReadColorsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 150
+    startLine: 179
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Color[]> ReadColorsAsync()
+    content: public Task<Color[]> ReadColorsAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Color[]}
-    content.vb: Public Function ReadColorsAsync() As UniTask(Of Color())
+      type: System.Threading.Tasks.Task{UnityEngine.Color[]}
+    content.vb: Public Function ReadColorsAsync() As Task(Of Color())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadColorsAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadColor32
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadColor32
@@ -467,7 +467,7 @@ items:
   source:
     id: ReadColor32
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 157
+    startLine: 185
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -491,7 +491,7 @@ items:
   source:
     id: ReadColors32
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 167
+    startLine: 195
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -515,15 +515,15 @@ items:
   source:
     id: ReadColors32Async
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 178
+    startLine: 211
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Color32[]> ReadColors32Async()
+    content: public Task<Color32[]> ReadColors32Async()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Color32[]}
-    content.vb: Public Function ReadColors32Async() As UniTask(Of Color32())
+      type: System.Threading.Tasks.Task{UnityEngine.Color32[]}
+    content.vb: Public Function ReadColors32Async() As Task(Of Color32())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadColors32Async*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadMatrix
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadMatrix
@@ -539,7 +539,7 @@ items:
   source:
     id: ReadMatrix
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 185
+    startLine: 217
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -563,7 +563,7 @@ items:
   source:
     id: ReadMatrices
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 194
+    startLine: 226
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -587,15 +587,15 @@ items:
   source:
     id: ReadMatricesAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 205
+    startLine: 242
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<Matrix4x4[]> ReadMatricesAsync()
+    content: public Task<Matrix4x4[]> ReadMatricesAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{UnityEngine.Matrix4x4[]}
-    content.vb: Public Function ReadMatricesAsync() As UniTask(Of Matrix4x4())
+      type: System.Threading.Tasks.Task{UnityEngine.Matrix4x4[]}
+    content.vb: Public Function ReadMatricesAsync() As Task(Of Matrix4x4())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadMatricesAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadMesh
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadMesh
@@ -611,7 +611,7 @@ items:
   source:
     id: ReadMesh
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 212
+    startLine: 248
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -635,15 +635,15 @@ items:
   source:
     id: ReadMeshAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 267
+    startLine: 308
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<MeshData> ReadMeshAsync()
+    content: public Task<MeshData> ReadMeshAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{SaveSystem.MeshData}
-    content.vb: Public Function ReadMeshAsync() As UniTask(Of MeshData)
+      type: System.Threading.Tasks.Task{SaveSystem.MeshData}
+    content.vb: Public Function ReadMeshAsync() As Task(Of MeshData)
   overload: SaveSystem.UnityHandlers.UnityReader.ReadMeshAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadObject``1
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadObject``1
@@ -659,7 +659,7 @@ items:
   source:
     id: ReadObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 274
+    startLine: 314
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -688,7 +688,7 @@ items:
   source:
     id: ReadObjectsArray
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 279
+    startLine: 319
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -717,17 +717,17 @@ items:
   source:
     id: ReadObjectsArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 290
+    startLine: 335
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<T[]> ReadObjectsArrayAsync<T>()
+    content: public Task<T[]> ReadObjectsArrayAsync<T>()
     typeParameters:
     - id: T
     return:
-      type: Cysharp.Threading.Tasks.UniTask{{T}[]}
-    content.vb: Public Function ReadObjectsArrayAsync(Of T)() As UniTask(Of T())
+      type: System.Threading.Tasks.Task{{T}[]}
+    content.vb: Public Function ReadObjectsArrayAsync(Of T)() As Task(Of T())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadObjectsArrayAsync*
   nameWithType.vb: UnityReader.ReadObjectsArrayAsync(Of T)()
   fullName.vb: SaveSystem.UnityHandlers.UnityReader.ReadObjectsArrayAsync(Of T)()
@@ -746,7 +746,7 @@ items:
   source:
     id: ReadByte
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 297
+    startLine: 341
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -770,7 +770,7 @@ items:
   source:
     id: ReadBytes
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 302
+    startLine: 346
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -794,15 +794,15 @@ items:
   source:
     id: ReadBytesAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 313
+    startLine: 362
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<byte[]> ReadBytesAsync()
+    content: public Task<byte[]> ReadBytesAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Byte[]}
-    content.vb: Public Function ReadBytesAsync() As UniTask(Of Byte())
+      type: System.Threading.Tasks.Task{System.Byte[]}
+    content.vb: Public Function ReadBytesAsync() As Task(Of Byte())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadBytesAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadShort
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadShort
@@ -818,7 +818,7 @@ items:
   source:
     id: ReadShort
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 320
+    startLine: 368
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -842,7 +842,7 @@ items:
   source:
     id: ReadShorts
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 325
+    startLine: 373
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -866,15 +866,15 @@ items:
   source:
     id: ReadShortsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 336
+    startLine: 389
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<short[]> ReadShortsAsync()
+    content: public Task<short[]> ReadShortsAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Int16[]}
-    content.vb: Public Function ReadShortsAsync() As UniTask(Of Short())
+      type: System.Threading.Tasks.Task{System.Int16[]}
+    content.vb: Public Function ReadShortsAsync() As Task(Of Short())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadShortsAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadInt
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadInt
@@ -890,7 +890,7 @@ items:
   source:
     id: ReadInt
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 343
+    startLine: 395
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -914,7 +914,7 @@ items:
   source:
     id: ReadIntArray
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 348
+    startLine: 400
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -938,15 +938,15 @@ items:
   source:
     id: ReadIntArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 359
+    startLine: 416
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<int[]> ReadIntArrayAsync()
+    content: public Task<int[]> ReadIntArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Int32[]}
-    content.vb: Public Function ReadIntArrayAsync() As UniTask(Of Integer())
+      type: System.Threading.Tasks.Task{System.Int32[]}
+    content.vb: Public Function ReadIntArrayAsync() As Task(Of Integer())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadIntArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadLong
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadLong
@@ -962,7 +962,7 @@ items:
   source:
     id: ReadLong
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 366
+    startLine: 422
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -986,7 +986,7 @@ items:
   source:
     id: ReadLongArray
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 371
+    startLine: 427
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1010,15 +1010,15 @@ items:
   source:
     id: ReadLongArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 382
+    startLine: 443
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<long[]> ReadLongArrayAsync()
+    content: public Task<long[]> ReadLongArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Int64[]}
-    content.vb: Public Function ReadLongArrayAsync() As UniTask(Of Long())
+      type: System.Threading.Tasks.Task{System.Int64[]}
+    content.vb: Public Function ReadLongArrayAsync() As Task(Of Long())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadLongArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadChar
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadChar
@@ -1034,7 +1034,7 @@ items:
   source:
     id: ReadChar
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 389
+    startLine: 449
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1058,7 +1058,7 @@ items:
   source:
     id: ReadChars
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 394
+    startLine: 454
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1082,15 +1082,15 @@ items:
   source:
     id: ReadCharsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 405
+    startLine: 470
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<char[]> ReadCharsAsync()
+    content: public Task<char[]> ReadCharsAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Char[]}
-    content.vb: Public Function ReadCharsAsync() As UniTask(Of Char())
+      type: System.Threading.Tasks.Task{System.Char[]}
+    content.vb: Public Function ReadCharsAsync() As Task(Of Char())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadCharsAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadString
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadString
@@ -1106,7 +1106,7 @@ items:
   source:
     id: ReadString
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 412
+    startLine: 476
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1130,7 +1130,7 @@ items:
   source:
     id: ReadStringArray
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 417
+    startLine: 481
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1154,15 +1154,15 @@ items:
   source:
     id: ReadStringArrayAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 428
+    startLine: 497
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<string[]> ReadStringArrayAsync()
+    content: public Task<string[]> ReadStringArrayAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.String[]}
-    content.vb: Public Function ReadStringArrayAsync() As UniTask(Of String())
+      type: System.Threading.Tasks.Task{System.String[]}
+    content.vb: Public Function ReadStringArrayAsync() As Task(Of String())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadStringArrayAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadFloat
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadFloat
@@ -1178,7 +1178,7 @@ items:
   source:
     id: ReadFloat
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 435
+    startLine: 503
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1202,7 +1202,7 @@ items:
   source:
     id: ReadFloats
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 440
+    startLine: 508
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1226,15 +1226,15 @@ items:
   source:
     id: ReadFloatsAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 451
+    startLine: 524
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<float[]> ReadFloatsAsync()
+    content: public Task<float[]> ReadFloatsAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Single[]}
-    content.vb: Public Function ReadFloatsAsync() As UniTask(Of Single())
+      type: System.Threading.Tasks.Task{System.Single[]}
+    content.vb: Public Function ReadFloatsAsync() As Task(Of Single())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadFloatsAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadDouble
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadDouble
@@ -1250,7 +1250,7 @@ items:
   source:
     id: ReadDouble
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 458
+    startLine: 530
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1274,7 +1274,7 @@ items:
   source:
     id: ReadDoubles
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 463
+    startLine: 535
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1298,15 +1298,15 @@ items:
   source:
     id: ReadDoublesAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 474
+    startLine: 551
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
   syntax:
-    content: public UniTask<double[]> ReadDoublesAsync()
+    content: public Task<double[]> ReadDoublesAsync()
     return:
-      type: Cysharp.Threading.Tasks.UniTask{System.Double[]}
-    content.vb: Public Function ReadDoublesAsync() As UniTask(Of Double())
+      type: System.Threading.Tasks.Task{System.Double[]}
+    content.vb: Public Function ReadDoublesAsync() As Task(Of Double())
   overload: SaveSystem.UnityHandlers.UnityReader.ReadDoublesAsync*
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadBool
   commentId: M:SaveSystem.UnityHandlers.UnityReader.ReadBool
@@ -1322,7 +1322,7 @@ items:
   source:
     id: ReadBool
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 481
+    startLine: 557
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1346,7 +1346,7 @@ items:
   source:
     id: Dispose
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\UnityHandlers\UnityReader.cs
-    startLine: 486
+    startLine: 562
   assemblies:
   - SaveSystem
   namespace: SaveSystem.UnityHandlers
@@ -1721,19 +1721,22 @@ references:
   name: ReadVector2ArrayAsync
   nameWithType: UnityReader.ReadVector2ArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadVector2ArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector2[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector2[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Vector2[]>
-  nameWithType: UniTask<Vector2[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Vector2[]>
-  nameWithType.vb: UniTask(Of Vector2())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Vector2())
-  name.vb: UniTask(Of Vector2())
+- uid: System.Threading.Tasks.Task{UnityEngine.Vector2[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Vector2[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Vector2[]>
+  nameWithType: Task<Vector2[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Vector2[]>
+  nameWithType.vb: Task(Of Vector2())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Vector2())
+  name.vb: Task(Of Vector2())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Vector2
     name: Vector2
@@ -1742,8 +1745,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -1753,51 +1758,71 @@ references:
   - name: (
   - name: )
   - name: )
-- uid: Cysharp.Threading.Tasks.UniTask`1
-  commentId: T:Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<T>
-  nameWithType: UniTask<T>
-  fullName: Cysharp.Threading.Tasks.UniTask<T>
-  nameWithType.vb: UniTask(Of T)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T)
-  name.vb: UniTask(Of T)
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
-  - name: T
+  - name: TResult
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: TResult
   - name: )
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
   spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
   spec.vb:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: SaveSystem.UnityHandlers.UnityReader.ReadVector3*
   commentId: Overload:SaveSystem.UnityHandlers.UnityReader.ReadVector3
   href: SaveSystem.UnityHandlers.UnityReader.html#SaveSystem.UnityHandlers.UnityReader.ReadVector3
@@ -1843,19 +1868,22 @@ references:
   name: ReadVector3ArrayAsync
   nameWithType: UnityReader.ReadVector3ArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadVector3ArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector3[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector3[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Vector3[]>
-  nameWithType: UniTask<Vector3[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Vector3[]>
-  nameWithType.vb: UniTask(Of Vector3())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Vector3())
-  name.vb: UniTask(Of Vector3())
+- uid: System.Threading.Tasks.Task{UnityEngine.Vector3[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Vector3[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Vector3[]>
+  nameWithType: Task<Vector3[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Vector3[]>
+  nameWithType.vb: Task(Of Vector3())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Vector3())
+  name.vb: Task(Of Vector3())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Vector3
     name: Vector3
@@ -1864,8 +1892,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -1920,19 +1950,22 @@ references:
   name: ReadVector4ArrayAsync
   nameWithType: UnityReader.ReadVector4ArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadVector4ArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector4[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Vector4[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Vector4[]>
-  nameWithType: UniTask<Vector4[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Vector4[]>
-  nameWithType.vb: UniTask(Of Vector4())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Vector4())
-  name.vb: UniTask(Of Vector4())
+- uid: System.Threading.Tasks.Task{UnityEngine.Vector4[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Vector4[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Vector4[]>
+  nameWithType: Task<Vector4[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Vector4[]>
+  nameWithType.vb: Task(Of Vector4())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Vector4())
+  name.vb: Task(Of Vector4())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Vector4
     name: Vector4
@@ -1941,8 +1974,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2010,19 +2045,22 @@ references:
   name: ReadColorsAsync
   nameWithType: UnityReader.ReadColorsAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadColorsAsync
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Color[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Color[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Color[]>
-  nameWithType: UniTask<Color[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Color[]>
-  nameWithType.vb: UniTask(Of Color())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Color())
-  name.vb: UniTask(Of Color())
+- uid: System.Threading.Tasks.Task{UnityEngine.Color[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Color[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Color[]>
+  nameWithType: Task<Color[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Color[]>
+  nameWithType.vb: Task(Of Color())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Color())
+  name.vb: Task(Of Color())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Color
     name: Color
@@ -2031,8 +2069,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2087,19 +2127,22 @@ references:
   name: ReadColors32Async
   nameWithType: UnityReader.ReadColors32Async
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadColors32Async
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Color32[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Color32[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Color32[]>
-  nameWithType: UniTask<Color32[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Color32[]>
-  nameWithType.vb: UniTask(Of Color32())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Color32())
-  name.vb: UniTask(Of Color32())
+- uid: System.Threading.Tasks.Task{UnityEngine.Color32[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Color32[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Color32[]>
+  nameWithType: Task<Color32[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Color32[]>
+  nameWithType.vb: Task(Of Color32())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Color32())
+  name.vb: Task(Of Color32())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Color32
     name: Color32
@@ -2108,8 +2151,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2164,19 +2209,22 @@ references:
   name: ReadMatricesAsync
   nameWithType: UnityReader.ReadMatricesAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadMatricesAsync
-- uid: Cysharp.Threading.Tasks.UniTask{UnityEngine.Matrix4x4[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{UnityEngine.Matrix4x4[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<Matrix4x4[]>
-  nameWithType: UniTask<Matrix4x4[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<UnityEngine.Matrix4x4[]>
-  nameWithType.vb: UniTask(Of Matrix4x4())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of UnityEngine.Matrix4x4())
-  name.vb: UniTask(Of Matrix4x4())
+- uid: System.Threading.Tasks.Task{UnityEngine.Matrix4x4[]}
+  commentId: T:System.Threading.Tasks.Task{UnityEngine.Matrix4x4[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Matrix4x4[]>
+  nameWithType: Task<Matrix4x4[]>
+  fullName: System.Threading.Tasks.Task<UnityEngine.Matrix4x4[]>
+  nameWithType.vb: Task(Of Matrix4x4())
+  fullName.vb: System.Threading.Tasks.Task(Of UnityEngine.Matrix4x4())
+  name.vb: Task(Of Matrix4x4())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: UnityEngine.Matrix4x4
     name: Matrix4x4
@@ -2185,8 +2233,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2221,28 +2271,32 @@ references:
   name: ReadMeshAsync
   nameWithType: UnityReader.ReadMeshAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadMeshAsync
-- uid: Cysharp.Threading.Tasks.UniTask{SaveSystem.MeshData}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{SaveSystem.MeshData}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: SaveSystem.MeshData.html
-  name: UniTask<MeshData>
-  nameWithType: UniTask<MeshData>
-  fullName: Cysharp.Threading.Tasks.UniTask<SaveSystem.MeshData>
-  nameWithType.vb: UniTask(Of MeshData)
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of SaveSystem.MeshData)
-  name.vb: UniTask(Of MeshData)
+- uid: System.Threading.Tasks.Task{SaveSystem.MeshData}
+  commentId: T:System.Threading.Tasks.Task{SaveSystem.MeshData}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MeshData>
+  nameWithType: Task<MeshData>
+  fullName: System.Threading.Tasks.Task<SaveSystem.MeshData>
+  nameWithType.vb: Task(Of MeshData)
+  fullName.vb: System.Threading.Tasks.Task(Of SaveSystem.MeshData)
+  name.vb: Task(Of MeshData)
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: SaveSystem.MeshData
     name: MeshData
     href: SaveSystem.MeshData.html
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2294,27 +2348,32 @@ references:
   name: ReadObjectsArrayAsync
   nameWithType: UnityReader.ReadObjectsArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadObjectsArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{{T}[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{``0[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  name: UniTask<T[]>
-  nameWithType: UniTask<T[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<T[]>
-  nameWithType.vb: UniTask(Of T())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of T())
-  name.vb: UniTask(Of T())
+- uid: System.Threading.Tasks.Task{{T}[]}
+  commentId: T:System.Threading.Tasks.Task{``0[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<T[]>
+  nameWithType: Task<T[]>
+  fullName: System.Threading.Tasks.Task<T[]>
+  nameWithType.vb: Task(Of T())
+  fullName.vb: System.Threading.Tasks.Task(Of T())
+  name.vb: Task(Of T())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - name: T
   - name: '['
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2374,20 +2433,22 @@ references:
   name: ReadBytesAsync
   nameWithType: UnityReader.ReadBytesAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadBytesAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Byte[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Byte[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.byte
-  name: UniTask<byte[]>
-  nameWithType: UniTask<byte[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<byte[]>
-  nameWithType.vb: UniTask(Of Byte())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Byte())
-  name.vb: UniTask(Of Byte())
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<byte[]>
+  nameWithType: Task<byte[]>
+  fullName: System.Threading.Tasks.Task<byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of Byte())
+  name.vb: Task(Of Byte())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Byte
     name: byte
@@ -2397,8 +2458,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2461,20 +2524,22 @@ references:
   name: ReadShortsAsync
   nameWithType: UnityReader.ReadShortsAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadShortsAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Int16[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Int16[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.int16
-  name: UniTask<short[]>
-  nameWithType: UniTask<short[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<short[]>
-  nameWithType.vb: UniTask(Of Short())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Short())
-  name.vb: UniTask(Of Short())
+- uid: System.Threading.Tasks.Task{System.Int16[]}
+  commentId: T:System.Threading.Tasks.Task{System.Int16[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<short[]>
+  nameWithType: Task<short[]>
+  fullName: System.Threading.Tasks.Task<short[]>
+  nameWithType.vb: Task(Of Short())
+  fullName.vb: System.Threading.Tasks.Task(Of Short())
+  name.vb: Task(Of Short())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Int16
     name: short
@@ -2484,8 +2549,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2548,20 +2615,22 @@ references:
   name: ReadIntArrayAsync
   nameWithType: UnityReader.ReadIntArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadIntArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Int32[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Int32[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: UniTask<int[]>
-  nameWithType: UniTask<int[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<int[]>
-  nameWithType.vb: UniTask(Of Integer())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Integer())
-  name.vb: UniTask(Of Integer())
+- uid: System.Threading.Tasks.Task{System.Int32[]}
+  commentId: T:System.Threading.Tasks.Task{System.Int32[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int[]>
+  nameWithType: Task<int[]>
+  fullName: System.Threading.Tasks.Task<int[]>
+  nameWithType.vb: Task(Of Integer())
+  fullName.vb: System.Threading.Tasks.Task(Of Integer())
+  name.vb: Task(Of Integer())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Int32
     name: int
@@ -2571,8 +2640,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2635,20 +2706,22 @@ references:
   name: ReadLongArrayAsync
   nameWithType: UnityReader.ReadLongArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadLongArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Int64[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Int64[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.int64
-  name: UniTask<long[]>
-  nameWithType: UniTask<long[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<long[]>
-  nameWithType.vb: UniTask(Of Long())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Long())
-  name.vb: UniTask(Of Long())
+- uid: System.Threading.Tasks.Task{System.Int64[]}
+  commentId: T:System.Threading.Tasks.Task{System.Int64[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<long[]>
+  nameWithType: Task<long[]>
+  fullName: System.Threading.Tasks.Task<long[]>
+  nameWithType.vb: Task(Of Long())
+  fullName.vb: System.Threading.Tasks.Task(Of Long())
+  name.vb: Task(Of Long())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Int64
     name: long
@@ -2658,8 +2731,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2722,20 +2797,22 @@ references:
   name: ReadCharsAsync
   nameWithType: UnityReader.ReadCharsAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadCharsAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Char[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Char[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.char
-  name: UniTask<char[]>
-  nameWithType: UniTask<char[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<char[]>
-  nameWithType.vb: UniTask(Of Char())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Char())
-  name.vb: UniTask(Of Char())
+- uid: System.Threading.Tasks.Task{System.Char[]}
+  commentId: T:System.Threading.Tasks.Task{System.Char[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<char[]>
+  nameWithType: Task<char[]>
+  fullName: System.Threading.Tasks.Task<char[]>
+  nameWithType.vb: Task(Of Char())
+  fullName.vb: System.Threading.Tasks.Task(Of Char())
+  name.vb: Task(Of Char())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Char
     name: char
@@ -2745,8 +2822,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2798,20 +2877,22 @@ references:
   name: ReadStringArrayAsync
   nameWithType: UnityReader.ReadStringArrayAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadStringArrayAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.String[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.String[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: UniTask<string[]>
-  nameWithType: UniTask<string[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<string[]>
-  nameWithType.vb: UniTask(Of String())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of String())
-  name.vb: UniTask(Of String())
+- uid: System.Threading.Tasks.Task{System.String[]}
+  commentId: T:System.Threading.Tasks.Task{System.String[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string[]>
+  nameWithType: Task<string[]>
+  fullName: System.Threading.Tasks.Task<string[]>
+  nameWithType.vb: Task(Of String())
+  fullName.vb: System.Threading.Tasks.Task(Of String())
+  name.vb: Task(Of String())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.String
     name: string
@@ -2821,8 +2902,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2885,20 +2968,22 @@ references:
   name: ReadFloatsAsync
   nameWithType: UnityReader.ReadFloatsAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadFloatsAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Single[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Single[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.single
-  name: UniTask<float[]>
-  nameWithType: UniTask<float[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<float[]>
-  nameWithType.vb: UniTask(Of Single())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Single())
-  name.vb: UniTask(Of Single())
+- uid: System.Threading.Tasks.Task{System.Single[]}
+  commentId: T:System.Threading.Tasks.Task{System.Single[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<float[]>
+  nameWithType: Task<float[]>
+  fullName: System.Threading.Tasks.Task<float[]>
+  nameWithType.vb: Task(Of Single())
+  fullName.vb: System.Threading.Tasks.Task(Of Single())
+  name.vb: Task(Of Single())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Single
     name: float
@@ -2908,8 +2993,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "
@@ -2972,20 +3059,22 @@ references:
   name: ReadDoublesAsync
   nameWithType: UnityReader.ReadDoublesAsync
   fullName: SaveSystem.UnityHandlers.UnityReader.ReadDoublesAsync
-- uid: Cysharp.Threading.Tasks.UniTask{System.Double[]}
-  commentId: T:Cysharp.Threading.Tasks.UniTask{System.Double[]}
-  parent: Cysharp.Threading.Tasks
-  definition: Cysharp.Threading.Tasks.UniTask`1
-  href: https://learn.microsoft.com/dotnet/api/system.double
-  name: UniTask<double[]>
-  nameWithType: UniTask<double[]>
-  fullName: Cysharp.Threading.Tasks.UniTask<double[]>
-  nameWithType.vb: UniTask(Of Double())
-  fullName.vb: Cysharp.Threading.Tasks.UniTask(Of Double())
-  name.vb: UniTask(Of Double())
+- uid: System.Threading.Tasks.Task{System.Double[]}
+  commentId: T:System.Threading.Tasks.Task{System.Double[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<double[]>
+  nameWithType: Task<double[]>
+  fullName: System.Threading.Tasks.Task<double[]>
+  nameWithType.vb: Task(Of Double())
+  fullName.vb: System.Threading.Tasks.Task(Of Double())
+  name.vb: Task(Of Double())
   spec.csharp:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: <
   - uid: System.Double
     name: double
@@ -2995,8 +3084,10 @@ references:
   - name: ']'
   - name: '>'
   spec.vb:
-  - uid: Cysharp.Threading.Tasks.UniTask`1
-    name: UniTask
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
   - name: (
   - name: Of
   - name: " "

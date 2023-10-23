@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.7.1] - 2023-10-23
+
+### Changed
+
+* Removed UniTask requirement. Write SAVE_SYSTEM_UNITASK_SUPPORT
+  in scripting define symbols to enable UniTask support
+
+## [1.7.0] - 2023-10-16
+
+### Added
+
+* Scene switching support was added
+    * Added 3 new attributes for methods - ProjectBootstrap, SceneBootstrap
+      and BootstrapCallback
+    * Added methods for saving and loading scenes
+* Added debug logs for SaveSystemCore properties
+
+### Changed
+
+* All exception catching has been removed; only OperationCancelException
+  will be caught, other exceptions will be thrown again
+
+### Fixed
+
+* Fixed a bug with removing of dynamic objects when saving
+
 ## [1.6.0] - 2023-10-02
 
 ### Added

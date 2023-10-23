@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SaveSystem.Exceptions
+  commentId: N:SaveSystem.Exceptions
+  id: SaveSystem.Exceptions
+  children:
+  - SaveSystem.Exceptions.SaveSystemException
+  langs:
+  - csharp
+  - vb
+  name: SaveSystem.Exceptions
+  nameWithType: SaveSystem.Exceptions
+  fullName: SaveSystem.Exceptions
+  type: Namespace
+  assemblies:
+  - SaveSystem
+references:
+- uid: SaveSystem.Exceptions.SaveSystemException
+  commentId: T:SaveSystem.Exceptions.SaveSystemException
+  href: SaveSystem.Exceptions.SaveSystemException.html
+  name: SaveSystemException
+  nameWithType: SaveSystemException
+  fullName: SaveSystem.Exceptions.SaveSystemException

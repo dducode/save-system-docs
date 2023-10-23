@@ -28,7 +28,7 @@ items:
   source:
     id: ObjectHandlersFactory
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -64,7 +64,7 @@ items:
   source:
     id: RegisterImmediately
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -95,7 +95,7 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -136,7 +136,7 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 62
+    startLine: 63
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -177,7 +177,7 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -218,7 +218,7 @@ items:
   source:
     id: CreateHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -262,7 +262,7 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 123
+    startLine: 127
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -303,7 +303,7 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 138
+    startLine: 142
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -344,7 +344,7 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 154
+    startLine: 158
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -385,7 +385,7 @@ items:
   source:
     id: CreateAsyncHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 170
+    startLine: 174
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -429,7 +429,7 @@ items:
   source:
     id: CreateSmartHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 199
+    startLine: 206
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -470,7 +470,7 @@ items:
   source:
     id: CreateSmartHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 214
+    startLine: 221
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -511,7 +511,7 @@ items:
   source:
     id: CreateSmartHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 230
+    startLine: 237
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -552,7 +552,7 @@ items:
   source:
     id: CreateSmartHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandlersFactory.cs
-    startLine: 246
+    startLine: 253
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -586,18 +586,18 @@ references:
 - uid: SaveSystem.Handlers.ObjectHandler`1
   commentId: T:SaveSystem.Handlers.ObjectHandler`1
   href: SaveSystem.Handlers.ObjectHandler-1.html
-  name: ObjectHandler<TO>
-  nameWithType: ObjectHandler<TO>
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
-  nameWithType.vb: ObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  name.vb: ObjectHandler(Of TO)
+  name: ObjectHandler<TObject>
+  nameWithType: ObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>
+  nameWithType.vb: ObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject)
+  name.vb: ObjectHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.ObjectHandler`1
     name: ObjectHandler
     href: SaveSystem.Handlers.ObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.ObjectHandler`1
@@ -606,23 +606,23 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1
   commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
   href: SaveSystem.Handlers.AsyncObjectHandler-1.html
-  name: AsyncObjectHandler<TO>
-  nameWithType: AsyncObjectHandler<TO>
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
-  nameWithType.vb: AsyncObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
-  name.vb: AsyncObjectHandler(Of TO)
+  name: AsyncObjectHandler<TObject>
+  nameWithType: AsyncObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>
+  nameWithType.vb: AsyncObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject)
+  name.vb: AsyncObjectHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
     name: AsyncObjectHandler
     href: SaveSystem.Handlers.AsyncObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.AsyncObjectHandler`1
@@ -631,7 +631,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers
   commentId: N:SaveSystem.Handlers
@@ -1183,18 +1183,18 @@ references:
 - uid: SaveSystem.Handlers.SmartHandler`1
   commentId: T:SaveSystem.Handlers.SmartHandler`1
   href: SaveSystem.Handlers.SmartHandler-1.html
-  name: SmartHandler<TO>
-  nameWithType: SmartHandler<TO>
-  fullName: SaveSystem.Handlers.SmartHandler<TO>
-  nameWithType.vb: SmartHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
-  name.vb: SmartHandler(Of TO)
+  name: SmartHandler<TObject>
+  nameWithType: SmartHandler<TObject>
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>
+  nameWithType.vb: SmartHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject)
+  name.vb: SmartHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.SmartHandler`1
     name: SmartHandler
     href: SaveSystem.Handlers.SmartHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.SmartHandler`1
@@ -1203,5 +1203,5 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )

@@ -115,9 +115,9 @@ others (see <a href="save-system-core.html">this part</a> about <code>SaveSystem
 <ol>
 <li>You don't have to worry about the order of writing and reading.</li>
 <li>Data collecting is processed by synchronously,
-the system receives a snapshot of data in once game frame and then
-writes data asynchronously.</li>
-<li>Since data writing cannot be canceled,
+the system receives a snapshot of the data in an
+once game frame and then writes the data asynchronously.</li>
+<li>Since a data writing cannot be canceled,
 the data will be written to file immediately
 and then it'll take up less memory.</li>
 </ol>

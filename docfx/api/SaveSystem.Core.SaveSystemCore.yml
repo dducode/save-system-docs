@@ -11,6 +11,8 @@ items:
   - SaveSystem.Core.SaveSystemCore.DestroyCheckPoints
   - SaveSystem.Core.SaveSystemCore.EnabledSaveEvents
   - SaveSystem.Core.SaveSystemCore.IsParallel
+  - SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  - SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
   - SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
   - SaveSystem.Core.SaveSystemCore.OnSaveEnd
   - SaveSystem.Core.SaveSystemCore.OnSaveStart
@@ -18,6 +20,7 @@ items:
   - SaveSystem.Core.SaveSystemCore.QuickSave
   - SaveSystem.Core.SaveSystemCore.RegisterAsyncObjectHandler(SaveSystem.Handlers.IAsyncObjectHandler)
   - SaveSystem.Core.SaveSystemCore.RegisterObjectHandler(SaveSystem.Handlers.IObjectHandler)
+  - SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
   - SaveSystem.Core.SaveSystemCore.SaveAndQuit
   - SaveSystem.Core.SaveSystemCore.SavePeriod
   langs:
@@ -29,8 +32,8 @@ items:
   type: Class
   source:
     id: SaveSystemCore
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 29
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 21
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -69,8 +72,8 @@ items:
   type: Property
   source:
     id: EnabledSaveEvents
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 39
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 28
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -99,8 +102,8 @@ items:
   type: Property
   source:
     id: SavePeriod
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 75
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 43
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -128,8 +131,8 @@ items:
   type: Property
   source:
     id: IsParallel
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 89
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 62
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -155,8 +158,8 @@ items:
   type: Property
   source:
     id: DebugEnabled
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 97
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 78
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -183,8 +186,8 @@ items:
   type: Property
   source:
     id: DestroyCheckPoints
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 103
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 92
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -211,8 +214,8 @@ items:
   type: Property
   source:
     id: PlayerTag
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 109
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 106
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -239,8 +242,8 @@ items:
   type: Event
   source:
     id: OnSaveStart
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 127
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 129
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -268,8 +271,8 @@ items:
   type: Event
   source:
     id: OnSaveEnd
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 136
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 151
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -297,8 +300,8 @@ items:
   type: Method
   source:
     id: RegisterObjectHandler
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 192
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 170
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -324,8 +327,8 @@ items:
   type: Method
   source:
     id: RegisterAsyncObjectHandler
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 206
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 184
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -351,8 +354,8 @@ items:
   type: Method
   source:
     id: ConfigureParameters
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 227
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 205
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -398,8 +401,8 @@ items:
   type: Method
   source:
     id: ObserveProgress
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 260
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 240
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -432,8 +435,8 @@ items:
   type: Method
   source:
     id: BindKey
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 271
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 251
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -446,36 +449,6 @@ items:
       type: UnityEngine.KeyCode
     content.vb: Public Shared Sub BindKey(keyCode As KeyCode)
   overload: SaveSystem.Core.SaveSystemCore.BindKey*
-- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
-  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndQuit
-  id: SaveAndQuit
-  parent: SaveSystem.Core.SaveSystemCore
-  langs:
-  - csharp
-  - vb
-  name: SaveAndQuit()
-  nameWithType: SaveSystemCore.SaveAndQuit()
-  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit()
-  type: Method
-  source:
-    id: SaveAndQuit
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 286
-  assemblies:
-  - SaveSystem
-  namespace: SaveSystem.Core
-  summary: Call this to manually save handlers before quitting the application
-  remarks: >-
-    This will immediately exit the game after saving.
-
-    You should make sure that you don't need to do anything else before calling it
-  example: []
-  syntax:
-    content: public static UniTask SaveAndQuit()
-    return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Public Shared Function SaveAndQuit() As UniTask
-  overload: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
 - uid: SaveSystem.Core.SaveSystemCore.QuickSave
   commentId: M:SaveSystem.Core.SaveSystemCore.QuickSave
   id: QuickSave
@@ -489,8 +462,8 @@ items:
   type: Method
   source:
     id: QuickSave
-    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.cs
-    startLine: 312
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 262
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Core
@@ -500,22 +473,152 @@ items:
     content: public static void QuickSave()
     content.vb: Public Shared Sub QuickSave()
   overload: SaveSystem.Core.SaveSystemCore.QuickSave*
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  commentId: M:SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  id: LoadSavedScene(System.Int32)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: LoadSavedScene(int)
+  nameWithType: SaveSystemCore.LoadSavedScene(int)
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedScene(int)
+  type: Method
+  source:
+    id: LoadSavedScene
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 272
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Loads a scene which was saved at last session
+  example: []
+  syntax:
+    content: public static void LoadSavedScene(int defaultSceneIndex = 0)
+    parameters:
+    - id: defaultSceneIndex
+      type: System.Int32
+      description: If there is no saved scene, load a scene by the index
+    content.vb: Public Shared Sub LoadSavedScene(defaultSceneIndex As Integer = 0)
+  overload: SaveSystem.Core.SaveSystemCore.LoadSavedScene*
+  nameWithType.vb: SaveSystemCore.LoadSavedScene(Integer)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.LoadSavedScene(Integer)
+  name.vb: LoadSavedScene(Integer)
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
+  commentId: M:SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
+  id: LoadSavedSceneAsync(System.Int32)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: LoadSavedSceneAsync(int)
+  nameWithType: SaveSystemCore.LoadSavedSceneAsync(int)
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(int)
+  type: Method
+  source:
+    id: LoadSavedSceneAsync
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 286
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Loads a scene which was saved at last session (async version)
+  example: []
+  syntax:
+    content: public static IEnumerator LoadSavedSceneAsync(int defaultSceneIndex = 0)
+    parameters:
+    - id: defaultSceneIndex
+      type: System.Int32
+      description: If there is no saved scene, load a scene by the index
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: Public Shared Function LoadSavedSceneAsync(defaultSceneIndex As Integer = 0) As IEnumerator
+  overload: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync*
+  nameWithType.vb: SaveSystemCore.LoadSavedSceneAsync(Integer)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(Integer)
+  name.vb: LoadSavedSceneAsync(Integer)
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
+  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
+  id: SaveAndLoadScene(System.Int32,System.Boolean)
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: SaveAndLoadScene(int, bool)
+  nameWithType: SaveSystemCore.SaveAndLoadScene(int, bool)
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(int, bool)
+  type: Method
+  source:
+    id: SaveAndLoadScene
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 297
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Call this to manually save handlers before loading another scene
+  example: []
+  syntax:
+    content: public static Task SaveAndLoadScene(int sceneIndex, bool asyncLoad = false)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+      description: Loading scene index
+    - id: asyncLoad
+      type: System.Boolean
+      description: Load scene asynchronously (only for UniTask)?
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function SaveAndLoadScene(sceneIndex As Integer, asyncLoad As Boolean = False) As Task
+  overload: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene*
+  nameWithType.vb: SaveSystemCore.SaveAndLoadScene(Integer, Boolean)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(Integer, Boolean)
+  name.vb: SaveAndLoadScene(Integer, Boolean)
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  id: SaveAndQuit
+  parent: SaveSystem.Core.SaveSystemCore
+  langs:
+  - csharp
+  - vb
+  name: SaveAndQuit()
+  nameWithType: SaveSystemCore.SaveAndQuit()
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit()
+  type: Method
+  source:
+    id: SaveAndQuit
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Core\SaveSystemCore.API.cs
+    startLine: 327
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Core
+  summary: Call this to manually save handlers before quitting the application
+  remarks: >-
+    This will immediately exit the game after saving.
+
+    You should make sure that you don't need to do anything else before calling it
+  example: []
+  syntax:
+    content: public static Task SaveAndQuit()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function SaveAndQuit() As Task
+  overload: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
 references:
 - uid: SaveSystem.Handlers.ObjectHandler`1
   commentId: T:SaveSystem.Handlers.ObjectHandler`1
   href: SaveSystem.Handlers.ObjectHandler-1.html
-  name: ObjectHandler<TO>
-  nameWithType: ObjectHandler<TO>
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
-  nameWithType.vb: ObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  name.vb: ObjectHandler(Of TO)
+  name: ObjectHandler<TObject>
+  nameWithType: ObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>
+  nameWithType.vb: ObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject)
+  name.vb: ObjectHandler(Of TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.ObjectHandler`1
     name: ObjectHandler
     href: SaveSystem.Handlers.ObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.ObjectHandler`1
@@ -524,7 +627,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.IPersistentObject
   commentId: T:SaveSystem.IPersistentObject
@@ -1108,44 +1211,124 @@ references:
   name: UnityEngine
   nameWithType: UnityEngine
   fullName: UnityEngine
-- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
-  commentId: Overload:SaveSystem.Core.SaveSystemCore.SaveAndQuit
-  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
-  name: SaveAndQuit
-  nameWithType: SaveSystemCore.SaveAndQuit
-  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit
-- uid: Cysharp.Threading.Tasks.UniTask
-  commentId: T:Cysharp.Threading.Tasks.UniTask
-  parent: Cysharp.Threading.Tasks
-  name: UniTask
-  nameWithType: UniTask
-  fullName: Cysharp.Threading.Tasks.UniTask
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
-  spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
-  - name: .
-  - uid: Cysharp.Threading
-    name: Threading
-  - name: .
-  - uid: Cysharp.Threading.Tasks
-    name: Tasks
-  spec.vb:
-  - uid: Cysharp
-    name: Cysharp
-  - name: .
-  - uid: Cysharp.Threading
-    name: Threading
-  - name: .
-  - uid: Cysharp.Threading.Tasks
-    name: Tasks
 - uid: SaveSystem.Core.SaveSystemCore.QuickSave*
   commentId: Overload:SaveSystem.Core.SaveSystemCore.QuickSave
   href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.QuickSave
   name: QuickSave
   nameWithType: SaveSystemCore.QuickSave
   fullName: SaveSystem.Core.SaveSystemCore.QuickSave
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedScene*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.LoadSavedScene
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  name: LoadSavedScene
+  nameWithType: SaveSystemCore.LoadSavedScene
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedScene
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
+  name: LoadSavedSceneAsync
+  nameWithType: SaveSystemCore.LoadSavedSceneAsync
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.SaveAndLoadScene
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
+  name: SaveAndLoadScene
+  nameWithType: SaveSystemCore.SaveAndLoadScene
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit*
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  href: SaveSystem.Core.SaveSystemCore.html#SaveSystem.Core.SaveSystemCore.SaveAndQuit
+  name: SaveAndQuit
+  nameWithType: SaveSystemCore.SaveAndQuit
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndQuit

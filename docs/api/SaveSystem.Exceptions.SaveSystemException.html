@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class SmartHandler&lt;TObject&gt;
+      <title>Class SaveSystemException
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class SmartHandler&lt;TObject&gt;
+      <meta name="title" content="Class SaveSystemException
  ">
       
       <link rel="icon" href="../images/icon.png">
@@ -74,78 +74,82 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="SaveSystem.Handlers.SmartHandler`1">
+        <article data-uid="SaveSystem.Exceptions.SaveSystemException">
 
 
 
-  <h1 id="SaveSystem_Handlers_SmartHandler_1" data-uid="SaveSystem.Handlers.SmartHandler`1" class="text-break">Class SmartHandler&lt;TObject&gt;
+  <h1 id="SaveSystem_Exceptions_SaveSystemException" data-uid="SaveSystem.Exceptions.SaveSystemException" class="text-break">Class SaveSystemException
 </h1>
-  <div class="markdown level0 summary"><p>You can handle <a class="xref" href="SaveSystem.IStorable.html">storable objects</a> using this</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="SaveSystem.Handlers.AbstractHandler-2.html">AbstractHandler</a>&lt;<a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler</a>&lt;TObject&gt;, TObject&gt;</div>
-    <div class="level2"><span class="xref">SmartHandler&lt;TObject&gt;</span></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></div>
+    <div class="level2"><span class="xref">SaveSystemException</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TObject&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
-    <div><a class="xref" href="SaveSystem.Handlers.IAsyncObjectHandler.html">IAsyncObjectHandler</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.interopservices._exception">_Exception</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Handlers.html">Handlers</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Exceptions.html">Exceptions</a></h6>
   <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
-  <h5 id="SaveSystem_Handlers_SmartHandler_1_syntax">Syntax</h5>
+  <h5 id="SaveSystem_Exceptions_SaveSystemException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SmartHandler&lt;TObject&gt; : AbstractHandler&lt;SmartHandler&lt;TObject&gt;, TObject&gt;, IEnumerable&lt;TObject&gt;, IEnumerable, IAsyncObjectHandler where TObject : IStorable</code></pre>
+    <pre><code class="lang-csharp hljs">public class SaveSystemException : Exception, _Exception, ISerializable</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="SaveSystem_Handlers_SmartHandler_1_LoadAsync_" data-uid="SaveSystem.Handlers.SmartHandler`1.LoadAsync*"></a>
+  <a id="SaveSystem_Exceptions_SaveSystemException__ctor_" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor*"></a>
 
-  <h3 id="SaveSystem_Handlers_SmartHandler_1_LoadAsync_System_Threading_CancellationToken_" data-uid="SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)">
-  LoadAsync(CancellationToken)
+  <h3 id="SaveSystem_Exceptions_SaveSystemException__ctor" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor">
+  SaveSystemException()
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Call it to start async objects loading</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;HandlingResult&gt; LoadAsync(CancellationToken token = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public SaveSystemException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Exceptions_SaveSystemException__ctor_" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor*"></a>
+
+  <h3 id="SaveSystem_Exceptions_SaveSystemException__ctor_System_String_System_Exception_" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor(System.String,System.Exception)">
+  SaveSystemException(string, Exception)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SaveSystemException(string message, Exception innerException)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="SaveSystem.Handlers.HandlingResult.html">HandlingResult</a>&gt;</dt>
+    <dt><code>innerException</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
     <dd></dd>
   </dl>
 
@@ -159,32 +163,27 @@
 
 
 
-  <a id="SaveSystem_Handlers_SmartHandler_1_SaveAsync_" data-uid="SaveSystem.Handlers.SmartHandler`1.SaveAsync*"></a>
 
-  <h3 id="SaveSystem_Handlers_SmartHandler_1_SaveAsync_System_Threading_CancellationToken_" data-uid="SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)">
-  SaveAsync(CancellationToken)
+  <a id="SaveSystem_Exceptions_SaveSystemException__ctor_" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor*"></a>
+
+  <h3 id="SaveSystem_Exceptions_SaveSystemException__ctor_System_String_" data-uid="SaveSystem.Exceptions.SaveSystemException.#ctor(System.String)">
+  SaveSystemException(string)
   
   </h3>
 
-  <div class="markdown level1 summary"><p>Call it to start async objects saving</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;HandlingResult&gt; SaveAsync(CancellationToken token = default)</code></pre>
+    <pre><code class="lang-csharp hljs">public SaveSystemException(string message)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>token</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="SaveSystem.Handlers.HandlingResult.html">HandlingResult</a>&gt;</dt>
-    <dd></dd>
-  </dl>
 
 
 

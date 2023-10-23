@@ -10,6 +10,8 @@ items:
   - SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   - SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
   - SaveSystem.Handlers.AbstractHandler`2.factoryFunc
+  - SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  - SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
   - SaveSystem.Handlers.AbstractHandler`2.loadingProgress
   - SaveSystem.Handlers.AbstractHandler`2.localFilePath
   - SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
@@ -17,36 +19,40 @@ items:
   - SaveSystem.Handlers.AbstractHandler`2.savingProgress
   - SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   - SaveSystem.Handlers.AbstractHandler`2.staticObjects
+  - SaveSystem.Handlers.AbstractHandler`2.ToString
   langs:
   - csharp
   - vb
-  name: AbstractHandler<T, TO>
-  nameWithType: AbstractHandler<T, TO>
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
+  name: AbstractHandler<THandler, TObject>
+  nameWithType: AbstractHandler<THandler, TObject>
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>
   type: Class
   source:
     id: AbstractHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Base class for all object handlers
   example: []
   syntax:
-    content: 'public abstract class AbstractHandler<T, TO> where T : AbstractHandler<T, TO>'
+    content: 'public abstract class AbstractHandler<THandler, TObject> : IEnumerable<TObject>, IEnumerable where THandler : AbstractHandler<THandler, TObject>'
     typeParameters:
-    - id: T
+    - id: THandler
       description: Type of handler
-    - id: TO
+    - id: TObject
       description: Type of handled objects
-    content.vb: Public MustInherit Class AbstractHandler(Of T As AbstractHandler(Of T, [TO]), [TO])
+    content.vb: Public MustInherit Class AbstractHandler(Of THandler As AbstractHandler(Of THandler, TObject), TObject) Implements IEnumerable(Of TObject), IEnumerable
   inheritance:
   - System.Object
   derivedClasses:
   - SaveSystem.Handlers.AsyncObjectHandler`1
   - SaveSystem.Handlers.ObjectHandler`1
   - SaveSystem.Handlers.SmartHandler`1
+  implements:
+  - System.Collections.Generic.IEnumerable{{TObject}}
+  - System.Collections.IEnumerable
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -54,10 +60,9 @@ items:
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-  nameWithType.vb: AbstractHandler(Of T, TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
-  name.vb: AbstractHandler(Of T, TO)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject)
+  name.vb: AbstractHandler(Of THandler, TObject)
 - uid: SaveSystem.Handlers.AbstractHandler`2.localFilePath
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.localFilePath
   id: localFilePath
@@ -66,13 +71,13 @@ items:
   - csharp
   - vb
   name: localFilePath
-  nameWithType: AbstractHandler<T, TO>.localFilePath
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.localFilePath
+  nameWithType: AbstractHandler<THandler, TObject>.localFilePath
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.localFilePath
   type: Field
   source:
     id: localFilePath
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 16
+    startLine: 18
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -81,8 +86,8 @@ items:
     return:
       type: System.String
     content.vb: Protected ReadOnly localFilePath As String
-  nameWithType.vb: AbstractHandler(Of T, TO).localFilePath
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).localFilePath
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).localFilePath
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).localFilePath
 - uid: SaveSystem.Handlers.AbstractHandler`2.staticObjects
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.staticObjects
   id: staticObjects
@@ -91,23 +96,23 @@ items:
   - csharp
   - vb
   name: staticObjects
-  nameWithType: AbstractHandler<T, TO>.staticObjects
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.staticObjects
+  nameWithType: AbstractHandler<THandler, TObject>.staticObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.staticObjects
   type: Field
   source:
     id: staticObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 17
+    startLine: 19
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   syntax:
-    content: protected readonly TO[] staticObjects
+    content: protected readonly TObject[] staticObjects
     return:
-      type: '{TO}[]'
-    content.vb: Protected ReadOnly staticObjects As [TO]()
-  nameWithType.vb: AbstractHandler(Of T, TO).staticObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).staticObjects
+      type: '{TObject}[]'
+    content.vb: Protected ReadOnly staticObjects As TObject()
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).staticObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).staticObjects
 - uid: SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
   id: dynamicObjects
@@ -116,23 +121,23 @@ items:
   - csharp
   - vb
   name: dynamicObjects
-  nameWithType: AbstractHandler<T, TO>.dynamicObjects
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.dynamicObjects
+  nameWithType: AbstractHandler<THandler, TObject>.dynamicObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.dynamicObjects
   type: Field
   source:
     id: dynamicObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 18
+    startLine: 20
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   syntax:
-    content: protected readonly List<TO> dynamicObjects
+    content: protected readonly List<TObject> dynamicObjects
     return:
-      type: System.Collections.Generic.List{{TO}}
-    content.vb: Protected ReadOnly dynamicObjects As List(Of [TO])
-  nameWithType.vb: AbstractHandler(Of T, TO).dynamicObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).dynamicObjects
+      type: System.Collections.Generic.List{{TObject}}
+    content.vb: Protected ReadOnly dynamicObjects As List(Of TObject)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).dynamicObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).dynamicObjects
 - uid: SaveSystem.Handlers.AbstractHandler`2.savingProgress
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.savingProgress
   id: savingProgress
@@ -141,13 +146,13 @@ items:
   - csharp
   - vb
   name: savingProgress
-  nameWithType: AbstractHandler<T, TO>.savingProgress
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.savingProgress
+  nameWithType: AbstractHandler<THandler, TObject>.savingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.savingProgress
   type: Field
   source:
     id: savingProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 20
+    startLine: 22
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -156,8 +161,8 @@ items:
     return:
       type: System.IProgress{System.Single}
     content.vb: Protected savingProgress As IProgress(Of Single)
-  nameWithType.vb: AbstractHandler(Of T, TO).savingProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).savingProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).savingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).savingProgress
 - uid: SaveSystem.Handlers.AbstractHandler`2.loadingProgress
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.loadingProgress
   id: loadingProgress
@@ -166,13 +171,13 @@ items:
   - csharp
   - vb
   name: loadingProgress
-  nameWithType: AbstractHandler<T, TO>.loadingProgress
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.loadingProgress
+  nameWithType: AbstractHandler<THandler, TObject>.loadingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.loadingProgress
   type: Field
   source:
     id: loadingProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -181,8 +186,8 @@ items:
     return:
       type: System.IProgress{System.Single}
     content.vb: Protected loadingProgress As IProgress(Of Single)
-  nameWithType.vb: AbstractHandler(Of T, TO).loadingProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).loadingProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).loadingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).loadingProgress
 - uid: SaveSystem.Handlers.AbstractHandler`2.factoryFunc
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.factoryFunc
   id: factoryFunc
@@ -191,23 +196,23 @@ items:
   - csharp
   - vb
   name: factoryFunc
-  nameWithType: AbstractHandler<T, TO>.factoryFunc
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.factoryFunc
+  nameWithType: AbstractHandler<THandler, TObject>.factoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.factoryFunc
   type: Field
   source:
     id: factoryFunc
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 22
+    startLine: 24
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   syntax:
-    content: protected Func<TO> factoryFunc
+    content: protected Func<TObject> factoryFunc
     return:
-      type: System.Func{{TO}}
-    content.vb: Protected factoryFunc As Func(Of [TO])
-  nameWithType.vb: AbstractHandler(Of T, TO).factoryFunc
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).factoryFunc
+      type: System.Func{{TObject}}
+    content.vb: Protected factoryFunc As Func(Of TObject)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).factoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).factoryFunc
 - uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
   id: '#ctor(System.String,`1[],System.Func{`1})'
@@ -215,31 +220,31 @@ items:
   langs:
   - csharp
   - vb
-  name: AbstractHandler(string, TO[], Func<TO>)
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[], Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[], System.Func<TO>)
+  name: AbstractHandler(string, TObject[], Func<TObject>)
+  nameWithType: AbstractHandler<THandler, TObject>.AbstractHandler(string, TObject[], Func<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AbstractHandler(string, TObject[], System.Func<TObject>)
   type: Constructor
   source:
     id: .ctor
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 25
+    startLine: 29
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   syntax:
-    content: protected AbstractHandler(string localFilePath, TO[] staticObjects, Func<TO> factoryFunc)
+    content: protected AbstractHandler(string localFilePath, TObject[] staticObjects, Func<TObject> factoryFunc)
     parameters:
     - id: localFilePath
       type: System.String
     - id: staticObjects
-      type: '{TO}[]'
+      type: '{TObject}[]'
     - id: factoryFunc
-      type: System.Func{{TO}}
-    content.vb: Protected Sub New(localFilePath As String, staticObjects As [TO](), factoryFunc As Func(Of [TO]))
+      type: System.Func{{TObject}}
+    content.vb: Protected Sub New(localFilePath As String, staticObjects As TObject(), factoryFunc As Func(Of TObject))
   overload: SaveSystem.Handlers.AbstractHandler`2.#ctor*
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO(), Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO(), System.Func(Of TO))
-  name.vb: New(String, TO(), Func(Of TO))
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).New(String, TObject(), Func(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).New(String, TObject(), System.Func(Of TObject))
+  name.vb: New(String, TObject(), Func(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   id: AddObject(`1)
@@ -247,35 +252,35 @@ items:
   langs:
   - csharp
   - vb
-  name: AddObject(TO)
-  nameWithType: AbstractHandler<T, TO>.AddObject(TO)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject(TO)
+  name: AddObject(TObject)
+  nameWithType: AbstractHandler<THandler, TObject>.AddObject(TObject)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObject(TObject)
   type: Method
   source:
     id: AddObject
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Add a dynamic object that spawned at runtime
   example: []
   syntax:
-    content: public T AddObject(TO obj)
+    content: public THandler AddObject(TObject obj)
     parameters:
     - id: obj
-      type: '{TO}'
+      type: '{TObject}'
       description: Spawned object
       attributes:
       - type: JetBrains.Annotations.NotNullAttribute
         ctor: JetBrains.Annotations.NotNullAttribute.#ctor
         arguments: []
     return:
-      type: '{T}'
-    content.vb: Public Function AddObject(obj As [TO]) As T
+      type: '{THandler}'
+    content.vb: Public Function AddObject(obj As TObject) As THandler
   overload: SaveSystem.Handlers.AbstractHandler`2.AddObject*
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObject(TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject(TO)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObject(TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObject(TObject)
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   id: AddObjects(System.Collections.Generic.ICollection{`1})
@@ -283,36 +288,36 @@ items:
   langs:
   - csharp
   - vb
-  name: AddObjects(ICollection<TO>)
-  nameWithType: AbstractHandler<T, TO>.AddObjects(ICollection<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
+  name: AddObjects(ICollection<TObject>)
+  nameWithType: AbstractHandler<THandler, TObject>.AddObjects(ICollection<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObjects(System.Collections.Generic.ICollection<TObject>)
   type: Method
   source:
     id: AddObjects
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 50
+    startLine: 54
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Add some objects that spawned at runtime
   example: []
   syntax:
-    content: public T AddObjects(ICollection<TO> objects)
+    content: public THandler AddObjects(ICollection<TObject> objects)
     parameters:
     - id: objects
-      type: System.Collections.Generic.ICollection{{TO}}
+      type: System.Collections.Generic.ICollection{{TObject}}
       description: Spawned objects
       attributes:
       - type: JetBrains.Annotations.NotNullAttribute
         ctor: JetBrains.Annotations.NotNullAttribute.#ctor
         arguments: []
     return:
-      type: '{T}'
-    content.vb: Public Function AddObjects(objects As ICollection(Of [TO])) As T
+      type: '{THandler}'
+    content.vb: Public Function AddObjects(objects As ICollection(Of TObject)) As THandler
   overload: SaveSystem.Handlers.AbstractHandler`2.AddObjects*
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects(ICollection(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
-  name.vb: AddObjects(ICollection(Of TO))
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObjects(ICollection(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObjects(System.Collections.Generic.ICollection(Of TObject))
+  name.vb: AddObjects(ICollection(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   id: SetFactoryFunc(System.Func{`1})
@@ -320,35 +325,35 @@ items:
   langs:
   - csharp
   - vb
-  name: SetFactoryFunc(Func<TO>)
-  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc(Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc(System.Func<TO>)
+  name: SetFactoryFunc(Func<TObject>)
+  nameWithType: AbstractHandler<THandler, TObject>.SetFactoryFunc(Func<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.SetFactoryFunc(System.Func<TObject>)
   type: Method
   source:
     id: SetFactoryFunc
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 63
+    startLine: 67
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: Add function for objects spawn. This is necessary to load dynamic objects
   example: []
   syntax:
-    content: public T SetFactoryFunc(Func<TO> factoryFunc)
+    content: public THandler SetFactoryFunc(Func<TObject> factoryFunc)
     parameters:
     - id: factoryFunc
-      type: System.Func{{TO}}
+      type: System.Func{{TObject}}
       attributes:
       - type: JetBrains.Annotations.NotNullAttribute
         ctor: JetBrains.Annotations.NotNullAttribute.#ctor
         arguments: []
     return:
-      type: '{T}'
-    content.vb: Public Function SetFactoryFunc(factoryFunc As Func(Of [TO])) As T
+      type: '{THandler}'
+    content.vb: Public Function SetFactoryFunc(factoryFunc As Func(Of TObject)) As THandler
   overload: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc*
-  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc(Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc(System.Func(Of TO))
-  name.vb: SetFactoryFunc(Func(Of TO))
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).SetFactoryFunc(Func(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).SetFactoryFunc(System.Func(Of TObject))
+  name.vb: SetFactoryFunc(Func(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   id: ObserveProgress(System.IProgress{System.Single})
@@ -357,30 +362,30 @@ items:
   - csharp
   - vb
   name: ObserveProgress(IProgress<float>)
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>)
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>)
   type: Method
   source:
     id: ObserveProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 73
+    startLine: 77
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: You can hand over IProgress object to observe the progress of data handling
   example: []
   syntax:
-    content: public T ObserveProgress(IProgress<float> progress)
+    content: public THandler ObserveProgress(IProgress<float> progress)
     parameters:
     - id: progress
       type: System.IProgress{System.Single}
       description: Object that observes of handling progress
     return:
-      type: '{T}'
-    content.vb: Public Function ObserveProgress(progress As IProgress(Of Single)) As T
+      type: '{THandler}'
+    content.vb: Public Function ObserveProgress(progress As IProgress(Of Single)) As THandler
   overload: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress*
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single))
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single))
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
@@ -390,20 +395,20 @@ items:
   - csharp
   - vb
   name: ObserveProgress(IProgress<float>, IProgress<float>)
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
   type: Method
   source:
     id: ObserveProgress
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
-    startLine: 85
+    startLine: 89
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
   summary: You can hand over two IProgress objects to observe the progress of loading and saving data separately
   example: []
   syntax:
-    content: public T ObserveProgress(IProgress<float> savingProgress, IProgress<float> loadingProgress)
+    content: public THandler ObserveProgress(IProgress<float> savingProgress, IProgress<float> loadingProgress)
     parameters:
     - id: savingProgress
       type: System.IProgress{System.Single}
@@ -412,12 +417,99 @@ items:
       type: System.IProgress{System.Single}
       description: Object that observes of loading progress
     return:
-      type: '{T}'
-    content.vb: Public Function ObserveProgress(savingProgress As IProgress(Of Single), loadingProgress As IProgress(Of Single)) As T
+      type: '{THandler}'
+    content.vb: Public Function ObserveProgress(savingProgress As IProgress(Of Single), loadingProgress As IProgress(Of Single)) As THandler
   overload: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress*
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+- uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  id: GetEnumerator
+  parent: SaveSystem.Handlers.AbstractHandler`2
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: AbstractHandler<THandler, TObject>.GetEnumerator()
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
+    startLine: 96
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  example: []
+  syntax:
+    content: public IEnumerator<TObject> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{TObject}}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of TObject)
+  overload: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{{TObject}}.GetEnumerator
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).GetEnumerator()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).GetEnumerator()
+- uid: SaveSystem.Handlers.AbstractHandler`2.ToString
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.ToString
+  id: ToString
+  parent: SaveSystem.Handlers.AbstractHandler`2
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: AbstractHandler<THandler, TObject>.ToString()
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
+    startLine: 106
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: SaveSystem.Handlers.AbstractHandler`2.ToString*
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ToString()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ToString()
+- uid: SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  commentId: P:SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: SaveSystem.Handlers.AbstractHandler`2
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: AbstractHandler<THandler, TObject>.this[int]
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.this[int]
+  type: Property
+  source:
+    id: this[]
+    path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\AbstractHandler.cs
+    startLine: 111
+  assemblies:
+  - SaveSystem
+  namespace: SaveSystem.Handlers
+  syntax:
+    content: public TObject this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: '{TObject}'
+    content.vb: Public ReadOnly Default Property this[](index As Integer) As TObject
+  overload: SaveSystem.Handlers.AbstractHandler`2.Item*
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).this[](Integer)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).this[](Integer)
+  name.vb: this[](Integer)
 references:
 - uid: SaveSystem.Handlers
   commentId: N:SaveSystem.Handlers
@@ -452,6 +544,43 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: System.Collections.Generic.IEnumerable{{TObject}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TObject>
+  nameWithType: IEnumerable<TObject>
+  fullName: System.Collections.Generic.IEnumerable<TObject>
+  nameWithType.vb: IEnumerable(Of TObject)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TObject)
+  name.vb: IEnumerable(Of TObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TObject
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TObject
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -647,30 +776,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
-  - name: (
-  - name: )
 - uid: System
   commentId: N:System
   isExternal: true
@@ -678,85 +783,29 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: System.String
-  commentId: T:System.String
-  parent: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: '{TO}[]'
-  isExternal: true
-  name: TO[]
-  nameWithType: TO[]
-  fullName: TO[]
-  nameWithType.vb: TO()
-  fullName.vb: TO()
-  name.vb: TO()
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
   spec.csharp:
-  - name: TO
-  - name: '['
-  - name: ']'
-  spec.vb:
-  - name: TO
-  - name: (
-  - name: )
-- uid: System.Collections.Generic.List{{TO}}
-  commentId: T:System.Collections.Generic.List{`1}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.List`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<TO>
-  nameWithType: List<TO>
-  fullName: System.Collections.Generic.List<TO>
-  nameWithType.vb: List(Of TO)
-  fullName.vb: System.Collections.Generic.List(Of TO)
-  name.vb: List(Of TO)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: <
-  - name: TO
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TO
-  - name: )
-- uid: System.Collections.Generic.List`1
-  commentId: T:System.Collections.Generic.List`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
-  name: List<T>
-  nameWithType: List<T>
-  fullName: System.Collections.Generic.List<T>
-  nameWithType.vb: List(Of T)
-  fullName.vb: System.Collections.Generic.List(Of T)
-  name.vb: List(Of T)
-  spec.csharp:
-  - uid: System.Collections.Generic.List`1
-    name: List
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.List`1
-    name: List
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
   - name: (
   - name: Of
   - name: " "
@@ -799,6 +848,117 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{TObject}[]'
+  isExternal: true
+  name: TObject[]
+  nameWithType: TObject[]
+  fullName: TObject[]
+  nameWithType.vb: TObject()
+  fullName.vb: TObject()
+  name.vb: TObject()
+  spec.csharp:
+  - name: TObject
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TObject
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{{TObject}}
+  commentId: T:System.Collections.Generic.List{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<TObject>
+  nameWithType: List<TObject>
+  fullName: System.Collections.Generic.List<TObject>
+  nameWithType.vb: List(Of TObject)
+  fullName.vb: System.Collections.Generic.List(Of TObject)
+  name.vb: List(Of TObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: TObject
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TObject
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: System.IProgress{System.Single}
   commentId: T:System.IProgress{System.Single}
   parent: System
@@ -862,24 +1022,24 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: System.Func{{TO}}
-  commentId: T:System.Func{``0}
+- uid: System.Func{{TObject}}
+  commentId: T:System.Func{`1}
   parent: System
   definition: System.Func`1
   href: https://learn.microsoft.com/dotnet/api/system.func-1
-  name: Func<TO>
-  nameWithType: Func<TO>
-  fullName: System.Func<TO>
-  nameWithType.vb: Func(Of TO)
-  fullName.vb: System.Func(Of TO)
-  name.vb: Func(Of TO)
+  name: Func<TObject>
+  nameWithType: Func<TObject>
+  fullName: System.Func<TObject>
+  nameWithType.vb: Func(Of TObject)
+  fullName.vb: System.Func(Of TObject)
+  name.vb: Func(Of TObject)
   spec.csharp:
   - uid: System.Func`1
     name: Func
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: System.Func`1
@@ -889,7 +1049,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: System.Func`1
   commentId: T:System.Func`1
@@ -923,65 +1083,65 @@ references:
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.#ctor
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
   name: AbstractHandler
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler
-  nameWithType.vb: AbstractHandler(Of T, TO).New
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New
+  nameWithType: AbstractHandler<THandler, TObject>.AbstractHandler
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AbstractHandler
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).New
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).New
   name.vb: New
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject*
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.AddObject
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   name: AddObject
-  nameWithType: AbstractHandler<T, TO>.AddObject
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObject
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject
-- uid: '{TO}'
-  commentId: '!:TO'
-  definition: TO
-  name: TO
-  nameWithType: TO
-  fullName: TO
-- uid: '{T}'
-  commentId: '!:T'
-  definition: T
-  name: T
-  nameWithType: T
-  fullName: T
-- uid: TO
-  name: TO
-  nameWithType: TO
-  fullName: TO
-- uid: T
-  name: T
-  nameWithType: T
-  fullName: T
+  nameWithType: AbstractHandler<THandler, TObject>.AddObject
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObject
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObject
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObject
+- uid: '{TObject}'
+  commentId: '!:TObject'
+  definition: TObject
+  name: TObject
+  nameWithType: TObject
+  fullName: TObject
+- uid: '{THandler}'
+  commentId: '!:THandler'
+  definition: THandler
+  name: THandler
+  nameWithType: THandler
+  fullName: THandler
+- uid: TObject
+  name: TObject
+  nameWithType: TObject
+  fullName: TObject
+- uid: THandler
+  name: THandler
+  nameWithType: THandler
+  fullName: THandler
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects*
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.AddObjects
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   name: AddObjects
-  nameWithType: AbstractHandler<T, TO>.AddObjects
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects
-- uid: System.Collections.Generic.ICollection{{TO}}
-  commentId: T:System.Collections.Generic.ICollection{``0}
+  nameWithType: AbstractHandler<THandler, TObject>.AddObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObjects
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObjects
+- uid: System.Collections.Generic.ICollection{{TObject}}
+  commentId: T:System.Collections.Generic.ICollection{`1}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.ICollection`1
   href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
-  name: ICollection<TO>
-  nameWithType: ICollection<TO>
-  fullName: System.Collections.Generic.ICollection<TO>
-  nameWithType.vb: ICollection(Of TO)
-  fullName.vb: System.Collections.Generic.ICollection(Of TO)
-  name.vb: ICollection(Of TO)
+  name: ICollection<TObject>
+  nameWithType: ICollection<TObject>
+  fullName: System.Collections.Generic.ICollection<TObject>
+  nameWithType.vb: ICollection(Of TObject)
+  fullName.vb: System.Collections.Generic.ICollection(Of TObject)
+  name.vb: ICollection(Of TObject)
   spec.csharp:
   - uid: System.Collections.Generic.ICollection`1
     name: ICollection
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: System.Collections.Generic.ICollection`1
@@ -991,7 +1151,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
 - uid: System.Collections.Generic.ICollection`1
   commentId: T:System.Collections.Generic.ICollection`1
@@ -1025,15 +1185,179 @@ references:
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   name: SetFactoryFunc
-  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc
-  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc
+  nameWithType: AbstractHandler<THandler, TObject>.SetFactoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.SetFactoryFunc
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).SetFactoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).SetFactoryFunc
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress*
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress
+- uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator*
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  name: GetEnumerator
+  nameWithType: AbstractHandler<THandler, TObject>.GetEnumerator
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.GetEnumerator
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).GetEnumerator
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{{TObject}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{`1}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{{TObject}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable--1-.getenumerator#system-collections-generic-ienumerable((-1))-getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<TObject>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<TObject>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of TObject).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TObject).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable--1-.getenumerator#system-collections-generic-ienumerable((-1))-getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable--1-.getenumerator#system-collections-generic-ienumerable((-1))-getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{{TObject}}
+  commentId: T:System.Collections.Generic.IEnumerator{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<TObject>
+  nameWithType: IEnumerator<TObject>
+  fullName: System.Collections.Generic.IEnumerator<TObject>
+  nameWithType.vb: IEnumerator(Of TObject)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of TObject)
+  name.vb: IEnumerator(Of TObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: TObject
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TObject
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.ToString*
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.ToString
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ToString
+  name: ToString
+  nameWithType: AbstractHandler<THandler, TObject>.ToString
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ToString
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ToString
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ToString
+- uid: SaveSystem.Handlers.AbstractHandler`2.Item*
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.Item
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  name: this
+  nameWithType: AbstractHandler<THandler, TObject>.this
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.this
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).this[]
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).this[]
+  name.vb: this[]
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

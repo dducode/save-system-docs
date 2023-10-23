@@ -10,14 +10,14 @@ items:
   langs:
   - csharp
   - vb
-  name: ObjectHandler<TO>
-  nameWithType: ObjectHandler<TO>
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
+  name: ObjectHandler<TObject>
+  nameWithType: ObjectHandler<TObject>
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>
   type: Class
   source:
     id: ObjectHandler
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandler.cs
-    startLine: 12
+    startLine: 11
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -27,30 +27,35 @@ items:
     Also you can set parameters for this as a chain of methods
   example: []
   syntax:
-    content: 'public sealed class ObjectHandler<TO> : AbstractHandler<ObjectHandler<TO>, TO>, IObjectHandler where TO : IPersistentObject'
+    content: 'public sealed class ObjectHandler<TObject> : AbstractHandler<ObjectHandler<TObject>, TObject>, IEnumerable<TObject>, IEnumerable, IObjectHandler where TObject : IPersistentObject'
     typeParameters:
-    - id: TO
-    content.vb: Public NotInheritable Class ObjectHandler(Of [TO] As IPersistentObject) Inherits AbstractHandler(Of ObjectHandler(Of TO), TO) Implements IObjectHandler
+    - id: TObject
+    content.vb: Public NotInheritable Class ObjectHandler(Of TObject As IPersistentObject) Inherits AbstractHandler(Of ObjectHandler(Of TObject), TObject) Implements IEnumerable(Of TObject), IEnumerable, IObjectHandler
   inheritance:
   - System.Object
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   implements:
+  - System.Collections.Generic.IEnumerable{{TObject}}
+  - System.Collections.IEnumerable
   - SaveSystem.Handlers.IObjectHandler
   inheritedMembers:
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.AddObject({TO})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
-  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.AddObject({TObject})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.AddObjects(System.Collections.Generic.ICollection{{TObject}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.SetFactoryFunc(System.Func{{TObject}})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ObserveProgress(System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.GetEnumerator
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ToString
+  - SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.Item(System.Int32)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  nameWithType.vb: ObjectHandler(Of TO)
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  name.vb: ObjectHandler(Of TO)
+  nameWithType.vb: ObjectHandler(Of TObject)
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject)
+  name.vb: ObjectHandler(Of TObject)
 - uid: SaveSystem.Handlers.ObjectHandler`1.Save
   commentId: M:SaveSystem.Handlers.ObjectHandler`1.Save
   id: Save
@@ -59,13 +64,13 @@ items:
   - csharp
   - vb
   name: Save()
-  nameWithType: ObjectHandler<TO>.Save()
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Save()
+  nameWithType: ObjectHandler<TObject>.Save()
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Save()
   type: Method
   source:
     id: Save
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandler.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -77,8 +82,8 @@ items:
   overload: SaveSystem.Handlers.ObjectHandler`1.Save*
   implements:
   - SaveSystem.Handlers.IObjectHandler.Save
-  nameWithType.vb: ObjectHandler(Of TO).Save()
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Save()
+  nameWithType.vb: ObjectHandler(Of TObject).Save()
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Save()
 - uid: SaveSystem.Handlers.ObjectHandler`1.Load
   commentId: M:SaveSystem.Handlers.ObjectHandler`1.Load
   id: Load
@@ -87,13 +92,13 @@ items:
   - csharp
   - vb
   name: Load()
-  nameWithType: ObjectHandler<TO>.Load()
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Load()
+  nameWithType: ObjectHandler<TObject>.Load()
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Load()
   type: Method
   source:
     id: Load
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\Handlers\ObjectHandler.cs
-    startLine: 32
+    startLine: 29
   assemblies:
   - SaveSystem
   namespace: SaveSystem.Handlers
@@ -107,8 +112,8 @@ items:
   overload: SaveSystem.Handlers.ObjectHandler`1.Load*
   implements:
   - SaveSystem.Handlers.IObjectHandler.Load
-  nameWithType.vb: ObjectHandler(Of TO).Load()
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Load()
+  nameWithType.vb: ObjectHandler(Of TObject).Load()
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Load()
 references:
 - uid: SaveSystem.IPersistentObject
   commentId: T:SaveSystem.IPersistentObject
@@ -150,17 +155,17 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   commentId: T:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}
   parent: SaveSystem.Handlers
   definition: SaveSystem.Handlers.AbstractHandler`2
   href: SaveSystem.Handlers.AbstractHandler-2.html
-  name: AbstractHandler<ObjectHandler<TO>, TO>
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO)
-  name.vb: AbstractHandler(Of ObjectHandler(Of TO), TO)
+  name: AbstractHandler<ObjectHandler<TObject>, TObject>
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject)
+  name.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2
     name: AbstractHandler
@@ -170,11 +175,11 @@ references:
     name: ObjectHandler
     href: SaveSystem.Handlers.ObjectHandler-1.html
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.AbstractHandler`2
@@ -189,12 +194,49 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
+- uid: System.Collections.Generic.IEnumerable{{TObject}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TObject>
+  nameWithType: IEnumerable<TObject>
+  fullName: System.Collections.Generic.IEnumerable<TObject>
+  nameWithType.vb: IEnumerable(Of TObject)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TObject)
+  name.vb: IEnumerable(Of TObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TObject
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TObject
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
 - uid: SaveSystem.Handlers.IObjectHandler
   commentId: T:SaveSystem.Handlers.IObjectHandler
   parent: SaveSystem.Handlers
@@ -202,41 +244,41 @@ references:
   name: IObjectHandler
   nameWithType: IObjectHandler
   fullName: SaveSystem.Handlers.IObjectHandler
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.AddObject({TO})
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.AddObject({TObject})
   commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   definition: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
-  name: AddObject(TO)
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>.AddObject(TO)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>.AddObject(TO)
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO).AddObject(TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO).AddObject(TO)
+  name: AddObject(TObject)
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.AddObject(TObject)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.AddObject(TObject)
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).AddObject(TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).AddObject(TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
     name: AddObject
     href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
   - name: (
-  - name: TO
+  - name: TObject
   - name: )
   spec.vb:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
     name: AddObject
     href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObject(`0)
   - name: (
-  - name: TO
+  - name: TObject
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.AddObjects(System.Collections.Generic.ICollection{{TO}})
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.AddObjects(System.Collections.Generic.ICollection{{TObject}})
   commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   definition: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
-  name: AddObjects(ICollection<TO>)
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>.AddObjects(ICollection<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO).AddObjects(ICollection(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
-  name.vb: AddObjects(ICollection(Of TO))
+  name: AddObjects(ICollection<TObject>)
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.AddObjects(ICollection<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.AddObjects(System.Collections.Generic.ICollection<TObject>)
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).AddObjects(ICollection(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).AddObjects(System.Collections.Generic.ICollection(Of TObject))
+  name.vb: AddObjects(ICollection(Of TObject))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.AddObjects(System.Collections.Generic.ICollection{`0})
     name: AddObjects
@@ -247,7 +289,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   - name: )
   spec.vb:
@@ -262,20 +304,20 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.SetFactoryFunc(System.Func{{TO}})
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.SetFactoryFunc(System.Func{{TObject}})
   commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   definition: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
-  name: SetFactoryFunc(Func<TO>)
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>.SetFactoryFunc(Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>.SetFactoryFunc(System.Func<TO>)
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO).SetFactoryFunc(Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO).SetFactoryFunc(System.Func(Of TO))
-  name.vb: SetFactoryFunc(Func(Of TO))
+  name: SetFactoryFunc(Func<TObject>)
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.SetFactoryFunc(Func<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.SetFactoryFunc(System.Func<TObject>)
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).SetFactoryFunc(Func(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).SetFactoryFunc(System.Func(Of TObject))
+  name.vb: SetFactoryFunc(Func(Of TObject))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.SetFactoryFunc(System.Func{`0})
     name: SetFactoryFunc
@@ -286,7 +328,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   - name: )
   spec.vb:
@@ -301,19 +343,19 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single})
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ObserveProgress(System.IProgress{System.Single})
   commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>)
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single))
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.ObserveProgress(System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).ObserveProgress(System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single})
@@ -349,16 +391,16 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
   - name: )
-- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
-  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TO}}
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
   definition: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>, IProgress<float>)
-  nameWithType: AbstractHandler<ObjectHandler<TO>, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TO>, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TO), TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TO), TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
@@ -419,6 +461,79 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.GetEnumerator
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.GetEnumerator()
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.GetEnumerator()
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).GetEnumerator()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).GetEnumerator()
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+    name: GetEnumerator
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+    name: GetEnumerator
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.GetEnumerator
+  - name: (
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.ToString
+  commentId: M:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.ToString
+  href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+  name: ToString()
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.ToString()
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.ToString()
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).ToString()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).ToString()
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+    name: ToString
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+    name: ToString
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.ToString
+  - name: (
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}.Item(System.Int32)
+  commentId: P:SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.Item(System.Int32)
+  parent: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,{TObject}}
+  definition: SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: AbstractHandler<ObjectHandler<TObject>, TObject>.this[int]
+  fullName: SaveSystem.Handlers.AbstractHandler<SaveSystem.Handlers.ObjectHandler<TObject>, TObject>.this[int]
+  nameWithType.vb: AbstractHandler(Of ObjectHandler(Of TObject), TObject).this[](Integer)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of SaveSystem.Handlers.ObjectHandler(Of TObject), TObject).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.Item(System.Int32)
+    name: this[]
+    href: SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler-1,-0}.html#SaveSystem.Handlers.AbstractHandler{SaveSystem.Handlers.ObjectHandler`1,`0}.Item(System.Int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -631,21 +746,21 @@ references:
 - uid: SaveSystem.Handlers.AbstractHandler`2
   commentId: T:SaveSystem.Handlers.AbstractHandler`2
   href: SaveSystem.Handlers.AbstractHandler-2.html
-  name: AbstractHandler<T, TO>
-  nameWithType: AbstractHandler<T, TO>
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
-  nameWithType.vb: AbstractHandler(Of T, TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
-  name.vb: AbstractHandler(Of T, TO)
+  name: AbstractHandler<THandler, TObject>
+  nameWithType: AbstractHandler<THandler, TObject>
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>
+  nameWithType.vb: AbstractHandler(Of THandler, TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject)
+  name.vb: AbstractHandler(Of THandler, TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2
     name: AbstractHandler
     href: SaveSystem.Handlers.AbstractHandler-2.html
   - name: <
-  - name: T
+  - name: THandler
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: '>'
   spec.vb:
   - uid: SaveSystem.Handlers.AbstractHandler`2
@@ -654,43 +769,135 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: T
+  - name: THandler
   - name: ','
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
-  name: AddObject(TO)
-  nameWithType: AbstractHandler<T, TO>.AddObject(TO)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject(TO)
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObject(TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject(TO)
+  name: AddObject(TObject)
+  nameWithType: AbstractHandler<THandler, TObject>.AddObject(TObject)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObject(TObject)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObject(TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObject(TObject)
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
     name: AddObject
     href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   - name: (
-  - name: TO
+  - name: TObject
   - name: )
   spec.vb:
   - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
     name: AddObject
     href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
   - name: (
-  - name: TO
+  - name: TObject
   - name: )
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
   isExternal: true
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
-  name: AddObjects(ICollection<TO>)
-  nameWithType: AbstractHandler<T, TO>.AddObjects(ICollection<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects(ICollection(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
-  name.vb: AddObjects(ICollection(Of TO))
+  name: AddObjects(ICollection<TObject>)
+  nameWithType: AbstractHandler<THandler, TObject>.AddObjects(ICollection<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObjects(System.Collections.Generic.ICollection<TObject>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObjects(ICollection(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObjects(System.Collections.Generic.ICollection(Of TObject))
+  name.vb: AddObjects(ICollection(Of TObject))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
     name: AddObjects
@@ -701,7 +908,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   - name: )
   spec.vb:
@@ -716,19 +923,19 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
   - name: )
 - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
   isExternal: true
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
-  name: SetFactoryFunc(Func<TO>)
-  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc(Func<TO>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc(System.Func<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc(Func(Of TO))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc(System.Func(Of TO))
-  name.vb: SetFactoryFunc(Func(Of TO))
+  name: SetFactoryFunc(Func<TObject>)
+  nameWithType: AbstractHandler<THandler, TObject>.SetFactoryFunc(Func<TObject>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.SetFactoryFunc(System.Func<TObject>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).SetFactoryFunc(Func(Of TObject))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).SetFactoryFunc(System.Func(Of TObject))
+  name.vb: SetFactoryFunc(Func(Of TObject))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
     name: SetFactoryFunc
@@ -739,7 +946,7 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.func-1
   - name: <
-  - name: TO
+  - name: TObject
   - name: '>'
   - name: )
   spec.vb:
@@ -754,7 +961,7 @@ references:
   - name: (
   - name: Of
   - name: " "
-  - name: TO
+  - name: TObject
   - name: )
   - name: )
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
@@ -762,10 +969,10 @@ references:
   isExternal: true
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>)
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single))
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
@@ -806,10 +1013,10 @@ references:
   isExternal: true
   href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>, IProgress<float>)
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>, IProgress<float>)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
   name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
   spec.csharp:
   - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
@@ -871,14 +1078,82 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.single
   - name: )
   - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: AbstractHandler<THandler, TObject>.GetEnumerator()
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.GetEnumerator()
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).GetEnumerator()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).GetEnumerator()
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+    name: GetEnumerator
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+    name: GetEnumerator
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  - name: (
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.ToString
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.ToString
+  href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ToString
+  name: ToString()
+  nameWithType: AbstractHandler<THandler, TObject>.ToString()
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ToString()
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ToString()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ToString()
+  spec.csharp:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ToString
+    name: ToString
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.ToString
+    name: ToString
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.ToString
+  - name: (
+  - name: )
+- uid: SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  commentId: P:SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: AbstractHandler<THandler, TObject>.this[int]
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.this[int]
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).this[](Integer)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+    name: this[]
+    href: SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
 - uid: SaveSystem.Handlers.ObjectHandler`1.Save*
   commentId: Overload:SaveSystem.Handlers.ObjectHandler`1.Save
   href: SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem.Handlers.ObjectHandler`1.Save
   name: Save
-  nameWithType: ObjectHandler<TO>.Save
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Save
-  nameWithType.vb: ObjectHandler(Of TO).Save
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Save
+  nameWithType: ObjectHandler<TObject>.Save
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Save
+  nameWithType.vb: ObjectHandler(Of TObject).Save
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Save
 - uid: SaveSystem.Handlers.IObjectHandler.Save
   commentId: M:SaveSystem.Handlers.IObjectHandler.Save
   parent: SaveSystem.Handlers.IObjectHandler
@@ -902,10 +1177,10 @@ references:
   commentId: Overload:SaveSystem.Handlers.ObjectHandler`1.Load
   href: SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem.Handlers.ObjectHandler`1.Load
   name: Load
-  nameWithType: ObjectHandler<TO>.Load
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Load
-  nameWithType.vb: ObjectHandler(Of TO).Load
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Load
+  nameWithType: ObjectHandler<TObject>.Load
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Load
+  nameWithType.vb: ObjectHandler(Of TObject).Load
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Load
 - uid: SaveSystem.Handlers.IObjectHandler.Load
   commentId: M:SaveSystem.Handlers.IObjectHandler.Load
   parent: SaveSystem.Handlers.IObjectHandler

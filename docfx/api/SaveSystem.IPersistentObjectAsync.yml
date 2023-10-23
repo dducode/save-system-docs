@@ -17,7 +17,7 @@ items:
   source:
     id: IPersistentObjectAsync
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - SaveSystem
   namespace: SaveSystem
@@ -40,20 +40,20 @@ items:
   source:
     id: Save
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
-    startLine: 13
+    startLine: 18
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: It will be called when system will save data
   example: []
   syntax:
-    content: UniTask Save(UnityWriter writer)
+    content: Task Save(UnityWriter writer)
     parameters:
     - id: writer
       type: SaveSystem.UnityHandlers.UnityWriter
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Function Save(writer As UnityWriter) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Function Save(writer As UnityWriter) As Task
   overload: SaveSystem.IPersistentObjectAsync.Save*
 - uid: SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityHandlers.UnityReader)
   commentId: M:SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityHandlers.UnityReader)
@@ -69,20 +69,20 @@ items:
   source:
     id: Load
     path: C:\UnityProjects\UnityPackages\Assets\com.dducode.save-system\Runtime\IPersistentObjectAsync.cs
-    startLine: 19
+    startLine: 24
   assemblies:
   - SaveSystem
   namespace: SaveSystem
   summary: It will be called when system will load data
   example: []
   syntax:
-    content: UniTask Load(UnityReader reader)
+    content: Task Load(UnityReader reader)
     parameters:
     - id: reader
       type: SaveSystem.UnityHandlers.UnityReader
     return:
-      type: Cysharp.Threading.Tasks.UniTask
-    content.vb: Function Load(reader As UnityReader) As UniTask
+      type: System.Threading.Tasks.Task
+    content.vb: Function Load(reader As UnityReader) As Task
   overload: SaveSystem.IPersistentObjectAsync.Load*
 references:
 - uid: SaveSystem
@@ -104,12 +104,14 @@ references:
   name: UnityWriter
   nameWithType: UnityWriter
   fullName: SaveSystem.UnityHandlers.UnityWriter
-- uid: Cysharp.Threading.Tasks.UniTask
-  commentId: T:Cysharp.Threading.Tasks.UniTask
-  parent: Cysharp.Threading.Tasks
-  name: UniTask
-  nameWithType: UniTask
-  fullName: Cysharp.Threading.Tasks.UniTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
 - uid: SaveSystem.UnityHandlers
   commentId: N:SaveSystem.UnityHandlers
   href: SaveSystem.html
@@ -132,29 +134,43 @@ references:
   - uid: SaveSystem.UnityHandlers
     name: UnityHandlers
     href: SaveSystem.UnityHandlers.html
-- uid: Cysharp.Threading.Tasks
-  commentId: N:Cysharp.Threading.Tasks
-  name: Cysharp.Threading.Tasks
-  nameWithType: Cysharp.Threading.Tasks
-  fullName: Cysharp.Threading.Tasks
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
   spec.csharp:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
   spec.vb:
-  - uid: Cysharp
-    name: Cysharp
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: Cysharp.Threading
+  - uid: System.Threading
     name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
   - name: .
-  - uid: Cysharp.Threading.Tasks
+  - uid: System.Threading.Tasks
     name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: SaveSystem.IPersistentObjectAsync.Load*
   commentId: Overload:SaveSystem.IPersistentObjectAsync.Load
   href: SaveSystem.IPersistentObjectAsync.html#SaveSystem.IPersistentObjectAsync.Load(SaveSystem.UnityHandlers.UnityReader)

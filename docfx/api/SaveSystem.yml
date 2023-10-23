@@ -5,6 +5,7 @@ items:
   id: SaveSystem
   children:
   - SaveSystem.AsyncMode
+  - SaveSystem.BootstrapCallbackAttribute
   - SaveSystem.DataBuffer
   - SaveSystem.DataManager
   - SaveSystem.DataManager.Advanced
@@ -12,6 +13,8 @@ items:
   - SaveSystem.IPersistentObjectAsync
   - SaveSystem.IStorable
   - SaveSystem.MeshData
+  - SaveSystem.ProjectBootstrapAttribute
+  - SaveSystem.SceneBootstrapAttribute
   - SaveSystem.Storage
   langs:
   - csharp
@@ -30,6 +33,12 @@ references:
   name: MeshData
   nameWithType: MeshData
   fullName: SaveSystem.MeshData
+- uid: SaveSystem.SceneBootstrapAttribute
+  commentId: T:SaveSystem.SceneBootstrapAttribute
+  href: SaveSystem.SceneBootstrapAttribute.html
+  name: SceneBootstrapAttribute
+  nameWithType: SceneBootstrapAttribute
+  fullName: SaveSystem.SceneBootstrapAttribute
 - uid: SaveSystem.DataManager
   commentId: T:SaveSystem.DataManager
   href: SaveSystem.DataManager.html
@@ -64,6 +73,18 @@ references:
   name: Storage
   nameWithType: Storage
   fullName: SaveSystem.Storage
+- uid: SaveSystem.BootstrapCallbackAttribute
+  commentId: T:SaveSystem.BootstrapCallbackAttribute
+  href: SaveSystem.BootstrapCallbackAttribute.html
+  name: BootstrapCallbackAttribute
+  nameWithType: BootstrapCallbackAttribute
+  fullName: SaveSystem.BootstrapCallbackAttribute
+- uid: SaveSystem.ProjectBootstrapAttribute
+  commentId: T:SaveSystem.ProjectBootstrapAttribute
+  href: SaveSystem.ProjectBootstrapAttribute.html
+  name: ProjectBootstrapAttribute
+  nameWithType: ProjectBootstrapAttribute
+  fullName: SaveSystem.ProjectBootstrapAttribute
 - uid: SaveSystem.AsyncMode
   commentId: T:SaveSystem.AsyncMode
   parent: SaveSystem

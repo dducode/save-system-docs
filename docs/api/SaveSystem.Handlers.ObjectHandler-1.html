@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ObjectHandler&lt;TO&gt;
+      <title>Class ObjectHandler&lt;TObject&gt;
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ObjectHandler&lt;TO&gt;
+      <meta name="title" content="Class ObjectHandler&lt;TObject&gt;
  ">
       
       <link rel="icon" href="../images/icon.png">
@@ -78,7 +78,7 @@
 
 
 
-  <h1 id="SaveSystem_Handlers_ObjectHandler_1" data-uid="SaveSystem.Handlers.ObjectHandler`1" class="text-break">Class ObjectHandler&lt;TO&gt;
+  <h1 id="SaveSystem_Handlers_ObjectHandler_1" data-uid="SaveSystem.Handlers.ObjectHandler`1" class="text-break">Class ObjectHandler&lt;TObject&gt;
 </h1>
   <div class="markdown level0 summary"><p>Object Handler can help you to saving/loading <a class="xref" href="SaveSystem.IPersistentObject.html">persistent objects</a>.
 Also you can set parameters for this as a chain of methods</p>
@@ -87,18 +87,20 @@ Also you can set parameters for this as a chain of methods</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><a class="xref" href="SaveSystem.Handlers.AbstractHandler-2.html">AbstractHandler</a>&lt;<a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TO&gt;, TO&gt;</div>
-    <div class="level2"><span class="xref">ObjectHandler&lt;TO&gt;</span></div>
+    <div class="level1"><a class="xref" href="SaveSystem.Handlers.AbstractHandler-2.html">AbstractHandler</a>&lt;<a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler</a>&lt;TObject&gt;, TObject&gt;</div>
+    <div class="level2"><span class="xref">ObjectHandler&lt;TObject&gt;</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TObject&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><a class="xref" href="SaveSystem.Handlers.IObjectHandler.html">IObjectHandler</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Handlers.html">Handlers</a></h6>
   <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
   <h5 id="SaveSystem_Handlers_ObjectHandler_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class ObjectHandler&lt;TO&gt; : AbstractHandler&lt;ObjectHandler&lt;TO&gt;, TO&gt;, IObjectHandler where TO : IPersistentObject</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class ObjectHandler&lt;TObject&gt; : AbstractHandler&lt;ObjectHandler&lt;TObject&gt;, TObject&gt;, IEnumerable&lt;TObject&gt;, IEnumerable, IObjectHandler where TObject : IPersistentObject</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -110,7 +112,7 @@ Also you can set parameters for this as a chain of methods</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TO</span></td>
+        <td><span class="parametername">TObject</span></td>
         <td></td>
       </tr>
     </tbody>

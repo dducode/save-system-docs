@@ -25,6 +25,12 @@ references:
   commentId: F:SaveSystem.AsyncMode.OnThreadPool
   fullName: SaveSystem.AsyncMode.OnThreadPool
   nameWithType: AsyncMode.OnThreadPool
+- uid: SaveSystem.BootstrapCallbackAttribute
+  name: BootstrapCallbackAttribute
+  href: api/SaveSystem.BootstrapCallbackAttribute.html
+  commentId: T:SaveSystem.BootstrapCallbackAttribute
+  fullName: SaveSystem.BootstrapCallbackAttribute
+  nameWithType: BootstrapCallbackAttribute
 - uid: SaveSystem.CheckPoints
   name: SaveSystem.CheckPoints
   href: api/SaveSystem.CheckPoints.html
@@ -222,6 +228,38 @@ references:
   isSpec: "True"
   fullName: SaveSystem.Core.SaveSystemCore.IsParallel
   nameWithType: SaveSystemCore.IsParallel
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  name: LoadSavedScene(int)
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_LoadSavedScene_System_Int32_
+  commentId: M:SaveSystem.Core.SaveSystemCore.LoadSavedScene(System.Int32)
+  name.vb: LoadSavedScene(Integer)
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedScene(int)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.LoadSavedScene(Integer)
+  nameWithType: SaveSystemCore.LoadSavedScene(int)
+  nameWithType.vb: SaveSystemCore.LoadSavedScene(Integer)
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedScene*
+  name: LoadSavedScene
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_LoadSavedScene_
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.LoadSavedScene
+  isSpec: "True"
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedScene
+  nameWithType: SaveSystemCore.LoadSavedScene
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
+  name: LoadSavedSceneAsync(int)
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_LoadSavedSceneAsync_System_Int32_
+  commentId: M:SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(System.Int32)
+  name.vb: LoadSavedSceneAsync(Integer)
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(int)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync(Integer)
+  nameWithType: SaveSystemCore.LoadSavedSceneAsync(int)
+  nameWithType.vb: SaveSystemCore.LoadSavedSceneAsync(Integer)
+- uid: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync*
+  name: LoadSavedSceneAsync
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_LoadSavedSceneAsync_
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync
+  isSpec: "True"
+  fullName: SaveSystem.Core.SaveSystemCore.LoadSavedSceneAsync
+  nameWithType: SaveSystemCore.LoadSavedSceneAsync
 - uid: SaveSystem.Core.SaveSystemCore.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>)
   href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_ObserveProgress_System_IProgress_System_Single__
@@ -302,6 +340,22 @@ references:
   isSpec: "True"
   fullName: SaveSystem.Core.SaveSystemCore.RegisterObjectHandler
   nameWithType: SaveSystemCore.RegisterObjectHandler
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
+  name: SaveAndLoadScene(int, bool)
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_SaveAndLoadScene_System_Int32_System_Boolean_
+  commentId: M:SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(System.Int32,System.Boolean)
+  name.vb: SaveAndLoadScene(Integer, Boolean)
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(int, bool)
+  fullName.vb: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene(Integer, Boolean)
+  nameWithType: SaveSystemCore.SaveAndLoadScene(int, bool)
+  nameWithType.vb: SaveSystemCore.SaveAndLoadScene(Integer, Boolean)
+- uid: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene*
+  name: SaveAndLoadScene
+  href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_SaveAndLoadScene_
+  commentId: Overload:SaveSystem.Core.SaveSystemCore.SaveAndLoadScene
+  isSpec: "True"
+  fullName: SaveSystem.Core.SaveSystemCore.SaveAndLoadScene
+  nameWithType: SaveSystemCore.SaveAndLoadScene
 - uid: SaveSystem.Core.SaveSystemCore.SaveAndQuit
   name: SaveAndQuit()
   href: api/SaveSystem.Core.SaveSystemCore.html#SaveSystem_Core_SaveSystemCore_SaveAndQuit
@@ -406,6 +460,12 @@ references:
   commentId: F:SaveSystem.Core.SaveType.OnLowMemory
   fullName: SaveSystem.Core.SaveType.OnLowMemory
   nameWithType: SaveType.OnLowMemory
+- uid: SaveSystem.Core.SaveType.OnSwitchScene
+  name: OnSwitchScene
+  href: api/SaveSystem.Core.SaveType.html#SaveSystem_Core_SaveType_OnSwitchScene
+  commentId: F:SaveSystem.Core.SaveType.OnSwitchScene
+  fullName: SaveSystem.Core.SaveType.OnSwitchScene
+  nameWithType: SaveType.OnSwitchScene
 - uid: SaveSystem.Core.SaveType.QuickSave
   name: QuickSave
   href: api/SaveSystem.Core.SaveType.html#SaveSystem_Core_SaveType_QuickSave
@@ -766,6 +826,55 @@ references:
   isSpec: "True"
   fullName: SaveSystem.DataManager.SaveObjectsAsync
   nameWithType: DataManager.SaveObjectsAsync
+- uid: SaveSystem.Exceptions
+  name: SaveSystem.Exceptions
+  href: api/SaveSystem.Exceptions.html
+  commentId: N:SaveSystem.Exceptions
+  fullName: SaveSystem.Exceptions
+  nameWithType: SaveSystem.Exceptions
+- uid: SaveSystem.Exceptions.SaveSystemException
+  name: SaveSystemException
+  href: api/SaveSystem.Exceptions.SaveSystemException.html
+  commentId: T:SaveSystem.Exceptions.SaveSystemException
+  fullName: SaveSystem.Exceptions.SaveSystemException
+  nameWithType: SaveSystemException
+- uid: SaveSystem.Exceptions.SaveSystemException.#ctor
+  name: SaveSystemException()
+  href: api/SaveSystem.Exceptions.SaveSystemException.html#SaveSystem_Exceptions_SaveSystemException__ctor
+  commentId: M:SaveSystem.Exceptions.SaveSystemException.#ctor
+  name.vb: New()
+  fullName: SaveSystem.Exceptions.SaveSystemException.SaveSystemException()
+  fullName.vb: SaveSystem.Exceptions.SaveSystemException.New()
+  nameWithType: SaveSystemException.SaveSystemException()
+  nameWithType.vb: SaveSystemException.New()
+- uid: SaveSystem.Exceptions.SaveSystemException.#ctor(System.String,System.Exception)
+  name: SaveSystemException(string, Exception)
+  href: api/SaveSystem.Exceptions.SaveSystemException.html#SaveSystem_Exceptions_SaveSystemException__ctor_System_String_System_Exception_
+  commentId: M:SaveSystem.Exceptions.SaveSystemException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: SaveSystem.Exceptions.SaveSystemException.SaveSystemException(string, System.Exception)
+  fullName.vb: SaveSystem.Exceptions.SaveSystemException.New(String, System.Exception)
+  nameWithType: SaveSystemException.SaveSystemException(string, Exception)
+  nameWithType.vb: SaveSystemException.New(String, Exception)
+- uid: SaveSystem.Exceptions.SaveSystemException.#ctor(System.String)
+  name: SaveSystemException(string)
+  href: api/SaveSystem.Exceptions.SaveSystemException.html#SaveSystem_Exceptions_SaveSystemException__ctor_System_String_
+  commentId: M:SaveSystem.Exceptions.SaveSystemException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: SaveSystem.Exceptions.SaveSystemException.SaveSystemException(string)
+  fullName.vb: SaveSystem.Exceptions.SaveSystemException.New(String)
+  nameWithType: SaveSystemException.SaveSystemException(string)
+  nameWithType.vb: SaveSystemException.New(String)
+- uid: SaveSystem.Exceptions.SaveSystemException.#ctor*
+  name: SaveSystemException
+  href: api/SaveSystem.Exceptions.SaveSystemException.html#SaveSystem_Exceptions_SaveSystemException__ctor_
+  commentId: Overload:SaveSystem.Exceptions.SaveSystemException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SaveSystem.Exceptions.SaveSystemException.SaveSystemException
+  fullName.vb: SaveSystem.Exceptions.SaveSystemException.New
+  nameWithType: SaveSystemException.SaveSystemException
+  nameWithType.vb: SaveSystemException.New
 - uid: SaveSystem.Extensions
   name: SaveSystem.Extensions
   href: api/SaveSystem.Extensions.html
@@ -811,204 +920,257 @@ references:
   fullName: SaveSystem.Handlers
   nameWithType: SaveSystem.Handlers
 - uid: SaveSystem.Handlers.AbstractHandler`2
-  name: AbstractHandler<T, TO>
+  name: AbstractHandler<THandler, TObject>
   href: api/SaveSystem.Handlers.AbstractHandler-2.html
   commentId: T:SaveSystem.Handlers.AbstractHandler`2
-  name.vb: AbstractHandler(Of T, TO)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO)
-  nameWithType: AbstractHandler<T, TO>
-  nameWithType.vb: AbstractHandler(Of T, TO)
+  name.vb: AbstractHandler(Of THandler, TObject)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject)
+  nameWithType: AbstractHandler<THandler, TObject>
+  nameWithType.vb: AbstractHandler(Of THandler, TObject)
 - uid: SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
-  name: AbstractHandler(string, TO[], Func<TO>)
+  name: AbstractHandler(string, TObject[], Func<TObject>)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___System_Func__1__
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})
-  name.vb: New(String, TO(), Func(Of TO))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler(string, TO[], System.Func<TO>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New(String, TO(), System.Func(Of TO))
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler(string, TO[], Func<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).New(String, TO(), Func(Of TO))
+  name.vb: New(String, TObject(), Func(Of TObject))
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AbstractHandler(string, TObject[], System.Func<TObject>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).New(String, TObject(), System.Func(Of TObject))
+  nameWithType: AbstractHandler<THandler, TObject>.AbstractHandler(string, TObject[], Func<TObject>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).New(String, TObject(), Func(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.#ctor*
   name: AbstractHandler
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2__ctor_
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AbstractHandler
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).New
-  nameWithType: AbstractHandler<T, TO>.AbstractHandler
-  nameWithType.vb: AbstractHandler(Of T, TO).New
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AbstractHandler
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).New
+  nameWithType: AbstractHandler<THandler, TObject>.AbstractHandler
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).New
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
-  name: AddObject(TO)
+  name: AddObject(TObject)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_AddObject__1_
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject(TO)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject(TO)
-  nameWithType: AbstractHandler<T, TO>.AddObject(TO)
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObject(TO)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObject(TObject)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObject(TObject)
+  nameWithType: AbstractHandler<THandler, TObject>.AddObject(TObject)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObject(TObject)
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObject*
   name: AddObject
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_AddObject_
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.AddObject
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObject
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObject
-  nameWithType: AbstractHandler<T, TO>.AddObject
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObject
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObject
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObject
+  nameWithType: AbstractHandler<THandler, TObject>.AddObject
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObject
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
-  name: AddObjects(ICollection<TO>)
+  name: AddObjects(ICollection<TObject>)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_AddObjects_System_Collections_Generic_ICollection__1__
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})
-  name.vb: AddObjects(ICollection(Of TO))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects(System.Collections.Generic.ICollection<TO>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects(System.Collections.Generic.ICollection(Of TO))
-  nameWithType: AbstractHandler<T, TO>.AddObjects(ICollection<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects(ICollection(Of TO))
+  name.vb: AddObjects(ICollection(Of TObject))
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObjects(System.Collections.Generic.ICollection<TObject>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObjects(System.Collections.Generic.ICollection(Of TObject))
+  nameWithType: AbstractHandler<THandler, TObject>.AddObjects(ICollection<TObject>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObjects(ICollection(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.AddObjects*
   name: AddObjects
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_AddObjects_
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.AddObjects
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.AddObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).AddObjects
-  nameWithType: AbstractHandler<T, TO>.AddObjects
-  nameWithType.vb: AbstractHandler(Of T, TO).AddObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.AddObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).AddObjects
+  nameWithType: AbstractHandler<THandler, TObject>.AddObjects
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).AddObjects
 - uid: SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
   name: dynamicObjects
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_dynamicObjects
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.dynamicObjects
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.dynamicObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).dynamicObjects
-  nameWithType: AbstractHandler<T, TO>.dynamicObjects
-  nameWithType.vb: AbstractHandler(Of T, TO).dynamicObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.dynamicObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).dynamicObjects
+  nameWithType: AbstractHandler<THandler, TObject>.dynamicObjects
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).dynamicObjects
 - uid: SaveSystem.Handlers.AbstractHandler`2.factoryFunc
   name: factoryFunc
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_factoryFunc
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.factoryFunc
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.factoryFunc
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).factoryFunc
-  nameWithType: AbstractHandler<T, TO>.factoryFunc
-  nameWithType.vb: AbstractHandler(Of T, TO).factoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.factoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).factoryFunc
+  nameWithType: AbstractHandler<THandler, TObject>.factoryFunc
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).factoryFunc
+- uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_GetEnumerator
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.GetEnumerator()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).GetEnumerator()
+  nameWithType: AbstractHandler<THandler, TObject>.GetEnumerator()
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).GetEnumerator()
+- uid: SaveSystem.Handlers.AbstractHandler`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_GetEnumerator_
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.GetEnumerator
+  isSpec: "True"
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.GetEnumerator
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).GetEnumerator
+  nameWithType: AbstractHandler<THandler, TObject>.GetEnumerator
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).GetEnumerator
+- uid: SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  name: this[int]
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_Item_System_Int32_
+  commentId: P:SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)
+  name.vb: this[](Integer)
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.this[int]
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).this[](Integer)
+  nameWithType: AbstractHandler<THandler, TObject>.this[int]
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).this[](Integer)
+- uid: SaveSystem.Handlers.AbstractHandler`2.Item*
+  name: this
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_Item_
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.Item
+  isSpec: "True"
+  name.vb: this[]
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.this
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).this[]
+  nameWithType: AbstractHandler<THandler, TObject>.this
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).this[]
 - uid: SaveSystem.Handlers.AbstractHandler`2.loadingProgress
   name: loadingProgress
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_loadingProgress
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.loadingProgress
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.loadingProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).loadingProgress
-  nameWithType: AbstractHandler<T, TO>.loadingProgress
-  nameWithType.vb: AbstractHandler(Of T, TO).loadingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.loadingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).loadingProgress
+  nameWithType: AbstractHandler<THandler, TObject>.loadingProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).loadingProgress
 - uid: SaveSystem.Handlers.AbstractHandler`2.localFilePath
   name: localFilePath
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_localFilePath
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.localFilePath
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.localFilePath
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).localFilePath
-  nameWithType: AbstractHandler<T, TO>.localFilePath
-  nameWithType.vb: AbstractHandler(Of T, TO).localFilePath
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.localFilePath
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).localFilePath
+  nameWithType: AbstractHandler<THandler, TObject>.localFilePath
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).localFilePath
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>, IProgress<float>)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_ObserveProgress_System_IProgress_System_Single__System_IProgress_System_Single__
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single},System.IProgress{System.Single})
   name.vb: ObserveProgress(IProgress(Of Single), IProgress(Of Single))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>, IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>, System.IProgress<float>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single), System.IProgress(Of Single))
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>, IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single), IProgress(Of Single))
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   name: ObserveProgress(IProgress<float>)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_ObserveProgress_System_IProgress_System_Single__
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress(System.IProgress{System.Single})
   name.vb: ObserveProgress(IProgress(Of Single))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress(System.IProgress<float>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress(System.IProgress(Of Single))
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress(IProgress<float>)
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress(IProgress(Of Single))
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress(System.IProgress<float>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress(System.IProgress(Of Single))
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress(IProgress<float>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress(IProgress(Of Single))
 - uid: SaveSystem.Handlers.AbstractHandler`2.ObserveProgress*
   name: ObserveProgress
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_ObserveProgress_
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.ObserveProgress
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.ObserveProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).ObserveProgress
-  nameWithType: AbstractHandler<T, TO>.ObserveProgress
-  nameWithType.vb: AbstractHandler(Of T, TO).ObserveProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ObserveProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ObserveProgress
+  nameWithType: AbstractHandler<THandler, TObject>.ObserveProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ObserveProgress
 - uid: SaveSystem.Handlers.AbstractHandler`2.savingProgress
   name: savingProgress
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_savingProgress
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.savingProgress
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.savingProgress
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).savingProgress
-  nameWithType: AbstractHandler<T, TO>.savingProgress
-  nameWithType.vb: AbstractHandler(Of T, TO).savingProgress
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.savingProgress
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).savingProgress
+  nameWithType: AbstractHandler<THandler, TObject>.savingProgress
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).savingProgress
 - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
-  name: SetFactoryFunc(Func<TO>)
+  name: SetFactoryFunc(Func<TObject>)
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_SetFactoryFunc_System_Func__1__
   commentId: M:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})
-  name.vb: SetFactoryFunc(Func(Of TO))
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc(System.Func<TO>)
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc(System.Func(Of TO))
-  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc(Func<TO>)
-  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc(Func(Of TO))
+  name.vb: SetFactoryFunc(Func(Of TObject))
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.SetFactoryFunc(System.Func<TObject>)
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).SetFactoryFunc(System.Func(Of TObject))
+  nameWithType: AbstractHandler<THandler, TObject>.SetFactoryFunc(Func<TObject>)
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).SetFactoryFunc(Func(Of TObject))
 - uid: SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc*
   name: SetFactoryFunc
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_SetFactoryFunc_
   commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.SetFactoryFunc
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).SetFactoryFunc
-  nameWithType: AbstractHandler<T, TO>.SetFactoryFunc
-  nameWithType.vb: AbstractHandler(Of T, TO).SetFactoryFunc
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.SetFactoryFunc
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).SetFactoryFunc
+  nameWithType: AbstractHandler<THandler, TObject>.SetFactoryFunc
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).SetFactoryFunc
 - uid: SaveSystem.Handlers.AbstractHandler`2.staticObjects
   name: staticObjects
   href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_staticObjects
   commentId: F:SaveSystem.Handlers.AbstractHandler`2.staticObjects
-  fullName: SaveSystem.Handlers.AbstractHandler<T, TO>.staticObjects
-  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of T, TO).staticObjects
-  nameWithType: AbstractHandler<T, TO>.staticObjects
-  nameWithType.vb: AbstractHandler(Of T, TO).staticObjects
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.staticObjects
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).staticObjects
+  nameWithType: AbstractHandler<THandler, TObject>.staticObjects
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).staticObjects
+- uid: SaveSystem.Handlers.AbstractHandler`2.ToString
+  name: ToString()
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_ToString
+  commentId: M:SaveSystem.Handlers.AbstractHandler`2.ToString
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ToString()
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ToString()
+  nameWithType: AbstractHandler<THandler, TObject>.ToString()
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ToString()
+- uid: SaveSystem.Handlers.AbstractHandler`2.ToString*
+  name: ToString
+  href: api/SaveSystem.Handlers.AbstractHandler-2.html#SaveSystem_Handlers_AbstractHandler_2_ToString_
+  commentId: Overload:SaveSystem.Handlers.AbstractHandler`2.ToString
+  isSpec: "True"
+  fullName: SaveSystem.Handlers.AbstractHandler<THandler, TObject>.ToString
+  fullName.vb: SaveSystem.Handlers.AbstractHandler(Of THandler, TObject).ToString
+  nameWithType: AbstractHandler<THandler, TObject>.ToString
+  nameWithType.vb: AbstractHandler(Of THandler, TObject).ToString
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1
-  name: AsyncObjectHandler<TO>
+  name: AsyncObjectHandler<TObject>
   href: api/SaveSystem.Handlers.AsyncObjectHandler-1.html
   commentId: T:SaveSystem.Handlers.AsyncObjectHandler`1
-  name.vb: AsyncObjectHandler(Of TO)
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO)
-  nameWithType: AsyncObjectHandler<TO>
-  nameWithType.vb: AsyncObjectHandler(Of TO)
+  name.vb: AsyncObjectHandler(Of TObject)
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject)
+  nameWithType: AsyncObjectHandler<TObject>
+  nameWithType.vb: AsyncObjectHandler(Of TObject)
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
   name: LoadAsync(CancellationToken)
   href: api/SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem_Handlers_AsyncObjectHandler_1_LoadAsync_System_Threading_CancellationToken_
   commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync(System.Threading.CancellationToken)
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync(System.Threading.CancellationToken)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
-  nameWithType: AsyncObjectHandler<TO>.LoadAsync(CancellationToken)
-  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>.LoadAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject).LoadAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncObjectHandler<TObject>.LoadAsync(CancellationToken)
+  nameWithType.vb: AsyncObjectHandler(Of TObject).LoadAsync(CancellationToken)
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync*
   name: LoadAsync
   href: api/SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem_Handlers_AsyncObjectHandler_1_LoadAsync_
   commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.LoadAsync
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.LoadAsync
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).LoadAsync
-  nameWithType: AsyncObjectHandler<TO>.LoadAsync
-  nameWithType.vb: AsyncObjectHandler(Of TO).LoadAsync
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>.LoadAsync
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject).LoadAsync
+  nameWithType: AsyncObjectHandler<TObject>.LoadAsync
+  nameWithType.vb: AsyncObjectHandler(Of TObject).LoadAsync
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
   name: SaveAsync(CancellationToken)
   href: api/SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem_Handlers_AsyncObjectHandler_1_SaveAsync_System_Threading_CancellationToken_
   commentId: M:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync(System.Threading.CancellationToken)
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync(System.Threading.CancellationToken)
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
-  nameWithType: AsyncObjectHandler<TO>.SaveAsync(CancellationToken)
-  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>.SaveAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject).SaveAsync(System.Threading.CancellationToken)
+  nameWithType: AsyncObjectHandler<TObject>.SaveAsync(CancellationToken)
+  nameWithType.vb: AsyncObjectHandler(Of TObject).SaveAsync(CancellationToken)
 - uid: SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync*
   name: SaveAsync
   href: api/SaveSystem.Handlers.AsyncObjectHandler-1.html#SaveSystem_Handlers_AsyncObjectHandler_1_SaveAsync_
   commentId: Overload:SaveSystem.Handlers.AsyncObjectHandler`1.SaveAsync
   isSpec: "True"
-  fullName: SaveSystem.Handlers.AsyncObjectHandler<TO>.SaveAsync
-  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TO).SaveAsync
-  nameWithType: AsyncObjectHandler<TO>.SaveAsync
-  nameWithType.vb: AsyncObjectHandler(Of TO).SaveAsync
+  fullName: SaveSystem.Handlers.AsyncObjectHandler<TObject>.SaveAsync
+  fullName.vb: SaveSystem.Handlers.AsyncObjectHandler(Of TObject).SaveAsync
+  nameWithType: AsyncObjectHandler<TObject>.SaveAsync
+  nameWithType.vb: AsyncObjectHandler(Of TObject).SaveAsync
 - uid: SaveSystem.Handlers.HandlingResult
   name: HandlingResult
   href: api/SaveSystem.Handlers.HandlingResult.html
@@ -1110,48 +1272,48 @@ references:
   fullName: SaveSystem.Handlers.IObjectHandler.Save
   nameWithType: IObjectHandler.Save
 - uid: SaveSystem.Handlers.ObjectHandler`1
-  name: ObjectHandler<TO>
+  name: ObjectHandler<TObject>
   href: api/SaveSystem.Handlers.ObjectHandler-1.html
   commentId: T:SaveSystem.Handlers.ObjectHandler`1
-  name.vb: ObjectHandler(Of TO)
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO)
-  nameWithType: ObjectHandler<TO>
-  nameWithType.vb: ObjectHandler(Of TO)
+  name.vb: ObjectHandler(Of TObject)
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject)
+  nameWithType: ObjectHandler<TObject>
+  nameWithType.vb: ObjectHandler(Of TObject)
 - uid: SaveSystem.Handlers.ObjectHandler`1.Load
   name: Load()
   href: api/SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem_Handlers_ObjectHandler_1_Load
   commentId: M:SaveSystem.Handlers.ObjectHandler`1.Load
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Load()
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Load()
-  nameWithType: ObjectHandler<TO>.Load()
-  nameWithType.vb: ObjectHandler(Of TO).Load()
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Load()
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Load()
+  nameWithType: ObjectHandler<TObject>.Load()
+  nameWithType.vb: ObjectHandler(Of TObject).Load()
 - uid: SaveSystem.Handlers.ObjectHandler`1.Load*
   name: Load
   href: api/SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem_Handlers_ObjectHandler_1_Load_
   commentId: Overload:SaveSystem.Handlers.ObjectHandler`1.Load
   isSpec: "True"
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Load
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Load
-  nameWithType: ObjectHandler<TO>.Load
-  nameWithType.vb: ObjectHandler(Of TO).Load
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Load
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Load
+  nameWithType: ObjectHandler<TObject>.Load
+  nameWithType.vb: ObjectHandler(Of TObject).Load
 - uid: SaveSystem.Handlers.ObjectHandler`1.Save
   name: Save()
   href: api/SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem_Handlers_ObjectHandler_1_Save
   commentId: M:SaveSystem.Handlers.ObjectHandler`1.Save
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Save()
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Save()
-  nameWithType: ObjectHandler<TO>.Save()
-  nameWithType.vb: ObjectHandler(Of TO).Save()
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Save()
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Save()
+  nameWithType: ObjectHandler<TObject>.Save()
+  nameWithType.vb: ObjectHandler(Of TObject).Save()
 - uid: SaveSystem.Handlers.ObjectHandler`1.Save*
   name: Save
   href: api/SaveSystem.Handlers.ObjectHandler-1.html#SaveSystem_Handlers_ObjectHandler_1_Save_
   commentId: Overload:SaveSystem.Handlers.ObjectHandler`1.Save
   isSpec: "True"
-  fullName: SaveSystem.Handlers.ObjectHandler<TO>.Save
-  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TO).Save
-  nameWithType: ObjectHandler<TO>.Save
-  nameWithType.vb: ObjectHandler(Of TO).Save
+  fullName: SaveSystem.Handlers.ObjectHandler<TObject>.Save
+  fullName.vb: SaveSystem.Handlers.ObjectHandler(Of TObject).Save
+  nameWithType: ObjectHandler<TObject>.Save
+  nameWithType.vb: ObjectHandler(Of TObject).Save
 - uid: SaveSystem.Handlers.ObjectHandlersFactory
   name: ObjectHandlersFactory
   href: api/SaveSystem.Handlers.ObjectHandlersFactory.html
@@ -1301,48 +1463,48 @@ references:
   fullName: SaveSystem.Handlers.ObjectHandlersFactory.RegisterImmediately
   nameWithType: ObjectHandlersFactory.RegisterImmediately
 - uid: SaveSystem.Handlers.SmartHandler`1
-  name: SmartHandler<TO>
+  name: SmartHandler<TObject>
   href: api/SaveSystem.Handlers.SmartHandler-1.html
   commentId: T:SaveSystem.Handlers.SmartHandler`1
-  name.vb: SmartHandler(Of TO)
-  fullName: SaveSystem.Handlers.SmartHandler<TO>
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO)
-  nameWithType: SmartHandler<TO>
-  nameWithType.vb: SmartHandler(Of TO)
+  name.vb: SmartHandler(Of TObject)
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject)
+  nameWithType: SmartHandler<TObject>
+  nameWithType.vb: SmartHandler(Of TObject)
 - uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
   name: LoadAsync(CancellationToken)
   href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_LoadAsync_System_Threading_CancellationToken_
   commentId: M:SaveSystem.Handlers.SmartHandler`1.LoadAsync(System.Threading.CancellationToken)
-  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync(System.Threading.CancellationToken)
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync(System.Threading.CancellationToken)
-  nameWithType: SmartHandler<TO>.LoadAsync(CancellationToken)
-  nameWithType.vb: SmartHandler(Of TO).LoadAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>.LoadAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject).LoadAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TObject>.LoadAsync(CancellationToken)
+  nameWithType.vb: SmartHandler(Of TObject).LoadAsync(CancellationToken)
 - uid: SaveSystem.Handlers.SmartHandler`1.LoadAsync*
   name: LoadAsync
   href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_LoadAsync_
   commentId: Overload:SaveSystem.Handlers.SmartHandler`1.LoadAsync
   isSpec: "True"
-  fullName: SaveSystem.Handlers.SmartHandler<TO>.LoadAsync
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).LoadAsync
-  nameWithType: SmartHandler<TO>.LoadAsync
-  nameWithType.vb: SmartHandler(Of TO).LoadAsync
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>.LoadAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject).LoadAsync
+  nameWithType: SmartHandler<TObject>.LoadAsync
+  nameWithType.vb: SmartHandler(Of TObject).LoadAsync
 - uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
   name: SaveAsync(CancellationToken)
   href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_SaveAsync_System_Threading_CancellationToken_
   commentId: M:SaveSystem.Handlers.SmartHandler`1.SaveAsync(System.Threading.CancellationToken)
-  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync(System.Threading.CancellationToken)
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync(System.Threading.CancellationToken)
-  nameWithType: SmartHandler<TO>.SaveAsync(CancellationToken)
-  nameWithType.vb: SmartHandler(Of TO).SaveAsync(CancellationToken)
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>.SaveAsync(System.Threading.CancellationToken)
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject).SaveAsync(System.Threading.CancellationToken)
+  nameWithType: SmartHandler<TObject>.SaveAsync(CancellationToken)
+  nameWithType.vb: SmartHandler(Of TObject).SaveAsync(CancellationToken)
 - uid: SaveSystem.Handlers.SmartHandler`1.SaveAsync*
   name: SaveAsync
   href: api/SaveSystem.Handlers.SmartHandler-1.html#SaveSystem_Handlers_SmartHandler_1_SaveAsync_
   commentId: Overload:SaveSystem.Handlers.SmartHandler`1.SaveAsync
   isSpec: "True"
-  fullName: SaveSystem.Handlers.SmartHandler<TO>.SaveAsync
-  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TO).SaveAsync
-  nameWithType: SmartHandler<TO>.SaveAsync
-  nameWithType.vb: SmartHandler(Of TO).SaveAsync
+  fullName: SaveSystem.Handlers.SmartHandler<TObject>.SaveAsync
+  fullName.vb: SaveSystem.Handlers.SmartHandler(Of TObject).SaveAsync
+  nameWithType: SmartHandler<TObject>.SaveAsync
+  nameWithType.vb: SmartHandler(Of TObject).SaveAsync
 - uid: SaveSystem.IPersistentObject
   name: IPersistentObject
   href: api/SaveSystem.IPersistentObject.html
@@ -1540,6 +1702,49 @@ references:
   fullName.vb: SaveSystem.MeshData.<>
   nameWithType: MeshData.operator !=
   nameWithType.vb: MeshData.<>
+- uid: SaveSystem.ProjectBootstrapAttribute
+  name: ProjectBootstrapAttribute
+  href: api/SaveSystem.ProjectBootstrapAttribute.html
+  commentId: T:SaveSystem.ProjectBootstrapAttribute
+  fullName: SaveSystem.ProjectBootstrapAttribute
+  nameWithType: ProjectBootstrapAttribute
+- uid: SaveSystem.SceneBootstrapAttribute
+  name: SceneBootstrapAttribute
+  href: api/SaveSystem.SceneBootstrapAttribute.html
+  commentId: T:SaveSystem.SceneBootstrapAttribute
+  fullName: SaveSystem.SceneBootstrapAttribute
+  nameWithType: SceneBootstrapAttribute
+- uid: SaveSystem.SceneBootstrapAttribute.#ctor(System.Boolean,System.Boolean)
+  name: SceneBootstrapAttribute(bool, bool)
+  href: api/SaveSystem.SceneBootstrapAttribute.html#SaveSystem_SceneBootstrapAttribute__ctor_System_Boolean_System_Boolean_
+  commentId: M:SaveSystem.SceneBootstrapAttribute.#ctor(System.Boolean,System.Boolean)
+  name.vb: New(Boolean, Boolean)
+  fullName: SaveSystem.SceneBootstrapAttribute.SceneBootstrapAttribute(bool, bool)
+  fullName.vb: SaveSystem.SceneBootstrapAttribute.New(Boolean, Boolean)
+  nameWithType: SceneBootstrapAttribute.SceneBootstrapAttribute(bool, bool)
+  nameWithType.vb: SceneBootstrapAttribute.New(Boolean, Boolean)
+- uid: SaveSystem.SceneBootstrapAttribute.#ctor*
+  name: SceneBootstrapAttribute
+  href: api/SaveSystem.SceneBootstrapAttribute.html#SaveSystem_SceneBootstrapAttribute__ctor_
+  commentId: Overload:SaveSystem.SceneBootstrapAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: SaveSystem.SceneBootstrapAttribute.SceneBootstrapAttribute
+  fullName.vb: SaveSystem.SceneBootstrapAttribute.New
+  nameWithType: SceneBootstrapAttribute.SceneBootstrapAttribute
+  nameWithType.vb: SceneBootstrapAttribute.New
+- uid: SaveSystem.SceneBootstrapAttribute.invokeCallbacks
+  name: invokeCallbacks
+  href: api/SaveSystem.SceneBootstrapAttribute.html#SaveSystem_SceneBootstrapAttribute_invokeCallbacks
+  commentId: F:SaveSystem.SceneBootstrapAttribute.invokeCallbacks
+  fullName: SaveSystem.SceneBootstrapAttribute.invokeCallbacks
+  nameWithType: SceneBootstrapAttribute.invokeCallbacks
+- uid: SaveSystem.SceneBootstrapAttribute.loadHandlers
+  name: loadHandlers
+  href: api/SaveSystem.SceneBootstrapAttribute.html#SaveSystem_SceneBootstrapAttribute_loadHandlers
+  commentId: F:SaveSystem.SceneBootstrapAttribute.loadHandlers
+  fullName: SaveSystem.SceneBootstrapAttribute.loadHandlers
+  nameWithType: SceneBootstrapAttribute.loadHandlers
 - uid: SaveSystem.Storage
   name: Storage
   href: api/SaveSystem.Storage.html

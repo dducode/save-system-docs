@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AbstractHandler&lt;T, TO&gt;
+      <title>Class AbstractHandler&lt;THandler, TObject&gt;
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AbstractHandler&lt;T, TO&gt;
+      <meta name="title" content="Class AbstractHandler&lt;THandler, TObject&gt;
  ">
       
       <link rel="icon" href="../images/icon.png">
@@ -78,7 +78,7 @@
 
 
 
-  <h1 id="SaveSystem_Handlers_AbstractHandler_2" data-uid="SaveSystem.Handlers.AbstractHandler`2" class="text-break">Class AbstractHandler&lt;T, TO&gt;
+  <h1 id="SaveSystem_Handlers_AbstractHandler_2" data-uid="SaveSystem.Handlers.AbstractHandler`2" class="text-break">Class AbstractHandler&lt;THandler, TObject&gt;
 </h1>
   <div class="markdown level0 summary"><p>Base class for all object handlers</p>
 </div>
@@ -86,16 +86,21 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">AbstractHandler&lt;T, TO&gt;</span></div>
-      <div class="level2"><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler&lt;TO&gt;</a></div>
-      <div class="level2"><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler&lt;TO&gt;</a></div>
-      <div class="level2"><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler&lt;TO&gt;</a></div>
+    <div class="level1"><span class="xref">AbstractHandler&lt;THandler, TObject&gt;</span></div>
+      <div class="level2"><a class="xref" href="SaveSystem.Handlers.AsyncObjectHandler-1.html">AsyncObjectHandler&lt;TObject&gt;</a></div>
+      <div class="level2"><a class="xref" href="SaveSystem.Handlers.ObjectHandler-1.html">ObjectHandler&lt;TObject&gt;</a></div>
+      <div class="level2"><a class="xref" href="SaveSystem.Handlers.SmartHandler-1.html">SmartHandler&lt;TObject&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TObject&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SaveSystem.html">SaveSystem</a>.<a class="xref" href="SaveSystem.Handlers.html">Handlers</a></h6>
   <h6><strong>Assembly</strong>: SaveSystem.dll</h6>
   <h5 id="SaveSystem_Handlers_AbstractHandler_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class AbstractHandler&lt;T, TO&gt; where T : AbstractHandler&lt;T, TO&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class AbstractHandler&lt;THandler, TObject&gt; : IEnumerable&lt;TObject&gt;, IEnumerable where THandler : AbstractHandler&lt;THandler, TObject&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -107,12 +112,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
+        <td><span class="parametername">THandler</span></td>
         <td><p>Type of handler</p>
 </td>
       </tr>
       <tr>
-        <td><span class="parametername">TO</span></td>
+        <td><span class="parametername">TObject</span></td>
         <td><p>Type of handled objects</p>
 </td>
       </tr>
@@ -127,7 +132,7 @@
   <a id="SaveSystem_Handlers_AbstractHandler_2__ctor_" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor*"></a>
 
   <h3 id="SaveSystem_Handlers_AbstractHandler_2__ctor_System_String__1___System_Func__1__" data-uid="SaveSystem.Handlers.AbstractHandler`2.#ctor(System.String,`1[],System.Func{`1})">
-  AbstractHandler(string, TO[], Func&lt;TO&gt;)
+  AbstractHandler(string, TObject[], Func&lt;TObject&gt;)
   
   </h3>
 
@@ -135,16 +140,16 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected AbstractHandler(string localFilePath, TO[] staticObjects, Func&lt;TO&gt; factoryFunc)</code></pre>
+    <pre><code class="lang-csharp hljs">protected AbstractHandler(string localFilePath, TObject[] staticObjects, Func&lt;TObject&gt; factoryFunc)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>localFilePath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
-    <dt><code>staticObjects</code> TO[]</dt>
+    <dt><code>staticObjects</code> TObject[]</dt>
     <dd></dd>
-    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TObject&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -173,7 +178,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly List&lt;TO&gt; dynamicObjects</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;TObject&gt; dynamicObjects</code></pre>
   </div>
 
 
@@ -181,7 +186,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TO&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TObject&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -203,7 +208,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Func&lt;TO&gt; factoryFunc</code></pre>
+    <pre><code class="lang-csharp hljs">protected Func&lt;TObject&gt; factoryFunc</code></pre>
   </div>
 
 
@@ -211,7 +216,7 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TObject&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -323,7 +328,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly TO[] staticObjects</code></pre>
+    <pre><code class="lang-csharp hljs">protected readonly TObject[] staticObjects</code></pre>
   </div>
 
 
@@ -331,10 +336,50 @@
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt>TO[]</dt>
+    <dt>TObject[]</dt>
     <dd></dd>
   </dl>
 
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="SaveSystem_Handlers_AbstractHandler_2_Item_" data-uid="SaveSystem.Handlers.AbstractHandler`2.Item*"></a>
+
+  <h3 id="SaveSystem_Handlers_AbstractHandler_2_Item_System_Int32_" data-uid="SaveSystem.Handlers.AbstractHandler`2.Item(System.Int32)">
+  this[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TObject this[int index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TObject</span></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -350,7 +395,7 @@
   <a id="SaveSystem_Handlers_AbstractHandler_2_AddObject_" data-uid="SaveSystem.Handlers.AbstractHandler`2.AddObject*"></a>
 
   <h3 id="SaveSystem_Handlers_AbstractHandler_2_AddObject__1_" data-uid="SaveSystem.Handlers.AbstractHandler`2.AddObject(`1)">
-  AddObject(TO)
+  AddObject(TObject)
   
   </h3>
 
@@ -359,19 +404,19 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T AddObject(TO obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public THandler AddObject(TObject obj)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>obj</code> <span class="xref">TO</span></dt>
+    <dt><code>obj</code> <span class="xref">TObject</span></dt>
     <dd><p>Spawned object</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">THandler</span></dt>
     <dd></dd>
   </dl>
 
@@ -388,7 +433,7 @@
   <a id="SaveSystem_Handlers_AbstractHandler_2_AddObjects_" data-uid="SaveSystem.Handlers.AbstractHandler`2.AddObjects*"></a>
 
   <h3 id="SaveSystem_Handlers_AbstractHandler_2_AddObjects_System_Collections_Generic_ICollection__1__" data-uid="SaveSystem.Handlers.AbstractHandler`2.AddObjects(System.Collections.Generic.ICollection{`1})">
-  AddObjects(ICollection&lt;TO&gt;)
+  AddObjects(ICollection&lt;TObject&gt;)
   
   </h3>
 
@@ -397,19 +442,50 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T AddObjects(ICollection&lt;TO&gt; objects)</code></pre>
+    <pre><code class="lang-csharp hljs">public THandler AddObjects(ICollection&lt;TObject&gt; objects)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TO&gt;</dt>
+    <dt><code>objects</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;TObject&gt;</dt>
     <dd><p>Spawned objects</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">THandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_AbstractHandler_2_GetEnumerator_" data-uid="SaveSystem.Handlers.AbstractHandler`2.GetEnumerator*"></a>
+
+  <h3 id="SaveSystem_Handlers_AbstractHandler_2_GetEnumerator" data-uid="SaveSystem.Handlers.AbstractHandler`2.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;TObject&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;TObject&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -435,7 +511,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T ObserveProgress(IProgress&lt;float&gt; savingProgress, IProgress&lt;float&gt; loadingProgress)</code></pre>
+    <pre><code class="lang-csharp hljs">public THandler ObserveProgress(IProgress&lt;float&gt; savingProgress, IProgress&lt;float&gt; loadingProgress)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -450,7 +526,7 @@
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">THandler</span></dt>
     <dd></dd>
   </dl>
 
@@ -476,7 +552,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T ObserveProgress(IProgress&lt;float&gt; progress)</code></pre>
+    <pre><code class="lang-csharp hljs">public THandler ObserveProgress(IProgress&lt;float&gt; progress)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -488,7 +564,7 @@
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">THandler</span></dt>
     <dd></dd>
   </dl>
 
@@ -505,7 +581,7 @@
   <a id="SaveSystem_Handlers_AbstractHandler_2_SetFactoryFunc_" data-uid="SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc*"></a>
 
   <h3 id="SaveSystem_Handlers_AbstractHandler_2_SetFactoryFunc_System_Func__1__" data-uid="SaveSystem.Handlers.AbstractHandler`2.SetFactoryFunc(System.Func{`1})">
-  SetFactoryFunc(Func&lt;TO&gt;)
+  SetFactoryFunc(Func&lt;TObject&gt;)
   
   </h3>
 
@@ -514,18 +590,49 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T SetFactoryFunc(Func&lt;TO&gt; factoryFunc)</code></pre>
+    <pre><code class="lang-csharp hljs">public THandler SetFactoryFunc(Func&lt;TObject&gt; factoryFunc)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TO&gt;</dt>
+    <dt><code>factoryFunc</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TObject&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">T</span></dt>
+    <dt><span class="xref">THandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="SaveSystem_Handlers_AbstractHandler_2_ToString_" data-uid="SaveSystem.Handlers.AbstractHandler`2.ToString*"></a>
+
+  <h3 id="SaveSystem_Handlers_AbstractHandler_2_ToString" data-uid="SaveSystem.Handlers.AbstractHandler`2.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
